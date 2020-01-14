@@ -3,6 +3,7 @@ layout: post
 title:  "Fixing bluetooth headphones (HFP/HSP) on Ubuntu 18.04"
 date:   2020-01-14 17:31:18 +0100
 categories: guides
+comments: true
 ---
 For years I have had a problem with my Bluetooth headphones.
 Although everything works correctly if headphones are connected in A2DP mode, problems start to arise when I try to use them in HSP/HFP mode.

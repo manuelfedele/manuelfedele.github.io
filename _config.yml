@@ -35,7 +35,6 @@ plugins:
 
 google_analytics: UA-156231463-1
 
-comments: true
 disqus:
   shortname: manuelfedele-github-io
 
