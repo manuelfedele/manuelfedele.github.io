@@ -1,0 +1,116 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ChangeListManager">
+    <list default="true" id="17ddd39f-3449-410e-9a64-fac8bdc6fa1f" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/install_ubuntu1804.sh" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.gitignore" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/_config.yml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/index.html" beforeDir="false" />
+    </list>
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
+  <component name="ProjectId" id="1WOPnqmvf3TUWIsMYJVYcafruee" />
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showExcludedFiles" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent">
+    <property name="ASKED_ADD_EXTERNAL_FILES" value="true" />
+    <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
+    <property name="WebServerToolWindowFactoryState" value="false" />
+    <property name="javascript.karma.karma_node_package_dir" value="" />
+    <property name="js.buildTools.gulp.gulp_package_dir" value="" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/serve.sh" />
+    <property name="node.js.detected.package.eslint" value="true" />
+    <property name="node.js.detected.package.tslint" value="true" />
+    <property name="node.js.path.for.package.eslint" value="project" />
+    <property name="node.js.path.for.package.tslint" value="project" />
+    <property name="node.js.selected.package.eslint" value="(autodetect)" />
+    <property name="node.js.selected.package.tslint" value="(autodetect)" />
+    <property name="nodejs.jest.jest_package" value="" />
+    <property name="nodejs.mocha.mocha_node_package_dir" value="" />
+    <property name="settings.editor.selected.configurable" value="preferences.pluginManager" />
+  </component>
+  <component name="RecentsManager">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$" />
+    </key>
+  </component>
+  <component name="RunManager">
+    <configuration default="true" type="ShConfigurationType">
+      <option name="SCRIPT_PATH" value="serve.sh" />
+      <option name="SCRIPT_OPTIONS" value="" />
+      <option name="SCRIPT_WORKING_DIRECTORY" value="$PROJECT_DIR$" />
+      <option name="INTERPRETER_PATH" value="/usr/bin/zsh" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <method v="2" />
+    </configuration>
+    <configuration default="true" type="js.build_tools.gulp">
+      <node-interpreter>project</node-interpreter>
+      <node-options />
+      <gulpfile />
+      <tasks />
+      <arguments />
+      <envs />
+      <method v="2" />
+    </configuration>
+  </component>
+  <component name="ServiceViewManager">
+    <option name="viewStates">
+      <list>
+        <serviceView>
+          <treeState>
+            <expand />
+            <select />
+          </treeState>
+        </serviceView>
+      </list>
+    </option>
+  </component>
+  <component name="SvnConfiguration">
+    <configuration />
+  </component>
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="17ddd39f-3449-410e-9a64-fac8bdc6fa1f" name="Default Changelist" comment="" />
+      <created>1579017838190</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1579017838190</updated>
+      <workItem from="1579017840492" duration="4913000" />
+    </task>
+    <servers />
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="1" />
+  </component>
+  <component name="WindowStateProjectService">
+    <state x="455" y="166" width="1076" height="665" key="#com.intellij.execution.impl.EditConfigurationsDialog" timestamp="1579020257226">
+      <screen x="67" y="27" width="1853" height="1052" />
+    </state>
+    <state x="455" y="166" width="1076" height="665" key="#com.intellij.execution.impl.EditConfigurationsDialog/67.27.1853.1052/1920.0.1920.1080@67.27.1853.1052" timestamp="1579020257226" />
+    <state x="553" y="353" width="877" height="398" key="#com.intellij.fileTypes.FileTypeChooser" timestamp="1579020426855">
+      <screen x="67" y="27" width="1853" height="1052" />
+    </state>
+    <state x="553" y="353" width="877" height="398" key="#com.intellij.fileTypes.FileTypeChooser/67.27.1853.1052/1920.0.1920.1080@67.27.1853.1052" timestamp="1579020426855" />
+    <state x="779" y="272" width="424" height="492" key="FileChooserDialogImpl" timestamp="1579020152060">
+      <screen x="67" y="27" width="1853" height="1052" />
+    </state>
+    <state x="779" y="272" width="424" height="492" key="FileChooserDialogImpl/67.27.1853.1052/1920.0.1920.1080@67.27.1853.1052" timestamp="1579020152060" />
+    <state x="485" y="175" width="1016" height="738" key="SettingsEditor" timestamp="1579020383690">
+      <screen x="67" y="27" width="1853" height="1052" />
+    </state>
+    <state x="485" y="175" width="1016" height="738" key="SettingsEditor/67.27.1853.1052/1920.0.1920.1080@67.27.1853.1052" timestamp="1579020383690" />
+    <state x="660" y="237" width="662" height="623" key="com.intellij.openapi.editor.actions.MultiplePasteAction$ClipboardContentChooser" timestamp="1579018373889">
+      <screen x="67" y="27" width="1853" height="1052" />
+    </state>
+    <state x="660" y="237" width="662" height="623" key="com.intellij.openapi.editor.actions.MultiplePasteAction$ClipboardContentChooser/67.27.1853.1052/1920.0.1920.1080@67.27.1853.1052" timestamp="1579018373889" />
+  </component>
+</project>
