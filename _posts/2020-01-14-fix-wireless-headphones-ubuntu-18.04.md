@@ -27,4 +27,4 @@ At this point the error is clear enough.
 After a brief search I found the necessary driver [here][bt-firmware], and I copied it to the `/lib/firmware/brcm` folder.
 After a reboot, for the first time in a year now, I managed to use the headphones in HSP/HFP mode.
 
-[bt-firmware]: [https://github.com/winterheart/broadcom-bt-firmware
+[bt-firmware]: [https://github.com/winterheart/broadcom-bt-firmware]
