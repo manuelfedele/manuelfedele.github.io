@@ -18,7 +18,7 @@
 # You can create any custom variable you would like, and they will be accessible
 # in the templates via {{ site.myvariable }}.
 
-url: "https://manuelfedele.github.io"
+# url: https://manuelfedele.github.io
 title: RefactorThis
 email: manuelfedele@gmail.com
 description: >- # this means to ignore newlines until "baseurl:"
@@ -37,7 +37,7 @@ plugins:
 google_analytics: UA-156231463-1
 
 disqus:
-  shortname: "manuelfedele-github-io"
+  shortname: manuelfedele-github-io
 
 # Exclude from processing.
 # The following items will not be processed, by default.
