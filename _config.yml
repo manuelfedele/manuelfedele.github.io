@@ -37,7 +37,7 @@ plugins:
 google_analytics: UA-156231463-1
 
 disqus:
-  shortname: manuelfedele-github-io
+  shortname: "manuelfedele-github-io"
 
 # Exclude from processing.
 # The following items will not be processed, by default.
