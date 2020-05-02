@@ -9,10 +9,10 @@ Yesterday, I tried to use my Amazon Echo Plus as bluetooth speaker on my media c
 
 I paired the Echo Plus using Alexa app on my phone following these steps:
 
-1) Open Alexa app on your phone and go to `devices` tab, then `Echo & Alexa`.
-2) Choose your Echo Plus from list and then the gear icon on top left.
-3) Under `Wireless` tab, choose `Bluetooth Devices` and then `Pair new device`. Now the Echo Plus is in Pairing Mode.
-4) On Ubuntu, discover devices with Bluetooth and then pair `Echo-s5u`
+1. Open Alexa app on your phone and go to `devices` tab, then `Echo & Alexa`.
+2. Choose your Echo Plus from list and then the gear icon on top left.
+3. Under `Wireless` tab, choose `Bluetooth Devices` and then `Pair new device`. Now the Echo Plus is in Pairing Mode.
+4. On Ubuntu, discover devices with Bluetooth and then pair `Echo-s5u`
 
 Following these steps, paired was successful but _I couldn't send any audio to Echo Plus_.
 
