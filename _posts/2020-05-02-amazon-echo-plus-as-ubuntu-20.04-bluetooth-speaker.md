@@ -21,4 +21,4 @@ Why? Because the Echo was recognized as microphone instead of a speaker.
 The only workaround I found at the moment to avoid this, is to **pair the Echo Plus while you're playing some audio on your Ubuntu machine**.
 
 I just unpaired the devices, then started a YouTube video on my Ubuntu machine and then repeated the steps above.
-A that poin I've been able to send audio to my Echo Plus.
+A that point I've been able to send audio to my Echo Plus.

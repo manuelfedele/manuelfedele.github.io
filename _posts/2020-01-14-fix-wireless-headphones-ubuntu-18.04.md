@@ -27,4 +27,16 @@ At this point the error is clear enough.
 After a brief search I found the necessary driver [here][bt-firmware], and I copied it to the `/lib/firmware/brcm` folder.
 After a reboot, for the first time in a year now, I managed to use the headphones in HSP/HFP mode.
 
+I produced an ansible playbook to fix my missing driver automatically:
+
+```yaml
+hosts: localhost
+become: true
+tasks:
+- name: Ensure Bluetooth driver is placed
+    copy:
+      src: https://github.com/winterheart/broadcom-bt-firmware/raw/master/brcm/BCM20702A1-0b05-17cb.hcd
+      dest: /lib/firmware/brcm
+```
+
 [bt-firmware]: https://github.com/winterheart/broadcom-bt-firmware
