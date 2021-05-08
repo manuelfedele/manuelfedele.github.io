@@ -13,10 +13,10 @@
     
     <item>
       <title>Poetry No module named &#39;virtualenv.seed.via_app_data&#39; on Ubuntu 20.04</title>
-      <link>https://manuelfedele.github.io/posts/test/</link>
+      <link>https://manuelfedele.github.io/posts/poetry_no_module_named_virtualenv_seed_via_app_data/</link>
       <pubDate>Sun, 02 May 2021 11:21:45 +0200</pubDate>
       
-      <guid>https://manuelfedele.github.io/posts/test/</guid>
+      <guid>https://manuelfedele.github.io/posts/poetry_no_module_named_virtualenv_seed_via_app_data/</guid>
       <description>For my last project, I used poetry to manage dependencies and package my code. Poetry comes with all the tools you might need to manage your projects in a deterministic way.
 Anyway, after running poetry init in an existing project, I tried to let poetry create a virtuale environment, by adding the first dependecy, but when I did poetry add twisted it suddenly hang out, printing:
  No module named &#39;virtualenv.</description>
