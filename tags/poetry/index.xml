@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>poetry on Git Push and Run</title>
+    
+    
+    
+    <link>https://manuelfedele.github.io/tags/poetry/</link>
+    <description>Recent content in poetry on Git Push and Run</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <lastBuildDate>Tue, 16 Nov 2021 15:15:47 +0100</lastBuildDate>
+    
+	<atom:link href="https://manuelfedele.github.io/tags/poetry/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>Poetry No Module Seed via App Data</title>
+      <link>https://manuelfedele.github.io/posts/poetry-no-module-seed-via-app-data/</link>
+      <pubDate>Tue, 16 Nov 2021 15:15:47 +0100</pubDate>
+      
+      <guid>https://manuelfedele.github.io/posts/poetry-no-module-seed-via-app-data/</guid>
+      <description>
+        
+          
+          
+          
+        
+        
+        
+          For my last project, I used poetry to manage dependencies and package my code. Poetry comes with all the tools you might need to manage your projects in a deterministic way.
+Anyway, after running poetry init in an existing project, I tried to let poetry create a virtuale environment, by adding the first dependecy, but when I did poetry add twisted it suddenly hang out, printing:
+No module named &amp;#39;virtualenv.seed.via_app_data&amp;#39; Why is that?
+          
+        
+        </description>
+    </item>
+    
+  </channel>
+</rss>

@@ -1,0 +1,326 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    
+      <title>
+        How to Deploy Machine Learning Model With Python ::
+        Git Push and Run
+      </title>
+    
+    <meta http-equiv="content-type" content="text/html; charset=utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<meta
+  name="description"
+  content="Today we&amp;rsquo;ll se how to deploy a machine learning model with fastapi. We&amp;rsquo;ll start with a simple example of a fastapi server that can classify the content of an image.
+Let&amp;rsquo;s start with our project structure
+▾ &amp;lt;root&amp;gt;/ ▾ src/ __init__.py prediction_model.py settings.py ▾ models/ mobilenet_v2.h5 main.py I like to have a settings.py file to store project base settings, as Django does.
+We will start by populating the settings.py file with useful values, as the base directory, the model directory etc, this will come in handy later."
+/>
+<meta
+  name="keywords"
+  content=""
+/>
+<meta name="robots" content="noodp" />
+<link rel="canonical" href="https://manuelfedele.github.io/posts/how-to-deploy-machine-learning-model-with-python/" />
+
+
+
+
+
+
+
+<link rel="stylesheet" href="/css/style.css" />
+
+<link rel="stylesheet" href="https://manuelfedele.github.io/style.css" />
+
+
+<link rel="apple-touch-icon-precomposed" sizes="144x144" href="https://manuelfedele.github.io/img/apple-touch-icon-144-precomposed.png" />
+<link rel="shortcut icon" href="https://manuelfedele.github.io/img/favicon.png" />
+
+
+<link href="/fonts/Inter-Italic.woff2" rel="preload" type="font/woff2" as="font" crossorigin="">
+<link href="/fonts/Inter-Regular.woff2" rel="preload" type="font/woff2" as="font" crossorigin="">
+<link href="/fonts/Inter-Medium.woff2" rel="preload" type="font/woff2" as="font" crossorigin="">
+<link href="/fonts/Inter-MediumItalic.woff2" rel="preload" type="font/woff2" as="font" crossorigin="">
+<link href="/fonts/Inter-Bold.woff2" rel="preload" type="font/woff2" as="font" crossorigin="">
+<link href="/fonts/Inter-BoldItalic.woff2" rel="preload" type="font/woff2" as="font" crossorigin="">
+
+
+<meta name="twitter:card" content="summary"/>
+<meta name="twitter:title" content="How to Deploy Machine Learning Model With Python"/>
+<meta name="twitter:description" content="Today we&rsquo;ll se how to deploy a machine learning model with fastapi. We&rsquo;ll start with a simple example of a fastapi server that can classify the content of an image.
+Let&rsquo;s start with our project structure
+▾ &lt;root&gt;/ ▾ src/ __init__.py prediction_model.py settings.py ▾ models/ mobilenet_v2.h5 main.py I like to have a settings.py file to store project base settings, as Django does.
+We will start by populating the settings.py file with useful values, as the base directory, the model directory etc, this will come in handy later."/>
+
+
+
+<meta property="og:title" content="How to Deploy Machine Learning Model With Python" />
+<meta property="og:description" content="Today we&rsquo;ll se how to deploy a machine learning model with fastapi. We&rsquo;ll start with a simple example of a fastapi server that can classify the content of an image.
+Let&rsquo;s start with our project structure
+▾ &lt;root&gt;/ ▾ src/ __init__.py prediction_model.py settings.py ▾ models/ mobilenet_v2.h5 main.py I like to have a settings.py file to store project base settings, as Django does.
+We will start by populating the settings.py file with useful values, as the base directory, the model directory etc, this will come in handy later." />
+<meta property="og:type" content="article" />
+<meta property="og:url" content="https://manuelfedele.github.io/posts/how-to-deploy-machine-learning-model-with-python/" /><meta property="article:section" content="posts" />
+<meta property="article:published_time" content="2021-11-16T16:30:35+01:00" />
+<meta property="article:modified_time" content="2021-11-16T16:30:35+01:00" />
+
+
+
+
+
+
+
+  </head>
+  <body >
+    <div class="container">
+      <header class="header">
+  <span class="header__inner">
+    <a
+  href="https://manuelfedele.github.io/"
+  class="logo"
+  style="text-decoration: none;"
+>
+  
+    <span class="logo__mark"><svg xmlns="http://www.w3.org/2000/svg" class="greater-icon" viewBox="0 0 44 44">
+  <path fill="none" d="M15 8l14.729 14.382L15 35.367" />
+</svg>
+</span>
+    <span class="logo__text"
+      >hello friend</span
+    >
+    <span class="logo__cursor"></span>
+  
+</a>
+
+    <span class="header__right">
+      
+        <nav class="menu">
+  <ul class="menu__inner menu__inner--desktop">
+    
+      
+        
+          <li><a href="/">Home</a></li>
+        
+      
+        
+          <li><a href="/tags/">Tags</a></li>
+        
+      
+        
+          <li><a href="/about/">About</a></li>
+        
+      
+    
+  </ul>
+
+  <ul class="menu__inner menu__inner--mobile">
+    
+      
+        <li><a href="/">Home</a></li>
+      
+    
+      
+        <li><a href="/tags/">Tags</a></li>
+      
+    
+      
+        <li><a href="/about/">About</a></li>
+      
+    
+  </ul>
+</nav>
+
+        <span class="menu-trigger">
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
+            <path d="M0 0h24v24H0z" fill="none" />
+            <path d="M3 18h18v-2H3v2zm0-5h18v-2H3v2zm0-7v2h18V6H3z" />
+          </svg>
+        </span>
+      
+      <span class="theme-toggle">
+        <svg
+  class="theme-toggler"
+  width="24"
+  height="24"
+  viewBox="0 0 48 48"
+  fill="none"
+  xmlns="http://www.w3.org/2000/svg"
+>
+  <path
+    d="M22 41C32.4934 41 41 32.4934 41 22C41 11.5066 32.4934 3 22
+  3C11.5066 3 3 11.5066 3 22C3 32.4934 11.5066 41 22 41ZM7 22C7
+  13.7157 13.7157 7 22 7V37C13.7157 37 7 30.2843 7 22Z"
+  />
+</svg>
+
+      </span>
+    </span>
+  </span>
+</header>
+
+
+      <div class="content">
+        
+  
+  
+
+  <article class="post">
+    <h1 class="post-title">How to Deploy Machine Learning Model With Python</h1>
+    <div class="post-meta">
+      
+        <time class="post-date">
+          2021-11-16
+        </time>
+
+        
+          
+        
+      
+
+      
+
+
+      
+    </div>
+
+    
+      <span class="post-tags">
+        
+          <a href="https://manuelfedele.github.io/tags/python/">#python</a>&nbsp;
+        
+          <a href="https://manuelfedele.github.io/tags/machine-learning/">#machine-learning</a>&nbsp;
+        
+          <a href="https://manuelfedele.github.io/tags/deploy/">#deploy</a>&nbsp;
+        
+          <a href="https://manuelfedele.github.io/tags/fastapi/">#fastapi</a>&nbsp;
+        
+          <a href="https://manuelfedele.github.io/tags/rest/">#rest</a>&nbsp;
+        
+      </span>
+    
+
+    
+
+    <div class="post-content">
+      
+      <p>Today we&rsquo;ll se how to deploy a machine learning model with <a href="https://fastapi.tiangolo.com/">fastapi</a>. We&rsquo;ll start with a
+simple example of a <a href="https://fastapi.tiangolo.com/">fastapi</a> server that can classify the content of an image.</p>
+<p>Let&rsquo;s start with our project structure</p>
+<pre tabindex="0"><code>▾ &lt;root&gt;/
+    ▾ src/
+      __init__.py
+      prediction_model.py
+      settings.py
+    ▾ models/
+        mobilenet_v2.h5
+    main.py
+</code></pre><p>I like to have a settings.py file to store project base settings, as Django does.</p>
+<ol>
+<li>
+<p>We will start by populating the <code>settings.py</code> file with useful values, as the base directory, the model directory etc,
+this will come in handy later.</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-python" data-lang="python"><span style="display:flex;"><span>BASE_DIR <span style="color:#f92672">=</span> Path(__file__)<span style="color:#f92672">.</span>resolve()<span style="color:#f92672">.</span>parent<span style="color:#f92672">.</span>parent <span style="color:#75715e"># This will always point to the root folder of the project</span>
+</span></span><span style="display:flex;"><span>MODELS_DIR <span style="color:#f92672">=</span> BASE_DIR <span style="color:#f92672">/</span> <span style="color:#e6db74">&#39;models&#39;</span>
+</span></span><span style="display:flex;"><span>IMAGES_DIR <span style="color:#f92672">=</span> BASE_DIR <span style="color:#f92672">/</span> <span style="color:#e6db74">&#39;images&#39;</span>
+</span></span></code></pre></div></li>
+<li>
+<p>We won&rsquo;t build the model ourself, but we will use <a href="https://github.com/OlafenwaMoses/ImageAI">ImageAI</a>. ImageAI is an
+open-source python library that can be used to classify images. Here&rsquo;s a simple example of how to use it:</p>
+<div class="highlight" lineno="table"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-python" data-lang="python"><span style="display:flex;"><span><span style="color:#f92672">import</span> os.path
+</span></span><span style="display:flex;"><span><span style="color:#f92672">from</span> imageai.Classification <span style="color:#f92672">import</span> ImageClassification
+</span></span><span style="display:flex;"><span><span style="color:#f92672">from</span> src.settings <span style="color:#f92672">import</span> MODELS_DIR
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>MODEL_NAME <span style="color:#f92672">=</span> <span style="color:#e6db74">&#39;mobilenet_v2.h5&#39;</span>
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>model_path <span style="color:#f92672">=</span> os<span style="color:#f92672">.</span>path<span style="color:#f92672">.</span>join(MODELS_DIR, MODEL_NAME)
+</span></span><span style="display:flex;"><span>prediction <span style="color:#f92672">=</span> ImageClassification()
+</span></span><span style="display:flex;"><span>prediction<span style="color:#f92672">.</span>setModelTypeAsMobileNetV2()
+</span></span><span style="display:flex;"><span>prediction<span style="color:#f92672">.</span>setModelPath(model_path)
+</span></span><span style="display:flex;"><span>prediction<span style="color:#f92672">.</span>loadModel()
+</span></span></code></pre></div><p>This loads the model from the <code>MODELS_DIR</code> directory. So now we can use the model to classify images.</p>
+</li>
+<li>
+<p>We will use the <code>prediction</code> object to classify the image.</p>
+<div class="highlight" lineno="table"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-python" data-lang="python"><span style="display:flex;"><span><span style="color:#f92672">import</span> os
+</span></span><span style="display:flex;"><span><span style="color:#f92672">from</span> PIL <span style="color:#f92672">import</span> Image
+</span></span><span style="display:flex;"><span><span style="color:#f92672">from</span> src.settings <span style="color:#f92672">import</span> IMAGES_DIR
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>image_path <span style="color:#f92672">=</span> os<span style="color:#f92672">.</span>path<span style="color:#f92672">.</span>join(IMAGES_DIR, <span style="color:#e6db74">&#39;image.jpg&#39;</span>)
+</span></span><span style="display:flex;"><span>image <span style="color:#f92672">=</span> Image<span style="color:#f92672">.</span>open(image_path)
+</span></span><span style="display:flex;"><span>prediction<span style="color:#f92672">.</span>predictImage(image_to_predict<span style="color:#f92672">=</span>image, result_count<span style="color:#f92672">=</span><span style="color:#ae81ff">5</span>)
+</span></span></code></pre></div><p>This will return the top 5 predictions for the image.</p>
+</li>
+</ol>
+
+    </div>
+    
+
+    
+      
+    
+  </article>
+
+      </div>
+
+      
+        <footer class="footer">
+  <div class="footer__inner">
+    
+      <a
+  href="https://manuelfedele.github.io/"
+  class="logo"
+  style="text-decoration: none;"
+>
+  
+    <span class="logo__mark"><svg xmlns="http://www.w3.org/2000/svg" class="greater-icon" viewBox="0 0 44 44">
+  <path fill="none" d="M15 8l14.729 14.382L15 35.367" />
+</svg>
+</span>
+    <span class="logo__text"
+      >hello friend</span
+    >
+    <span class="logo__cursor"></span>
+  
+</a>
+
+      <div class="copyright">
+        <span
+          >© 2022 Powered by
+          <a href="https://gohugo.io" target="_blank" rel="noopener">Hugo</a></span
+        >
+        <span
+          >Theme created by
+          <a href="https://twitter.com/panr" target="_blank" rel="noopener">panr</a></span
+        >
+      </div>
+    
+  </div>
+</footer>
+
+
+
+
+
+<script type="text/javascript" src="/bundle.min.js"></script>
+
+
+      
+    </div>
+
+    
+      
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-6N8X83X24W"></script>
+<script>
+var doNotTrack = false;
+if (!doNotTrack) {
+	window.dataLayer = window.dataLayer || [];
+	function gtag(){dataLayer.push(arguments);}
+	gtag('js', new Date());
+	gtag('config', 'G-6N8X83X24W', { 'anonymize_ip': false });
+}
+</script>
+
+    
+  </body>
+</html>

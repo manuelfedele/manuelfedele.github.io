@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Posts on Git Push and Run</title>
+    
+    
+    
+    <link>https://manuelfedele.github.io/posts/</link>
+    <description>Recent content in Posts on Git Push and Run</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <lastBuildDate>Tue, 16 Nov 2021 16:30:35 +0100</lastBuildDate>
+    
+	<atom:link href="https://manuelfedele.github.io/posts/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>How to Deploy Machine Learning Model With Python</title>
+      <link>https://manuelfedele.github.io/posts/how-to-deploy-machine-learning-model-with-python/</link>
+      <pubDate>Tue, 16 Nov 2021 16:30:35 +0100</pubDate>
+      
+      <guid>https://manuelfedele.github.io/posts/how-to-deploy-machine-learning-model-with-python/</guid>
+      <description>
+        
+          
+          
+          
+        
+        
+        
+          Today we&amp;rsquo;ll se how to deploy a machine learning model with fastapi. We&amp;rsquo;ll start with a simple example of a fastapi server that can classify the content of an image.
+Let&amp;rsquo;s start with our project structure
+▾ &amp;lt;root&amp;gt;/ ▾ src/ __init__.py prediction_model.py settings.py ▾ models/ mobilenet_v2.h5 main.py I like to have a settings.py file to store project base settings, as Django does.
+We will start by populating the settings.py file with useful values, as the base directory, the model directory etc, this will come in handy later.
+          
+        
+        </description>
+    </item>
+    
+    <item>
+      <title>Poetry No Module Seed via App Data</title>
+      <link>https://manuelfedele.github.io/posts/poetry-no-module-seed-via-app-data/</link>
+      <pubDate>Tue, 16 Nov 2021 15:15:47 +0100</pubDate>
+      
+      <guid>https://manuelfedele.github.io/posts/poetry-no-module-seed-via-app-data/</guid>
+      <description>
+        
+          
+          
+          
+        
+        
+        
+          For my last project, I used poetry to manage dependencies and package my code. Poetry comes with all the tools you might need to manage your projects in a deterministic way.
+Anyway, after running poetry init in an existing project, I tried to let poetry create a virtuale environment, by adding the first dependecy, but when I did poetry add twisted it suddenly hang out, printing:
+No module named &amp;#39;virtualenv.seed.via_app_data&amp;#39; Why is that?
+          
+        
+        </description>
+    </item>
+    
+  </channel>
+</rss>
