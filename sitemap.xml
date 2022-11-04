@@ -2,13 +2,28 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   <url>
+    <loc>https://manuelfedele.github.io/posts/create-template-hugo/</loc>
+    <lastmod>2022-11-03T14:57:41+01:00</lastmod>
+  </url><url>
+    <loc>https://manuelfedele.github.io/</loc>
+    <lastmod>2022-11-03T14:57:41+01:00</lastmod>
+  </url><url>
+    <loc>https://manuelfedele.github.io/tags/hugo/</loc>
+    <lastmod>2022-11-03T14:57:41+01:00</lastmod>
+  </url><url>
+    <loc>https://manuelfedele.github.io/posts/</loc>
+    <lastmod>2022-11-03T14:57:41+01:00</lastmod>
+  </url><url>
+    <loc>https://manuelfedele.github.io/tags/</loc>
+    <lastmod>2022-11-03T14:57:41+01:00</lastmod>
+  </url><url>
+    <loc>https://manuelfedele.github.io/tags/theme/</loc>
+    <lastmod>2022-11-03T14:57:41+01:00</lastmod>
+  </url><url>
     <loc>https://manuelfedele.github.io/tags/deploy/</loc>
     <lastmod>2021-11-16T16:30:35+01:00</lastmod>
   </url><url>
     <loc>https://manuelfedele.github.io/tags/fastapi/</loc>
-    <lastmod>2021-11-16T16:30:35+01:00</lastmod>
-  </url><url>
-    <loc>https://manuelfedele.github.io/</loc>
     <lastmod>2021-11-16T16:30:35+01:00</lastmod>
   </url><url>
     <loc>https://manuelfedele.github.io/posts/how-to-deploy-machine-learning-model-with-python/</loc>
@@ -17,16 +32,10 @@
     <loc>https://manuelfedele.github.io/tags/machine-learning/</loc>
     <lastmod>2021-11-16T16:30:35+01:00</lastmod>
   </url><url>
-    <loc>https://manuelfedele.github.io/posts/</loc>
-    <lastmod>2021-11-16T16:30:35+01:00</lastmod>
-  </url><url>
     <loc>https://manuelfedele.github.io/tags/python/</loc>
     <lastmod>2021-11-16T16:30:35+01:00</lastmod>
   </url><url>
     <loc>https://manuelfedele.github.io/tags/rest/</loc>
-    <lastmod>2021-11-16T16:30:35+01:00</lastmod>
-  </url><url>
-    <loc>https://manuelfedele.github.io/tags/</loc>
     <lastmod>2021-11-16T16:30:35+01:00</lastmod>
   </url><url>
     <loc>https://manuelfedele.github.io/tags/poetry/</loc>
