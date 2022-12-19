@@ -1,0 +1,334 @@
+<!doctype html><html lang=en><head><title>Use Redis With Golang ::
+Git Push and Run — A simple blog</title><meta charset=utf-8><meta name=viewport content="width=device-width,initial-scale=1"><meta name=description content="Using Golang and Redis # Redis is an in-memory data structure store that can be used as a database, cache, and message broker. It is known for its speed, simplicity, and flexibility. In this article, we will discuss how to use Redis with Golang, a popular programming language known for its simplicity, performance, and concurrency support.
+Before we dive into the details of using Redis with Golang, let&amp;rsquo;s first understand the requirements of the application."><meta name=keywords content="software-engineering,go,python"><meta name=robots content="noodp"><link rel=canonical href=https://manuelfedele.github.io/posts/use-redis-with-golang/><link rel=stylesheet href=/css/style.css><link rel=stylesheet href=https://manuelfedele.github.io/style.css><link rel=apple-touch-icon-precomposed sizes=144x144 href=https://manuelfedele.github.io/img/apple-touch-icon-144-precomposed.png><link rel="shortcut icon" href=https://manuelfedele.github.io/img/favicon.png><link href=/fonts/Inter-Italic.woff2 rel=preload type=font/woff2 as=font crossorigin><link href=/fonts/Inter-Regular.woff2 rel=preload type=font/woff2 as=font crossorigin><link href=/fonts/Inter-Medium.woff2 rel=preload type=font/woff2 as=font crossorigin><link href=/fonts/Inter-MediumItalic.woff2 rel=preload type=font/woff2 as=font crossorigin><link href=/fonts/Inter-Bold.woff2 rel=preload type=font/woff2 as=font crossorigin><link href=/fonts/Inter-BoldItalic.woff2 rel=preload type=font/woff2 as=font crossorigin><meta name=twitter:card content="summary"><meta name=twitter:title content="Use Redis With Golang"><meta name=twitter:description content="Using Golang and Redis # Redis is an in-memory data structure store that can be used as a database, cache, and message broker. It is known for its speed, simplicity, and flexibility. In this article, we will discuss how to use Redis with Golang, a popular programming language known for its simplicity, performance, and concurrency support.
+Before we dive into the details of using Redis with Golang, let&rsquo;s first understand the requirements of the application."><meta property="og:title" content="Use Redis With Golang"><meta property="og:description" content="Using Golang and Redis # Redis is an in-memory data structure store that can be used as a database, cache, and message broker. It is known for its speed, simplicity, and flexibility. In this article, we will discuss how to use Redis with Golang, a popular programming language known for its simplicity, performance, and concurrency support.
+Before we dive into the details of using Redis with Golang, let&rsquo;s first understand the requirements of the application."><meta property="og:type" content="article"><meta property="og:url" content="https://manuelfedele.github.io/posts/use-redis-with-golang/"><meta property="article:section" content="posts"><meta property="article:published_time" content="2022-12-19T19:32:27+01:00"><meta property="article:modified_time" content="2022-12-19T19:32:27+01:00"><meta property="og:site_name" content="Git Push and Run"></head><body class=dark-theme><div class=container><header class=header><span class=header__inner><a href=/ class=logo style=text-decoration:none><span class=logo__mark><svg xmlns="http://www.w3.org/2000/svg" class="greater-icon" viewBox="0 0 44 44"><path fill="none" d="M15 8l14.729 14.382L15 35.367"/></svg></span><span class=logo__text>Git Push and Run</span>
+<span class=logo__cursor></span></a>
+<span class=header__right><nav class=menu><ul class="menu__inner menu__inner--desktop"><li><a href=/>Home</a></li><li><a href=/about>About</a></li></ul><ul class="menu__inner menu__inner--mobile"><li><a href=/>Home</a></li><li><a href=/about>About</a></li></ul></nav><span class=menu-trigger><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M0 0h24v24H0z" fill="none"/><path d="M3 18h18v-2H3v2zm0-5h18v-2H3v2zm0-7v2h18V6H3z"/></svg></span><span class=theme-toggle><svg class="theme-toggler" width="24" height="24" viewBox="0 0 48 48" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M22 41c10.4934.0 19-8.5066 19-19C41 11.5066 32.4934 3 22 3 11.5066 3 3 11.5066 3 22s8.5066 19 19 19zM7 22C7 13.7157 13.7157 7 22 7V37C13.7157 37 7 30.2843 7 22z"/></svg></span></span></span></header><div class=content><article class=post><h1 class=post-title>Use Redis With Golang</h1><div class=post-meta><time class=post-date>2022-12-19</time>
+<span class=post-read-time>— 8 min read</span></div><span class=post-tags><a href=https://manuelfedele.github.io/tags/golang/>#golang</a>&nbsp;
+<a href=https://manuelfedele.github.io/tags/redis/>#redis</a>&nbsp;</span><div class=post-content><h2>Table of Contents</h2><aside class=table-of-contents><nav id=TableOfContents><ul><li><a href=#using-golang-and-redis>Using Golang and Redis</a><ul><li><a href=#requirements>Requirements</a></li><li><a href=#setting-up-redis>Setting up Redis</a></li><li><a href=#connecting-to-redis>Connecting to Redis</a></li><li><a href=#storing-and-retrieving-data>Storing and Retrieving Data</a></li><li><a href=#strings>Strings</a></li><li><a href=#lists>Lists</a></li><li><a href=#sets>Sets</a></li><li><a href=#hashes>Hashes</a></li><li><a href=#conclusion>Conclusion</a></li></ul></li></ul></nav></aside><h2 id=using-golang-and-redis>Using Golang and Redis
+<a href=#using-golang-and-redis class=h-anchor aria-hidden=true>#</a></h2><p>Redis is an in-memory data structure store that can be used as a database, cache, and message broker. It is known for its speed, simplicity, and flexibility. In this article, we will discuss how to use Redis with Golang, a popular programming language known for its simplicity, performance, and concurrency support.</p><p>Before we dive into the details of using Redis with Golang, let&rsquo;s first understand the requirements of the application.</p><h3 id=requirements>Requirements
+<a href=#requirements class=h-anchor aria-hidden=true>#</a></h3><ul><li>The application should be able to connect to a Redis server.</li><li>The application should be able to store and retrieve data from Redis.</li><li>The application should be able to perform basic operations on Redis data structures, such as strings, lists, sets, and hashes.</li></ul><h3 id=setting-up-redis>Setting up Redis
+<a href=#setting-up-redis class=h-anchor aria-hidden=true>#</a></h3><p>To use Redis with Golang, you will need to have a Redis server installed and running on your system. You can download the latest version of Redis from the <a href=https://redis.io/>official website</a> and follow the instructions to install and run the server.</p><p>Once the Redis server is running, you can use the following Go libraries to connect to the server and perform various operations:</p><ul><li><code>redis</code>: A low-level Redis client library for Go.</li><li><code>radix</code>: A higher-level Redis client library for Go that provides a more convenient API and additional features.</li></ul><h3 id=connecting-to-redis>Connecting to Redis
+<a href=#connecting-to-redis class=h-anchor aria-hidden=true>#</a></h3><p>To connect to the Redis server using the redis library, you can use the Dial function:</p><div class=highlight><pre tabindex=0 style=color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4><code class=language-go data-lang=go><span style=display:flex><span><span style=color:#f92672>package</span> <span style=color:#a6e22e>main</span>
+</span></span><span style=display:flex><span>
+</span></span><span style=display:flex><span><span style=color:#f92672>import</span> (
+</span></span><span style=display:flex><span>    <span style=color:#e6db74>&#34;fmt&#34;</span>
+</span></span><span style=display:flex><span>    <span style=color:#e6db74>&#34;log&#34;</span>
+</span></span><span style=display:flex><span>
+</span></span><span style=display:flex><span>    <span style=color:#e6db74>&#34;github.com/gomodule/redigo/redis&#34;</span>
+</span></span><span style=display:flex><span>)
+</span></span><span style=display:flex><span>
+</span></span><span style=display:flex><span><span style=color:#66d9ef>func</span> <span style=color:#a6e22e>main</span>() {
+</span></span><span style=display:flex><span>    <span style=color:#75715e>// Connect to the Redis server
+</span></span></span><span style=display:flex><span><span style=color:#75715e></span>    <span style=color:#a6e22e>conn</span>, <span style=color:#a6e22e>err</span> <span style=color:#f92672>:=</span> <span style=color:#a6e22e>redis</span>.<span style=color:#a6e22e>Dial</span>(<span style=color:#e6db74>&#34;tcp&#34;</span>, <span style=color:#e6db74>&#34;localhost:6379&#34;</span>)
+</span></span><span style=display:flex><span>    <span style=color:#66d9ef>if</span> <span style=color:#a6e22e>err</span> <span style=color:#f92672>!=</span> <span style=color:#66d9ef>nil</span> {
+</span></span><span style=display:flex><span>        <span style=color:#a6e22e>log</span>.<span style=color:#a6e22e>Fatal</span>(<span style=color:#a6e22e>err</span>)
+</span></span><span style=display:flex><span>    }
+</span></span><span style=display:flex><span>    <span style=color:#66d9ef>defer</span> <span style=color:#a6e22e>conn</span>.<span style=color:#a6e22e>Close</span>()
+</span></span><span style=display:flex><span>
+</span></span><span style=display:flex><span>    <span style=color:#75715e>// Print the Redis version
+</span></span></span><span style=display:flex><span><span style=color:#75715e></span>    <span style=color:#a6e22e>version</span>, <span style=color:#a6e22e>err</span> <span style=color:#f92672>:=</span> <span style=color:#a6e22e>redis</span>.<span style=color:#a6e22e>String</span>(<span style=color:#a6e22e>conn</span>.<span style=color:#a6e22e>Do</span>(<span style=color:#e6db74>&#34;INFO&#34;</span>, <span style=color:#e6db74>&#34;server&#34;</span>))
+</span></span><span style=display:flex><span>    <span style=color:#66d9ef>if</span> <span style=color:#a6e22e>err</span> <span style=color:#f92672>!=</span> <span style=color:#66d9ef>nil</span> {
+</span></span><span style=display:flex><span>        <span style=color:#a6e22e>log</span>.<span style=color:#a6e22e>Fatal</span>(<span style=color:#a6e22e>err</span>)
+</span></span><span style=display:flex><span>    }
+</span></span><span style=display:flex><span>    <span style=color:#a6e22e>fmt</span>.<span style=color:#a6e22e>Println</span>(<span style=color:#a6e22e>version</span>)
+</span></span><span style=display:flex><span>}
+</span></span></code></pre></div><p>This will connect to the Redis server running on the local host at the default port (6379) and print the Redis version.</p><p>To connect to the Redis server using the <code>radix</code> library, you can use the <code>Dial</code> function:</p><div class=highlight><pre tabindex=0 style=color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4><code class=language-go data-lang=go><span style=display:flex><span><span style=color:#f92672>package</span> <span style=color:#a6e22e>main</span>
+</span></span><span style=display:flex><span>
+</span></span><span style=display:flex><span><span style=color:#f92672>import</span> (
+</span></span><span style=display:flex><span>    <span style=color:#e6db74>&#34;fmt&#34;</span>
+</span></span><span style=display:flex><span>    <span style=color:#e6db74>&#34;log&#34;</span>
+</span></span><span style=display:flex><span>
+</span></span><span style=display:flex><span>    <span style=color:#e6db74>&#34;github.com/mediocregopher/radix/v3&#34;</span>
+</span></span><span style=display:flex><span>)
+</span></span><span style=display:flex><span>
+</span></span><span style=display:flex><span><span style=color:#66d9ef>func</span> <span style=color:#a6e22e>main</span>() {
+</span></span><span style=display:flex><span>    <span style=color:#75715e>// Connect to the Redis server
+</span></span></span><span style=display:flex><span><span style=color:#75715e></span>    <span style=color:#a6e22e>conn</span>, <span style=color:#a6e22e>err</span> <span style=color:#f92672>:=</span> <span style=color:#a6e22e>radix</span>.<span style=color:#a6e22e>Dial</span>(<span style=color:#e6db74>&#34;tcp&#34;</span>, <span style=color:#e6db74>&#34;localhost:6379&#34;</span>)
+</span></span><span style=display:flex><span>    <span style=color:#66d9ef>if</span> <span style=color:#a6e22e>err</span> <span style=color:#f92672>!=</span> <span style=color:#66d9ef>nil</span> {
+</span></span><span style=display:flex><span>        <span style=color:#a6e22e>log</span>.<span style=color:#a6e22e>Fatal</span>(<span style=color:#a6e22e>err</span>)
+</span></span><span style=display:flex><span>    }
+</span></span><span style=display:flex><span>    <span style=color:#66d9ef>defer</span> <span style=color:#a6e22e>conn</span>.<span style=color:#a6e22e>Close</span>()
+</span></span><span style=display:flex><span>
+</span></span><span style=display:flex><span>    <span style=color:#75715e>// Print the Redis version
+</span></span></span><span style=display:flex><span><span style=color:#75715e></span>    <span style=color:#66d9ef>var</span> <span style=color:#a6e22e>version</span> <span style=color:#66d9ef>string</span>
+</span></span><span style=display:flex><span>    <span style=color:#a6e22e>err</span> = <span style=color:#a6e22e>conn</span>.<span style=color:#a6e22e>Do</span>(<span style=color:#a6e22e>radix</span>.<span style=color:#a6e22e>Cmd</span>(<span style=color:#f92672>&amp;</span><span style=color:#a6e22e>version</span>, <span style=color:#e6db74>&#34;INFO&#34;</span>, <span style=color:#e6db74>&#34;server&#34;</span>))
+</span></span><span style=display:flex><span>    <span style=color:#66d9ef>if</span> <span style=color:#a6e22e>err</span> <span style=color:#f92672>!=</span> <span style=color:#66d9ef>nil</span> {
+</span></span><span style=display:flex><span>        <span style=color:#a6e22e>log</span>.<span style=color:#a6e22e>Fatal</span>(<span style=color:#a6e22e>err</span>)
+</span></span><span style=display:flex><span>    }
+</span></span><span style=display:flex><span>    <span style=color:#a6e22e>fmt</span>.<span style=color:#a6e22e>Println</span>(<span style=color:#a6e22e>version</span>)
+</span></span><span style=display:flex><span>}
+</span></span></code></pre></div><p>This will also connect to the Redis server running on the local host at the default port (<code>6379</code>).</p><h3 id=storing-and-retrieving-data>Storing and Retrieving Data
+<a href=#storing-and-retrieving-data class=h-anchor aria-hidden=true>#</a></h3><p>Once you have connected to the Redis server, you can use various Redis commands to store and retrieve data.</p><h3 id=strings>Strings
+<a href=#strings class=h-anchor aria-hidden=true>#</a></h3><p>To store and retrieve a string value using the <code>redis</code> library, you can use the <code>Do</code> function and the <code>redis.String</code> function:</p><div class=highlight><pre tabindex=0 style=color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4><code class=language-go data-lang=go><span style=display:flex><span><span style=color:#f92672>package</span> <span style=color:#a6e22e>main</span>
+</span></span><span style=display:flex><span>
+</span></span><span style=display:flex><span><span style=color:#f92672>import</span> (
+</span></span><span style=display:flex><span>    <span style=color:#e6db74>&#34;fmt&#34;</span>
+</span></span><span style=display:flex><span>    <span style=color:#e6db74>&#34;log&#34;</span>
+</span></span><span style=display:flex><span>
+</span></span><span style=display:flex><span>    <span style=color:#e6db74>&#34;github.com/gomodule/redigo/redis&#34;</span>
+</span></span><span style=display:flex><span>)
+</span></span><span style=display:flex><span>
+</span></span><span style=display:flex><span><span style=color:#66d9ef>func</span> <span style=color:#a6e22e>main</span>() {
+</span></span><span style=display:flex><span>    <span style=color:#75715e>// Connect to the Redis server
+</span></span></span><span style=display:flex><span><span style=color:#75715e></span>    <span style=color:#a6e22e>conn</span>, <span style=color:#a6e22e>err</span> <span style=color:#f92672>:=</span> <span style=color:#a6e22e>redis</span>.<span style=color:#a6e22e>Dial</span>(<span style=color:#e6db74>&#34;tcp&#34;</span>, <span style=color:#e6db74>&#34;localhost:6379&#34;</span>)
+</span></span><span style=display:flex><span>    <span style=color:#66d9ef>if</span> <span style=color:#a6e22e>err</span> <span style=color:#f92672>!=</span> <span style=color:#66d9ef>nil</span> {
+</span></span><span style=display:flex><span>        <span style=color:#a6e22e>log</span>.<span style=color:#a6e22e>Fatal</span>(<span style=color:#a6e22e>err</span>)
+</span></span><span style=display:flex><span>    }
+</span></span><span style=display:flex><span>    <span style=color:#66d9ef>defer</span> <span style=color:#a6e22e>conn</span>.<span style=color:#a6e22e>Close</span>()
+</span></span><span style=display:flex><span>
+</span></span><span style=display:flex><span>    <span style=color:#75715e>// Set the key &#34;message&#34; to the value &#34;Hello, Redis!&#34;
+</span></span></span><span style=display:flex><span><span style=color:#75715e></span>    <span style=color:#a6e22e>_</span>, <span style=color:#a6e22e>err</span> = <span style=color:#a6e22e>conn</span>.<span style=color:#a6e22e>Do</span>(<span style=color:#e6db74>&#34;SET&#34;</span>, <span style=color:#e6db74>&#34;message&#34;</span>, <span style=color:#e6db74>&#34;Hello, Redis!&#34;</span>)
+</span></span><span style=display:flex><span>    <span style=color:#66d9ef>if</span> <span style=color:#a6e22e>err</span> <span style=color:#f92672>!=</span> <span style=color:#66d9ef>nil</span> {
+</span></span><span style=display:flex><span>        <span style=color:#a6e22e>log</span>.<span style=color:#a6e22e>Fatal</span>(<span style=color:#a6e22e>err</span>)
+</span></span><span style=display:flex><span>    }
+</span></span><span style=display:flex><span>
+</span></span><span style=display:flex><span>    <span style=color:#75715e>// Retrieve the value of the key &#34;message&#34;
+</span></span></span><span style=display:flex><span><span style=color:#75715e></span>    <span style=color:#a6e22e>value</span>, <span style=color:#a6e22e>err</span> <span style=color:#f92672>:=</span> <span style=color:#a6e22e>redis</span>.<span style=color:#a6e22e>String</span>(<span style=color:#a6e22e>conn</span>.<span style=color:#a6e22e>Do</span>(<span style=color:#e6db74>&#34;GET&#34;</span>, <span style=color:#e6db74>&#34;message&#34;</span>))
+</span></span><span style=display:flex><span>    <span style=color:#66d9ef>if</span> <span style=color:#a6e22e>err</span> <span style=color:#f92672>!=</span> <span style=color:#66d9ef>nil</span> {
+</span></span><span style=display:flex><span>        <span style=color:#a6e22e>log</span>.<span style=color:#a6e22e>Fatal</span>(<span style=color:#a6e22e>err</span>)
+</span></span><span style=display:flex><span>    }
+</span></span><span style=display:flex><span>
+</span></span><span style=display:flex><span>    <span style=color:#75715e>// Print the value
+</span></span></span><span style=display:flex><span><span style=color:#75715e></span>    <span style=color:#a6e22e>fmt</span>.<span style=color:#a6e22e>Println</span>(<span style=color:#a6e22e>value</span>)
+</span></span><span style=display:flex><span>}
+</span></span></code></pre></div><p>This will set the key &ldquo;message&rdquo; to the value &ldquo;Hello, Redis!&rdquo; and retrieve the value of the key &ldquo;message&rdquo;, printing &ldquo;Hello, Redis!&rdquo;.</p><p>To store and retrieve a string value using the <code>radix</code> library, you can use the <code>Do</code> function and the <code>radix.String</code> function:</p><div class=highlight><pre tabindex=0 style=color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4><code class=language-go data-lang=go><span style=display:flex><span><span style=color:#f92672>package</span> <span style=color:#a6e22e>main</span>
+</span></span><span style=display:flex><span>
+</span></span><span style=display:flex><span><span style=color:#f92672>import</span> (
+</span></span><span style=display:flex><span>    <span style=color:#e6db74>&#34;fmt&#34;</span>
+</span></span><span style=display:flex><span>    <span style=color:#e6db74>&#34;log&#34;</span>
+</span></span><span style=display:flex><span>
+</span></span><span style=display:flex><span>    <span style=color:#e6db74>&#34;github.com/mediocregopher/radix/v3&#34;</span>
+</span></span><span style=display:flex><span>)
+</span></span><span style=display:flex><span>
+</span></span><span style=display:flex><span><span style=color:#66d9ef>func</span> <span style=color:#a6e22e>main</span>() {
+</span></span><span style=display:flex><span>    <span style=color:#75715e>// Connect to the Redis server
+</span></span></span><span style=display:flex><span><span style=color:#75715e></span>    <span style=color:#a6e22e>conn</span>, <span style=color:#a6e22e>err</span> <span style=color:#f92672>:=</span> <span style=color:#a6e22e>radix</span>.<span style=color:#a6e22e>Dial</span>(<span style=color:#e6db74>&#34;tcp&#34;</span>, <span style=color:#e6db74>&#34;localhost:6379&#34;</span>)
+</span></span><span style=display:flex><span>    <span style=color:#66d9ef>if</span> <span style=color:#a6e22e>err</span> <span style=color:#f92672>!=</span> <span style=color:#66d9ef>nil</span> {
+</span></span><span style=display:flex><span>        <span style=color:#a6e22e>log</span>.<span style=color:#a6e22e>Fatal</span>(<span style=color:#a6e22e>err</span>)
+</span></span><span style=display:flex><span>    }
+</span></span><span style=display:flex><span>    <span style=color:#66d9ef>defer</span> <span style=color:#a6e22e>conn</span>.<span style=color:#a6e22e>Close</span>()
+</span></span><span style=display:flex><span>
+</span></span><span style=display:flex><span>    <span style=color:#75715e>// Set the key &#34;message&#34; to the value &#34;Hello, Redis!&#34;
+</span></span></span><span style=display:flex><span><span style=color:#75715e></span>    <span style=color:#a6e22e>err</span> = <span style=color:#a6e22e>conn</span>.<span style=color:#a6e22e>Do</span>(<span style=color:#a6e22e>radix</span>.<span style=color:#a6e22e>FlatCmd</span>(<span style=color:#66d9ef>nil</span>, <span style=color:#e6db74>&#34;SET&#34;</span>, <span style=color:#e6db74>&#34;message&#34;</span>, <span style=color:#e6db74>&#34;Hello, Redis!&#34;</span>))
+</span></span><span style=display:flex><span>    <span style=color:#66d9ef>if</span> <span style=color:#a6e22e>err</span> <span style=color:#f92672>!=</span> <span style=color:#66d9ef>nil</span> {
+</span></span><span style=display:flex><span>        <span style=color:#a6e22e>log</span>.<span style=color:#a6e22e>Fatal</span>(<span style=color:#a6e22e>err</span>)
+</span></span><span style=display:flex><span>    }
+</span></span><span style=display:flex><span>
+</span></span><span style=display:flex><span>    <span style=color:#75715e>// Retrieve the value of the key &#34;message&#34;
+</span></span></span><span style=display:flex><span><span style=color:#75715e></span>    <span style=color:#66d9ef>var</span> <span style=color:#a6e22e>value</span> <span style=color:#66d9ef>string</span>
+</span></span><span style=display:flex><span>    <span style=color:#a6e22e>err</span> = <span style=color:#a6e22e>conn</span>.<span style=color:#a6e22e>Do</span>(<span style=color:#a6e22e>radix</span>.<span style=color:#a6e22e>Cmd</span>(<span style=color:#f92672>&amp;</span><span style=color:#a6e22e>value</span>, <span style=color:#e6db74>&#34;GET&#34;</span>, <span style=color:#e6db74>&#34;message&#34;</span>))
+</span></span><span style=display:flex><span>    <span style=color:#66d9ef>if</span> <span style=color:#a6e22e>err</span> <span style=color:#f92672>!=</span> <span style=color:#66d9ef>nil</span> {
+</span></span><span style=display:flex><span>        <span style=color:#a6e22e>log</span>.<span style=color:#a6e22e>Fatal</span>(<span style=color:#a6e22e>err</span>)
+</span></span><span style=display:flex><span>    }
+</span></span><span style=display:flex><span>
+</span></span><span style=display:flex><span>    <span style=color:#75715e>// Print the value
+</span></span></span><span style=display:flex><span><span style=color:#75715e></span>    <span style=color:#a6e22e>fmt</span>.<span style=color:#a6e22e>Println</span>(<span style=color:#a6e22e>value</span>)
+</span></span><span style=display:flex><span>}
+</span></span></code></pre></div><p>This will also set the key &ldquo;message&rdquo; to the value &ldquo;Hello, Redis!&rdquo; and retrieve the value of the key &ldquo;message&rdquo;, printing &ldquo;Hello, Redis!&rdquo;.</p><h3 id=lists>Lists
+<a href=#lists class=h-anchor aria-hidden=true>#</a></h3><p>To store and retrieve a list using the <code>redis</code> library, you can use the <code>Do</code> function and the <code>redis.Strings</code> function:</p><div class=highlight><pre tabindex=0 style=color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4><code class=language-go data-lang=go><span style=display:flex><span><span style=color:#f92672>package</span> <span style=color:#a6e22e>main</span>
+</span></span><span style=display:flex><span>
+</span></span><span style=display:flex><span><span style=color:#f92672>import</span> (
+</span></span><span style=display:flex><span>    <span style=color:#e6db74>&#34;fmt&#34;</span>
+</span></span><span style=display:flex><span>    <span style=color:#e6db74>&#34;log&#34;</span>
+</span></span><span style=display:flex><span>
+</span></span><span style=display:flex><span>    <span style=color:#e6db74>&#34;github.com/gomodule/redigo/redis&#34;</span>
+</span></span><span style=display:flex><span>)
+</span></span><span style=display:flex><span>
+</span></span><span style=display:flex><span><span style=color:#66d9ef>func</span> <span style=color:#a6e22e>main</span>() {
+</span></span><span style=display:flex><span>    <span style=color:#75715e>// Connect to the Redis server
+</span></span></span><span style=display:flex><span><span style=color:#75715e></span>    <span style=color:#a6e22e>conn</span>, <span style=color:#a6e22e>err</span> <span style=color:#f92672>:=</span> <span style=color:#a6e22e>redis</span>.<span style=color:#a6e22e>Dial</span>(<span style=color:#e6db74>&#34;tcp&#34;</span>, <span style=color:#e6db74>&#34;localhost:6379&#34;</span>)
+</span></span><span style=display:flex><span>    <span style=color:#66d9ef>if</span> <span style=color:#a6e22e>err</span> <span style=color:#f92672>!=</span> <span style=color:#66d9ef>nil</span> {
+</span></span><span style=display:flex><span>        <span style=color:#a6e22e>log</span>.<span style=color:#a6e22e>Fatal</span>(<span style=color:#a6e22e>err</span>)
+</span></span><span style=display:flex><span>    }
+</span></span><span style=display:flex><span>    <span style=color:#66d9ef>defer</span> <span style=color:#a6e22e>conn</span>.<span style=color:#a6e22e>Close</span>()
+</span></span><span style=display:flex><span>
+</span></span><span style=display:flex><span>    <span style=color:#75715e>// Store the list [&#34;apple&#34;, &#34;banana&#34;, &#34;cherry&#34;] in the key &#34;fruits&#34;
+</span></span></span><span style=display:flex><span><span style=color:#75715e></span>    <span style=color:#a6e22e>_</span>, <span style=color:#a6e22e>err</span> = <span style=color:#a6e22e>conn</span>.<span style=color:#a6e22e>Do</span>(<span style=color:#e6db74>&#34;RPUSH&#34;</span>, <span style=color:#e6db74>&#34;fruits&#34;</span>, <span style=color:#e6db74>&#34;apple&#34;</span>, <span style=color:#e6db74>&#34;banana&#34;</span>, <span style=color:#e6db74>&#34;cherry&#34;</span>)
+</span></span><span style=display:flex><span>    <span style=color:#66d9ef>if</span> <span style=color:#a6e22e>err</span> <span style=color:#f92672>!=</span> <span style=color:#66d9ef>nil</span> {
+</span></span><span style=display:flex><span>        <span style=color:#a6e22e>log</span>.<span style=color:#a6e22e>Fatal</span>(<span style=color:#a6e22e>err</span>)
+</span></span><span style=display:flex><span>    }
+</span></span><span style=display:flex><span>
+</span></span><span style=display:flex><span>    <span style=color:#75715e>// Retrieve the list from the key &#34;fruits&#34;
+</span></span></span><span style=display:flex><span><span style=color:#75715e></span>    <span style=color:#a6e22e>values</span>, <span style=color:#a6e22e>err</span> <span style=color:#f92672>:=</span> <span style=color:#a6e22e>redis</span>.<span style=color:#a6e22e>Strings</span>(<span style=color:#a6e22e>conn</span>.<span style=color:#a6e22e>Do</span>(<span style=color:#e6db74>&#34;LRANGE&#34;</span>, <span style=color:#e6db74>&#34;fruits&#34;</span>, <span style=color:#ae81ff>0</span>, <span style=color:#f92672>-</span><span style=color:#ae81ff>1</span>))
+</span></span><span style=display:flex><span>    <span style=color:#66d9ef>if</span> <span style=color:#a6e22e>err</span> <span style=color:#f92672>!=</span> <span style=color:#66d9ef>nil</span> {
+</span></span><span style=display:flex><span>        <span style=color:#a6e22e>log</span>.<span style=color:#a6e22e>Fatal</span>(<span style=color:#a6e22e>err</span>)
+</span></span><span style=display:flex><span>    }
+</span></span><span style=display:flex><span>
+</span></span><span style=display:flex><span>    <span style=color:#75715e>// Print the list
+</span></span></span><span style=display:flex><span><span style=color:#75715e></span>    <span style=color:#a6e22e>fmt</span>.<span style=color:#a6e22e>Println</span>(<span style=color:#a6e22e>values</span>)
+</span></span><span style=display:flex><span>}
+</span></span></code></pre></div><p>This will store the list [&ldquo;apple&rdquo;, &ldquo;banana&rdquo;, &ldquo;cherry&rdquo;] in the key &ldquo;fruits&rdquo; and retrieve the list from the key &ldquo;fruits&rdquo;, printing [&ldquo;apple&rdquo;, &ldquo;banana&rdquo;, &ldquo;cherry&rdquo;].</p><p>To store and retrieve a list using the <code>radix</code> library, you can use the <code>Do</code> function and the <code>radix.Strings</code> function:</p><div class=highlight><pre tabindex=0 style=color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4><code class=language-go data-lang=go><span style=display:flex><span><span style=color:#f92672>package</span> <span style=color:#a6e22e>main</span>
+</span></span><span style=display:flex><span>
+</span></span><span style=display:flex><span><span style=color:#f92672>import</span> (
+</span></span><span style=display:flex><span>    <span style=color:#e6db74>&#34;fmt&#34;</span>
+</span></span><span style=display:flex><span>    <span style=color:#e6db74>&#34;log&#34;</span>
+</span></span><span style=display:flex><span>
+</span></span><span style=display:flex><span>    <span style=color:#e6db74>&#34;github.com/mediocregopher/radix/v3&#34;</span>
+</span></span><span style=display:flex><span>)
+</span></span><span style=display:flex><span>
+</span></span><span style=display:flex><span><span style=color:#66d9ef>func</span> <span style=color:#a6e22e>main</span>() {
+</span></span><span style=display:flex><span>    <span style=color:#75715e>// Connect to the Redis server
+</span></span></span><span style=display:flex><span><span style=color:#75715e></span>    <span style=color:#a6e22e>conn</span>, <span style=color:#a6e22e>err</span> <span style=color:#f92672>:=</span> <span style=color:#a6e22e>radix</span>.<span style=color:#a6e22e>Dial</span>(<span style=color:#e6db74>&#34;tcp&#34;</span>, <span style=color:#e6db74>&#34;localhost:6379&#34;</span>)
+</span></span><span style=display:flex><span>    <span style=color:#66d9ef>if</span> <span style=color:#a6e22e>err</span> <span style=color:#f92672>!=</span> <span style=color:#66d9ef>nil</span> {
+</span></span><span style=display:flex><span>        <span style=color:#a6e22e>log</span>.<span style=color:#a6e22e>Fatal</span>(<span style=color:#a6e22e>err</span>)
+</span></span><span style=display:flex><span>    }
+</span></span><span style=display:flex><span>    <span style=color:#66d9ef>defer</span> <span style=color:#a6e22e>conn</span>.<span style=color:#a6e22e>Close</span>()
+</span></span><span style=display:flex><span>
+</span></span><span style=display:flex><span>    <span style=color:#75715e>// Store the list [&#34;apple&#34;, &#34;banana&#34;, &#34;cherry&#34;] in the key &#34;fruits&#34;
+</span></span></span><span style=display:flex><span><span style=color:#75715e></span>    <span style=color:#a6e22e>err</span> = <span style=color:#a6e22e>conn</span>.<span style=color:#a6e22e>Do</span>(<span style=color:#a6e22e>radix</span>.<span style=color:#a6e22e>FlatCmd</span>(<span style=color:#66d9ef>nil</span>, <span style=color:#e6db74>&#34;RPUSH&#34;</span>, <span style=color:#e6db74>&#34;fruits&#34;</span>, <span style=color:#e6db74>&#34;apple&#34;</span>, <span style=color:#e6db74>&#34;banana&#34;</span>, <span style=color:#e6db74>&#34;cherry&#34;</span>))
+</span></span><span style=display:flex><span>    <span style=color:#66d9ef>if</span> <span style=color:#a6e22e>err</span> <span style=color:#f92672>!=</span> <span style=color:#66d9ef>nil</span> {
+</span></span><span style=display:flex><span>        <span style=color:#a6e22e>log</span>.<span style=color:#a6e22e>Fatal</span>(<span style=color:#a6e22e>err</span>)
+</span></span><span style=display:flex><span>    }
+</span></span><span style=display:flex><span>
+</span></span><span style=display:flex><span>    <span style=color:#75715e>// Retrieve the list from the key &#34;fruits&#34;
+</span></span></span><span style=display:flex><span><span style=color:#75715e></span>    <span style=color:#66d9ef>var</span> <span style=color:#a6e22e>values</span> []<span style=color:#66d9ef>string</span>
+</span></span><span style=display:flex><span>    <span style=color:#a6e22e>err</span> = <span style=color:#a6e22e>conn</span>.<span style=color:#a6e22e>Do</span>(<span style=color:#a6e22e>radix</span>.<span style=color:#a6e22e>Cmd</span>(<span style=color:#f92672>&amp;</span><span style=color:#a6e22e>values</span>, <span style=color:#e6db74>&#34;LRANGE&#34;</span>, <span style=color:#e6db74>&#34;fruits&#34;</span>, <span style=color:#ae81ff>0</span>, <span style=color:#f92672>-</span><span style=color:#ae81ff>1</span>))
+</span></span><span style=display:flex><span>    <span style=color:#66d9ef>if</span> <span style=color:#a6e22e>err</span> <span style=color:#f92672>!=</span> <span style=color:#66d9ef>nil</span> {
+</span></span><span style=display:flex><span>        <span style=color:#a6e22e>log</span>.<span style=color:#a6e22e>Fatal</span>(<span style=color:#a6e22e>err</span>)
+</span></span><span style=display:flex><span>    }
+</span></span><span style=display:flex><span>
+</span></span><span style=display:flex><span>    <span style=color:#75715e>// Print the list
+</span></span></span><span style=display:flex><span><span style=color:#75715e></span>    <span style=color:#a6e22e>fmt</span>.<span style=color:#a6e22e>Println</span>(<span style=color:#a6e22e>values</span>)
+</span></span><span style=display:flex><span>}
+</span></span></code></pre></div><p>This will also store the list [&ldquo;apple&rdquo;, &ldquo;banana&rdquo;, &ldquo;cherry&rdquo;] in the key &ldquo;fruits&rdquo; and retrieve the list from the key &ldquo;fruits&rdquo;, printing [&ldquo;apple&rdquo;, &ldquo;banana&rdquo;, &ldquo;cherry&rdquo;].</p><h3 id=sets>Sets
+<a href=#sets class=h-anchor aria-hidden=true>#</a></h3><p>To store and retrieve a set using the redis library, you can use the Do function and the redis.Strings function:</p><div class=highlight><pre tabindex=0 style=color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4><code class=language-go data-lang=go><span style=display:flex><span><span style=color:#f92672>package</span> <span style=color:#a6e22e>main</span>
+</span></span><span style=display:flex><span>
+</span></span><span style=display:flex><span><span style=color:#f92672>import</span> (
+</span></span><span style=display:flex><span>    <span style=color:#e6db74>&#34;fmt&#34;</span>
+</span></span><span style=display:flex><span>    <span style=color:#e6db74>&#34;log&#34;</span>
+</span></span><span style=display:flex><span>
+</span></span><span style=display:flex><span>    <span style=color:#e6db74>&#34;github.com/gomodule/redigo/redis&#34;</span>
+</span></span><span style=display:flex><span>)
+</span></span><span style=display:flex><span>
+</span></span><span style=display:flex><span><span style=color:#66d9ef>func</span> <span style=color:#a6e22e>main</span>() {
+</span></span><span style=display:flex><span>    <span style=color:#75715e>// Connect to the Redis server
+</span></span></span><span style=display:flex><span><span style=color:#75715e></span>    <span style=color:#a6e22e>conn</span>, <span style=color:#a6e22e>err</span> <span style=color:#f92672>:=</span> <span style=color:#a6e22e>redis</span>.<span style=color:#a6e22e>Dial</span>(<span style=color:#e6db74>&#34;tcp&#34;</span>, <span style=color:#e6db74>&#34;localhost:6379&#34;</span>)
+</span></span><span style=display:flex><span>    <span style=color:#66d9ef>if</span> <span style=color:#a6e22e>err</span> <span style=color:#f92672>!=</span> <span style=color:#66d9ef>nil</span> {
+</span></span><span style=display:flex><span>        <span style=color:#a6e22e>log</span>.<span style=color:#a6e22e>Fatal</span>(<span style=color:#a6e22e>err</span>)
+</span></span><span style=display:flex><span>    }
+</span></span><span style=display:flex><span>    <span style=color:#66d9ef>defer</span> <span style=color:#a6e22e>conn</span>.<span style=color:#a6e22e>Close</span>()
+</span></span><span style=display:flex><span>
+</span></span><span style=display:flex><span>    <span style=color:#75715e>// Store the set {&#34;apple&#34;, &#34;banana&#34;, &#34;cherry&#34;} in the key &#34;fruits&#34;
+</span></span></span><span style=display:flex><span><span style=color:#75715e></span>    <span style=color:#a6e22e>_</span>, <span style=color:#a6e22e>err</span> = <span style=color:#a6e22e>conn</span>.<span style=color:#a6e22e>Do</span>(<span style=color:#e6db74>&#34;SADD&#34;</span>, <span style=color:#e6db74>&#34;fruits&#34;</span>, <span style=color:#e6db74>&#34;apple&#34;</span>, <span style=color:#e6db74>&#34;banana&#34;</span>, <span style=color:#e6db74>&#34;cherry&#34;</span>)
+</span></span><span style=display:flex><span>    <span style=color:#66d9ef>if</span> <span style=color:#a6e22e>err</span> <span style=color:#f92672>!=</span> <span style=color:#66d9ef>nil</span> {
+</span></span><span style=display:flex><span>        <span style=color:#a6e22e>log</span>.<span style=color:#a6e22e>Fatal</span>(<span style=color:#a6e22e>err</span>)
+</span></span><span style=display:flex><span>    }
+</span></span><span style=display:flex><span>
+</span></span><span style=display:flex><span>    <span style=color:#75715e>// Retrieve the set from the key &#34;fruits&#34;
+</span></span></span><span style=display:flex><span><span style=color:#75715e></span>    <span style=color:#a6e22e>values</span>, <span style=color:#a6e22e>err</span> <span style=color:#f92672>:=</span> <span style=color:#a6e22e>redis</span>.<span style=color:#a6e22e>Strings</span>(<span style=color:#a6e22e>conn</span>.<span style=color:#a6e22e>Do</span>(<span style=color:#e6db74>&#34;SMEMBERS&#34;</span>, <span style=color:#e6db74>&#34;fruits&#34;</span>))
+</span></span><span style=display:flex><span>    <span style=color:#66d9ef>if</span> <span style=color:#a6e22e>err</span> <span style=color:#f92672>!=</span> <span style=color:#66d9ef>nil</span> {
+</span></span><span style=display:flex><span>        <span style=color:#a6e22e>log</span>.<span style=color:#a6e22e>Fatal</span>(<span style=color:#a6e22e>err</span>)
+</span></span><span style=display:flex><span>    }
+</span></span><span style=display:flex><span>
+</span></span><span style=display:flex><span>    <span style=color:#75715e>// Print the set
+</span></span></span><span style=display:flex><span><span style=color:#75715e></span>    <span style=color:#a6e22e>fmt</span>.<span style=color:#a6e22e>Println</span>(<span style=color:#a6e22e>values</span>)
+</span></span><span style=display:flex><span>}
+</span></span></code></pre></div><p>This will store the set {&ldquo;apple&rdquo;, &ldquo;banana&rdquo;, &ldquo;cherry&rdquo;} in the key &ldquo;fruits&rdquo; and retrieve the set from the key &ldquo;fruits&rdquo;, printing {&ldquo;apple&rdquo;, &ldquo;banana&rdquo;, &ldquo;cherry&rdquo;}.</p><p>To store and retrieve a set using the <code>radix</code> library, you can use the <code>Do</code> function and the <code>radix.Strings</code> function:</p><div class=highlight><pre tabindex=0 style=color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4><code class=language-go data-lang=go><span style=display:flex><span><span style=color:#f92672>package</span> <span style=color:#a6e22e>main</span>
+</span></span><span style=display:flex><span>
+</span></span><span style=display:flex><span><span style=color:#f92672>import</span> (
+</span></span><span style=display:flex><span>    <span style=color:#e6db74>&#34;fmt&#34;</span>
+</span></span><span style=display:flex><span>    <span style=color:#e6db74>&#34;log&#34;</span>
+</span></span><span style=display:flex><span>
+</span></span><span style=display:flex><span>    <span style=color:#e6db74>&#34;github.com/mediocregopher/radix/v3&#34;</span>
+</span></span><span style=display:flex><span>)
+</span></span><span style=display:flex><span>
+</span></span><span style=display:flex><span><span style=color:#66d9ef>func</span> <span style=color:#a6e22e>main</span>() {
+</span></span><span style=display:flex><span>    <span style=color:#75715e>// Connect to the Redis server
+</span></span></span><span style=display:flex><span><span style=color:#75715e></span>    <span style=color:#a6e22e>conn</span>, <span style=color:#a6e22e>err</span> <span style=color:#f92672>:=</span> <span style=color:#a6e22e>radix</span>.<span style=color:#a6e22e>Dial</span>(<span style=color:#e6db74>&#34;tcp&#34;</span>, <span style=color:#e6db74>&#34;localhost:6379&#34;</span>)
+</span></span><span style=display:flex><span>    <span style=color:#66d9ef>if</span> <span style=color:#a6e22e>err</span> <span style=color:#f92672>!=</span> <span style=color:#66d9ef>nil</span> {
+</span></span><span style=display:flex><span>        <span style=color:#a6e22e>log</span>.<span style=color:#a6e22e>Fatal</span>(<span style=color:#a6e22e>err</span>)
+</span></span><span style=display:flex><span>    }
+</span></span><span style=display:flex><span>    <span style=color:#66d9ef>defer</span> <span style=color:#a6e22e>conn</span>.<span style=color:#a6e22e>Close</span>()
+</span></span><span style=display:flex><span>
+</span></span><span style=display:flex><span>    <span style=color:#75715e>// Store the set {&#34;apple&#34;, &#34;banana&#34;, &#34;cherry&#34;} in the key &#34;fruits&#34;
+</span></span></span><span style=display:flex><span><span style=color:#75715e></span>    <span style=color:#a6e22e>err</span> = <span style=color:#a6e22e>conn</span>.<span style=color:#a6e22e>Do</span>(<span style=color:#a6e22e>radix</span>.<span style=color:#a6e22e>FlatCmd</span>(<span style=color:#66d9ef>nil</span>, <span style=color:#e6db74>&#34;SADD&#34;</span>, <span style=color:#e6db74>&#34;fruits&#34;</span>, <span style=color:#e6db74>&#34;apple&#34;</span>, <span style=color:#e6db74>&#34;banana&#34;</span>, <span style=color:#e6db74>&#34;cherry&#34;</span>))
+</span></span><span style=display:flex><span>    <span style=color:#66d9ef>if</span> <span style=color:#a6e22e>err</span> <span style=color:#f92672>!=</span> <span style=color:#66d9ef>nil</span> {
+</span></span><span style=display:flex><span>        <span style=color:#a6e22e>log</span>.<span style=color:#a6e22e>Fatal</span>(<span style=color:#a6e22e>err</span>)
+</span></span><span style=display:flex><span>    }
+</span></span><span style=display:flex><span>
+</span></span><span style=display:flex><span>    <span style=color:#75715e>// Retrieve the set from the key &#34;fruits&#34;
+</span></span></span><span style=display:flex><span><span style=color:#75715e></span>    <span style=color:#66d9ef>var</span> <span style=color:#a6e22e>values</span> []<span style=color:#66d9ef>string</span>
+</span></span><span style=display:flex><span>    <span style=color:#a6e22e>err</span> = <span style=color:#a6e22e>conn</span>.<span style=color:#a6e22e>Do</span>(<span style=color:#a6e22e>radix</span>.<span style=color:#a6e22e>Cmd</span>(<span style=color:#f92672>&amp;</span><span style=color:#a6e22e>values</span>, <span style=color:#e6db74>&#34;SMEMBERS&#34;</span>, <span style=color:#e6db74>&#34;fruits&#34;</span>))
+</span></span><span style=display:flex><span>    <span style=color:#66d9ef>if</span> <span style=color:#a6e22e>err</span> <span style=color:#f92672>!=</span> <span style=color:#66d9ef>nil</span> {
+</span></span><span style=display:flex><span>        <span style=color:#a6e22e>log</span>.<span style=color:#a6e22e>Fatal</span>(<span style=color:#a6e22e>err</span>)
+</span></span><span style=display:flex><span>    }
+</span></span><span style=display:flex><span>
+</span></span><span style=display:flex><span>    <span style=color:#75715e>// Print the set
+</span></span></span><span style=display:flex><span><span style=color:#75715e></span>    <span style=color:#a6e22e>fmt</span>.<span style=color:#a6e22e>Println</span>(<span style=color:#a6e22e>values</span>)
+</span></span><span style=display:flex><span>}
+</span></span></code></pre></div><p>This will also store the set {&ldquo;apple&rdquo;, &ldquo;banana&rdquo;, &ldquo;cherry&rdquo;} in the key &ldquo;fruits&rdquo; and retrieve the set from the key &ldquo;fruits&rdquo;, printing {&ldquo;apple&rdquo;, &ldquo;banana&rdquo;, &ldquo;cherry&rdquo;}.</p><h3 id=hashes>Hashes
+<a href=#hashes class=h-anchor aria-hidden=true>#</a></h3><p>To store and retrieve a hash using the redis library, you can use the Do function and the redis.Strings function:</p><div class=highlight><pre tabindex=0 style=color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4><code class=language-go data-lang=go><span style=display:flex><span><span style=color:#f92672>package</span> <span style=color:#a6e22e>main</span>
+</span></span><span style=display:flex><span>
+</span></span><span style=display:flex><span><span style=color:#f92672>import</span> (
+</span></span><span style=display:flex><span>    <span style=color:#e6db74>&#34;fmt&#34;</span>
+</span></span><span style=display:flex><span>    <span style=color:#e6db74>&#34;log&#34;</span>
+</span></span><span style=display:flex><span>
+</span></span><span style=display:flex><span>    <span style=color:#e6db74>&#34;github.com/gomodule/redigo/redis&#34;</span>
+</span></span><span style=display:flex><span>)
+</span></span><span style=display:flex><span>
+</span></span><span style=display:flex><span><span style=color:#66d9ef>func</span> <span style=color:#a6e22e>main</span>() {
+</span></span><span style=display:flex><span>    <span style=color:#75715e>// Connect to the Redis server
+</span></span></span><span style=display:flex><span><span style=color:#75715e></span>    <span style=color:#a6e22e>conn</span>, <span style=color:#a6e22e>err</span> <span style=color:#f92672>:=</span> <span style=color:#a6e22e>redis</span>.<span style=color:#a6e22e>Dial</span>(<span style=color:#e6db74>&#34;tcp&#34;</span>, <span style=color:#e6db74>&#34;localhost:6379&#34;</span>)
+</span></span><span style=display:flex><span>    <span style=color:#66d9ef>if</span> <span style=color:#a6e22e>err</span> <span style=color:#f92672>!=</span> <span style=color:#66d9ef>nil</span> {
+</span></span><span style=display:flex><span>        <span style=color:#a6e22e>log</span>.<span style=color:#a6e22e>Fatal</span>(<span style=color:#a6e22e>err</span>)
+</span></span><span style=display:flex><span>    }
+</span></span><span style=display:flex><span>    <span style=color:#66d9ef>defer</span> <span style=color:#a6e22e>conn</span>.<span style=color:#a6e22e>Close</span>()
+</span></span><span style=display:flex><span>
+</span></span><span style=display:flex><span>    <span style=color:#75715e>// Store the hash {&#34;name&#34;: &#34;Alice&#34;, &#34;age&#34;: &#34;30&#34;} in the key &#34;person&#34;
+</span></span></span><span style=display:flex><span><span style=color:#75715e></span>    <span style=color:#a6e22e>_</span>, <span style=color:#a6e22e>err</span> = <span style=color:#a6e22e>conn</span>.<span style=color:#a6e22e>Do</span>(<span style=color:#e6db74>&#34;HMSET&#34;</span>, <span style=color:#e6db74>&#34;person&#34;</span>, <span style=color:#e6db74>&#34;name&#34;</span>, <span style=color:#e6db74>&#34;Alice&#34;</span>, <span style=color:#e6db74>&#34;age&#34;</span>, <span style=color:#e6db74>&#34;30&#34;</span>)
+</span></span><span style=display:flex><span>    <span style=color:#66d9ef>if</span> <span style=color:#a6e22e>err</span> <span style=color:#f92672>!=</span> <span style=color:#66d9ef>nil</span> {
+</span></span><span style=display:flex><span>        <span style=color:#a6e22e>log</span>.<span style=color:#a6e22e>Fatal</span>(<span style=color:#a6e22e>err</span>)
+</span></span><span style=display:flex><span>    }
+</span></span><span style=display:flex><span>
+</span></span><span style=display:flex><span>    <span style=color:#75715e>// Retrieve the hash from the key &#34;person&#34;
+</span></span></span><span style=display:flex><span><span style=color:#75715e></span>    <span style=color:#a6e22e>values</span>, <span style=color:#a6e22e>err</span> <span style=color:#f92672>:=</span> <span style=color:#a6e22e>redis</span>.<span style=color:#a6e22e>Strings</span>(<span style=color:#a6e22e>conn</span>.<span style=color:#a6e22e>Do</span>(<span style=color:#e6db74>&#34;HGETALL&#34;</span>, <span style=color:#e6db74>&#34;person&#34;</span>))
+</span></span><span style=display:flex><span>    <span style=color:#66d9ef>if</span> <span style=color:#a6e22e>err</span> <span style=color:#f92672>!=</span> <span style=color:#66d9ef>nil</span> {
+</span></span><span style=display:flex><span>        <span style=color:#a6e22e>log</span>.<span style=color:#a6e22e>Fatal</span>(<span style=color:#a6e22e>err</span>)
+</span></span><span style=display:flex><span>    }
+</span></span><span style=display:flex><span>
+</span></span><span style=display:flex><span>    <span style=color:#75715e>// Print the hash
+</span></span></span><span style=display:flex><span><span style=color:#75715e></span>    <span style=color:#a6e22e>fmt</span>.<span style=color:#a6e22e>Println</span>(<span style=color:#a6e22e>values</span>)
+</span></span><span style=display:flex><span>}
+</span></span></code></pre></div><p>This will store the hash {&ldquo;name&rdquo;: &ldquo;Alice&rdquo;, &ldquo;age&rdquo;: &ldquo;30&rdquo;} in the key &ldquo;person&rdquo; and retrieve the hash from the key &ldquo;person&rdquo;, printing {&ldquo;name&rdquo;, &ldquo;Alice&rdquo;, &ldquo;age&rdquo;, &ldquo;30&rdquo;}.</p><p>To store and retrieve a hash using the <code>radix</code> library, you can use the <code>Do</code> function and the <code>radix.Map</code> function:</p><div class=highlight><pre tabindex=0 style=color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4><code class=language-go data-lang=go><span style=display:flex><span><span style=color:#f92672>package</span> <span style=color:#a6e22e>main</span>
+</span></span><span style=display:flex><span>
+</span></span><span style=display:flex><span><span style=color:#f92672>import</span> (
+</span></span><span style=display:flex><span>    <span style=color:#e6db74>&#34;fmt&#34;</span>
+</span></span><span style=display:flex><span>    <span style=color:#e6db74>&#34;log&#34;</span>
+</span></span><span style=display:flex><span>
+</span></span><span style=display:flex><span>    <span style=color:#e6db74>&#34;github.com/mediocregopher/radix/v3&#34;</span>
+</span></span><span style=display:flex><span>)
+</span></span><span style=display:flex><span>
+</span></span><span style=display:flex><span><span style=color:#66d9ef>func</span> <span style=color:#a6e22e>main</span>() {
+</span></span><span style=display:flex><span>    <span style=color:#75715e>// Connect to the Redis server
+</span></span></span><span style=display:flex><span><span style=color:#75715e></span>    <span style=color:#a6e22e>conn</span>, <span style=color:#a6e22e>err</span> <span style=color:#f92672>:=</span> <span style=color:#a6e22e>radix</span>.<span style=color:#a6e22e>Dial</span>(<span style=color:#e6db74>&#34;tcp&#34;</span>, <span style=color:#e6db74>&#34;localhost:6379&#34;</span>)
+</span></span><span style=display:flex><span>    <span style=color:#66d9ef>if</span> <span style=color:#a6e22e>err</span> <span style=color:#f92672>!=</span> <span style=color:#66d9ef>nil</span> {
+</span></span><span style=display:flex><span>        <span style=color:#a6e22e>log</span>.<span style=color:#a6e22e>Fatal</span>(<span style=color:#a6e22e>err</span>)
+</span></span><span style=display:flex><span>    }
+</span></span><span style=display:flex><span>    <span style=color:#66d9ef>defer</span> <span style=color:#a6e22e>conn</span>.<span style=color:#a6e22e>Close</span>()
+</span></span><span style=display:flex><span>
+</span></span><span style=display:flex><span>    <span style=color:#75715e>// Store the hash {&#34;name&#34;: &#34;Alice&#34;, &#34;age&#34;: &#34;30&#34;} in the key &#34;person&#34;
+</span></span></span><span style=display:flex><span><span style=color:#75715e></span>    <span style=color:#a6e22e>err</span> = <span style=color:#a6e22e>conn</span>.<span style=color:#a6e22e>Do</span>(<span style=color:#a6e22e>radix</span>.<span style=color:#a6e22e>FlatCmd</span>(<span style=color:#66d9ef>nil</span>, <span style=color:#e6db74>&#34;HMSET&#34;</span>, <span style=color:#e6db74>&#34;person&#34;</span>, <span style=color:#e6db74>&#34;name&#34;</span>, <span style=color:#e6db74>&#34;Alice&#34;</span>, <span style=color:#e6db74>&#34;age&#34;</span>, <span style=color:#e6db74>&#34;30&#34;</span>))
+</span></span><span style=display:flex><span>    <span style=color:#66d9ef>if</span> <span style=color:#a6e22e>err</span> <span style=color:#f92672>!=</span> <span style=color:#66d9ef>nil</span> {
+</span></span><span style=display:flex><span>        <span style=color:#a6e22e>log</span>.<span style=color:#a6e22e>Fatal</span>(<span style=color:#a6e22e>err</span>)
+</span></span><span style=display:flex><span>    }
+</span></span><span style=display:flex><span>
+</span></span><span style=display:flex><span>    <span style=color:#75715e>// Retrieve the hash from the key &#34;person&#34;
+</span></span></span><span style=display:flex><span><span style=color:#75715e></span>    <span style=color:#66d9ef>var</span> <span style=color:#a6e22e>values</span> <span style=color:#66d9ef>map</span>[<span style=color:#66d9ef>string</span>]<span style=color:#66d9ef>string</span>
+</span></span><span style=display:flex><span>    <span style=color:#a6e22e>err</span> = <span style=color:#a6e22e>conn</span>.<span style=color:#a6e22e>Do</span>(<span style=color:#a6e22e>radix</span>.<span style=color:#a6e22e>Cmd</span>(<span style=color:#f92672>&amp;</span><span style=color:#a6e22e>values</span>, <span style=color:#e6db74>&#34;HGETALL&#34;</span>, <span style=color:#e6db74>&#34;person&#34;</span>))
+</span></span><span style=display:flex><span>    <span style=color:#66d9ef>if</span> <span style=color:#a6e22e>err</span> <span style=color:#f92672>!=</span> <span style=color:#66d9ef>nil</span> {
+</span></span><span style=display:flex><span>        <span style=color:#a6e22e>log</span>.<span style=color:#a6e22e>Fatal</span>(<span style=color:#a6e22e>err</span>)
+</span></span><span style=display:flex><span>    }
+</span></span><span style=display:flex><span>
+</span></span><span style=display:flex><span>    <span style=color:#75715e>// Print the hash
+</span></span></span><span style=display:flex><span><span style=color:#75715e></span>    <span style=color:#a6e22e>fmt</span>.<span style=color:#a6e22e>Println</span>(<span style=color:#a6e22e>values</span>)
+</span></span><span style=display:flex><span>}
+</span></span></code></pre></div><h3 id=conclusion>Conclusion
+<a href=#conclusion class=h-anchor aria-hidden=true>#</a></h3><p>In this article, we have learned how to use the redis and radix libraries to connect to a Redis server and store and retrieve various data types in Go. Redis is a powerful and fast in-memory data store that can be used for a wide range of applications, and the redis and radix libraries make it easy to use Redis in Go.</p></div><div class=pagination><div class=pagination__title><span class=pagination__title-h>Read other posts</span><hr></div><div class=pagination__buttons><span class="button next"><a href=https://manuelfedele.github.io/posts/create-desktop-application-stock-market-data-golang/><span class=button__text>Create Desktop Application to fetch Stock Market Data with Golang</span>
+<span class=button__icon>→</span></a></span></div></div><div id=disqus_thread></div><script type=application/javascript>window.disqus_config=function(){},function(){if(["localhost","127.0.0.1"].indexOf(window.location.hostname)!=-1){document.getElementById("disqus_thread").innerHTML="Disqus comments not available by default when the website is previewed locally.";return}var t=document,e=t.createElement("script");e.async=!0,e.src="//manuelfedele-github-io.disqus.com/embed.js",e.setAttribute("data-timestamp",+new Date),(t.head||t.body).appendChild(e)}()</script><noscript>Please enable JavaScript to view the <a href=https://disqus.com/?ref_noscript>comments powered by Disqus.</a></noscript><a href=https://disqus.com class=dsq-brlink>comments powered by <span class=logo-disqus>Disqus</span></a></article></div><footer class=footer><div class=footer__inner><a href=/ class=logo style=text-decoration:none><span class=logo__mark><svg xmlns="http://www.w3.org/2000/svg" class="greater-icon" viewBox="0 0 44 44"><path fill="none" d="M15 8l14.729 14.382L15 35.367"/></svg></span><span class=logo__text>Git Push and Run</span>
+<span class=logo__cursor></span></a><div class=copyright><span>© 2022 Powered by
+<a href=https://gohugo.io target=_blank rel=noopener>Hugo</a></span>
+<span>Theme created by
+<a href=https://twitter.com/panr target=_blank rel=noopener>panr</a></span></div></div></footer><script type=text/javascript src=/bundle.min.js></script></div><script async src="https://www.googletagmanager.com/gtag/js?id=G-K9P1DJX238"></script>
+<script>var doNotTrack=!1;if(!doNotTrack){window.dataLayer=window.dataLayer||[];function gtag(){dataLayer.push(arguments)}gtag("js",new Date),gtag("config","G-K9P1DJX238",{anonymize_ip:!1})}</script></body></html>
