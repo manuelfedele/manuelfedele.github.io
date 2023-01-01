@@ -1,4 +1,25 @@
-<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>poetry on Git Push and Run</title><link>https://manuelfedele.github.io/tags/poetry/</link><description>Recent content in poetry on Git Push and Run</description><generator>Hugo -- gohugo.io</generator><language>en-us</language><lastBuildDate>Mon, 01 Nov 2021 15:15:47 +0100</lastBuildDate><atom:link href="https://manuelfedele.github.io/tags/poetry/index.xml" rel="self" type="application/rss+xml"/><item><title>Poetry No Module Seed via App Data</title><link>https://manuelfedele.github.io/posts/poetry-no-module-seed-via-app-data/</link><pubDate>Mon, 01 Nov 2021 15:15:47 +0100</pubDate><guid>https://manuelfedele.github.io/posts/poetry-no-module-seed-via-app-data/</guid><description>
-For my last project, I used poetry to manage dependencies and package my code. Poetry comes with all the tools you might need to manage your projects in a deterministic way.
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/">
+  <channel>
+    <title>poetry on Git Push and Run</title>
+    <link>https://manuelfedele.github.io/tags/poetry/</link>
+    <description>Recent content in poetry on Git Push and Run</description>
+    <image>
+      <url>https://images.unsplash.com/photo-1564865878688-9a244444042a?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=3540&q=80</url>
+      <link>https://images.unsplash.com/photo-1564865878688-9a244444042a?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=3540&q=80</link>
+    </image>
+    <generator>Hugo -- gohugo.io</generator>
+    <lastBuildDate>Mon, 01 Nov 2021 15:15:47 +0100</lastBuildDate><atom:link href="https://manuelfedele.github.io/tags/poetry/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Poetry No Module Seed via App Data</title>
+      <link>https://manuelfedele.github.io/posts/poetry-no-module-seed-via-app-data/</link>
+      <pubDate>Mon, 01 Nov 2021 15:15:47 +0100</pubDate>
+      
+      <guid>https://manuelfedele.github.io/posts/poetry-no-module-seed-via-app-data/</guid>
+      <description>For my last project, I used poetry to manage dependencies and package my code. Poetry comes with all the tools you might need to manage your projects in a deterministic way.
 Anyway, after running poetry init in an existing project, I tried to let poetry create a virtuale environment, by adding the first dependecy, but when I did poetry add twisted it suddenly hang out, printing:
-No module named &amp;#39;virtualenv.seed.via_app_data&amp;#39; Why is that?</description></item></channel></rss>
+No module named &amp;#39;virtualenv.seed.via_app_data&amp;#39; Why is that?</description>
+    </item>
+    
+  </channel>
+</rss>

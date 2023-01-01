@@ -1,18 +1,87 @@
-<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>golang on Git Push and Run</title><link>https://manuelfedele.github.io/tags/golang/</link><description>Recent content in golang on Git Push and Run</description><generator>Hugo -- gohugo.io</generator><language>en-us</language><lastBuildDate>Tue, 27 Dec 2022 18:48:44 +0100</lastBuildDate><atom:link href="https://manuelfedele.github.io/tags/golang/index.xml" rel="self" type="application/rss+xml"/><item><title>Use Protobuf With Golang</title><link>https://manuelfedele.github.io/posts/use-protobuf-with-golang/</link><pubDate>Tue, 27 Dec 2022 18:48:44 +0100</pubDate><guid>https://manuelfedele.github.io/posts/use-protobuf-with-golang/</guid><description>
-Protocol Buffers (Protobuf) is a language- and platform-neutral data serialization format developed by Google. It allows you to define data structures in a .proto file and then use code generation tools to generate code in various languages for working with those data structures.
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/">
+  <channel>
+    <title>golang on Git Push and Run</title>
+    <link>https://manuelfedele.github.io/tags/golang/</link>
+    <description>Recent content in golang on Git Push and Run</description>
+    <image>
+      <url>https://images.unsplash.com/photo-1564865878688-9a244444042a?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=3540&q=80</url>
+      <link>https://images.unsplash.com/photo-1564865878688-9a244444042a?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=3540&q=80</link>
+    </image>
+    <generator>Hugo -- gohugo.io</generator>
+    <lastBuildDate>Tue, 27 Dec 2022 18:48:44 +0100</lastBuildDate><atom:link href="https://manuelfedele.github.io/tags/golang/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Use Protobuf With Golang</title>
+      <link>https://manuelfedele.github.io/posts/use-protobuf-with-golang/</link>
+      <pubDate>Tue, 27 Dec 2022 18:48:44 +0100</pubDate>
+      
+      <guid>https://manuelfedele.github.io/posts/use-protobuf-with-golang/</guid>
+      <description>Protocol Buffers (Protobuf) is a language- and platform-neutral data serialization format developed by Google. It allows you to define data structures in a .proto file and then use code generation tools to generate code in various languages for working with those data structures.
 To use Protobuf with Go, you&amp;rsquo;ll need to do the following:
 Install the Protobuf compiler (protoc) and the Go Protobuf plugin:
-# Install protoc wget https://github.com/protocolbuffers/protobuf/releases/download/v3.14.0/protoc-3.14.0-linux-x86_64.zip unzip protoc-3.</description></item><item><title>Create Command Line Application With Golang</title><link>https://manuelfedele.github.io/posts/create-command-line-application-with-golang/</link><pubDate>Tue, 20 Dec 2022 10:03:30 +0100</pubDate><guid>https://manuelfedele.github.io/posts/create-command-line-application-with-golang/</guid><description>
-Creating a Command Line Application to Separate Files by Extension in Go # If you have a folder with a large number of files and you want to organize them by file extension, you can create a command line application to do this automatically using Go. Go, also known as Golang, is a programming language developed by Google that is designed to be fast, statically-typed, and easy to learn. In this article, we&amp;rsquo;ll walk through the steps to create a Go program that separates files in a given folder into subfolders based on their extension.</description></item><item><title>Use Redis With Golang</title><link>https://manuelfedele.github.io/posts/use-redis-with-golang/</link><pubDate>Mon, 19 Dec 2022 19:32:27 +0100</pubDate><guid>https://manuelfedele.github.io/posts/use-redis-with-golang/</guid><description>
-Using Golang and Redis # Redis is an in-memory data structure store that can be used as a database, cache, and message broker. It is known for its speed, simplicity, and flexibility. In this article, we will discuss how to use Redis with Golang, a popular programming language known for its simplicity, performance, and concurrency support.
-Before we dive into the details of using Redis with Golang, let&amp;rsquo;s first understand the requirements of the application.</description></item><item><title>Create Desktop Application to fetch Stock Market Data with Golang</title><link>https://manuelfedele.github.io/posts/create-desktop-application-stock-market-data-golang/</link><pubDate>Mon, 19 Dec 2022 19:08:58 +0100</pubDate><guid>https://manuelfedele.github.io/posts/create-desktop-application-stock-market-data-golang/</guid><description>
-Golang, also known as Go, is a popular programming language known for its simplicity, performance, and concurrency support. Fyne is an open-source cross-platform UI toolkit written in Go, which makes it an excellent choice for building desktop applications. In this article, we will discuss how to build a desktop application for stock market data using Golang and Fyne.
-Before we dive into the details of building the application, let&amp;rsquo;s first understand the requirements of the application.</description></item><item><title>How to Create a Webserver in Golang</title><link>https://manuelfedele.github.io/posts/how-to-create-a-webserver-in-golang/</link><pubDate>Sun, 11 Dec 2022 19:14:21 +0100</pubDate><guid>https://manuelfedele.github.io/posts/how-to-create-a-webserver-in-golang/</guid><description>
-To create a web server in Go, you can use the http package provided by the standard library. This package includes the http.Server type, which represents an HTTP server, and the http.ListenAndServe() function, which listens for incoming HTTP requests on a specified port and serves responses to those requests.
+# Install protoc wget https://github.com/protocolbuffers/protobuf/releases/download/v3.14.0/protoc-3.14.0-linux-x86_64.zip unzip protoc-3.</description>
+    </item>
+    
+    <item>
+      <title>Create Command Line Application With Golang</title>
+      <link>https://manuelfedele.github.io/posts/create-command-line-application-with-golang/</link>
+      <pubDate>Tue, 20 Dec 2022 10:03:30 +0100</pubDate>
+      
+      <guid>https://manuelfedele.github.io/posts/create-command-line-application-with-golang/</guid>
+      <description>Creating a Command Line Application to Separate Files by Extension in Go If you have a folder with a large number of files and you want to organize them by file extension, you can create a command line application to do this automatically using Go. Go, also known as Golang, is a programming language developed by Google that is designed to be fast, statically-typed, and easy to learn. In this article, we&amp;rsquo;ll walk through the steps to create a Go program that separates files in a given folder into subfolders based on their extension.</description>
+    </item>
+    
+    <item>
+      <title>Use Redis With Golang</title>
+      <link>https://manuelfedele.github.io/posts/use-redis-with-golang/</link>
+      <pubDate>Mon, 19 Dec 2022 19:32:27 +0100</pubDate>
+      
+      <guid>https://manuelfedele.github.io/posts/use-redis-with-golang/</guid>
+      <description>Using Golang and Redis Redis is an in-memory data structure store that can be used as a database, cache, and message broker. It is known for its speed, simplicity, and flexibility. In this article, we will discuss how to use Redis with Golang, a popular programming language known for its simplicity, performance, and concurrency support.
+Before we dive into the details of using Redis with Golang, let&amp;rsquo;s first understand the requirements of the application.</description>
+    </item>
+    
+    <item>
+      <title>Create Desktop Application to fetch Stock Market Data  with Golang</title>
+      <link>https://manuelfedele.github.io/posts/create-desktop-application-stock-market-data-golang/</link>
+      <pubDate>Mon, 19 Dec 2022 19:08:58 +0100</pubDate>
+      
+      <guid>https://manuelfedele.github.io/posts/create-desktop-application-stock-market-data-golang/</guid>
+      <description>Golang, also known as Go, is a popular programming language known for its simplicity, performance, and concurrency support. Fyne is an open-source cross-platform UI toolkit written in Go, which makes it an excellent choice for building desktop applications. In this article, we will discuss how to build a desktop application for stock market data using Golang and Fyne.
+Before we dive into the details of building the application, let&amp;rsquo;s first understand the requirements of the application.</description>
+    </item>
+    
+    <item>
+      <title>How to Create a Webserver in Golang</title>
+      <link>https://manuelfedele.github.io/posts/how-to-create-a-webserver-in-golang/</link>
+      <pubDate>Sun, 11 Dec 2022 19:14:21 +0100</pubDate>
+      
+      <guid>https://manuelfedele.github.io/posts/how-to-create-a-webserver-in-golang/</guid>
+      <description>To create a web server in Go, you can use the http package provided by the standard library. This package includes the http.Server type, which represents an HTTP server, and the http.ListenAndServe() function, which listens for incoming HTTP requests on a specified port and serves responses to those requests.
 Here is an example of how you might create a simple web server in Go:
-// Import the http package import &amp;#34;net/http&amp;#34; // Define a function that will be called to handle incoming HTTP requests func handler(w http.</description></item><item><title>How to Use Interfaces in Golang</title><link>https://manuelfedele.github.io/posts/how-to-use-interfaces-in-golang/</link><pubDate>Sun, 11 Dec 2022 19:04:27 +0100</pubDate><guid>https://manuelfedele.github.io/posts/how-to-use-interfaces-in-golang/</guid><description>
-In Go, an interface is a type that defines a set of methods that a struct must implement in order to implement the interface. An interface defines the behavior or capabilities of a struct without specifying the implementation details. This allows different structs to implement the same interface in different ways, promoting loose coupling and flexibility in your code.
+// Import the http package import &amp;#34;net/http&amp;#34; // Define a function that will be called to handle incoming HTTP requests func handler(w http.</description>
+    </item>
+    
+    <item>
+      <title>How to Use Interfaces in Golang</title>
+      <link>https://manuelfedele.github.io/posts/how-to-use-interfaces-in-golang/</link>
+      <pubDate>Sun, 11 Dec 2022 19:04:27 +0100</pubDate>
+      
+      <guid>https://manuelfedele.github.io/posts/how-to-use-interfaces-in-golang/</guid>
+      <description>In Go, an interface is a type that defines a set of methods that a struct must implement in order to implement the interface. An interface defines the behavior or capabilities of a struct without specifying the implementation details. This allows different structs to implement the same interface in different ways, promoting loose coupling and flexibility in your code.
 Here is an example of an interface in Go:
-// Define an interface named Animal type Animal interface { // Define a method named Speak that takes no arguments and returns a string Speak() string } In this example, the Animal interface defines a single method named Speak(), which takes no arguments and returns a string.</description></item><item><title>Implement Factory Design Pattern in Golang</title><link>https://manuelfedele.github.io/posts/implement-factory-design-pattern-golang/</link><pubDate>Sun, 11 Dec 2022 18:57:13 +0100</pubDate><guid>https://manuelfedele.github.io/posts/implement-factory-design-pattern-golang/</guid><description>
-To implement the factory design pattern in Go, you can create a factory function that returns an object that implements a common interface. This function can take parameters to specify the type of object to be created. Here is an example of how you might implement the factory design pattern in Go:
-// Define an interface that the factory will create objects for type Animal interface { Speak() string } // Define a factory function that returns an object that implements the Animal interface func NewAnimal(animalType string) Animal { switch animalType { case &amp;#34;dog&amp;#34;: return &amp;amp;Dog{} case &amp;#34;cat&amp;#34;: return &amp;amp;Cat{} default: return nil } } // Define a struct for a dog that implements the Animal interface type Dog struct{} func (d *Dog) Speak() string { return &amp;#34;Woof!</description></item></channel></rss>
+// Define an interface named Animal type Animal interface { // Define a method named Speak that takes no arguments and returns a string Speak() string } In this example, the Animal interface defines a single method named Speak(), which takes no arguments and returns a string.</description>
+    </item>
+    
+    <item>
+      <title>Implement Factory Design Pattern in Golang</title>
+      <link>https://manuelfedele.github.io/posts/implement-factory-design-pattern-golang/</link>
+      <pubDate>Sun, 11 Dec 2022 18:57:13 +0100</pubDate>
+      
+      <guid>https://manuelfedele.github.io/posts/implement-factory-design-pattern-golang/</guid>
+      <description>To implement the factory design pattern in Go, you can create a factory function that returns an object that implements a common interface. This function can take parameters to specify the type of object to be created. Here is an example of how you might implement the factory design pattern in Go:
+// Define an interface that the factory will create objects for type Animal interface { Speak() string } // Define a factory function that returns an object that implements the Animal interface func NewAnimal(animalType string) Animal { switch animalType { case &amp;#34;dog&amp;#34;: return &amp;amp;Dog{} case &amp;#34;cat&amp;#34;: return &amp;amp;Cat{} default: return nil } } // Define a struct for a dog that implements the Animal interface type Dog struct{} func (d *Dog) Speak() string { return &amp;#34;Woof!</description>
+    </item>
+    
+  </channel>
+</rss>

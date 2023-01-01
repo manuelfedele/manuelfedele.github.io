@@ -1,3 +1,24 @@
-<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>redis on Git Push and Run</title><link>https://manuelfedele.github.io/tags/redis/</link><description>Recent content in redis on Git Push and Run</description><generator>Hugo -- gohugo.io</generator><language>en-us</language><lastBuildDate>Mon, 19 Dec 2022 19:32:27 +0100</lastBuildDate><atom:link href="https://manuelfedele.github.io/tags/redis/index.xml" rel="self" type="application/rss+xml"/><item><title>Use Redis With Golang</title><link>https://manuelfedele.github.io/posts/use-redis-with-golang/</link><pubDate>Mon, 19 Dec 2022 19:32:27 +0100</pubDate><guid>https://manuelfedele.github.io/posts/use-redis-with-golang/</guid><description>
-Using Golang and Redis # Redis is an in-memory data structure store that can be used as a database, cache, and message broker. It is known for its speed, simplicity, and flexibility. In this article, we will discuss how to use Redis with Golang, a popular programming language known for its simplicity, performance, and concurrency support.
-Before we dive into the details of using Redis with Golang, let&amp;rsquo;s first understand the requirements of the application.</description></item></channel></rss>
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/">
+  <channel>
+    <title>redis on Git Push and Run</title>
+    <link>https://manuelfedele.github.io/tags/redis/</link>
+    <description>Recent content in redis on Git Push and Run</description>
+    <image>
+      <url>https://images.unsplash.com/photo-1564865878688-9a244444042a?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=3540&q=80</url>
+      <link>https://images.unsplash.com/photo-1564865878688-9a244444042a?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=3540&q=80</link>
+    </image>
+    <generator>Hugo -- gohugo.io</generator>
+    <lastBuildDate>Mon, 19 Dec 2022 19:32:27 +0100</lastBuildDate><atom:link href="https://manuelfedele.github.io/tags/redis/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Use Redis With Golang</title>
+      <link>https://manuelfedele.github.io/posts/use-redis-with-golang/</link>
+      <pubDate>Mon, 19 Dec 2022 19:32:27 +0100</pubDate>
+      
+      <guid>https://manuelfedele.github.io/posts/use-redis-with-golang/</guid>
+      <description>Using Golang and Redis Redis is an in-memory data structure store that can be used as a database, cache, and message broker. It is known for its speed, simplicity, and flexibility. In this article, we will discuss how to use Redis with Golang, a popular programming language known for its simplicity, performance, and concurrency support.
+Before we dive into the details of using Redis with Golang, let&amp;rsquo;s first understand the requirements of the application.</description>
+    </item>
+    
+  </channel>
+</rss>

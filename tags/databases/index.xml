@@ -1,4 +1,25 @@
-<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>databases on Git Push and Run</title><link>https://manuelfedele.github.io/tags/databases/</link><description>Recent content in databases on Git Push and Run</description><generator>Hugo -- gohugo.io</generator><language>en-us</language><lastBuildDate>Mon, 19 Dec 2022 18:20:30 +0100</lastBuildDate><atom:link href="https://manuelfedele.github.io/tags/databases/index.xml" rel="self" type="application/rss+xml"/><item><title>Work with Json field on Postgresql</title><link>https://manuelfedele.github.io/posts/work-with-json-postgresql/</link><pubDate>Mon, 19 Dec 2022 18:20:30 +0100</pubDate><guid>https://manuelfedele.github.io/posts/work-with-json-postgresql/</guid><description>
-In PostgreSQL, the json data type can be used to store JSON data. You can use the -&amp;gt; operator to access elements of a JSON object, and the -&amp;raquo; operator to access values of a JSON object as text.
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/">
+  <channel>
+    <title>databases on Git Push and Run</title>
+    <link>https://manuelfedele.github.io/tags/databases/</link>
+    <description>Recent content in databases on Git Push and Run</description>
+    <image>
+      <url>https://images.unsplash.com/photo-1564865878688-9a244444042a?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=3540&q=80</url>
+      <link>https://images.unsplash.com/photo-1564865878688-9a244444042a?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=3540&q=80</link>
+    </image>
+    <generator>Hugo -- gohugo.io</generator>
+    <lastBuildDate>Mon, 19 Dec 2022 18:20:30 +0100</lastBuildDate><atom:link href="https://manuelfedele.github.io/tags/databases/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Work with Json field on Postgresql</title>
+      <link>https://manuelfedele.github.io/posts/work-with-json-postgresql/</link>
+      <pubDate>Mon, 19 Dec 2022 18:20:30 +0100</pubDate>
+      
+      <guid>https://manuelfedele.github.io/posts/work-with-json-postgresql/</guid>
+      <description>In PostgreSQL, the json data type can be used to store JSON data. You can use the -&amp;gt; operator to access elements of a JSON object, and the -&amp;raquo; operator to access values of a JSON object as text.
 For example, consider the following table with a JSON field called data:
-CREATE TABLE documents ( id serial PRIMARY KEY, data json ); To insert a JSON object into the data field, you can use the json_build_object function:</description></item></channel></rss>
+CREATE TABLE documents ( id serial PRIMARY KEY, data json ); To insert a JSON object into the data field, you can use the json_build_object function:</description>
+    </item>
+    
+  </channel>
+</rss>

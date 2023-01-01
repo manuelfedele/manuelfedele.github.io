@@ -1,38 +1,181 @@
-<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>Posts on Git Push and Run</title><link>https://manuelfedele.github.io/posts/</link><description>Recent content in Posts on Git Push and Run</description><generator>Hugo -- gohugo.io</generator><language>en-us</language><lastBuildDate>Sat, 31 Dec 2022 14:26:23 +0100</lastBuildDate><atom:link href="https://manuelfedele.github.io/posts/index.xml" rel="self" type="application/rss+xml"/><item><title>Create a Telegram Bot With Rust</title><link>https://manuelfedele.github.io/posts/create-a-telegram-bot-with-rust/</link><pubDate>Sat, 31 Dec 2022 14:26:23 +0100</pubDate><guid>https://manuelfedele.github.io/posts/create-a-telegram-bot-with-rust/</guid><description>
-Install Rust # Before you can start writing Rust code, you&amp;rsquo;ll need to install the Rust programming language on your computer. You can do this by following the instructions on the Rust website (https://www.rust-lang.org/tools/install).
-Set up a new Rust project # Once you have Rust installed, you&amp;rsquo;ll need to create a new Rust project using the cargo command-line tool. Open a terminal and navigate to the directory where you want to store your project, then run the following command: cargo new telegram-bot &amp;ndash;bin.</description></item><item><title>Create a Webserver With Fastapi and Uvicorn</title><link>https://manuelfedele.github.io/posts/create-webserver-with-fastapi-and-uvicorn/</link><pubDate>Fri, 30 Dec 2022 14:08:35 +0100</pubDate><guid>https://manuelfedele.github.io/posts/create-webserver-with-fastapi-and-uvicorn/</guid><description>
-FastAPI is a modern, fast, web framework for building APIs with Python 3.7 and above. It is built on top of Starlette, a lightweight ASGI framework, and uses the uvicorn ASGI server.
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/">
+  <channel>
+    <title>Posts on Git Push and Run</title>
+    <link>https://manuelfedele.github.io/posts/</link>
+    <description>Recent content in Posts on Git Push and Run</description>
+    <image>
+      <url>https://images.unsplash.com/photo-1564865878688-9a244444042a?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=3540&q=80</url>
+      <link>https://images.unsplash.com/photo-1564865878688-9a244444042a?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=3540&q=80</link>
+    </image>
+    <generator>Hugo -- gohugo.io</generator>
+    <lastBuildDate>Sun, 01 Jan 2023 14:50:35 +0100</lastBuildDate><atom:link href="https://manuelfedele.github.io/posts/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Understand Async Await in Python</title>
+      <link>https://manuelfedele.github.io/posts/understand-async-await-in-python/</link>
+      <pubDate>Sun, 01 Jan 2023 14:50:35 +0100</pubDate>
+      
+      <guid>https://manuelfedele.github.io/posts/understand-async-await-in-python/</guid>
+      <description>Async/await is a powerful programming construct that allows you to write asynchronous code in a synchronous-like style. It was introduced in Python 3.5 as part of the asyncio module and has become a popular choice for writing concurrent and parallel code in Python.
+In this post, we&amp;rsquo;ll take a look at what async/await is and how it works, as well as some of the benefits and drawbacks of using it. We&amp;rsquo;ll also see some examples of how to use async/await in Python to write efficient and scalable code.</description>
+    </item>
+    
+    <item>
+      <title>Create a Telegram Bot With Rust</title>
+      <link>https://manuelfedele.github.io/posts/create-a-telegram-bot-with-rust/</link>
+      <pubDate>Sat, 31 Dec 2022 14:26:23 +0100</pubDate>
+      
+      <guid>https://manuelfedele.github.io/posts/create-a-telegram-bot-with-rust/</guid>
+      <description>Install Rust Before you can start writing Rust code, you&amp;rsquo;ll need to install the Rust programming language on your computer. You can do this by following the instructions on the Rust website (https://www.rust-lang.org/tools/install).
+Set up a new Rust project Once you have Rust installed, you&amp;rsquo;ll need to create a new Rust project using the cargo command-line tool. Open a terminal and navigate to the directory where you want to store your project, then run the following command: cargo new telegram-bot &amp;ndash;bin.</description>
+    </item>
+    
+    <item>
+      <title>Create a Webserver With Fastapi and Uvicorn</title>
+      <link>https://manuelfedele.github.io/posts/create-webserver-with-fastapi-and-uvicorn/</link>
+      <pubDate>Fri, 30 Dec 2022 14:08:35 +0100</pubDate>
+      
+      <guid>https://manuelfedele.github.io/posts/create-webserver-with-fastapi-and-uvicorn/</guid>
+      <description>FastAPI is a modern, fast, web framework for building APIs with Python 3.7 and above. It is built on top of Starlette, a lightweight ASGI framework, and uses the uvicorn ASGI server.
 Here is an example of how to create a web server with FastAPI and uvicorn:
-Install FastAPI and uvicorn using pip: pip install fastapi uvicorn Create a file called main.py and import FastAPI: from fastapi import FastAPI app = FastAPI() Define a function that will be the endpoint for your API.</description></item><item><title>What Does Yield Keyword Do in Python</title><link>https://manuelfedele.github.io/posts/what-does-yield-keyword-do-in-python/</link><pubDate>Thu, 29 Dec 2022 10:19:25 +0100</pubDate><guid>https://manuelfedele.github.io/posts/what-does-yield-keyword-do-in-python/</guid><description>
-The keyword &amp;ldquo;yield&amp;rdquo; is a important part of the Python programming language, and it can be used in a number of different ways. In this article, we&amp;rsquo;ll take a closer look at what the yield keyword does in Python, and how it can be used to create more efficient and powerful programs.
-The primary use of the yield keyword is to create a generator function. A generator function is a special type of function that produces a sequence of values, one at a time, when it is called.</description></item><item><title>Use Protobuf With Golang</title><link>https://manuelfedele.github.io/posts/use-protobuf-with-golang/</link><pubDate>Tue, 27 Dec 2022 18:48:44 +0100</pubDate><guid>https://manuelfedele.github.io/posts/use-protobuf-with-golang/</guid><description>
-Protocol Buffers (Protobuf) is a language- and platform-neutral data serialization format developed by Google. It allows you to define data structures in a .proto file and then use code generation tools to generate code in various languages for working with those data structures.
+Install FastAPI and uvicorn using pip: pip install fastapi uvicorn Create a file called main.py and import FastAPI: from fastapi import FastAPI app = FastAPI() Define a function that will be the endpoint for your API.</description>
+    </item>
+    
+    <item>
+      <title>What Does Yield Keyword Do in Python</title>
+      <link>https://manuelfedele.github.io/posts/what-does-yield-keyword-do-in-python/</link>
+      <pubDate>Thu, 29 Dec 2022 10:19:25 +0100</pubDate>
+      
+      <guid>https://manuelfedele.github.io/posts/what-does-yield-keyword-do-in-python/</guid>
+      <description>The keyword &amp;ldquo;yield&amp;rdquo; is a important part of the Python programming language, and it can be used in a number of different ways. In this article, we&amp;rsquo;ll take a closer look at what the yield keyword does in Python, and how it can be used to create more efficient and powerful programs.
+The primary use of the yield keyword is to create a generator function. A generator function is a special type of function that produces a sequence of values, one at a time, when it is called.</description>
+    </item>
+    
+    <item>
+      <title>Use Protobuf With Golang</title>
+      <link>https://manuelfedele.github.io/posts/use-protobuf-with-golang/</link>
+      <pubDate>Tue, 27 Dec 2022 18:48:44 +0100</pubDate>
+      
+      <guid>https://manuelfedele.github.io/posts/use-protobuf-with-golang/</guid>
+      <description>Protocol Buffers (Protobuf) is a language- and platform-neutral data serialization format developed by Google. It allows you to define data structures in a .proto file and then use code generation tools to generate code in various languages for working with those data structures.
 To use Protobuf with Go, you&amp;rsquo;ll need to do the following:
 Install the Protobuf compiler (protoc) and the Go Protobuf plugin:
-# Install protoc wget https://github.com/protocolbuffers/protobuf/releases/download/v3.14.0/protoc-3.14.0-linux-x86_64.zip unzip protoc-3.</description></item><item><title>Create Command Line Application With Golang</title><link>https://manuelfedele.github.io/posts/create-command-line-application-with-golang/</link><pubDate>Tue, 20 Dec 2022 10:03:30 +0100</pubDate><guid>https://manuelfedele.github.io/posts/create-command-line-application-with-golang/</guid><description>
-Creating a Command Line Application to Separate Files by Extension in Go # If you have a folder with a large number of files and you want to organize them by file extension, you can create a command line application to do this automatically using Go. Go, also known as Golang, is a programming language developed by Google that is designed to be fast, statically-typed, and easy to learn. In this article, we&amp;rsquo;ll walk through the steps to create a Go program that separates files in a given folder into subfolders based on their extension.</description></item><item><title>Create Website With Gatsby and Github Pages</title><link>https://manuelfedele.github.io/posts/create-website-with-gatsby-and-github-pages/</link><pubDate>Tue, 20 Dec 2022 09:49:01 +0100</pubDate><guid>https://manuelfedele.github.io/posts/create-website-with-gatsby-and-github-pages/</guid><description>
-GitHub Pages is a free service that allows you to host your website directly from a GitHub repository. It is a great platform for developers to showcase their portfolio, document their projects, or create a personal blog. In this article, we will walk through the steps of creating a static website using GitHub Pages and Gatsby, a popular static site generator.
-Install Gatsby First, you will need to install Gatsby by running the following command in your terminal: npm install -g gatsby-cli Create a new Gatsby project gatsby new my-website This will create a new directory called my-website with the necessary files and dependencies for your Gatsby project.</description></item><item><title>Use Redis With Golang</title><link>https://manuelfedele.github.io/posts/use-redis-with-golang/</link><pubDate>Mon, 19 Dec 2022 19:32:27 +0100</pubDate><guid>https://manuelfedele.github.io/posts/use-redis-with-golang/</guid><description>
-Using Golang and Redis # Redis is an in-memory data structure store that can be used as a database, cache, and message broker. It is known for its speed, simplicity, and flexibility. In this article, we will discuss how to use Redis with Golang, a popular programming language known for its simplicity, performance, and concurrency support.
-Before we dive into the details of using Redis with Golang, let&amp;rsquo;s first understand the requirements of the application.</description></item><item><title>Create Desktop Application to fetch Stock Market Data with Golang</title><link>https://manuelfedele.github.io/posts/create-desktop-application-stock-market-data-golang/</link><pubDate>Mon, 19 Dec 2022 19:08:58 +0100</pubDate><guid>https://manuelfedele.github.io/posts/create-desktop-application-stock-market-data-golang/</guid><description>
-Golang, also known as Go, is a popular programming language known for its simplicity, performance, and concurrency support. Fyne is an open-source cross-platform UI toolkit written in Go, which makes it an excellent choice for building desktop applications. In this article, we will discuss how to build a desktop application for stock market data using Golang and Fyne.
-Before we dive into the details of building the application, let&amp;rsquo;s first understand the requirements of the application.</description></item><item><title>Work with Json field on Postgresql</title><link>https://manuelfedele.github.io/posts/work-with-json-postgresql/</link><pubDate>Mon, 19 Dec 2022 18:20:30 +0100</pubDate><guid>https://manuelfedele.github.io/posts/work-with-json-postgresql/</guid><description>
-In PostgreSQL, the json data type can be used to store JSON data. You can use the -&amp;gt; operator to access elements of a JSON object, and the -&amp;raquo; operator to access values of a JSON object as text.
+# Install protoc wget https://github.com/protocolbuffers/protobuf/releases/download/v3.14.0/protoc-3.14.0-linux-x86_64.zip unzip protoc-3.</description>
+    </item>
+    
+    <item>
+      <title>Create Command Line Application With Golang</title>
+      <link>https://manuelfedele.github.io/posts/create-command-line-application-with-golang/</link>
+      <pubDate>Tue, 20 Dec 2022 10:03:30 +0100</pubDate>
+      
+      <guid>https://manuelfedele.github.io/posts/create-command-line-application-with-golang/</guid>
+      <description>Creating a Command Line Application to Separate Files by Extension in Go If you have a folder with a large number of files and you want to organize them by file extension, you can create a command line application to do this automatically using Go. Go, also known as Golang, is a programming language developed by Google that is designed to be fast, statically-typed, and easy to learn. In this article, we&amp;rsquo;ll walk through the steps to create a Go program that separates files in a given folder into subfolders based on their extension.</description>
+    </item>
+    
+    <item>
+      <title>Create Website With Gatsby and Github Pages</title>
+      <link>https://manuelfedele.github.io/posts/create-website-with-gatsby-and-github-pages/</link>
+      <pubDate>Tue, 20 Dec 2022 09:49:01 +0100</pubDate>
+      
+      <guid>https://manuelfedele.github.io/posts/create-website-with-gatsby-and-github-pages/</guid>
+      <description>GitHub Pages is a free service that allows you to host your website directly from a GitHub repository. It is a great platform for developers to showcase their portfolio, document their projects, or create a personal blog. In this article, we will walk through the steps of creating a static website using GitHub Pages and Gatsby, a popular static site generator.
+Install Gatsby First, you will need to install Gatsby by running the following command in your terminal: npm install -g gatsby-cli Create a new Gatsby project gatsby new my-website This will create a new directory called my-website with the necessary files and dependencies for your Gatsby project.</description>
+    </item>
+    
+    <item>
+      <title>Use Redis With Golang</title>
+      <link>https://manuelfedele.github.io/posts/use-redis-with-golang/</link>
+      <pubDate>Mon, 19 Dec 2022 19:32:27 +0100</pubDate>
+      
+      <guid>https://manuelfedele.github.io/posts/use-redis-with-golang/</guid>
+      <description>Using Golang and Redis Redis is an in-memory data structure store that can be used as a database, cache, and message broker. It is known for its speed, simplicity, and flexibility. In this article, we will discuss how to use Redis with Golang, a popular programming language known for its simplicity, performance, and concurrency support.
+Before we dive into the details of using Redis with Golang, let&amp;rsquo;s first understand the requirements of the application.</description>
+    </item>
+    
+    <item>
+      <title>Create Desktop Application to fetch Stock Market Data  with Golang</title>
+      <link>https://manuelfedele.github.io/posts/create-desktop-application-stock-market-data-golang/</link>
+      <pubDate>Mon, 19 Dec 2022 19:08:58 +0100</pubDate>
+      
+      <guid>https://manuelfedele.github.io/posts/create-desktop-application-stock-market-data-golang/</guid>
+      <description>Golang, also known as Go, is a popular programming language known for its simplicity, performance, and concurrency support. Fyne is an open-source cross-platform UI toolkit written in Go, which makes it an excellent choice for building desktop applications. In this article, we will discuss how to build a desktop application for stock market data using Golang and Fyne.
+Before we dive into the details of building the application, let&amp;rsquo;s first understand the requirements of the application.</description>
+    </item>
+    
+    <item>
+      <title>Work with Json field on Postgresql</title>
+      <link>https://manuelfedele.github.io/posts/work-with-json-postgresql/</link>
+      <pubDate>Mon, 19 Dec 2022 18:20:30 +0100</pubDate>
+      
+      <guid>https://manuelfedele.github.io/posts/work-with-json-postgresql/</guid>
+      <description>In PostgreSQL, the json data type can be used to store JSON data. You can use the -&amp;gt; operator to access elements of a JSON object, and the -&amp;raquo; operator to access values of a JSON object as text.
 For example, consider the following table with a JSON field called data:
-CREATE TABLE documents ( id serial PRIMARY KEY, data json ); To insert a JSON object into the data field, you can use the json_build_object function:</description></item><item><title>How to Create a Webserver in Golang</title><link>https://manuelfedele.github.io/posts/how-to-create-a-webserver-in-golang/</link><pubDate>Sun, 11 Dec 2022 19:14:21 +0100</pubDate><guid>https://manuelfedele.github.io/posts/how-to-create-a-webserver-in-golang/</guid><description>
-To create a web server in Go, you can use the http package provided by the standard library. This package includes the http.Server type, which represents an HTTP server, and the http.ListenAndServe() function, which listens for incoming HTTP requests on a specified port and serves responses to those requests.
+CREATE TABLE documents ( id serial PRIMARY KEY, data json ); To insert a JSON object into the data field, you can use the json_build_object function:</description>
+    </item>
+    
+    <item>
+      <title>How to Create a Webserver in Golang</title>
+      <link>https://manuelfedele.github.io/posts/how-to-create-a-webserver-in-golang/</link>
+      <pubDate>Sun, 11 Dec 2022 19:14:21 +0100</pubDate>
+      
+      <guid>https://manuelfedele.github.io/posts/how-to-create-a-webserver-in-golang/</guid>
+      <description>To create a web server in Go, you can use the http package provided by the standard library. This package includes the http.Server type, which represents an HTTP server, and the http.ListenAndServe() function, which listens for incoming HTTP requests on a specified port and serves responses to those requests.
 Here is an example of how you might create a simple web server in Go:
-// Import the http package import &amp;#34;net/http&amp;#34; // Define a function that will be called to handle incoming HTTP requests func handler(w http.</description></item><item><title>How to Use Interfaces in Golang</title><link>https://manuelfedele.github.io/posts/how-to-use-interfaces-in-golang/</link><pubDate>Sun, 11 Dec 2022 19:04:27 +0100</pubDate><guid>https://manuelfedele.github.io/posts/how-to-use-interfaces-in-golang/</guid><description>
-In Go, an interface is a type that defines a set of methods that a struct must implement in order to implement the interface. An interface defines the behavior or capabilities of a struct without specifying the implementation details. This allows different structs to implement the same interface in different ways, promoting loose coupling and flexibility in your code.
+// Import the http package import &amp;#34;net/http&amp;#34; // Define a function that will be called to handle incoming HTTP requests func handler(w http.</description>
+    </item>
+    
+    <item>
+      <title>How to Use Interfaces in Golang</title>
+      <link>https://manuelfedele.github.io/posts/how-to-use-interfaces-in-golang/</link>
+      <pubDate>Sun, 11 Dec 2022 19:04:27 +0100</pubDate>
+      
+      <guid>https://manuelfedele.github.io/posts/how-to-use-interfaces-in-golang/</guid>
+      <description>In Go, an interface is a type that defines a set of methods that a struct must implement in order to implement the interface. An interface defines the behavior or capabilities of a struct without specifying the implementation details. This allows different structs to implement the same interface in different ways, promoting loose coupling and flexibility in your code.
 Here is an example of an interface in Go:
-// Define an interface named Animal type Animal interface { // Define a method named Speak that takes no arguments and returns a string Speak() string } In this example, the Animal interface defines a single method named Speak(), which takes no arguments and returns a string.</description></item><item><title>Implement Factory Design Pattern in Golang</title><link>https://manuelfedele.github.io/posts/implement-factory-design-pattern-golang/</link><pubDate>Sun, 11 Dec 2022 18:57:13 +0100</pubDate><guid>https://manuelfedele.github.io/posts/implement-factory-design-pattern-golang/</guid><description>
-To implement the factory design pattern in Go, you can create a factory function that returns an object that implements a common interface. This function can take parameters to specify the type of object to be created. Here is an example of how you might implement the factory design pattern in Go:
-// Define an interface that the factory will create objects for type Animal interface { Speak() string } // Define a factory function that returns an object that implements the Animal interface func NewAnimal(animalType string) Animal { switch animalType { case &amp;#34;dog&amp;#34;: return &amp;amp;Dog{} case &amp;#34;cat&amp;#34;: return &amp;amp;Cat{} default: return nil } } // Define a struct for a dog that implements the Animal interface type Dog struct{} func (d *Dog) Speak() string { return &amp;#34;Woof!</description></item><item><title>Create a template for Hugo</title><link>https://manuelfedele.github.io/posts/create-template-hugo/</link><pubDate>Thu, 03 Nov 2022 14:57:41 +0100</pubDate><guid>https://manuelfedele.github.io/posts/create-template-hugo/</guid><description>
-Introduction # This tutorial will show you how to create a simple theme in Hugo. I assume that you are familiar with HTML, the bash command line, and that you are comfortable using Markdown to format content. I&amp;rsquo;ll explain how Hugo uses templates and how you can organize your templates to create a theme. I won&amp;rsquo;t cover using CSS to style your theme.
-We&amp;rsquo;ll start with creating a new site with a very basic template.</description></item><item><title>Poetry No Module Seed via App Data</title><link>https://manuelfedele.github.io/posts/poetry-no-module-seed-via-app-data/</link><pubDate>Mon, 01 Nov 2021 15:15:47 +0100</pubDate><guid>https://manuelfedele.github.io/posts/poetry-no-module-seed-via-app-data/</guid><description>
-For my last project, I used poetry to manage dependencies and package my code. Poetry comes with all the tools you might need to manage your projects in a deterministic way.
+// Define an interface named Animal type Animal interface { // Define a method named Speak that takes no arguments and returns a string Speak() string } In this example, the Animal interface defines a single method named Speak(), which takes no arguments and returns a string.</description>
+    </item>
+    
+    <item>
+      <title>Implement Factory Design Pattern in Golang</title>
+      <link>https://manuelfedele.github.io/posts/implement-factory-design-pattern-golang/</link>
+      <pubDate>Sun, 11 Dec 2022 18:57:13 +0100</pubDate>
+      
+      <guid>https://manuelfedele.github.io/posts/implement-factory-design-pattern-golang/</guid>
+      <description>To implement the factory design pattern in Go, you can create a factory function that returns an object that implements a common interface. This function can take parameters to specify the type of object to be created. Here is an example of how you might implement the factory design pattern in Go:
+// Define an interface that the factory will create objects for type Animal interface { Speak() string } // Define a factory function that returns an object that implements the Animal interface func NewAnimal(animalType string) Animal { switch animalType { case &amp;#34;dog&amp;#34;: return &amp;amp;Dog{} case &amp;#34;cat&amp;#34;: return &amp;amp;Cat{} default: return nil } } // Define a struct for a dog that implements the Animal interface type Dog struct{} func (d *Dog) Speak() string { return &amp;#34;Woof!</description>
+    </item>
+    
+    <item>
+      <title>Create a template for Hugo</title>
+      <link>https://manuelfedele.github.io/posts/create-template-hugo/</link>
+      <pubDate>Thu, 03 Nov 2022 14:57:41 +0100</pubDate>
+      
+      <guid>https://manuelfedele.github.io/posts/create-template-hugo/</guid>
+      <description>Introduction This tutorial will show you how to create a simple theme in Hugo. I assume that you are familiar with HTML, the bash command line, and that you are comfortable using Markdown to format content. I&amp;rsquo;ll explain how Hugo uses templates and how you can organize your templates to create a theme. I won&amp;rsquo;t cover using CSS to style your theme.
+We&amp;rsquo;ll start with creating a new site with a very basic template.</description>
+    </item>
+    
+    <item>
+      <title>Poetry No Module Seed via App Data</title>
+      <link>https://manuelfedele.github.io/posts/poetry-no-module-seed-via-app-data/</link>
+      <pubDate>Mon, 01 Nov 2021 15:15:47 +0100</pubDate>
+      
+      <guid>https://manuelfedele.github.io/posts/poetry-no-module-seed-via-app-data/</guid>
+      <description>For my last project, I used poetry to manage dependencies and package my code. Poetry comes with all the tools you might need to manage your projects in a deterministic way.
 Anyway, after running poetry init in an existing project, I tried to let poetry create a virtuale environment, by adding the first dependecy, but when I did poetry add twisted it suddenly hang out, printing:
-No module named &amp;#39;virtualenv.seed.via_app_data&amp;#39; Why is that?</description></item><item><title>Amazon Echo Plus as bluetooth speaker on Ubuntu 20.04</title><link>https://manuelfedele.github.io/posts/ubuntu-echo-plus-alexa-workaround-bluetooth-speaker/</link><pubDate>Tue, 14 Apr 2020 09:37:07 +0100</pubDate><guid>https://manuelfedele.github.io/posts/ubuntu-echo-plus-alexa-workaround-bluetooth-speaker/</guid><description>
-Yesterday, I tried to use my Amazon Echo Plus as bluetooth speaker on my media center Running Ubuntu 20.04.
+No module named &amp;#39;virtualenv.seed.via_app_data&amp;#39; Why is that?</description>
+    </item>
+    
+    <item>
+      <title>Amazon Echo Plus as bluetooth speaker on Ubuntu 20.04</title>
+      <link>https://manuelfedele.github.io/posts/ubuntu-echo-plus-alexa-workaround-bluetooth-speaker/</link>
+      <pubDate>Tue, 14 Apr 2020 09:37:07 +0100</pubDate>
+      
+      <guid>https://manuelfedele.github.io/posts/ubuntu-echo-plus-alexa-workaround-bluetooth-speaker/</guid>
+      <description>Yesterday, I tried to use my Amazon Echo Plus as bluetooth speaker on my media center Running Ubuntu 20.04.
 I paired the Echo Plus using Alexa app on my phone following these steps:
-Open Alexa app on your phone and go to devices tab, then Echo &amp;amp; Alexa. Choose your Echo Plus from list and then the gear icon on top left. Under Wireless tab, choose Bluetooth Devices and then Pair new device.</description></item></channel></rss>
+Open Alexa app on your phone and go to devices tab, then Echo &amp;amp; Alexa. Choose your Echo Plus from list and then the gear icon on top left. Under Wireless tab, choose Bluetooth Devices and then Pair new device.</description>
+    </item>
+    
+  </channel>
+</rss>

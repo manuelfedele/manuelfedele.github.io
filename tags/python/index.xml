@@ -1,9 +1,56 @@
-<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>python on Git Push and Run</title><link>https://manuelfedele.github.io/tags/python/</link><description>Recent content in python on Git Push and Run</description><generator>Hugo -- gohugo.io</generator><language>en-us</language><lastBuildDate>Fri, 30 Dec 2022 14:08:35 +0100</lastBuildDate><atom:link href="https://manuelfedele.github.io/tags/python/index.xml" rel="self" type="application/rss+xml"/><item><title>Create a Webserver With Fastapi and Uvicorn</title><link>https://manuelfedele.github.io/posts/create-webserver-with-fastapi-and-uvicorn/</link><pubDate>Fri, 30 Dec 2022 14:08:35 +0100</pubDate><guid>https://manuelfedele.github.io/posts/create-webserver-with-fastapi-and-uvicorn/</guid><description>
-FastAPI is a modern, fast, web framework for building APIs with Python 3.7 and above. It is built on top of Starlette, a lightweight ASGI framework, and uses the uvicorn ASGI server.
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/">
+  <channel>
+    <title>python on Git Push and Run</title>
+    <link>https://manuelfedele.github.io/tags/python/</link>
+    <description>Recent content in python on Git Push and Run</description>
+    <image>
+      <url>https://images.unsplash.com/photo-1564865878688-9a244444042a?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=3540&q=80</url>
+      <link>https://images.unsplash.com/photo-1564865878688-9a244444042a?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=3540&q=80</link>
+    </image>
+    <generator>Hugo -- gohugo.io</generator>
+    <lastBuildDate>Sun, 01 Jan 2023 14:50:35 +0100</lastBuildDate><atom:link href="https://manuelfedele.github.io/tags/python/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Understand Async Await in Python</title>
+      <link>https://manuelfedele.github.io/posts/understand-async-await-in-python/</link>
+      <pubDate>Sun, 01 Jan 2023 14:50:35 +0100</pubDate>
+      
+      <guid>https://manuelfedele.github.io/posts/understand-async-await-in-python/</guid>
+      <description>Async/await is a powerful programming construct that allows you to write asynchronous code in a synchronous-like style. It was introduced in Python 3.5 as part of the asyncio module and has become a popular choice for writing concurrent and parallel code in Python.
+In this post, we&amp;rsquo;ll take a look at what async/await is and how it works, as well as some of the benefits and drawbacks of using it. We&amp;rsquo;ll also see some examples of how to use async/await in Python to write efficient and scalable code.</description>
+    </item>
+    
+    <item>
+      <title>Create a Webserver With Fastapi and Uvicorn</title>
+      <link>https://manuelfedele.github.io/posts/create-webserver-with-fastapi-and-uvicorn/</link>
+      <pubDate>Fri, 30 Dec 2022 14:08:35 +0100</pubDate>
+      
+      <guid>https://manuelfedele.github.io/posts/create-webserver-with-fastapi-and-uvicorn/</guid>
+      <description>FastAPI is a modern, fast, web framework for building APIs with Python 3.7 and above. It is built on top of Starlette, a lightweight ASGI framework, and uses the uvicorn ASGI server.
 Here is an example of how to create a web server with FastAPI and uvicorn:
-Install FastAPI and uvicorn using pip: pip install fastapi uvicorn Create a file called main.py and import FastAPI: from fastapi import FastAPI app = FastAPI() Define a function that will be the endpoint for your API.</description></item><item><title>What Does Yield Keyword Do in Python</title><link>https://manuelfedele.github.io/posts/what-does-yield-keyword-do-in-python/</link><pubDate>Thu, 29 Dec 2022 10:19:25 +0100</pubDate><guid>https://manuelfedele.github.io/posts/what-does-yield-keyword-do-in-python/</guid><description>
-The keyword &amp;ldquo;yield&amp;rdquo; is a important part of the Python programming language, and it can be used in a number of different ways. In this article, we&amp;rsquo;ll take a closer look at what the yield keyword does in Python, and how it can be used to create more efficient and powerful programs.
-The primary use of the yield keyword is to create a generator function. A generator function is a special type of function that produces a sequence of values, one at a time, when it is called.</description></item><item><title>Poetry No Module Seed via App Data</title><link>https://manuelfedele.github.io/posts/poetry-no-module-seed-via-app-data/</link><pubDate>Mon, 01 Nov 2021 15:15:47 +0100</pubDate><guid>https://manuelfedele.github.io/posts/poetry-no-module-seed-via-app-data/</guid><description>
-For my last project, I used poetry to manage dependencies and package my code. Poetry comes with all the tools you might need to manage your projects in a deterministic way.
+Install FastAPI and uvicorn using pip: pip install fastapi uvicorn Create a file called main.py and import FastAPI: from fastapi import FastAPI app = FastAPI() Define a function that will be the endpoint for your API.</description>
+    </item>
+    
+    <item>
+      <title>What Does Yield Keyword Do in Python</title>
+      <link>https://manuelfedele.github.io/posts/what-does-yield-keyword-do-in-python/</link>
+      <pubDate>Thu, 29 Dec 2022 10:19:25 +0100</pubDate>
+      
+      <guid>https://manuelfedele.github.io/posts/what-does-yield-keyword-do-in-python/</guid>
+      <description>The keyword &amp;ldquo;yield&amp;rdquo; is a important part of the Python programming language, and it can be used in a number of different ways. In this article, we&amp;rsquo;ll take a closer look at what the yield keyword does in Python, and how it can be used to create more efficient and powerful programs.
+The primary use of the yield keyword is to create a generator function. A generator function is a special type of function that produces a sequence of values, one at a time, when it is called.</description>
+    </item>
+    
+    <item>
+      <title>Poetry No Module Seed via App Data</title>
+      <link>https://manuelfedele.github.io/posts/poetry-no-module-seed-via-app-data/</link>
+      <pubDate>Mon, 01 Nov 2021 15:15:47 +0100</pubDate>
+      
+      <guid>https://manuelfedele.github.io/posts/poetry-no-module-seed-via-app-data/</guid>
+      <description>For my last project, I used poetry to manage dependencies and package my code. Poetry comes with all the tools you might need to manage your projects in a deterministic way.
 Anyway, after running poetry init in an existing project, I tried to let poetry create a virtuale environment, by adding the first dependecy, but when I did poetry add twisted it suddenly hang out, printing:
-No module named &amp;#39;virtualenv.seed.via_app_data&amp;#39; Why is that?</description></item></channel></rss>
+No module named &amp;#39;virtualenv.seed.via_app_data&amp;#39; Why is that?</description>
+    </item>
+    
+  </channel>
+</rss>

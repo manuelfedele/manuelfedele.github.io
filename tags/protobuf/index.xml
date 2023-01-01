@@ -1,5 +1,26 @@
-<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>protobuf on Git Push and Run</title><link>https://manuelfedele.github.io/tags/protobuf/</link><description>Recent content in protobuf on Git Push and Run</description><generator>Hugo -- gohugo.io</generator><language>en-us</language><lastBuildDate>Tue, 27 Dec 2022 18:48:44 +0100</lastBuildDate><atom:link href="https://manuelfedele.github.io/tags/protobuf/index.xml" rel="self" type="application/rss+xml"/><item><title>Use Protobuf With Golang</title><link>https://manuelfedele.github.io/posts/use-protobuf-with-golang/</link><pubDate>Tue, 27 Dec 2022 18:48:44 +0100</pubDate><guid>https://manuelfedele.github.io/posts/use-protobuf-with-golang/</guid><description>
-Protocol Buffers (Protobuf) is a language- and platform-neutral data serialization format developed by Google. It allows you to define data structures in a .proto file and then use code generation tools to generate code in various languages for working with those data structures.
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/">
+  <channel>
+    <title>protobuf on Git Push and Run</title>
+    <link>https://manuelfedele.github.io/tags/protobuf/</link>
+    <description>Recent content in protobuf on Git Push and Run</description>
+    <image>
+      <url>https://images.unsplash.com/photo-1564865878688-9a244444042a?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=3540&q=80</url>
+      <link>https://images.unsplash.com/photo-1564865878688-9a244444042a?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=3540&q=80</link>
+    </image>
+    <generator>Hugo -- gohugo.io</generator>
+    <lastBuildDate>Tue, 27 Dec 2022 18:48:44 +0100</lastBuildDate><atom:link href="https://manuelfedele.github.io/tags/protobuf/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Use Protobuf With Golang</title>
+      <link>https://manuelfedele.github.io/posts/use-protobuf-with-golang/</link>
+      <pubDate>Tue, 27 Dec 2022 18:48:44 +0100</pubDate>
+      
+      <guid>https://manuelfedele.github.io/posts/use-protobuf-with-golang/</guid>
+      <description>Protocol Buffers (Protobuf) is a language- and platform-neutral data serialization format developed by Google. It allows you to define data structures in a .proto file and then use code generation tools to generate code in various languages for working with those data structures.
 To use Protobuf with Go, you&amp;rsquo;ll need to do the following:
 Install the Protobuf compiler (protoc) and the Go Protobuf plugin:
-# Install protoc wget https://github.com/protocolbuffers/protobuf/releases/download/v3.14.0/protoc-3.14.0-linux-x86_64.zip unzip protoc-3.</description></item></channel></rss>
+# Install protoc wget https://github.com/protocolbuffers/protobuf/releases/download/v3.14.0/protoc-3.14.0-linux-x86_64.zip unzip protoc-3.</description>
+    </item>
+    
+  </channel>
+</rss>
