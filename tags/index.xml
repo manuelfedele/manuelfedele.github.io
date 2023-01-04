@@ -9,7 +9,25 @@
       <link>https://manuelfedele.github.io/img/card-pillow.jpg</link>
     </image>
     <generator>Hugo -- gohugo.io</generator>
-    <lastBuildDate>Sun, 01 Jan 2023 14:50:35 +0100</lastBuildDate><atom:link href="https://manuelfedele.github.io/tags/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Tue, 03 Jan 2023 20:36:29 +0100</lastBuildDate><atom:link href="https://manuelfedele.github.io/tags/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>context</title>
+      <link>https://manuelfedele.github.io/tags/context/</link>
+      <pubDate>Tue, 03 Jan 2023 20:36:29 +0100</pubDate>
+      
+      <guid>https://manuelfedele.github.io/tags/context/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>golang</title>
+      <link>https://manuelfedele.github.io/tags/golang/</link>
+      <pubDate>Tue, 03 Jan 2023 20:36:29 +0100</pubDate>
+      
+      <guid>https://manuelfedele.github.io/tags/golang/</guid>
+      <description></description>
+    </item>
+    
     <item>
       <title>asyncio</title>
       <link>https://manuelfedele.github.io/tags/asyncio/</link>
@@ -70,15 +88,6 @@
       <pubDate>Fri, 30 Dec 2022 14:08:35 +0100</pubDate>
       
       <guid>https://manuelfedele.github.io/tags/webserver/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>golang</title>
-      <link>https://manuelfedele.github.io/tags/golang/</link>
-      <pubDate>Tue, 27 Dec 2022 18:48:44 +0100</pubDate>
-      
-      <guid>https://manuelfedele.github.io/tags/golang/</guid>
       <description></description>
     </item>
     

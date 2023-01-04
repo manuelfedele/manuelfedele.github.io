@@ -9,7 +9,17 @@
       <link>https://manuelfedele.github.io/img/card-pillow.jpg</link>
     </image>
     <generator>Hugo -- gohugo.io</generator>
-    <lastBuildDate>Sun, 01 Jan 2023 14:50:35 +0100</lastBuildDate><atom:link href="https://manuelfedele.github.io/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Tue, 03 Jan 2023 20:36:29 +0100</lastBuildDate><atom:link href="https://manuelfedele.github.io/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>The Context Package</title>
+      <link>https://manuelfedele.github.io/posts/the-context-package/</link>
+      <pubDate>Tue, 03 Jan 2023 20:36:29 +0100</pubDate>
+      
+      <guid>https://manuelfedele.github.io/posts/the-context-package/</guid>
+      <description>Context in Go is a type that carries a request-scoped value across API boundaries. It is designed to be used in long-lived requests, such as an HTTP server handling multiple requests over the lifetime of a process.
+One of the primary use cases of context is to cancel long-running operations. For example, if an HTTP server receives a request with a cancelation token, it can use that token to cancel the request if the client closes the connection.</description>
+    </item>
+    
     <item>
       <title>Understand Async Await in Python</title>
       <link>https://manuelfedele.github.io/posts/understand-async-await-in-python/</link>
