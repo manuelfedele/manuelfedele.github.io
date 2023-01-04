@@ -9,7 +9,17 @@
       <link>https://manuelfedele.github.io/img/card-pillow.jpg</link>
     </image>
     <generator>Hugo -- gohugo.io</generator>
-    <lastBuildDate>Tue, 03 Jan 2023 20:36:29 +0100</lastBuildDate><atom:link href="https://manuelfedele.github.io/posts/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Wed, 04 Jan 2023 16:00:43 +0100</lastBuildDate><atom:link href="https://manuelfedele.github.io/posts/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Use Protobuf With Fastapi</title>
+      <link>https://manuelfedele.github.io/posts/use-protobuf-with-fastapi/</link>
+      <pubDate>Wed, 04 Jan 2023 16:00:43 +0100</pubDate>
+      
+      <guid>https://manuelfedele.github.io/posts/use-protobuf-with-fastapi/</guid>
+      <description>Protocol buffers, also known as Protobuf, are a popular data serialization format used for communication between services. They are efficient, easy to use, and language-agnostic. In this article, we will look at how to use Protobuf with FastAPI, a modern, high-performance web framework for building APIs with Python.
+First, let&amp;rsquo;s start by installing the necessary dependencies. You will need to install fastapi, google-protobuf, and grpcio. You can do this by running the following command:</description>
+    </item>
+    
     <item>
       <title>The Context Package</title>
       <link>https://manuelfedele.github.io/posts/the-context-package/</link>
