@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/">
+  <channel>
+    <title>video streaming on Git Push and Run</title>
+    <link>https://manuelfedele.github.io/tags/video-streaming/</link>
+    <description>Recent content in video streaming on Git Push and Run</description>
+    <image>
+      <url>https://manuelfedele.github.io/img/card-pillow.jpg</url>
+      <link>https://manuelfedele.github.io/img/card-pillow.jpg</link>
+    </image>
+    <generator>Hugo -- gohugo.io</generator>
+    <lastBuildDate>Wed, 04 Jan 2023 21:23:20 +0100</lastBuildDate><atom:link href="https://manuelfedele.github.io/tags/video-streaming/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Streaming Video With Golang</title>
+      <link>https://manuelfedele.github.io/posts/streaming-video-with-golang/</link>
+      <pubDate>Wed, 04 Jan 2023 21:23:20 +0100</pubDate>
+      
+      <guid>https://manuelfedele.github.io/posts/streaming-video-with-golang/</guid>
+      <description>Streaming video with Go (Golang) is a popular choice for building efficient and scalable video streaming applications. In this blog post, we&amp;rsquo;ll discuss some of the key concepts and considerations for building a video streaming application with Go.
+One of the first things to consider when building a video streaming application is the underlying video format. Go has built-in support for working with a variety of video formats, including MP4, FLV, and AVI.</description>
+    </item>
+    
+  </channel>
+</rss>
