@@ -9,7 +9,17 @@
       <link>https://manuelfedele.github.io/img/card-pillow.jpg</link>
     </image>
     <generator>Hugo -- gohugo.io</generator>
-    <lastBuildDate>Wed, 04 Jan 2023 21:23:20 +0100</lastBuildDate><atom:link href="https://manuelfedele.github.io/posts/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Sun, 08 Jan 2023 17:16:40 +0100</lastBuildDate><atom:link href="https://manuelfedele.github.io/posts/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>What Is the Difference Between Git Pull and Git Fetch</title>
+      <link>https://manuelfedele.github.io/posts/what-is-the-difference-between-git-pull-and-git-fetch/</link>
+      <pubDate>Sun, 08 Jan 2023 17:16:40 +0100</pubDate>
+      
+      <guid>https://manuelfedele.github.io/posts/what-is-the-difference-between-git-pull-and-git-fetch/</guid>
+      <description>Git is a version control system that is widely used in software development to track and manage changes to source code. Two of the most common Git commands that developers use to retrieve updates from a remote repository are git pull and git fetch. While these two commands may seem similar at first glance, they have some important differences that are worth understanding.
+The git pull command is a combination of git fetch and git merge.</description>
+    </item>
+    
     <item>
       <title>Streaming Video With Golang</title>
       <link>https://manuelfedele.github.io/posts/streaming-video-with-golang/</link>
