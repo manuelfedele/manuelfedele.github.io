@@ -9,7 +9,17 @@
       <link>https://manuelfedele.github.io/img/card-pillow.jpg</link>
     </image>
     <generator>Hugo -- gohugo.io</generator>
-    <lastBuildDate>Wed, 04 Jan 2023 21:23:20 +0100</lastBuildDate><atom:link href="https://manuelfedele.github.io/tags/golang/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Mon, 09 Jan 2023 20:49:03 +0100</lastBuildDate><atom:link href="https://manuelfedele.github.io/tags/golang/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Unit Testing in Golang</title>
+      <link>https://manuelfedele.github.io/posts/unit-testing-in-golang/</link>
+      <pubDate>Mon, 09 Jan 2023 20:49:03 +0100</pubDate>
+      
+      <guid>https://manuelfedele.github.io/posts/unit-testing-in-golang/</guid>
+      <description>Unit testing is a software testing technique in which individual units (smallest testable parts) of a software application are tested in isolation from the rest of the application. The goal of unit testing is to validate that each unit of the application is working as intended and meets the specified requirements.
+In Go, the testing package provides support for writing unit tests. To write unit tests, you need to create a file with a name that ends in _test.</description>
+    </item>
+    
     <item>
       <title>Streaming Video With Golang</title>
       <link>https://manuelfedele.github.io/posts/streaming-video-with-golang/</link>
