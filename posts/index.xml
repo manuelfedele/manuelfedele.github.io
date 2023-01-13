@@ -16,7 +16,7 @@
       <pubDate>Fri, 13 Jan 2023 17:24:25 +0100</pubDate>
       
       <guid>https://manuelfedele.github.io/posts/a-quick-overview-of-elasticsearch/</guid>
-      <description>Introduction &amp;ldquo;Elastic, also known as Elasticsearch, is a powerful search and analytics engine that can be used to index, search, and analyze large volumes of data quickly and in near real-time. It is open-source and built on top of the Lucene library. In this blog post, we will go over the basics of Elastic and how to get started using it.
+      <description>Introduction Elastic, also known as Elasticsearch, is a powerful search and analytics engine that can be used to index, search, and analyze large volumes of data quickly and in near real-time. It is open-source and built on top of the Lucene library. In this blog post, we will go over the basics of Elastic and how to get started using it.
 Installation The first step to using Elastic is to install it on your system.</description>
     </item>
     
