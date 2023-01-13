@@ -2,13 +2,16 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   <url>
-    <loc>https://manuelfedele.github.io/</loc>
-    <lastmod>2023-01-09T20:49:03+01:00</lastmod>
+    <loc>https://manuelfedele.github.io/posts/a-quick-overview-of-elasticsearch/</loc>
+    <lastmod>2023-01-13T17:24:25+01:00</lastmod>
   </url><url>
-    <loc>https://manuelfedele.github.io/tags/golang/</loc>
-    <lastmod>2023-01-09T20:49:03+01:00</lastmod>
+    <loc>https://manuelfedele.github.io/</loc>
+    <lastmod>2023-01-13T17:24:25+01:00</lastmod>
   </url><url>
     <loc>https://manuelfedele.github.io/posts/</loc>
+    <lastmod>2023-01-13T17:24:25+01:00</lastmod>
+  </url><url>
+    <loc>https://manuelfedele.github.io/tags/golang/</loc>
     <lastmod>2023-01-09T20:49:03+01:00</lastmod>
   </url><url>
     <loc>https://manuelfedele.github.io/tags/</loc>
