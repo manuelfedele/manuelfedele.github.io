@@ -9,7 +9,18 @@
       <link>https://manuelfedele.github.io/img/card-pillow.jpg</link>
     </image>
     <generator>Hugo -- gohugo.io</generator>
-    <lastBuildDate>Mon, 09 Jan 2023 20:49:03 +0100</lastBuildDate><atom:link href="https://manuelfedele.github.io/tags/golang/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Sun, 15 Jan 2023 19:24:09 +0100</lastBuildDate><atom:link href="https://manuelfedele.github.io/tags/golang/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Trading With Alpaca and Golang</title>
+      <link>https://manuelfedele.github.io/posts/trading-with-alpaca-and-golang/</link>
+      <pubDate>Sun, 15 Jan 2023 19:24:09 +0100</pubDate>
+      
+      <guid>https://manuelfedele.github.io/posts/trading-with-alpaca-and-golang/</guid>
+      <description>Alpaca is a popular platform for automated trading, offering APIs for accessing real-time market data and placing trades. In this article, we will discuss how to use Alpaca&amp;rsquo;s APIs with Golang, a popular programming language known for its simplicity, performance, and concurrency support.
+Before we dive into the details of using Alpaca&amp;rsquo;s APIs with Golang, let&amp;rsquo;s first understand the requirements of the application.
+Requirements The application should be able to connect to the Alpaca API and authenticate the user.</description>
+    </item>
+    
     <item>
       <title>Unit Testing in Golang</title>
       <link>https://manuelfedele.github.io/posts/unit-testing-in-golang/</link>

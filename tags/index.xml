@@ -9,13 +9,31 @@
       <link>https://manuelfedele.github.io/img/card-pillow.jpg</link>
     </image>
     <generator>Hugo -- gohugo.io</generator>
-    <lastBuildDate>Mon, 09 Jan 2023 20:49:03 +0100</lastBuildDate><atom:link href="https://manuelfedele.github.io/tags/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Sun, 15 Jan 2023 19:24:09 +0100</lastBuildDate><atom:link href="https://manuelfedele.github.io/tags/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>alpaca</title>
+      <link>https://manuelfedele.github.io/tags/alpaca/</link>
+      <pubDate>Sun, 15 Jan 2023 19:24:09 +0100</pubDate>
+      
+      <guid>https://manuelfedele.github.io/tags/alpaca/</guid>
+      <description></description>
+    </item>
+    
     <item>
       <title>golang</title>
       <link>https://manuelfedele.github.io/tags/golang/</link>
-      <pubDate>Mon, 09 Jan 2023 20:49:03 +0100</pubDate>
+      <pubDate>Sun, 15 Jan 2023 19:24:09 +0100</pubDate>
       
       <guid>https://manuelfedele.github.io/tags/golang/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>trading</title>
+      <link>https://manuelfedele.github.io/tags/trading/</link>
+      <pubDate>Sun, 15 Jan 2023 19:24:09 +0100</pubDate>
+      
+      <guid>https://manuelfedele.github.io/tags/trading/</guid>
       <description></description>
     </item>
     
