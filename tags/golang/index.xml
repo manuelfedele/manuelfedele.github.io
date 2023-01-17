@@ -9,7 +9,17 @@
       <link>https://manuelfedele.github.io/img/card-pillow.jpg</link>
     </image>
     <generator>Hugo -- gohugo.io</generator>
-    <lastBuildDate>Sun, 15 Jan 2023 19:24:09 +0100</lastBuildDate><atom:link href="https://manuelfedele.github.io/tags/golang/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Mon, 16 Jan 2023 21:07:26 +0100</lastBuildDate><atom:link href="https://manuelfedele.github.io/tags/golang/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>The Memoization Technique</title>
+      <link>https://manuelfedele.github.io/posts/the-memoization-technique/</link>
+      <pubDate>Mon, 16 Jan 2023 21:07:26 +0100</pubDate>
+      
+      <guid>https://manuelfedele.github.io/posts/the-memoization-technique/</guid>
+      <description>Memoization is a technique that is used to speed up the execution of a function by storing the results of expensive function calls and returning the cached result when the same input occurs again. This can be particularly useful for algorithms that have a large number of recursive calls or for functions that are called multiple times with the same input.
+In Go, it is easy to implement memoization using a simple map.</description>
+    </item>
+    
     <item>
       <title>Trading With Alpaca and Golang</title>
       <link>https://manuelfedele.github.io/posts/trading-with-alpaca-and-golang/</link>
