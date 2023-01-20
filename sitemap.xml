@@ -2,17 +2,23 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   <url>
+    <loc>https://manuelfedele.github.io/tags/chess/</loc>
+    <lastmod>2023-01-19T21:33:41+01:00</lastmod>
+  </url><url>
+    <loc>https://manuelfedele.github.io/posts/evaluate-chess-position-with-golang/</loc>
+    <lastmod>2023-01-19T21:33:41+01:00</lastmod>
+  </url><url>
     <loc>https://manuelfedele.github.io/</loc>
-    <lastmod>2023-01-16T21:07:26+01:00</lastmod>
+    <lastmod>2023-01-19T21:33:41+01:00</lastmod>
   </url><url>
     <loc>https://manuelfedele.github.io/tags/golang/</loc>
-    <lastmod>2023-01-16T21:07:26+01:00</lastmod>
+    <lastmod>2023-01-19T21:33:41+01:00</lastmod>
   </url><url>
     <loc>https://manuelfedele.github.io/posts/</loc>
-    <lastmod>2023-01-16T21:07:26+01:00</lastmod>
+    <lastmod>2023-01-19T21:33:41+01:00</lastmod>
   </url><url>
     <loc>https://manuelfedele.github.io/tags/</loc>
-    <lastmod>2023-01-16T21:07:26+01:00</lastmod>
+    <lastmod>2023-01-19T21:33:41+01:00</lastmod>
   </url><url>
     <loc>https://manuelfedele.github.io/posts/the-memoization-technique/</loc>
     <lastmod>2023-01-16T21:07:26+01:00</lastmod>

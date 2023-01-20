@@ -9,7 +9,17 @@
       <link>https://manuelfedele.github.io/img/card-pillow.jpg</link>
     </image>
     <generator>Hugo -- gohugo.io</generator>
-    <lastBuildDate>Mon, 16 Jan 2023 21:07:26 +0100</lastBuildDate><atom:link href="https://manuelfedele.github.io/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Thu, 19 Jan 2023 21:33:41 +0100</lastBuildDate><atom:link href="https://manuelfedele.github.io/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Evaluate Chess Position With Golang</title>
+      <link>https://manuelfedele.github.io/posts/evaluate-chess-position-with-golang/</link>
+      <pubDate>Thu, 19 Jan 2023 21:33:41 +0100</pubDate>
+      
+      <guid>https://manuelfedele.github.io/posts/evaluate-chess-position-with-golang/</guid>
+      <description>Evaluating chess positions is an important part of chess strategy and can help players make more informed decisions about which moves to make. In this blog post, we&amp;rsquo;ll look at how to use the powerful Stockfish chess engine and the Go programming language to evaluate chess positions.
+Installing Stockfish Before we can start using Stockfish, we need to install it. On Linux and macOS, you can install Stockfish using the package manager of your choice (e.</description>
+    </item>
+    
     <item>
       <title>The Memoization Technique</title>
       <link>https://manuelfedele.github.io/posts/the-memoization-technique/</link>
