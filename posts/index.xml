@@ -9,7 +9,17 @@
       <link>https://manuelfedele.github.io/img/card-pillow.jpg</link>
     </image>
     <generator>Hugo -- gohugo.io</generator>
-    <lastBuildDate>Wed, 01 Feb 2023 21:09:26 +0100</lastBuildDate><atom:link href="https://manuelfedele.github.io/posts/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Mon, 13 Feb 2023 18:57:15 +0100</lastBuildDate><atom:link href="https://manuelfedele.github.io/posts/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Nats Messaging With Golang</title>
+      <link>https://manuelfedele.github.io/posts/nats-messaging-with-golang/</link>
+      <pubDate>Mon, 13 Feb 2023 18:57:15 +0100</pubDate>
+      
+      <guid>https://manuelfedele.github.io/posts/nats-messaging-with-golang/</guid>
+      <description>NATS Messaging with Golang NATS is a high-performance, lightweight messaging system that is widely used for building distributed systems. It is designed to be simple, fast, and easy to use, making it a popular choice for many developers. In this tutorial, we will learn how to use NATS with Golang to send and receive messages.
+Setting up NATS To use NATS with Golang, we first need to install the NATS server and client libraries.</description>
+    </item>
+    
     <item>
       <title>Build a Sudoku Solver in Golang</title>
       <link>https://manuelfedele.github.io/posts/build-a-sudoku-solver-in-golang/</link>
