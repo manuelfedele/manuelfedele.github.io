@@ -9,7 +9,17 @@
       <link>https://manuelfedele.github.io/img/card-pillow.jpg</link>
     </image>
     <generator>Hugo -- gohugo.io</generator>
-    <lastBuildDate>Mon, 13 Feb 2023 18:57:15 +0100</lastBuildDate><atom:link href="https://manuelfedele.github.io/posts/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Tue, 21 Feb 2023 13:16:06 +0100</lastBuildDate><atom:link href="https://manuelfedele.github.io/posts/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Implement Desing Patterns With Golang</title>
+      <link>https://manuelfedele.github.io/posts/implement-desing-patterns-with-golang/</link>
+      <pubDate>Tue, 21 Feb 2023 13:16:06 +0100</pubDate>
+      
+      <guid>https://manuelfedele.github.io/posts/implement-desing-patterns-with-golang/</guid>
+      <description>Design patterns are reusable solutions to common software design problems. They are a way to structure and organize code in a way that makes it easier to understand, maintain, and extend. In this article, we&amp;rsquo;ll explore how to implement some popular design patterns in Go.
+Singleton pattern The singleton pattern is a creational design pattern that ensures a class has only one instance and provides a global access point to it.</description>
+    </item>
+    
     <item>
       <title>Nats Messaging With Golang</title>
       <link>https://manuelfedele.github.io/posts/nats-messaging-with-golang/</link>
