@@ -9,7 +9,17 @@
       <link>https://manuelfedele.github.io/img/card-pillow.jpg</link>
     </image>
     <generator>Hugo -- gohugo.io</generator>
-    <lastBuildDate>Sun, 08 Jan 2023 17:16:40 +0100</lastBuildDate><atom:link href="https://manuelfedele.github.io/tags/git/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Tue, 28 Feb 2023 17:09:02 +0100</lastBuildDate><atom:link href="https://manuelfedele.github.io/tags/git/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>How to Undo Most Recent Local Git Commit</title>
+      <link>https://manuelfedele.github.io/posts/how-to-undo-most-recent-local-git-commit/</link>
+      <pubDate>Tue, 28 Feb 2023 17:09:02 +0100</pubDate>
+      
+      <guid>https://manuelfedele.github.io/posts/how-to-undo-most-recent-local-git-commit/</guid>
+      <description>Git is a version control system that allows developers to track changes to their codebase and collaborate with others. One of the useful features of Git is the ability to revert changes that have been made to the codebase. In this article, we will look at how to undo the most recent local commits in Git.
+There are several ways to undo commits in Git, and the method you choose will depend on your specific needs.</description>
+    </item>
+    
     <item>
       <title>What Is the Difference Between Git Pull and Git Fetch</title>
       <link>https://manuelfedele.github.io/posts/what-is-the-difference-between-git-pull-and-git-fetch/</link>
