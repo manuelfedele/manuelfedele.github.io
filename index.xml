@@ -9,7 +9,17 @@
       <link>https://manuelfedele.github.io/img/card-pillow.jpg</link>
     </image>
     <generator>Hugo -- gohugo.io</generator>
-    <lastBuildDate>Tue, 28 Feb 2023 17:09:02 +0100</lastBuildDate><atom:link href="https://manuelfedele.github.io/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Tue, 07 Mar 2023 17:14:30 +0100</lastBuildDate><atom:link href="https://manuelfedele.github.io/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>How to Delete Git Branch Locally</title>
+      <link>https://manuelfedele.github.io/posts/how-to-delete-git-branch-locally/</link>
+      <pubDate>Tue, 07 Mar 2023 17:14:30 +0100</pubDate>
+      
+      <guid>https://manuelfedele.github.io/posts/how-to-delete-git-branch-locally/</guid>
+      <description>To delete a Git branch locally, you can use the git branch command with the -d flag, followed by the name of the branch you want to delete. For example:
+git branch -d branch_name This will delete the specified branch if it has already been fully merged into the current branch. If the branch has not been fully merged, you can use the -D flag instead, which will force the deletion of the branch.</description>
+    </item>
+    
     <item>
       <title>How to Undo Most Recent Local Git Commit</title>
       <link>https://manuelfedele.github.io/posts/how-to-undo-most-recent-local-git-commit/</link>
