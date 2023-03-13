@@ -9,7 +9,18 @@
       <link>https://manuelfedele.github.io/img/card-pillow.jpg</link>
     </image>
     <generator>Hugo -- gohugo.io</generator>
-    <lastBuildDate>Tue, 07 Mar 2023 17:14:30 +0100</lastBuildDate><atom:link href="https://manuelfedele.github.io/posts/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Sun, 12 Mar 2023 15:03:40 +0100</lastBuildDate><atom:link href="https://manuelfedele.github.io/posts/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Schedule Github Action With Cron</title>
+      <link>https://manuelfedele.github.io/posts/schedule-github-action-with-cron/</link>
+      <pubDate>Sun, 12 Mar 2023 15:03:40 +0100</pubDate>
+      
+      <guid>https://manuelfedele.github.io/posts/schedule-github-action-with-cron/</guid>
+      <description>Cron scheduling is a useful feature in GitHub Actions that allows you to run a workflow on a schedule. This can be useful for tasks such as running tests or deploying code at regular intervals.
+To use cron scheduling in GitHub Actions, you will need to add a schedule key to your workflow file. The schedule key should contain a cron expression that specifies when the workflow should run.
+Here is an example of a workflow that runs every day at noon:</description>
+    </item>
+    
     <item>
       <title>How to Delete Git Branch Locally</title>
       <link>https://manuelfedele.github.io/posts/how-to-delete-git-branch-locally/</link>
