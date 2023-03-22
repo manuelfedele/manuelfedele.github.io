@@ -9,7 +9,18 @@
       <link>https://manuelfedele.github.io/img/card-pillow.jpg</link>
     </image>
     <generator>Hugo -- gohugo.io</generator>
-    <lastBuildDate>Sun, 12 Mar 2023 15:03:40 +0100</lastBuildDate><atom:link href="https://manuelfedele.github.io/posts/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Tue, 21 Mar 2023 15:10:03 +0100</lastBuildDate><atom:link href="https://manuelfedele.github.io/posts/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>The Single Responsibility Principle</title>
+      <link>https://manuelfedele.github.io/posts/the-single-responsibility-principle/</link>
+      <pubDate>Tue, 21 Mar 2023 15:10:03 +0100</pubDate>
+      
+      <guid>https://manuelfedele.github.io/posts/the-single-responsibility-principle/</guid>
+      <description>The Single Responsibility Principle (SRP) is a software design principle that states that a software module or component should have only one reason to change. This means that a module or component should have a single, narrowly defined responsibility and all of its features should be related to that responsibility.
+In Go, the SRP can be applied at both the package and the function level.
+At the package level, it&amp;rsquo;s important to consider what a package should be responsible for.</description>
+    </item>
+    
     <item>
       <title>Schedule Github Action With Cron</title>
       <link>https://manuelfedele.github.io/posts/schedule-github-action-with-cron/</link>
