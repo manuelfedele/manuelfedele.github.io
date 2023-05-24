@@ -9,6 +9,7 @@
       <link>https://manuelfedele.github.io/img/card-pillow.jpg</link>
     </image>
     <generator>Hugo -- gohugo.io</generator>
+    <language>en</language>
     <lastBuildDate>Mon, 13 Feb 2023 18:57:15 +0100</lastBuildDate><atom:link href="https://manuelfedele.github.io/tags/nats/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Nats Messaging With Golang</title>

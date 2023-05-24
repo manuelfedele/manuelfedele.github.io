@@ -9,6 +9,7 @@
       <link>https://manuelfedele.github.io/img/card-pillow.jpg</link>
     </image>
     <generator>Hugo -- gohugo.io</generator>
+    <language>en</language>
     <lastBuildDate>Mon, 19 Dec 2022 19:08:58 +0100</lastBuildDate><atom:link href="https://manuelfedele.github.io/tags/fyne/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Create Desktop Application to fetch Stock Market Data  with Golang</title>

@@ -9,6 +9,7 @@
       <link>https://manuelfedele.github.io/img/card-pillow.jpg</link>
     </image>
     <generator>Hugo -- gohugo.io</generator>
+    <language>en</language>
     <lastBuildDate>Tue, 20 Dec 2022 10:03:30 +0100</lastBuildDate><atom:link href="https://manuelfedele.github.io/tags/cli/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Create Command Line Application With Golang</title>
