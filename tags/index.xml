@@ -10,7 +10,79 @@
     </image>
     <generator>Hugo -- gohugo.io</generator>
     <language>en</language>
-    <lastBuildDate>Tue, 21 Mar 2023 15:10:03 +0100</lastBuildDate><atom:link href="https://manuelfedele.github.io/tags/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Wed, 12 Jul 2023 08:42:00 +0200</lastBuildDate><atom:link href="https://manuelfedele.github.io/tags/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>AWS</title>
+      <link>https://manuelfedele.github.io/tags/aws/</link>
+      <pubDate>Wed, 12 Jul 2023 08:42:00 +0200</pubDate>
+      
+      <guid>https://manuelfedele.github.io/tags/aws/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Cloudwatch</title>
+      <link>https://manuelfedele.github.io/tags/cloudwatch/</link>
+      <pubDate>Wed, 12 Jul 2023 08:42:00 +0200</pubDate>
+      
+      <guid>https://manuelfedele.github.io/tags/cloudwatch/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Elasticsearch</title>
+      <link>https://manuelfedele.github.io/tags/elasticsearch/</link>
+      <pubDate>Wed, 12 Jul 2023 08:42:00 +0200</pubDate>
+      
+      <guid>https://manuelfedele.github.io/tags/elasticsearch/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Kibana</title>
+      <link>https://manuelfedele.github.io/tags/kibana/</link>
+      <pubDate>Wed, 12 Jul 2023 08:42:00 +0200</pubDate>
+      
+      <guid>https://manuelfedele.github.io/tags/kibana/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Lambda</title>
+      <link>https://manuelfedele.github.io/tags/lambda/</link>
+      <pubDate>Wed, 12 Jul 2023 08:42:00 +0200</pubDate>
+      
+      <guid>https://manuelfedele.github.io/tags/lambda/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Logging</title>
+      <link>https://manuelfedele.github.io/tags/logging/</link>
+      <pubDate>Wed, 12 Jul 2023 08:42:00 +0200</pubDate>
+      
+      <guid>https://manuelfedele.github.io/tags/logging/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Monitoring</title>
+      <link>https://manuelfedele.github.io/tags/monitoring/</link>
+      <pubDate>Wed, 12 Jul 2023 08:42:00 +0200</pubDate>
+      
+      <guid>https://manuelfedele.github.io/tags/monitoring/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Opensearch</title>
+      <link>https://manuelfedele.github.io/tags/opensearch/</link>
+      <pubDate>Wed, 12 Jul 2023 08:42:00 +0200</pubDate>
+      
+      <guid>https://manuelfedele.github.io/tags/opensearch/</guid>
+      <description></description>
+    </item>
+    
     <item>
       <title>design patterns</title>
       <link>https://manuelfedele.github.io/tags/design-patterns/</link>

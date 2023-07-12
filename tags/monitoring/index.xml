@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/">
+  <channel>
+    <title>Monitoring on Git Push and Run</title>
+    <link>https://manuelfedele.github.io/tags/monitoring/</link>
+    <description>Recent content in Monitoring on Git Push and Run</description>
+    <image>
+      <url>https://manuelfedele.github.io/img/card-pillow.jpg</url>
+      <link>https://manuelfedele.github.io/img/card-pillow.jpg</link>
+    </image>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en</language>
+    <lastBuildDate>Wed, 12 Jul 2023 08:42:00 +0200</lastBuildDate><atom:link href="https://manuelfedele.github.io/tags/monitoring/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Aws Opensearch as Monitoring Tool</title>
+      <link>https://manuelfedele.github.io/posts/aws-opensearch-as-monitoring-tool/</link>
+      <pubDate>Wed, 12 Jul 2023 08:42:00 +0200</pubDate>
+      
+      <guid>https://manuelfedele.github.io/posts/aws-opensearch-as-monitoring-tool/</guid>
+      <description>Cross-Account Logging: Shipping AWS Lambda Logs to OpenSearch In today&amp;rsquo;s distributed systems, logging and monitoring play a crucial role in detecting anomalies and ensuring system health. AWS Lambda and OpenSearch are often paired to deliver efficient, scalable logging solutions. However, complexities can arise when these resources live in separate AWS accounts. This blog post will guide you through the process of sending AWS Lambda logs from Account A to an OpenSearch cluster in Account B using Terraform as the Infrastructure as Code (IAC) tool and GitLab for CI/CD pipelines.</description>
+    </item>
+    
+  </channel>
+</rss>
