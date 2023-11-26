@@ -11,7 +11,17 @@
     </image>
     <generator>Hugo -- gohugo.io</generator>
     <language>en</language>
-    <lastBuildDate>Wed, 12 Jul 2023 08:42:00 +0200</lastBuildDate><atom:link href="https://manuelfedele.github.io/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Sun, 26 Nov 2023 11:29:46 +0100</lastBuildDate><atom:link href="https://manuelfedele.github.io/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Clipboard Watch Remove Accidentally Typed Passwords</title>
+      <link>https://manuelfedele.github.io/posts/clipboard-watch-remove-accidentally-typed-passwords/</link>
+      <pubDate>Sun, 26 Nov 2023 11:29:46 +0100</pubDate>
+      
+      <guid>https://manuelfedele.github.io/posts/clipboard-watch-remove-accidentally-typed-passwords/</guid>
+      <description>Monitoring Clipboard in Golang: A Guide to Obscuring Passwords Introduction In this article, we explore creating a Go program that monitors the system clipboard, automatically substituting passwords with asterisks. Uniquely, the program leaves the last few characters (minimum 1, maximum 3) of the password visible when the password length exceeds 8 characters.
+Understanding Clipboard Monitoring in Go The Clipboard Package Go lacks a built-in library for clipboard operations. We use atotto/clipboard, a third-party package offering simple clipboard interfaces.</description>
+    </item>
+    
     <item>
       <title>Aws Opensearch as Monitoring Tool</title>
       <link>https://manuelfedele.github.io/posts/aws-opensearch-as-monitoring-tool/</link>
