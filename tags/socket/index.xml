@@ -18,8 +18,9 @@
       <pubDate>Sun, 29 Jan 2023 18:44:12 +0100</pubDate>
       
       <guid>https://manuelfedele.github.io/posts/socket-messaging-with-golang/</guid>
-      <description>Socket messaging allows two or more processes to communicate with each other over a network by sending and receiving messages through a socket connection. In this article, we&amp;rsquo;ll look at how to use Go to implement socket messaging between two processes.
-Setting up the Socket Server The first step in implementing socket messaging is to set up a socket server that listens for incoming connections and processes incoming messages. To do this in Go, we&amp;rsquo;ll need to use the net package to create a socket server and handle incoming connections.</description>
+      <description>&lt;p&gt;Socket messaging allows two or more processes to communicate with each other over a network by sending and receiving messages through a socket connection. In this article, we&amp;rsquo;ll look at how to use Go to implement socket messaging between two processes.&lt;/p&gt;
+&lt;p&gt;Setting up the Socket Server
+The first step in implementing socket messaging is to set up a socket server that listens for incoming connections and processes incoming messages. To do this in Go, we&amp;rsquo;ll need to use the net package to create a socket server and handle incoming connections.&lt;/p&gt;</description>
     </item>
     
   </channel>

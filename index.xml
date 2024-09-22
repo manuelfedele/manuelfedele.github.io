@@ -18,8 +18,12 @@
       <pubDate>Sun, 26 Nov 2023 11:29:46 +0100</pubDate>
       
       <guid>https://manuelfedele.github.io/posts/clipboard-watch-remove-accidentally-typed-passwords/</guid>
-      <description>Monitoring Clipboard in Golang: A Guide to Obscuring Passwords Introduction In this article, we explore creating a Go program that monitors the system clipboard, automatically substituting passwords with asterisks. Uniquely, the program leaves the last few characters (minimum 1, maximum 3) of the password visible when the password length exceeds 8 characters.
-Understanding Clipboard Monitoring in Go The Clipboard Package Go lacks a built-in library for clipboard operations. We use atotto/clipboard, a third-party package offering simple clipboard interfaces.</description>
+      <description>&lt;h1 id=&#34;monitoring-clipboard-in-golang-a-guide-to-obscuring-passwords&#34;&gt;Monitoring Clipboard in Golang: A Guide to Obscuring Passwords&lt;/h1&gt;
+&lt;h2 id=&#34;introduction&#34;&gt;Introduction&lt;/h2&gt;
+&lt;p&gt;In this article, we explore creating a Go program that monitors the system clipboard, automatically substituting passwords with asterisks. Uniquely, the program leaves the last few characters (minimum 1, maximum 3) of the password visible when the password length exceeds 8 characters.&lt;/p&gt;
+&lt;h2 id=&#34;understanding-clipboard-monitoring-in-go&#34;&gt;Understanding Clipboard Monitoring in Go&lt;/h2&gt;
+&lt;h3 id=&#34;the-clipboard-package&#34;&gt;The Clipboard Package&lt;/h3&gt;
+&lt;p&gt;Go lacks a built-in library for clipboard operations. We use &lt;code&gt;atotto/clipboard&lt;/code&gt;, a third-party package offering simple clipboard interfaces.&lt;/p&gt;</description>
     </item>
     
     <item>
@@ -28,7 +32,8 @@ Understanding Clipboard Monitoring in Go The Clipboard Package Go lacks a built-
       <pubDate>Wed, 12 Jul 2023 08:42:00 +0200</pubDate>
       
       <guid>https://manuelfedele.github.io/posts/aws-opensearch-as-monitoring-tool/</guid>
-      <description>Cross-Account Logging: Shipping AWS Lambda Logs to OpenSearch In today&amp;rsquo;s distributed systems, logging and monitoring play a crucial role in detecting anomalies and ensuring system health. AWS Lambda and OpenSearch are often paired to deliver efficient, scalable logging solutions. However, complexities can arise when these resources live in separate AWS accounts. This blog post will guide you through the process of sending AWS Lambda logs from Account A to an OpenSearch cluster in Account B using Terraform as the Infrastructure as Code (IAC) tool and GitLab for CI/CD pipelines.</description>
+      <description>&lt;h1 id=&#34;cross-account-logging-shipping-aws-lambda-logs-to-opensearch&#34;&gt;Cross-Account Logging: Shipping AWS Lambda Logs to OpenSearch&lt;/h1&gt;
+&lt;p&gt;In today&amp;rsquo;s distributed systems, logging and monitoring play a crucial role in detecting anomalies and ensuring system health. AWS Lambda and OpenSearch are often paired to deliver efficient, scalable logging solutions. However, complexities can arise when these resources live in separate AWS accounts. This blog post will guide you through the process of sending AWS Lambda logs from Account A to an OpenSearch cluster in Account B using Terraform as the Infrastructure as Code (IAC) tool and GitLab for CI/CD pipelines.&lt;/p&gt;</description>
     </item>
     
     <item>
@@ -37,9 +42,9 @@ Understanding Clipboard Monitoring in Go The Clipboard Package Go lacks a built-
       <pubDate>Tue, 21 Mar 2023 15:10:03 +0100</pubDate>
       
       <guid>https://manuelfedele.github.io/posts/the-single-responsibility-principle/</guid>
-      <description>The Single Responsibility Principle (SRP) is a software design principle that states that a software module or component should have only one reason to change. This means that a module or component should have a single, narrowly defined responsibility and all of its features should be related to that responsibility.
-In Go, the SRP can be applied at both the package and the function level.
-At the package level, it&amp;rsquo;s important to consider what a package should be responsible for.</description>
+      <description>&lt;p&gt;The Single Responsibility Principle (SRP) is a software design principle that states that a software module or component should have only one reason to change. This means that a module or component should have a single, narrowly defined responsibility and all of its features should be related to that responsibility.&lt;/p&gt;
+&lt;p&gt;In Go, the SRP can be applied at both the package and the function level.&lt;/p&gt;
+&lt;p&gt;At the package level, it&amp;rsquo;s important to consider what a package should be responsible for. A package should contain all of the code related to a specific feature or set of features. For example, a package that handles user authentication and authorization should not also contain code related to sending email notifications. These are two distinct responsibilities and should be separated into different packages.&lt;/p&gt;</description>
     </item>
     
     <item>
@@ -48,9 +53,9 @@ At the package level, it&amp;rsquo;s important to consider what a package should
       <pubDate>Sun, 12 Mar 2023 15:03:40 +0100</pubDate>
       
       <guid>https://manuelfedele.github.io/posts/schedule-github-action-with-cron/</guid>
-      <description>Cron scheduling is a useful feature in GitHub Actions that allows you to run a workflow on a schedule. This can be useful for tasks such as running tests or deploying code at regular intervals.
-To use cron scheduling in GitHub Actions, you will need to add a schedule key to your workflow file. The schedule key should contain a cron expression that specifies when the workflow should run.
-Here is an example of a workflow that runs every day at noon:</description>
+      <description>&lt;p&gt;Cron scheduling is a useful feature in GitHub Actions that allows you to run a workflow on a schedule. This can be useful for tasks such as running tests or deploying code at regular intervals.&lt;/p&gt;
+&lt;p&gt;To use cron scheduling in GitHub Actions, you will need to add a schedule key to your workflow file. The schedule key should contain a cron expression that specifies when the workflow should run.&lt;/p&gt;
+&lt;p&gt;Here is an example of a workflow that runs every day at noon:&lt;/p&gt;</description>
     </item>
     
     <item>
@@ -59,8 +64,9 @@ Here is an example of a workflow that runs every day at noon:</description>
       <pubDate>Tue, 07 Mar 2023 17:14:30 +0100</pubDate>
       
       <guid>https://manuelfedele.github.io/posts/how-to-delete-git-branch-locally/</guid>
-      <description>To delete a Git branch locally, you can use the git branch command with the -d flag, followed by the name of the branch you want to delete. For example:
-git branch -d branch_name This will delete the specified branch if it has already been fully merged into the current branch. If the branch has not been fully merged, you can use the -D flag instead, which will force the deletion of the branch.</description>
+      <description>&lt;p&gt;To delete a Git branch locally, you can use the &lt;code&gt;git branch&lt;/code&gt; command with the &lt;code&gt;-d&lt;/code&gt; flag, followed by the name of the branch you want to delete. For example:&lt;/p&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; class=&#34;chroma&#34;&gt;&lt;code class=&#34;language-bash&#34; data-lang=&#34;bash&#34;&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;git branch -d branch_name
+&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;p&gt;This will delete the specified branch if it has already been fully merged into the current branch. If the branch has not been fully merged, you can use the -D flag instead, which will force the deletion of the branch.&lt;/p&gt;</description>
     </item>
     
     <item>
@@ -69,8 +75,8 @@ git branch -d branch_name This will delete the specified branch if it has alread
       <pubDate>Tue, 28 Feb 2023 17:09:02 +0100</pubDate>
       
       <guid>https://manuelfedele.github.io/posts/how-to-undo-most-recent-local-git-commit/</guid>
-      <description>Git is a version control system that allows developers to track changes to their codebase and collaborate with others. One of the useful features of Git is the ability to revert changes that have been made to the codebase. In this article, we will look at how to undo the most recent local commits in Git.
-There are several ways to undo commits in Git, and the method you choose will depend on your specific needs.</description>
+      <description>&lt;p&gt;Git is a version control system that allows developers to track changes to their codebase and collaborate with others. One of the useful features of Git is the ability to revert changes that have been made to the codebase. In this article, we will look at how to undo the most recent local commits in Git.&lt;/p&gt;
+&lt;p&gt;There are several ways to undo commits in Git, and the method you choose will depend on your specific needs. Here are three common ways to undo commits in Git:&lt;/p&gt;</description>
     </item>
     
     <item>
@@ -79,8 +85,9 @@ There are several ways to undo commits in Git, and the method you choose will de
       <pubDate>Tue, 21 Feb 2023 13:16:06 +0100</pubDate>
       
       <guid>https://manuelfedele.github.io/posts/implement-desing-patterns-with-golang/</guid>
-      <description>Design patterns are reusable solutions to common software design problems. They are a way to structure and organize code in a way that makes it easier to understand, maintain, and extend. In this article, we&amp;rsquo;ll explore how to implement some popular design patterns in Go.
-Singleton pattern The singleton pattern is a creational design pattern that ensures a class has only one instance and provides a global access point to it.</description>
+      <description>&lt;p&gt;Design patterns are reusable solutions to common software design problems. They are a way to structure and organize code in a way that makes it easier to understand, maintain, and extend. In this article, we&amp;rsquo;ll explore how to implement some popular design patterns in Go.&lt;/p&gt;
+&lt;h2 id=&#34;singleton-pattern&#34;&gt;Singleton pattern&lt;/h2&gt;
+&lt;p&gt;The singleton pattern is a creational design pattern that ensures a class has only one instance and provides a global access point to it. In Go, we can implement the singleton pattern using the sync.Once type. Here&amp;rsquo;s an example:&lt;/p&gt;</description>
     </item>
     
     <item>
@@ -89,8 +96,10 @@ Singleton pattern The singleton pattern is a creational design pattern that ensu
       <pubDate>Mon, 13 Feb 2023 18:57:15 +0100</pubDate>
       
       <guid>https://manuelfedele.github.io/posts/nats-messaging-with-golang/</guid>
-      <description>NATS Messaging with Golang NATS is a high-performance, lightweight messaging system that is widely used for building distributed systems. It is designed to be simple, fast, and easy to use, making it a popular choice for many developers. In this tutorial, we will learn how to use NATS with Golang to send and receive messages.
-Setting up NATS To use NATS with Golang, we first need to install the NATS server and client libraries.</description>
+      <description>&lt;p&gt;NATS Messaging with Golang
+NATS is a high-performance, lightweight messaging system that is widely used for building distributed systems. It is designed to be simple, fast, and easy to use, making it a popular choice for many developers. In this tutorial, we will learn how to use NATS with Golang to send and receive messages.&lt;/p&gt;
+&lt;p&gt;Setting up NATS
+To use NATS with Golang, we first need to install the NATS server and client libraries. The NATS server can be downloaded from the NATS website or installed using a package manager like apt or brew.&lt;/p&gt;</description>
     </item>
     
     <item>
@@ -99,7 +108,8 @@ Setting up NATS To use NATS with Golang, we first need to install the NATS serve
       <pubDate>Wed, 01 Feb 2023 21:09:26 +0100</pubDate>
       
       <guid>https://manuelfedele.github.io/posts/build-a-sudoku-solver-in-golang/</guid>
-      <description>Sudoku Solver in Go: A Beginner&amp;rsquo;s Guide and Optimization Techniques The game of Sudoku has always been a popular pastime for many. Whether you&amp;rsquo;re an absolute novice or a seasoned veteran, the challenge of filling out a 9x9 grid with digits so that each column, each row, and each of the nine 3x3 subgrids contains all of the digits from 1 to 9, is an appealing task. Today, we&amp;rsquo;re going to see how we can automate this process in Golang, and how we can optimize it using memoization techniques.</description>
+      <description>&lt;h1 id=&#34;sudoku-solver-in-go-a-beginners-guide-and-optimization-techniques&#34;&gt;Sudoku Solver in Go: A Beginner&amp;rsquo;s Guide and Optimization Techniques&lt;/h1&gt;
+&lt;p&gt;The game of Sudoku has always been a popular pastime for many. Whether you&amp;rsquo;re an absolute novice or a seasoned veteran, the challenge of filling out a 9x9 grid with digits so that each column, each row, and each of the nine 3x3 subgrids contains all of the digits from 1 to 9, is an appealing task. Today, we&amp;rsquo;re going to see how we can automate this process in Golang, and how we can optimize it using memoization techniques.&lt;/p&gt;</description>
     </item>
     
     <item>
@@ -108,8 +118,9 @@ Setting up NATS To use NATS with Golang, we first need to install the NATS serve
       <pubDate>Sun, 29 Jan 2023 18:44:12 +0100</pubDate>
       
       <guid>https://manuelfedele.github.io/posts/socket-messaging-with-golang/</guid>
-      <description>Socket messaging allows two or more processes to communicate with each other over a network by sending and receiving messages through a socket connection. In this article, we&amp;rsquo;ll look at how to use Go to implement socket messaging between two processes.
-Setting up the Socket Server The first step in implementing socket messaging is to set up a socket server that listens for incoming connections and processes incoming messages. To do this in Go, we&amp;rsquo;ll need to use the net package to create a socket server and handle incoming connections.</description>
+      <description>&lt;p&gt;Socket messaging allows two or more processes to communicate with each other over a network by sending and receiving messages through a socket connection. In this article, we&amp;rsquo;ll look at how to use Go to implement socket messaging between two processes.&lt;/p&gt;
+&lt;p&gt;Setting up the Socket Server
+The first step in implementing socket messaging is to set up a socket server that listens for incoming connections and processes incoming messages. To do this in Go, we&amp;rsquo;ll need to use the net package to create a socket server and handle incoming connections.&lt;/p&gt;</description>
     </item>
     
     <item>
@@ -118,7 +129,7 @@ Setting up the Socket Server The first step in implementing socket messaging is 
       <pubDate>Sun, 22 Jan 2023 19:02:19 +0100</pubDate>
       
       <guid>https://manuelfedele.github.io/posts/tracking-pixel-technology-email-golang/</guid>
-      <description>Tracking pixels, also known as web beacons, are small transparent images that are used to track the effectiveness of emails. They work by including a unique image in the email that is hosted on a server, and when the email is opened and the image is loaded, it sends a request to the server with information about the email opening. This information can be used to track the effectiveness of the email and see how many people have opened it.</description>
+      <description>&lt;p&gt;Tracking pixels, also known as web beacons, are small transparent images that are used to track the effectiveness of emails. They work by including a unique image in the email that is hosted on a server, and when the email is opened and the image is loaded, it sends a request to the server with information about the email opening. This information can be used to track the effectiveness of the email and see how many people have opened it.&lt;/p&gt;</description>
     </item>
     
     <item>
@@ -127,8 +138,9 @@ Setting up the Socket Server The first step in implementing socket messaging is 
       <pubDate>Thu, 19 Jan 2023 21:33:41 +0100</pubDate>
       
       <guid>https://manuelfedele.github.io/posts/evaluate-chess-position-with-golang/</guid>
-      <description>Evaluating chess positions is an important part of chess strategy and can help players make more informed decisions about which moves to make. In this blog post, we&amp;rsquo;ll look at how to use the powerful Stockfish chess engine and the Go programming language to evaluate chess positions.
-Installing Stockfish Before we can start using Stockfish, we need to install it. On Linux and macOS, you can install Stockfish using the package manager of your choice (e.</description>
+      <description>&lt;p&gt;Evaluating chess positions is an important part of chess strategy and can help players make more informed decisions about which moves to make. In this blog post, we&amp;rsquo;ll look at how to use the powerful Stockfish chess engine and the Go programming language to evaluate chess positions.&lt;/p&gt;
+&lt;h2 id=&#34;installing-stockfish&#34;&gt;Installing Stockfish&lt;/h2&gt;
+&lt;p&gt;Before we can start using Stockfish, we need to install it. On Linux and macOS, you can install Stockfish using the package manager of your choice (e.g., apt-get, Homebrew, etc.). On Windows, you can download a pre-compiled executable from the Stockfish website (&lt;a href=&#34;https://stockfishchess.org/download/)&#34;&gt;https://stockfishchess.org/download/)&lt;/a&gt;.&lt;/p&gt;</description>
     </item>
     
     <item>
@@ -137,8 +149,8 @@ Installing Stockfish Before we can start using Stockfish, we need to install it.
       <pubDate>Mon, 16 Jan 2023 21:07:26 +0100</pubDate>
       
       <guid>https://manuelfedele.github.io/posts/the-memoization-technique/</guid>
-      <description>Memoization is a technique that is used to speed up the execution of a function by storing the results of expensive function calls and returning the cached result when the same input occurs again. This can be particularly useful for algorithms that have a large number of recursive calls or for functions that are called multiple times with the same input.
-In Go, it is easy to implement memoization using a simple map.</description>
+      <description>&lt;p&gt;Memoization is a technique that is used to speed up the execution of a function by storing the results of expensive function calls and returning the cached result when the same input occurs again. This can be particularly useful for algorithms that have a large number of recursive calls or for functions that are called multiple times with the same input.&lt;/p&gt;
+&lt;p&gt;In Go, it is easy to implement memoization using a simple map. For example, consider the following function that calculates the nth number in the Fibonacci sequence:&lt;/p&gt;</description>
     </item>
     
     <item>
@@ -147,9 +159,12 @@ In Go, it is easy to implement memoization using a simple map.</description>
       <pubDate>Sun, 15 Jan 2023 19:24:09 +0100</pubDate>
       
       <guid>https://manuelfedele.github.io/posts/trading-with-alpaca-and-golang/</guid>
-      <description>Alpaca is a popular platform for automated trading, offering APIs for accessing real-time market data and placing trades. In this article, we will discuss how to use Alpaca&amp;rsquo;s APIs with Golang, a popular programming language known for its simplicity, performance, and concurrency support.
-Before we dive into the details of using Alpaca&amp;rsquo;s APIs with Golang, let&amp;rsquo;s first understand the requirements of the application.
-Requirements The application should be able to connect to the Alpaca API and authenticate the user.</description>
+      <description>&lt;p&gt;Alpaca is a popular platform for automated trading, offering APIs for accessing real-time market data and placing trades. In this article, we will discuss how to use Alpaca&amp;rsquo;s APIs with Golang, a popular programming language known for its simplicity, performance, and concurrency support.&lt;/p&gt;
+&lt;p&gt;Before we dive into the details of using Alpaca&amp;rsquo;s APIs with Golang, let&amp;rsquo;s first understand the requirements of the application.&lt;/p&gt;
+&lt;h3 id=&#34;requirements&#34;&gt;Requirements&lt;/h3&gt;
+&lt;p&gt;The application should be able to connect to the Alpaca API and authenticate the user.
+The application should be able to retrieve real-time market data and place trades.
+The application should be able to retrieve the user&amp;rsquo;s account information and trade history.&lt;/p&gt;</description>
     </item>
     
     <item>
@@ -158,8 +173,12 @@ Requirements The application should be able to connect to the Alpaca API and aut
       <pubDate>Fri, 13 Jan 2023 17:24:25 +0100</pubDate>
       
       <guid>https://manuelfedele.github.io/posts/a-quick-overview-of-elasticsearch/</guid>
-      <description>Introduction Elastic, also known as Elasticsearch, is a powerful search and analytics engine that can be used to index, search, and analyze large volumes of data quickly and in near real-time. It is open-source and built on top of the Lucene library. In this blog post, we will go over the basics of Elastic and how to get started using it.
-Installation The first step to using Elastic is to install it on your system.</description>
+      <description>&lt;h2 id=&#34;introduction&#34;&gt;Introduction&lt;/h2&gt;
+&lt;p&gt;Elastic, also known as Elasticsearch, is a powerful search and analytics engine that can be used to index, search, and analyze large volumes of data quickly and in near real-time. It is open-source and built on top of the Lucene library. In this blog post, we will go over the basics of Elastic and how to get started using it.&lt;/p&gt;
+&lt;ol&gt;
+&lt;li&gt;
+&lt;h3 id=&#34;installation&#34;&gt;Installation&lt;/h3&gt;
+&lt;p&gt;The first step to using Elastic is to install it on your system. You can download the latest version of Elastic from the official website (&lt;a href=&#34;https://www.elastic.co/downloads/elasticsearch&#34;&gt;https://www.elastic.co/downloads/elasticsearch&lt;/a&gt;) and install it according to the instructions provided. Once installed, you can start the Elastic service on your machine and access it through a web interface at http://localhost:9200.&lt;/p&gt;</description>
     </item>
     
     <item>
@@ -168,8 +187,8 @@ Installation The first step to using Elastic is to install it on your system.</d
       <pubDate>Mon, 09 Jan 2023 20:49:03 +0100</pubDate>
       
       <guid>https://manuelfedele.github.io/posts/unit-testing-in-golang/</guid>
-      <description>Unit testing is a software testing technique in which individual units (smallest testable parts) of a software application are tested in isolation from the rest of the application. The goal of unit testing is to validate that each unit of the application is working as intended and meets the specified requirements.
-In Go, the testing package provides support for writing unit tests. To write unit tests, you need to create a file with a name that ends in _test.</description>
+      <description>&lt;p&gt;Unit testing is a software testing technique in which individual units (smallest testable parts) of a software application are tested in isolation from the rest of the application. The goal of unit testing is to validate that each unit of the application is working as intended and meets the specified requirements.&lt;/p&gt;
+&lt;p&gt;In Go, the testing package provides support for writing unit tests. To write unit tests, you need to create a file with a name that ends in _test.go and place it in the same package as the code you want to test. The testing package also provides a testing.T type that represents a testing context and has methods for reporting test failures and logging messages.&lt;/p&gt;</description>
     </item>
     
     <item>
@@ -178,8 +197,8 @@ In Go, the testing package provides support for writing unit tests. To write uni
       <pubDate>Sun, 08 Jan 2023 17:16:40 +0100</pubDate>
       
       <guid>https://manuelfedele.github.io/posts/what-is-the-difference-between-git-pull-and-git-fetch/</guid>
-      <description>Git is a version control system that is widely used in software development to track and manage changes to source code. Two of the most common Git commands that developers use to retrieve updates from a remote repository are git pull and git fetch. While these two commands may seem similar at first glance, they have some important differences that are worth understanding.
-The git pull command is a combination of git fetch and git merge.</description>
+      <description>&lt;p&gt;Git is a version control system that is widely used in software development to track and manage changes to source code. Two of the most common Git commands that developers use to retrieve updates from a remote repository are &lt;code&gt;git pull&lt;/code&gt; and &lt;code&gt;git fetch&lt;/code&gt;. While these two commands may seem similar at first glance, they have some important differences that are worth understanding.&lt;/p&gt;
+&lt;p&gt;The &lt;code&gt;git pull&lt;/code&gt; command is a combination of &lt;code&gt;git fetch&lt;/code&gt; and &lt;code&gt;git merge&lt;/code&gt;. When you run git pull, Git first retrieves the latest version of the repository from the remote server. It then merges the changes into your local copy of the repository. This means that git pull not only downloads the changes from the remote repository, but it also integrates them into your local copy.&lt;/p&gt;</description>
     </item>
     
     <item>
@@ -188,8 +207,8 @@ The git pull command is a combination of git fetch and git merge.</description>
       <pubDate>Wed, 04 Jan 2023 21:23:20 +0100</pubDate>
       
       <guid>https://manuelfedele.github.io/posts/streaming-video-with-golang/</guid>
-      <description>Streaming video with Go (Golang) is a popular choice for building efficient and scalable video streaming applications. In this blog post, we&amp;rsquo;ll discuss some of the key concepts and considerations for building a video streaming application with Go.
-One of the first things to consider when building a video streaming application is the underlying video format. Go has built-in support for working with a variety of video formats, including MP4, FLV, and AVI.</description>
+      <description>&lt;p&gt;Streaming video with Go (Golang) is a popular choice for building efficient and scalable video streaming applications. In this blog post, we&amp;rsquo;ll discuss some of the key concepts and considerations for building a video streaming application with Go.&lt;/p&gt;
+&lt;p&gt;One of the first things to consider when building a video streaming application is the underlying video format. Go has built-in support for working with a variety of video formats, including MP4, FLV, and AVI. However, the most common format for streaming video is probably H.264, which is a popular choice due to its high compression ratio and wide compatibility with a variety of devices and platforms.&lt;/p&gt;</description>
     </item>
     
     <item>
@@ -198,8 +217,8 @@ One of the first things to consider when building a video streaming application 
       <pubDate>Wed, 04 Jan 2023 16:00:43 +0100</pubDate>
       
       <guid>https://manuelfedele.github.io/posts/use-protobuf-with-fastapi/</guid>
-      <description>Protocol buffers, also known as Protobuf, are a popular data serialization format used for communication between services. They are efficient, easy to use, and language-agnostic. In this article, we will look at how to use Protobuf with FastAPI, a modern, high-performance web framework for building APIs with Python.
-First, let&amp;rsquo;s start by installing the necessary dependencies. You will need to install fastapi, google-protobuf, and grpcio. You can do this by running the following command:</description>
+      <description>&lt;p&gt;Protocol buffers, also known as Protobuf, are a popular data serialization format used for communication between services. They are efficient, easy to use, and language-agnostic. In this article, we will look at how to use Protobuf with FastAPI, a modern, high-performance web framework for building APIs with Python.&lt;/p&gt;
+&lt;p&gt;First, let&amp;rsquo;s start by installing the necessary dependencies. You will need to install fastapi, google-protobuf, and grpcio. You can do this by running the following command:&lt;/p&gt;</description>
     </item>
     
     <item>
@@ -208,8 +227,8 @@ First, let&amp;rsquo;s start by installing the necessary dependencies. You will 
       <pubDate>Tue, 03 Jan 2023 20:36:29 +0100</pubDate>
       
       <guid>https://manuelfedele.github.io/posts/the-context-package/</guid>
-      <description>Context in Go is a type that carries a request-scoped value across API boundaries. It is designed to be used in long-lived requests, such as an HTTP server handling multiple requests over the lifetime of a process.
-One of the primary use cases of context is to cancel long-running operations. For example, if an HTTP server receives a request with a cancelation token, it can use that token to cancel the request if the client closes the connection.</description>
+      <description>&lt;p&gt;Context in Go is a type that carries a request-scoped value across API boundaries. It is designed to be used in long-lived requests, such as an HTTP server handling multiple requests over the lifetime of a process.&lt;/p&gt;
+&lt;p&gt;One of the primary use cases of context is to cancel long-running operations. For example, if an HTTP server receives a request with a cancelation token, it can use that token to cancel the request if the client closes the connection. This helps to avoid resource leaks by freeing up resources that would have been used by the request.&lt;/p&gt;</description>
     </item>
     
     <item>
@@ -218,8 +237,8 @@ One of the primary use cases of context is to cancel long-running operations. Fo
       <pubDate>Sun, 01 Jan 2023 14:50:35 +0100</pubDate>
       
       <guid>https://manuelfedele.github.io/posts/understand-async-await-in-python/</guid>
-      <description>Async/await is a powerful programming construct that allows you to write asynchronous code in a synchronous-like style. It was introduced in Python 3.5 as part of the asyncio module and has become a popular choice for writing concurrent and parallel code in Python.
-In this post, we&amp;rsquo;ll take a look at what async/await is and how it works, as well as some of the benefits and drawbacks of using it. We&amp;rsquo;ll also see some examples of how to use async/await in Python to write efficient and scalable code.</description>
+      <description>&lt;p&gt;Async/await is a powerful programming construct that allows you to write asynchronous code in a synchronous-like style. It was introduced in Python 3.5 as part of the asyncio module and has become a popular choice for writing concurrent and parallel code in Python.&lt;/p&gt;
+&lt;p&gt;In this post, we&amp;rsquo;ll take a look at what async/await is and how it works, as well as some of the benefits and drawbacks of using it. We&amp;rsquo;ll also see some examples of how to use async/await in Python to write efficient and scalable code.&lt;/p&gt;</description>
     </item>
     
     <item>
@@ -228,8 +247,14 @@ In this post, we&amp;rsquo;ll take a look at what async/await is and how it work
       <pubDate>Sat, 31 Dec 2022 14:26:23 +0100</pubDate>
       
       <guid>https://manuelfedele.github.io/posts/create-a-telegram-bot-with-rust/</guid>
-      <description>Install Rust Before you can start writing Rust code, you&amp;rsquo;ll need to install the Rust programming language on your computer. You can do this by following the instructions on the Rust website (https://www.rust-lang.org/tools/install).
-Set up a new Rust project Once you have Rust installed, you&amp;rsquo;ll need to create a new Rust project using the cargo command-line tool. Open a terminal and navigate to the directory where you want to store your project, then run the following command: cargo new telegram-bot &amp;ndash;bin.</description>
+      <description>&lt;ol&gt;
+&lt;li&gt;
+&lt;h2 id=&#34;install-rust&#34;&gt;Install Rust&lt;/h2&gt;
+&lt;p&gt;Before you can start writing Rust code, you&amp;rsquo;ll need to install the Rust programming language on your computer. You can do this by following the instructions on the Rust website (&lt;a href=&#34;https://www.rust-lang.org/tools/install)&#34;&gt;https://www.rust-lang.org/tools/install)&lt;/a&gt;.&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;h2 id=&#34;set-up-a-new-rust-project&#34;&gt;Set up a new Rust project&lt;/h2&gt;
+&lt;p&gt;Once you have Rust installed, you&amp;rsquo;ll need to create a new Rust project using the cargo command-line tool. Open a terminal and navigate to the directory where you want to store your project, then run the following command: cargo new telegram-bot &amp;ndash;bin. This will create a new Rust project called &amp;ldquo;telegram-bot&amp;rdquo; with a binary crate (executable).&lt;/p&gt;</description>
     </item>
     
     <item>
@@ -238,9 +263,32 @@ Set up a new Rust project Once you have Rust installed, you&amp;rsquo;ll need to
       <pubDate>Fri, 30 Dec 2022 14:08:35 +0100</pubDate>
       
       <guid>https://manuelfedele.github.io/posts/create-webserver-with-fastapi-and-uvicorn/</guid>
-      <description>FastAPI is a modern, fast, web framework for building APIs with Python 3.7 and above. It is built on top of Starlette, a lightweight ASGI framework, and uses the uvicorn ASGI server.
-Here is an example of how to create a web server with FastAPI and uvicorn:
-Install FastAPI and uvicorn using pip: pip install fastapi uvicorn Create a file called main.py and import FastAPI: from fastapi import FastAPI app = FastAPI() Define a function that will be the endpoint for your API.</description>
+      <description>&lt;p&gt;FastAPI is a modern, fast, web framework for building APIs with Python 3.7 and above. It is built on top of Starlette, a lightweight ASGI framework, and uses the uvicorn ASGI server.&lt;/p&gt;
+&lt;p&gt;Here is an example of how to create a web server with FastAPI and uvicorn:&lt;/p&gt;
+&lt;ol&gt;
+&lt;li&gt;Install FastAPI and uvicorn using pip:&lt;/li&gt;
+&lt;/ol&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; class=&#34;chroma&#34;&gt;&lt;code class=&#34;language-bash&#34; data-lang=&#34;bash&#34;&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;pip install fastapi uvicorn
+&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;ol start=&#34;2&#34;&gt;
+&lt;li&gt;Create a file called main.py and import FastAPI:&lt;/li&gt;
+&lt;/ol&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; class=&#34;chroma&#34;&gt;&lt;code class=&#34;language-python&#34; data-lang=&#34;python&#34;&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;&lt;span class=&#34;kn&#34;&gt;from&lt;/span&gt; &lt;span class=&#34;nn&#34;&gt;fastapi&lt;/span&gt; &lt;span class=&#34;kn&#34;&gt;import&lt;/span&gt; &lt;span class=&#34;n&#34;&gt;FastAPI&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;&lt;span class=&#34;n&#34;&gt;app&lt;/span&gt; &lt;span class=&#34;o&#34;&gt;=&lt;/span&gt; &lt;span class=&#34;n&#34;&gt;FastAPI&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;()&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;ol start=&#34;3&#34;&gt;
+&lt;li&gt;Define a function that will be the endpoint for your API. This function should have a request parameter that specifies the HTTP request and a response parameter that specifies the HTTP response. You can use the @app.get decorator to define a function as a GET endpoint:&lt;/li&gt;
+&lt;/ol&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; class=&#34;chroma&#34;&gt;&lt;code class=&#34;language-python&#34; data-lang=&#34;python&#34;&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;&lt;span class=&#34;nd&#34;&gt;@app.get&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;(&lt;/span&gt;&lt;span class=&#34;s2&#34;&gt;&amp;#34;/&amp;#34;&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;)&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;&lt;span class=&#34;k&#34;&gt;def&lt;/span&gt; &lt;span class=&#34;nf&#34;&gt;read_root&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;(&lt;/span&gt;&lt;span class=&#34;n&#34;&gt;request&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;,&lt;/span&gt; &lt;span class=&#34;n&#34;&gt;response&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;):&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;    &lt;span class=&#34;n&#34;&gt;response&lt;/span&gt;&lt;span class=&#34;o&#34;&gt;.&lt;/span&gt;&lt;span class=&#34;n&#34;&gt;status_code&lt;/span&gt; &lt;span class=&#34;o&#34;&gt;=&lt;/span&gt; &lt;span class=&#34;mi&#34;&gt;200&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;    &lt;span class=&#34;k&#34;&gt;return&lt;/span&gt; &lt;span class=&#34;p&#34;&gt;{&lt;/span&gt;&lt;span class=&#34;s2&#34;&gt;&amp;#34;Hello&amp;#34;&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;:&lt;/span&gt; &lt;span class=&#34;s2&#34;&gt;&amp;#34;World&amp;#34;&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;}&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;ol start=&#34;4&#34;&gt;
+&lt;li&gt;Run the web server using uvicorn:&lt;/li&gt;
+&lt;/ol&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; class=&#34;chroma&#34;&gt;&lt;code class=&#34;language-python&#34; data-lang=&#34;python&#34;&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;&lt;span class=&#34;k&#34;&gt;if&lt;/span&gt; &lt;span class=&#34;vm&#34;&gt;__name__&lt;/span&gt; &lt;span class=&#34;o&#34;&gt;==&lt;/span&gt; &lt;span class=&#34;s2&#34;&gt;&amp;#34;__main__&amp;#34;&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;:&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;    &lt;span class=&#34;kn&#34;&gt;import&lt;/span&gt; &lt;span class=&#34;nn&#34;&gt;uvicorn&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;    &lt;span class=&#34;n&#34;&gt;uvicorn&lt;/span&gt;&lt;span class=&#34;o&#34;&gt;.&lt;/span&gt;&lt;span class=&#34;n&#34;&gt;run&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;(&lt;/span&gt;&lt;span class=&#34;n&#34;&gt;app&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;,&lt;/span&gt; &lt;span class=&#34;n&#34;&gt;host&lt;/span&gt;&lt;span class=&#34;o&#34;&gt;=&lt;/span&gt;&lt;span class=&#34;s2&#34;&gt;&amp;#34;0.0.0.0&amp;#34;&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;,&lt;/span&gt; &lt;span class=&#34;n&#34;&gt;port&lt;/span&gt;&lt;span class=&#34;o&#34;&gt;=&lt;/span&gt;&lt;span class=&#34;mi&#34;&gt;8000&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;)&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;p&gt;This will start the web server on the specified host and port (in this case, 0.0.0.0 and 8000). You can then access the endpoint at http://0.0.0.0:8000/.&lt;/p&gt;</description>
     </item>
     
     <item>
@@ -249,8 +297,8 @@ Install FastAPI and uvicorn using pip: pip install fastapi uvicorn Create a file
       <pubDate>Thu, 29 Dec 2022 10:19:25 +0100</pubDate>
       
       <guid>https://manuelfedele.github.io/posts/what-does-yield-keyword-do-in-python/</guid>
-      <description>The keyword &amp;ldquo;yield&amp;rdquo; is a important part of the Python programming language, and it can be used in a number of different ways. In this article, we&amp;rsquo;ll take a closer look at what the yield keyword does in Python, and how it can be used to create more efficient and powerful programs.
-The primary use of the yield keyword is to create a generator function. A generator function is a special type of function that produces a sequence of values, one at a time, when it is called.</description>
+      <description>&lt;p&gt;The keyword &amp;ldquo;yield&amp;rdquo; is a important part of the Python programming language, and it can be used in a number of different ways. In this article, we&amp;rsquo;ll take a closer look at what the yield keyword does in Python, and how it can be used to create more efficient and powerful programs.&lt;/p&gt;
+&lt;p&gt;The primary use of the yield keyword is to create a generator function. A generator function is a special type of function that produces a sequence of values, one at a time, when it is called. Unlike a regular function, which executes all of its code and returns a single value, a generator function can be paused at any point and resumed later, allowing it to produce a potentially infinite sequence of values.&lt;/p&gt;</description>
     </item>
     
     <item>
@@ -259,10 +307,17 @@ The primary use of the yield keyword is to create a generator function. A genera
       <pubDate>Tue, 27 Dec 2022 18:48:44 +0100</pubDate>
       
       <guid>https://manuelfedele.github.io/posts/use-protobuf-with-golang/</guid>
-      <description>Protocol Buffers (Protobuf) is a language- and platform-neutral data serialization format developed by Google. It allows you to define data structures in a .proto file and then use code generation tools to generate code in various languages for working with those data structures.
-To use Protobuf with Go, you&amp;rsquo;ll need to do the following:
-Install the Protobuf compiler (protoc) and the Go Protobuf plugin:
-# Install protoc wget https://github.com/protocolbuffers/protobuf/releases/download/v3.14.0/protoc-3.14.0-linux-x86_64.zip unzip protoc-3.</description>
+      <description>&lt;p&gt;Protocol Buffers (Protobuf) is a language- and platform-neutral data serialization format developed by Google. It allows you to define data structures in a .proto file and then use code generation tools to generate code in various languages for working with those data structures.&lt;/p&gt;
+&lt;p&gt;To use Protobuf with Go, you&amp;rsquo;ll need to do the following:&lt;/p&gt;
+&lt;p&gt;Install the Protobuf compiler (protoc) and the Go Protobuf plugin:&lt;/p&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; class=&#34;chroma&#34;&gt;&lt;code class=&#34;language-bash&#34; data-lang=&#34;bash&#34;&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;&lt;span class=&#34;c1&#34;&gt;# Install protoc&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;wget https://github.com/protocolbuffers/protobuf/releases/download/v3.14.0/protoc-3.14.0-linux-x86_64.zip
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;unzip protoc-3.14.0-linux-x86_64.zip -d protoc3
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;sudo mv protoc3/bin/* /usr/local/bin/
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;&lt;span class=&#34;c1&#34;&gt;# Install the Go Protobuf plugin&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;go get -u github.com/golang/protobuf/protoc-gen-go
+&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;p&gt;Define your data structures in a .proto file. For example:&lt;/p&gt;</description>
     </item>
     
     <item>
@@ -271,7 +326,8 @@ Install the Protobuf compiler (protoc) and the Go Protobuf plugin:
       <pubDate>Tue, 20 Dec 2022 10:03:30 +0100</pubDate>
       
       <guid>https://manuelfedele.github.io/posts/create-command-line-application-with-golang/</guid>
-      <description>Creating a Command Line Application to Separate Files by Extension in Go If you have a folder with a large number of files and you want to organize them by file extension, you can create a command line application to do this automatically using Go. Go, also known as Golang, is a programming language developed by Google that is designed to be fast, statically-typed, and easy to learn. In this article, we&amp;rsquo;ll walk through the steps to create a Go program that separates files in a given folder into subfolders based on their extension.</description>
+      <description>&lt;h2 id=&#34;creating-a-command-line-application-to-separate-files-by-extension-in-go&#34;&gt;Creating a Command Line Application to Separate Files by Extension in Go&lt;/h2&gt;
+&lt;p&gt;If you have a folder with a large number of files and you want to organize them by file extension, you can create a command line application to do this automatically using Go. Go, also known as Golang, is a programming language developed by Google that is designed to be fast, statically-typed, and easy to learn. In this article, we&amp;rsquo;ll walk through the steps to create a Go program that separates files in a given folder into subfolders based on their extension.&lt;/p&gt;</description>
     </item>
     
     <item>
@@ -280,8 +336,17 @@ Install the Protobuf compiler (protoc) and the Go Protobuf plugin:
       <pubDate>Tue, 20 Dec 2022 09:49:01 +0100</pubDate>
       
       <guid>https://manuelfedele.github.io/posts/create-website-with-gatsby-and-github-pages/</guid>
-      <description>GitHub Pages is a free service that allows you to host your website directly from a GitHub repository. It is a great platform for developers to showcase their portfolio, document their projects, or create a personal blog. In this article, we will walk through the steps of creating a static website using GitHub Pages and Gatsby, a popular static site generator.
-Install Gatsby First, you will need to install Gatsby by running the following command in your terminal: npm install -g gatsby-cli Create a new Gatsby project gatsby new my-website This will create a new directory called my-website with the necessary files and dependencies for your Gatsby project.</description>
+      <description>&lt;p&gt;GitHub Pages is a free service that allows you to host your website directly from a GitHub repository. It is a great platform for developers to showcase their portfolio, document their projects, or create a personal blog. In this article, we will walk through the steps of creating a static website using GitHub Pages and Gatsby, a popular static site generator.&lt;/p&gt;
+&lt;ol&gt;
+&lt;li&gt;Install Gatsby
+First, you will need to install Gatsby by running the following command in your terminal:&lt;/li&gt;
+&lt;/ol&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; class=&#34;chroma&#34;&gt;&lt;code class=&#34;language-bash&#34; data-lang=&#34;bash&#34;&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;npm install -g gatsby-cli
+&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;ol start=&#34;2&#34;&gt;
+&lt;li&gt;Create a new Gatsby project&lt;/li&gt;
+&lt;/ol&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; class=&#34;chroma&#34;&gt;&lt;code class=&#34;language-bash&#34; data-lang=&#34;bash&#34;&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;gatsby new my-website
+&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;p&gt;This will create a new directory called my-website with the necessary files and dependencies for your Gatsby project.&lt;/p&gt;</description>
     </item>
     
     <item>
@@ -290,8 +355,9 @@ Install Gatsby First, you will need to install Gatsby by running the following c
       <pubDate>Mon, 19 Dec 2022 19:32:27 +0100</pubDate>
       
       <guid>https://manuelfedele.github.io/posts/use-redis-with-golang/</guid>
-      <description>Using Golang and Redis Redis is an in-memory data structure store that can be used as a database, cache, and message broker. It is known for its speed, simplicity, and flexibility. In this article, we will discuss how to use Redis with Golang, a popular programming language known for its simplicity, performance, and concurrency support.
-Before we dive into the details of using Redis with Golang, let&amp;rsquo;s first understand the requirements of the application.</description>
+      <description>&lt;h2 id=&#34;using-golang-and-redis&#34;&gt;Using Golang and Redis&lt;/h2&gt;
+&lt;p&gt;Redis is an in-memory data structure store that can be used as a database, cache, and message broker. It is known for its speed, simplicity, and flexibility. In this article, we will discuss how to use Redis with Golang, a popular programming language known for its simplicity, performance, and concurrency support.&lt;/p&gt;
+&lt;p&gt;Before we dive into the details of using Redis with Golang, let&amp;rsquo;s first understand the requirements of the application.&lt;/p&gt;</description>
     </item>
     
     <item>
@@ -300,8 +366,8 @@ Before we dive into the details of using Redis with Golang, let&amp;rsquo;s firs
       <pubDate>Mon, 19 Dec 2022 19:08:58 +0100</pubDate>
       
       <guid>https://manuelfedele.github.io/posts/create-desktop-application-stock-market-data-golang/</guid>
-      <description>Golang, also known as Go, is a popular programming language known for its simplicity, performance, and concurrency support. Fyne is an open-source cross-platform UI toolkit written in Go, which makes it an excellent choice for building desktop applications. In this article, we will discuss how to build a desktop application for stock market data using Golang and Fyne.
-Before we dive into the details of building the application, let&amp;rsquo;s first understand the requirements of the application.</description>
+      <description>&lt;p&gt;Golang, also known as Go, is a popular programming language known for its simplicity, performance, and concurrency support. Fyne is an open-source cross-platform UI toolkit written in Go, which makes it an excellent choice for building desktop applications. In this article, we will discuss how to build a desktop application for stock market data using Golang and Fyne.&lt;/p&gt;
+&lt;p&gt;Before we dive into the details of building the application, let&amp;rsquo;s first understand the requirements of the application.&lt;/p&gt;</description>
     </item>
     
     <item>
@@ -310,9 +376,13 @@ Before we dive into the details of building the application, let&amp;rsquo;s fir
       <pubDate>Mon, 19 Dec 2022 18:20:30 +0100</pubDate>
       
       <guid>https://manuelfedele.github.io/posts/work-with-json-postgresql/</guid>
-      <description>In PostgreSQL, the json data type can be used to store JSON data. You can use the -&amp;gt; operator to access elements of a JSON object, and the -&amp;raquo; operator to access values of a JSON object as text.
-For example, consider the following table with a JSON field called data:
-CREATE TABLE documents ( id serial PRIMARY KEY, data json ); To insert a JSON object into the data field, you can use the json_build_object function:</description>
+      <description>&lt;p&gt;In PostgreSQL, the json data type can be used to store JSON data. You can use the -&amp;gt; operator to access elements of a JSON object, and the -&amp;raquo; operator to access values of a JSON object as text.&lt;/p&gt;
+&lt;p&gt;For example, consider the following table with a JSON field called data:&lt;/p&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; class=&#34;chroma&#34;&gt;&lt;code class=&#34;language-SQL&#34; data-lang=&#34;SQL&#34;&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;&lt;span class=&#34;k&#34;&gt;CREATE&lt;/span&gt;&lt;span class=&#34;w&#34;&gt; &lt;/span&gt;&lt;span class=&#34;k&#34;&gt;TABLE&lt;/span&gt;&lt;span class=&#34;w&#34;&gt; &lt;/span&gt;&lt;span class=&#34;n&#34;&gt;documents&lt;/span&gt;&lt;span class=&#34;w&#34;&gt; &lt;/span&gt;&lt;span class=&#34;p&#34;&gt;(&lt;/span&gt;&lt;span class=&#34;w&#34;&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;&lt;span class=&#34;w&#34;&gt;    &lt;/span&gt;&lt;span class=&#34;n&#34;&gt;id&lt;/span&gt;&lt;span class=&#34;w&#34;&gt; &lt;/span&gt;&lt;span class=&#34;nb&#34;&gt;serial&lt;/span&gt;&lt;span class=&#34;w&#34;&gt; &lt;/span&gt;&lt;span class=&#34;k&#34;&gt;PRIMARY&lt;/span&gt;&lt;span class=&#34;w&#34;&gt; &lt;/span&gt;&lt;span class=&#34;k&#34;&gt;KEY&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;,&lt;/span&gt;&lt;span class=&#34;w&#34;&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;&lt;span class=&#34;w&#34;&gt;    &lt;/span&gt;&lt;span class=&#34;k&#34;&gt;data&lt;/span&gt;&lt;span class=&#34;w&#34;&gt; &lt;/span&gt;&lt;span class=&#34;n&#34;&gt;json&lt;/span&gt;&lt;span class=&#34;w&#34;&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;&lt;span class=&#34;w&#34;&gt;&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;);&lt;/span&gt;&lt;span class=&#34;w&#34;&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;p&gt;To insert a JSON object into the data field, you can use the json_build_object function:&lt;/p&gt;</description>
     </item>
     
     <item>
@@ -321,9 +391,25 @@ CREATE TABLE documents ( id serial PRIMARY KEY, data json ); To insert a JSON ob
       <pubDate>Sun, 11 Dec 2022 19:14:21 +0100</pubDate>
       
       <guid>https://manuelfedele.github.io/posts/how-to-create-a-webserver-in-golang/</guid>
-      <description>To create a web server in Go, you can use the http package provided by the standard library. This package includes the http.Server type, which represents an HTTP server, and the http.ListenAndServe() function, which listens for incoming HTTP requests on a specified port and serves responses to those requests.
-Here is an example of how you might create a simple web server in Go:
-// Import the http package import &amp;#34;net/http&amp;#34; // Define a function that will be called to handle incoming HTTP requests func handler(w http.</description>
+      <description>&lt;p&gt;To create a web server in Go, you can use the http package provided by the standard library. This package includes the http.Server type, which represents an HTTP server, and the http.ListenAndServe() function, which listens for incoming HTTP requests on a specified port and serves responses to those requests.&lt;/p&gt;
+&lt;p&gt;Here is an example of how you might create a simple web server in Go:&lt;/p&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; class=&#34;chroma&#34;&gt;&lt;code class=&#34;language-Go&#34; data-lang=&#34;Go&#34;&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;&lt;span class=&#34;c1&#34;&gt;// Import the http package
+&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;&lt;span class=&#34;c1&#34;&gt;&lt;/span&gt;&lt;span class=&#34;kn&#34;&gt;import&lt;/span&gt; &lt;span class=&#34;s&#34;&gt;&amp;#34;net/http&amp;#34;&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;&lt;span class=&#34;c1&#34;&gt;// Define a function that will be called to handle incoming HTTP requests
+&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;&lt;span class=&#34;c1&#34;&gt;&lt;/span&gt;&lt;span class=&#34;kd&#34;&gt;func&lt;/span&gt; &lt;span class=&#34;nf&#34;&gt;handler&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;(&lt;/span&gt;&lt;span class=&#34;nx&#34;&gt;w&lt;/span&gt; &lt;span class=&#34;nx&#34;&gt;http&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;.&lt;/span&gt;&lt;span class=&#34;nx&#34;&gt;ResponseWriter&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;,&lt;/span&gt; &lt;span class=&#34;nx&#34;&gt;r&lt;/span&gt; &lt;span class=&#34;o&#34;&gt;*&lt;/span&gt;&lt;span class=&#34;nx&#34;&gt;http&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;.&lt;/span&gt;&lt;span class=&#34;nx&#34;&gt;Request&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;)&lt;/span&gt; &lt;span class=&#34;p&#34;&gt;{&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;    &lt;span class=&#34;c1&#34;&gt;// Write a response message to the client
+&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;&lt;span class=&#34;c1&#34;&gt;&lt;/span&gt;    &lt;span class=&#34;nx&#34;&gt;fmt&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;.&lt;/span&gt;&lt;span class=&#34;nf&#34;&gt;Fprintf&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;(&lt;/span&gt;&lt;span class=&#34;nx&#34;&gt;w&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;,&lt;/span&gt; &lt;span class=&#34;s&#34;&gt;&amp;#34;Hello, World!&amp;#34;&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;)&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;&lt;span class=&#34;p&#34;&gt;}&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;&lt;span class=&#34;kd&#34;&gt;func&lt;/span&gt; &lt;span class=&#34;nf&#34;&gt;main&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;()&lt;/span&gt; &lt;span class=&#34;p&#34;&gt;{&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;    &lt;span class=&#34;c1&#34;&gt;// Set up a route that will call the handler function for any requests to the root URL
+&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;&lt;span class=&#34;c1&#34;&gt;&lt;/span&gt;    &lt;span class=&#34;nx&#34;&gt;http&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;.&lt;/span&gt;&lt;span class=&#34;nf&#34;&gt;HandleFunc&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;(&lt;/span&gt;&lt;span class=&#34;s&#34;&gt;&amp;#34;/&amp;#34;&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;,&lt;/span&gt; &lt;span class=&#34;nx&#34;&gt;handler&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;)&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;    &lt;span class=&#34;c1&#34;&gt;// Start the web server and listen for incoming requests on port 8080
+&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;&lt;span class=&#34;c1&#34;&gt;&lt;/span&gt;    &lt;span class=&#34;nx&#34;&gt;http&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;.&lt;/span&gt;&lt;span class=&#34;nf&#34;&gt;ListenAndServe&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;(&lt;/span&gt;&lt;span class=&#34;s&#34;&gt;&amp;#34;:8080&amp;#34;&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;,&lt;/span&gt; &lt;span class=&#34;kc&#34;&gt;nil&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;)&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;&lt;span class=&#34;p&#34;&gt;}&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;p&gt;In this example, the handler() function is defined to handle incoming HTTP requests. This function receives a http.ResponseWriter and a *http.Request as arguments, which are used to write the response message and access information about the incoming request, respectively. The main() function sets up a route that will call the handler() function for any requests to the root URL (&amp;quot;/&amp;quot;) and then starts the web server using the http.ListenAndServe() function. This web server will listen for incoming requests on port 8080 and serve responses using the handler() function.&lt;/p&gt;</description>
     </item>
     
     <item>
@@ -332,9 +418,14 @@ Here is an example of how you might create a simple web server in Go:
       <pubDate>Sun, 11 Dec 2022 19:04:27 +0100</pubDate>
       
       <guid>https://manuelfedele.github.io/posts/how-to-use-interfaces-in-golang/</guid>
-      <description>In Go, an interface is a type that defines a set of methods that a struct must implement in order to implement the interface. An interface defines the behavior or capabilities of a struct without specifying the implementation details. This allows different structs to implement the same interface in different ways, promoting loose coupling and flexibility in your code.
-Here is an example of an interface in Go:
-// Define an interface named Animal type Animal interface { // Define a method named Speak that takes no arguments and returns a string Speak() string } In this example, the Animal interface defines a single method named Speak(), which takes no arguments and returns a string.</description>
+      <description>&lt;p&gt;In Go, an interface is a type that defines a set of methods that a struct must implement in order to implement the interface. An interface defines the behavior or capabilities of a struct without specifying the implementation details. This allows different structs to implement the same interface in different ways, promoting loose coupling and flexibility in your code.&lt;/p&gt;
+&lt;p&gt;Here is an example of an interface in Go:&lt;/p&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; class=&#34;chroma&#34;&gt;&lt;code class=&#34;language-Go&#34; data-lang=&#34;Go&#34;&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;&lt;span class=&#34;c1&#34;&gt;// Define an interface named Animal
+&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;&lt;span class=&#34;c1&#34;&gt;&lt;/span&gt;&lt;span class=&#34;kd&#34;&gt;type&lt;/span&gt; &lt;span class=&#34;nx&#34;&gt;Animal&lt;/span&gt; &lt;span class=&#34;kd&#34;&gt;interface&lt;/span&gt; &lt;span class=&#34;p&#34;&gt;{&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;    &lt;span class=&#34;c1&#34;&gt;// Define a method named Speak that takes no arguments and returns a string
+&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;&lt;span class=&#34;c1&#34;&gt;&lt;/span&gt;    &lt;span class=&#34;nf&#34;&gt;Speak&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;()&lt;/span&gt; &lt;span class=&#34;kt&#34;&gt;string&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;&lt;span class=&#34;p&#34;&gt;}&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;p&gt;In this example, the Animal interface defines a single method named Speak(), which takes no arguments and returns a string. Any struct that wants to implement the Animal interface must implement this Speak() method.&lt;/p&gt;</description>
     </item>
     
     <item>
@@ -343,8 +434,45 @@ Here is an example of an interface in Go:
       <pubDate>Sun, 11 Dec 2022 18:57:13 +0100</pubDate>
       
       <guid>https://manuelfedele.github.io/posts/implement-factory-design-pattern-golang/</guid>
-      <description>To implement the factory design pattern in Go, you can create a factory function that returns an object that implements a common interface. This function can take parameters to specify the type of object to be created. Here is an example of how you might implement the factory design pattern in Go:
-// Define an interface that the factory will create objects for type Animal interface { Speak() string } // Define a factory function that returns an object that implements the Animal interface func NewAnimal(animalType string) Animal { switch animalType { case &amp;#34;dog&amp;#34;: return &amp;amp;Dog{} case &amp;#34;cat&amp;#34;: return &amp;amp;Cat{} default: return nil } } // Define a struct for a dog that implements the Animal interface type Dog struct{} func (d *Dog) Speak() string { return &amp;#34;Woof!</description>
+      <description>&lt;p&gt;To implement the factory design pattern in Go, you can create a factory function that returns an object that implements a common interface. This function can take parameters to specify the type of object to be created. Here is an example of how you might implement the factory design pattern in Go:&lt;/p&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; class=&#34;chroma&#34;&gt;&lt;code class=&#34;language-go&#34; data-lang=&#34;go&#34;&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;&lt;span class=&#34;c1&#34;&gt;// Define an interface that the factory will create objects for
+&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;&lt;span class=&#34;c1&#34;&gt;&lt;/span&gt;&lt;span class=&#34;kd&#34;&gt;type&lt;/span&gt; &lt;span class=&#34;nx&#34;&gt;Animal&lt;/span&gt; &lt;span class=&#34;kd&#34;&gt;interface&lt;/span&gt; &lt;span class=&#34;p&#34;&gt;{&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;    &lt;span class=&#34;nf&#34;&gt;Speak&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;()&lt;/span&gt; &lt;span class=&#34;kt&#34;&gt;string&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;&lt;span class=&#34;p&#34;&gt;}&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;&lt;span class=&#34;c1&#34;&gt;// Define a factory function that returns an object that implements the Animal interface
+&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;&lt;span class=&#34;c1&#34;&gt;&lt;/span&gt;&lt;span class=&#34;kd&#34;&gt;func&lt;/span&gt; &lt;span class=&#34;nf&#34;&gt;NewAnimal&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;(&lt;/span&gt;&lt;span class=&#34;nx&#34;&gt;animalType&lt;/span&gt; &lt;span class=&#34;kt&#34;&gt;string&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;)&lt;/span&gt; &lt;span class=&#34;nx&#34;&gt;Animal&lt;/span&gt; &lt;span class=&#34;p&#34;&gt;{&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;    &lt;span class=&#34;k&#34;&gt;switch&lt;/span&gt; &lt;span class=&#34;nx&#34;&gt;animalType&lt;/span&gt; &lt;span class=&#34;p&#34;&gt;{&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;    &lt;span class=&#34;k&#34;&gt;case&lt;/span&gt; &lt;span class=&#34;s&#34;&gt;&amp;#34;dog&amp;#34;&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;:&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;        &lt;span class=&#34;k&#34;&gt;return&lt;/span&gt; &lt;span class=&#34;o&#34;&gt;&amp;amp;&lt;/span&gt;&lt;span class=&#34;nx&#34;&gt;Dog&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;{}&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;    &lt;span class=&#34;k&#34;&gt;case&lt;/span&gt; &lt;span class=&#34;s&#34;&gt;&amp;#34;cat&amp;#34;&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;:&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;        &lt;span class=&#34;k&#34;&gt;return&lt;/span&gt; &lt;span class=&#34;o&#34;&gt;&amp;amp;&lt;/span&gt;&lt;span class=&#34;nx&#34;&gt;Cat&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;{}&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;    &lt;span class=&#34;k&#34;&gt;default&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;:&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;        &lt;span class=&#34;k&#34;&gt;return&lt;/span&gt; &lt;span class=&#34;kc&#34;&gt;nil&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;    &lt;span class=&#34;p&#34;&gt;}&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;&lt;span class=&#34;p&#34;&gt;}&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;&lt;span class=&#34;c1&#34;&gt;// Define a struct for a dog that implements the Animal interface
+&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;&lt;span class=&#34;c1&#34;&gt;&lt;/span&gt;&lt;span class=&#34;kd&#34;&gt;type&lt;/span&gt; &lt;span class=&#34;nx&#34;&gt;Dog&lt;/span&gt; &lt;span class=&#34;kd&#34;&gt;struct&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;{}&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;&lt;span class=&#34;kd&#34;&gt;func&lt;/span&gt; &lt;span class=&#34;p&#34;&gt;(&lt;/span&gt;&lt;span class=&#34;nx&#34;&gt;d&lt;/span&gt; &lt;span class=&#34;o&#34;&gt;*&lt;/span&gt;&lt;span class=&#34;nx&#34;&gt;Dog&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;)&lt;/span&gt; &lt;span class=&#34;nf&#34;&gt;Speak&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;()&lt;/span&gt; &lt;span class=&#34;kt&#34;&gt;string&lt;/span&gt; &lt;span class=&#34;p&#34;&gt;{&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;    &lt;span class=&#34;k&#34;&gt;return&lt;/span&gt; &lt;span class=&#34;s&#34;&gt;&amp;#34;Woof!&amp;#34;&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;&lt;span class=&#34;p&#34;&gt;}&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;&lt;span class=&#34;c1&#34;&gt;// Define a struct for a cat that implements the Animal interface
+&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;&lt;span class=&#34;c1&#34;&gt;&lt;/span&gt;&lt;span class=&#34;kd&#34;&gt;type&lt;/span&gt; &lt;span class=&#34;nx&#34;&gt;Cat&lt;/span&gt; &lt;span class=&#34;kd&#34;&gt;struct&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;{}&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;&lt;span class=&#34;kd&#34;&gt;func&lt;/span&gt; &lt;span class=&#34;p&#34;&gt;(&lt;/span&gt;&lt;span class=&#34;nx&#34;&gt;c&lt;/span&gt; &lt;span class=&#34;o&#34;&gt;*&lt;/span&gt;&lt;span class=&#34;nx&#34;&gt;Cat&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;)&lt;/span&gt; &lt;span class=&#34;nf&#34;&gt;Speak&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;()&lt;/span&gt; &lt;span class=&#34;kt&#34;&gt;string&lt;/span&gt; &lt;span class=&#34;p&#34;&gt;{&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;    &lt;span class=&#34;k&#34;&gt;return&lt;/span&gt; &lt;span class=&#34;s&#34;&gt;&amp;#34;Meow!&amp;#34;&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;&lt;span class=&#34;p&#34;&gt;}&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;&lt;span class=&#34;c1&#34;&gt;// Use the factory function to create new Animal objects
+&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;&lt;span class=&#34;c1&#34;&gt;&lt;/span&gt;&lt;span class=&#34;nx&#34;&gt;dog&lt;/span&gt; &lt;span class=&#34;o&#34;&gt;:=&lt;/span&gt; &lt;span class=&#34;nf&#34;&gt;NewAnimal&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;(&lt;/span&gt;&lt;span class=&#34;s&#34;&gt;&amp;#34;dog&amp;#34;&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;)&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;&lt;span class=&#34;nx&#34;&gt;cat&lt;/span&gt; &lt;span class=&#34;o&#34;&gt;:=&lt;/span&gt; &lt;span class=&#34;nf&#34;&gt;NewAnimal&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;(&lt;/span&gt;&lt;span class=&#34;s&#34;&gt;&amp;#34;cat&amp;#34;&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;)&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;&lt;span class=&#34;nx&#34;&gt;fmt&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;.&lt;/span&gt;&lt;span class=&#34;nf&#34;&gt;Println&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;(&lt;/span&gt;&lt;span class=&#34;nx&#34;&gt;dog&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;.&lt;/span&gt;&lt;span class=&#34;nf&#34;&gt;Speak&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;())&lt;/span&gt; &lt;span class=&#34;c1&#34;&gt;// &amp;#34;Woof!&amp;#34;
+&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;&lt;span class=&#34;c1&#34;&gt;&lt;/span&gt;&lt;span class=&#34;nx&#34;&gt;fmt&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;.&lt;/span&gt;&lt;span class=&#34;nf&#34;&gt;Println&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;(&lt;/span&gt;&lt;span class=&#34;nx&#34;&gt;cat&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;.&lt;/span&gt;&lt;span class=&#34;nf&#34;&gt;Speak&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;())&lt;/span&gt; &lt;span class=&#34;c1&#34;&gt;// &amp;#34;Meow!&amp;#34;
+&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;p&gt;In this example, the NewAnimal() function is the factory function that returns objects of different types (Dog or Cat in this case) that implement the Animal interface. The factory function takes a string parameter that specifies the type of object to be created. The Dog and Cat structs both implement the Animal interface by implementing the Speak() method. The NewAnimal() function uses a switch statement to determine which type of object to return based on the animalType parameter.&lt;/p&gt;</description>
     </item>
     
     <item>
@@ -353,8 +481,9 @@ Here is an example of an interface in Go:
       <pubDate>Thu, 03 Nov 2022 14:57:41 +0100</pubDate>
       
       <guid>https://manuelfedele.github.io/posts/create-template-hugo/</guid>
-      <description>Introduction This tutorial will show you how to create a simple theme in Hugo. I assume that you are familiar with HTML, the bash command line, and that you are comfortable using Markdown to format content. I&amp;rsquo;ll explain how Hugo uses templates and how you can organize your templates to create a theme. I won&amp;rsquo;t cover using CSS to style your theme.
-We&amp;rsquo;ll start with creating a new site with a very basic template.</description>
+      <description>&lt;h2 id=&#34;introduction&#34;&gt;Introduction&lt;/h2&gt;
+&lt;p&gt;This tutorial will show you how to create a simple theme in Hugo. I assume that you are familiar with HTML, the bash command line, and that you are comfortable using Markdown to format content. I&amp;rsquo;ll explain how Hugo uses templates and how you can organize your templates to create a theme. I won&amp;rsquo;t cover using CSS to style your theme.&lt;/p&gt;
+&lt;p&gt;We&amp;rsquo;ll start with creating a new site with a very basic template. Then we&amp;rsquo;ll add in a few pages and posts. With small variations on that, you will be able to create many different types of web sites.&lt;/p&gt;</description>
     </item>
     
     <item>
@@ -363,9 +492,11 @@ We&amp;rsquo;ll start with creating a new site with a very basic template.</desc
       <pubDate>Mon, 01 Nov 2021 15:15:47 +0100</pubDate>
       
       <guid>https://manuelfedele.github.io/posts/poetry-no-module-seed-via-app-data/</guid>
-      <description>For my last project, I used poetry to manage dependencies and package my code. Poetry comes with all the tools you might need to manage your projects in a deterministic way.
-Anyway, after running poetry init in an existing project, I tried to let poetry create a virtuale environment, by adding the first dependecy, but when I did poetry add twisted it suddenly hang out, printing:
-No module named &amp;#39;virtualenv.seed.via_app_data&amp;#39; Why is that?</description>
+      <description>&lt;p&gt;For my last project, I used &lt;strong&gt;poetry&lt;/strong&gt; to manage dependencies and package my code.
+Poetry comes with all the tools you might need to manage your projects in a deterministic way.&lt;/p&gt;
+&lt;p&gt;Anyway, after running poetry init in an existing project, I tried to let poetry create a virtuale environment, by adding the first dependecy, but when I did poetry add twisted it suddenly hang out, printing:&lt;/p&gt;
+&lt;pre tabindex=&#34;0&#34;&gt;&lt;code&gt;No module named &amp;#39;virtualenv.seed.via_app_data&amp;#39;
+&lt;/code&gt;&lt;/pre&gt;&lt;p&gt;Why is that? Because &lt;strong&gt;poetry&lt;/strong&gt; was using the wrong virtualenv instance, so to solve this:&lt;/p&gt;</description>
     </item>
     
     <item>
@@ -374,9 +505,10 @@ No module named &amp;#39;virtualenv.seed.via_app_data&amp;#39; Why is that?</des
       <pubDate>Tue, 14 Apr 2020 09:37:07 +0100</pubDate>
       
       <guid>https://manuelfedele.github.io/posts/ubuntu-echo-plus-alexa-workaround-bluetooth-speaker/</guid>
-      <description>TLDR; I just unpaired the devices, then started a YouTube video on my Ubuntu machine and then repeated the steps below (pairing) while the audio was playing. At that point I’ve been able to send audio to my Echo Plus.
-Yesterday, I tried to use my Amazon Echo Plus as bluetooth speaker on my media center Running Ubuntu 20.04.
-I paired the Echo Plus using Alexa app on my phone following these steps:</description>
+      <description>&lt;h3 id=&#34;tldr&#34;&gt;TLDR;&lt;/h3&gt;
+&lt;p&gt;I just unpaired the devices, then started a YouTube video on my Ubuntu machine and then repeated the steps below (pairing) while the audio was playing. At that point I’ve been able to send audio to my Echo Plus.&lt;/p&gt;
+&lt;p&gt;Yesterday, I tried to use my Amazon Echo Plus as bluetooth speaker on my media center Running Ubuntu 20.04.&lt;/p&gt;
+&lt;p&gt;I paired the Echo Plus using Alexa app on my phone following these steps:&lt;/p&gt;</description>
     </item>
     
     

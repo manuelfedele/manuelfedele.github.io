@@ -18,8 +18,8 @@
       <pubDate>Mon, 19 Dec 2022 19:08:58 +0100</pubDate>
       
       <guid>https://manuelfedele.github.io/posts/create-desktop-application-stock-market-data-golang/</guid>
-      <description>Golang, also known as Go, is a popular programming language known for its simplicity, performance, and concurrency support. Fyne is an open-source cross-platform UI toolkit written in Go, which makes it an excellent choice for building desktop applications. In this article, we will discuss how to build a desktop application for stock market data using Golang and Fyne.
-Before we dive into the details of building the application, let&amp;rsquo;s first understand the requirements of the application.</description>
+      <description>&lt;p&gt;Golang, also known as Go, is a popular programming language known for its simplicity, performance, and concurrency support. Fyne is an open-source cross-platform UI toolkit written in Go, which makes it an excellent choice for building desktop applications. In this article, we will discuss how to build a desktop application for stock market data using Golang and Fyne.&lt;/p&gt;
+&lt;p&gt;Before we dive into the details of building the application, let&amp;rsquo;s first understand the requirements of the application.&lt;/p&gt;</description>
     </item>
     
   </channel>

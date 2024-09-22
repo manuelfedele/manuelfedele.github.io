@@ -18,9 +18,9 @@
       <pubDate>Sun, 12 Mar 2023 15:03:40 +0100</pubDate>
       
       <guid>https://manuelfedele.github.io/posts/schedule-github-action-with-cron/</guid>
-      <description>Cron scheduling is a useful feature in GitHub Actions that allows you to run a workflow on a schedule. This can be useful for tasks such as running tests or deploying code at regular intervals.
-To use cron scheduling in GitHub Actions, you will need to add a schedule key to your workflow file. The schedule key should contain a cron expression that specifies when the workflow should run.
-Here is an example of a workflow that runs every day at noon:</description>
+      <description>&lt;p&gt;Cron scheduling is a useful feature in GitHub Actions that allows you to run a workflow on a schedule. This can be useful for tasks such as running tests or deploying code at regular intervals.&lt;/p&gt;
+&lt;p&gt;To use cron scheduling in GitHub Actions, you will need to add a schedule key to your workflow file. The schedule key should contain a cron expression that specifies when the workflow should run.&lt;/p&gt;
+&lt;p&gt;Here is an example of a workflow that runs every day at noon:&lt;/p&gt;</description>
     </item>
     
     <item>
@@ -29,8 +29,17 @@ Here is an example of a workflow that runs every day at noon:</description>
       <pubDate>Tue, 20 Dec 2022 09:49:01 +0100</pubDate>
       
       <guid>https://manuelfedele.github.io/posts/create-website-with-gatsby-and-github-pages/</guid>
-      <description>GitHub Pages is a free service that allows you to host your website directly from a GitHub repository. It is a great platform for developers to showcase their portfolio, document their projects, or create a personal blog. In this article, we will walk through the steps of creating a static website using GitHub Pages and Gatsby, a popular static site generator.
-Install Gatsby First, you will need to install Gatsby by running the following command in your terminal: npm install -g gatsby-cli Create a new Gatsby project gatsby new my-website This will create a new directory called my-website with the necessary files and dependencies for your Gatsby project.</description>
+      <description>&lt;p&gt;GitHub Pages is a free service that allows you to host your website directly from a GitHub repository. It is a great platform for developers to showcase their portfolio, document their projects, or create a personal blog. In this article, we will walk through the steps of creating a static website using GitHub Pages and Gatsby, a popular static site generator.&lt;/p&gt;
+&lt;ol&gt;
+&lt;li&gt;Install Gatsby
+First, you will need to install Gatsby by running the following command in your terminal:&lt;/li&gt;
+&lt;/ol&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; class=&#34;chroma&#34;&gt;&lt;code class=&#34;language-bash&#34; data-lang=&#34;bash&#34;&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;npm install -g gatsby-cli
+&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;ol start=&#34;2&#34;&gt;
+&lt;li&gt;Create a new Gatsby project&lt;/li&gt;
+&lt;/ol&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; class=&#34;chroma&#34;&gt;&lt;code class=&#34;language-bash&#34; data-lang=&#34;bash&#34;&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;gatsby new my-website
+&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;p&gt;This will create a new directory called my-website with the necessary files and dependencies for your Gatsby project.&lt;/p&gt;</description>
     </item>
     
   </channel>

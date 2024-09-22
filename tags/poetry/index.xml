@@ -18,9 +18,11 @@
       <pubDate>Mon, 01 Nov 2021 15:15:47 +0100</pubDate>
       
       <guid>https://manuelfedele.github.io/posts/poetry-no-module-seed-via-app-data/</guid>
-      <description>For my last project, I used poetry to manage dependencies and package my code. Poetry comes with all the tools you might need to manage your projects in a deterministic way.
-Anyway, after running poetry init in an existing project, I tried to let poetry create a virtuale environment, by adding the first dependecy, but when I did poetry add twisted it suddenly hang out, printing:
-No module named &amp;#39;virtualenv.seed.via_app_data&amp;#39; Why is that?</description>
+      <description>&lt;p&gt;For my last project, I used &lt;strong&gt;poetry&lt;/strong&gt; to manage dependencies and package my code.
+Poetry comes with all the tools you might need to manage your projects in a deterministic way.&lt;/p&gt;
+&lt;p&gt;Anyway, after running poetry init in an existing project, I tried to let poetry create a virtuale environment, by adding the first dependecy, but when I did poetry add twisted it suddenly hang out, printing:&lt;/p&gt;
+&lt;pre tabindex=&#34;0&#34;&gt;&lt;code&gt;No module named &amp;#39;virtualenv.seed.via_app_data&amp;#39;
+&lt;/code&gt;&lt;/pre&gt;&lt;p&gt;Why is that? Because &lt;strong&gt;poetry&lt;/strong&gt; was using the wrong virtualenv instance, so to solve this:&lt;/p&gt;</description>
     </item>
     
   </channel>

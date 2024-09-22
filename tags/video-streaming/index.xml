@@ -18,8 +18,8 @@
       <pubDate>Wed, 04 Jan 2023 21:23:20 +0100</pubDate>
       
       <guid>https://manuelfedele.github.io/posts/streaming-video-with-golang/</guid>
-      <description>Streaming video with Go (Golang) is a popular choice for building efficient and scalable video streaming applications. In this blog post, we&amp;rsquo;ll discuss some of the key concepts and considerations for building a video streaming application with Go.
-One of the first things to consider when building a video streaming application is the underlying video format. Go has built-in support for working with a variety of video formats, including MP4, FLV, and AVI.</description>
+      <description>&lt;p&gt;Streaming video with Go (Golang) is a popular choice for building efficient and scalable video streaming applications. In this blog post, we&amp;rsquo;ll discuss some of the key concepts and considerations for building a video streaming application with Go.&lt;/p&gt;
+&lt;p&gt;One of the first things to consider when building a video streaming application is the underlying video format. Go has built-in support for working with a variety of video formats, including MP4, FLV, and AVI. However, the most common format for streaming video is probably H.264, which is a popular choice due to its high compression ratio and wide compatibility with a variety of devices and platforms.&lt;/p&gt;</description>
     </item>
     
   </channel>

@@ -18,8 +18,8 @@
       <pubDate>Wed, 04 Jan 2023 16:00:43 +0100</pubDate>
       
       <guid>https://manuelfedele.github.io/posts/use-protobuf-with-fastapi/</guid>
-      <description>Protocol buffers, also known as Protobuf, are a popular data serialization format used for communication between services. They are efficient, easy to use, and language-agnostic. In this article, we will look at how to use Protobuf with FastAPI, a modern, high-performance web framework for building APIs with Python.
-First, let&amp;rsquo;s start by installing the necessary dependencies. You will need to install fastapi, google-protobuf, and grpcio. You can do this by running the following command:</description>
+      <description>&lt;p&gt;Protocol buffers, also known as Protobuf, are a popular data serialization format used for communication between services. They are efficient, easy to use, and language-agnostic. In this article, we will look at how to use Protobuf with FastAPI, a modern, high-performance web framework for building APIs with Python.&lt;/p&gt;
+&lt;p&gt;First, let&amp;rsquo;s start by installing the necessary dependencies. You will need to install fastapi, google-protobuf, and grpcio. You can do this by running the following command:&lt;/p&gt;</description>
     </item>
     
     <item>
@@ -28,10 +28,17 @@ First, let&amp;rsquo;s start by installing the necessary dependencies. You will 
       <pubDate>Tue, 27 Dec 2022 18:48:44 +0100</pubDate>
       
       <guid>https://manuelfedele.github.io/posts/use-protobuf-with-golang/</guid>
-      <description>Protocol Buffers (Protobuf) is a language- and platform-neutral data serialization format developed by Google. It allows you to define data structures in a .proto file and then use code generation tools to generate code in various languages for working with those data structures.
-To use Protobuf with Go, you&amp;rsquo;ll need to do the following:
-Install the Protobuf compiler (protoc) and the Go Protobuf plugin:
-# Install protoc wget https://github.com/protocolbuffers/protobuf/releases/download/v3.14.0/protoc-3.14.0-linux-x86_64.zip unzip protoc-3.</description>
+      <description>&lt;p&gt;Protocol Buffers (Protobuf) is a language- and platform-neutral data serialization format developed by Google. It allows you to define data structures in a .proto file and then use code generation tools to generate code in various languages for working with those data structures.&lt;/p&gt;
+&lt;p&gt;To use Protobuf with Go, you&amp;rsquo;ll need to do the following:&lt;/p&gt;
+&lt;p&gt;Install the Protobuf compiler (protoc) and the Go Protobuf plugin:&lt;/p&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; class=&#34;chroma&#34;&gt;&lt;code class=&#34;language-bash&#34; data-lang=&#34;bash&#34;&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;&lt;span class=&#34;c1&#34;&gt;# Install protoc&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;wget https://github.com/protocolbuffers/protobuf/releases/download/v3.14.0/protoc-3.14.0-linux-x86_64.zip
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;unzip protoc-3.14.0-linux-x86_64.zip -d protoc3
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;sudo mv protoc3/bin/* /usr/local/bin/
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;&lt;span class=&#34;c1&#34;&gt;# Install the Go Protobuf plugin&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;go get -u github.com/golang/protobuf/protoc-gen-go
+&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;p&gt;Define your data structures in a .proto file. For example:&lt;/p&gt;</description>
     </item>
     
   </channel>

@@ -18,8 +18,8 @@
       <pubDate>Mon, 09 Jan 2023 20:49:03 +0100</pubDate>
       
       <guid>https://manuelfedele.github.io/posts/unit-testing-in-golang/</guid>
-      <description>Unit testing is a software testing technique in which individual units (smallest testable parts) of a software application are tested in isolation from the rest of the application. The goal of unit testing is to validate that each unit of the application is working as intended and meets the specified requirements.
-In Go, the testing package provides support for writing unit tests. To write unit tests, you need to create a file with a name that ends in _test.</description>
+      <description>&lt;p&gt;Unit testing is a software testing technique in which individual units (smallest testable parts) of a software application are tested in isolation from the rest of the application. The goal of unit testing is to validate that each unit of the application is working as intended and meets the specified requirements.&lt;/p&gt;
+&lt;p&gt;In Go, the testing package provides support for writing unit tests. To write unit tests, you need to create a file with a name that ends in _test.go and place it in the same package as the code you want to test. The testing package also provides a testing.T type that represents a testing context and has methods for reporting test failures and logging messages.&lt;/p&gt;</description>
     </item>
     
   </channel>

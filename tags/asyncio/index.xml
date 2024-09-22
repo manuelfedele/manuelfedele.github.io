@@ -18,8 +18,8 @@
       <pubDate>Sun, 01 Jan 2023 14:50:35 +0100</pubDate>
       
       <guid>https://manuelfedele.github.io/posts/understand-async-await-in-python/</guid>
-      <description>Async/await is a powerful programming construct that allows you to write asynchronous code in a synchronous-like style. It was introduced in Python 3.5 as part of the asyncio module and has become a popular choice for writing concurrent and parallel code in Python.
-In this post, we&amp;rsquo;ll take a look at what async/await is and how it works, as well as some of the benefits and drawbacks of using it. We&amp;rsquo;ll also see some examples of how to use async/await in Python to write efficient and scalable code.</description>
+      <description>&lt;p&gt;Async/await is a powerful programming construct that allows you to write asynchronous code in a synchronous-like style. It was introduced in Python 3.5 as part of the asyncio module and has become a popular choice for writing concurrent and parallel code in Python.&lt;/p&gt;
+&lt;p&gt;In this post, we&amp;rsquo;ll take a look at what async/await is and how it works, as well as some of the benefits and drawbacks of using it. We&amp;rsquo;ll also see some examples of how to use async/await in Python to write efficient and scalable code.&lt;/p&gt;</description>
     </item>
     
   </channel>

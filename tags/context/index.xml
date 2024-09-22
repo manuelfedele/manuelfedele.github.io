@@ -18,8 +18,8 @@
       <pubDate>Tue, 03 Jan 2023 20:36:29 +0100</pubDate>
       
       <guid>https://manuelfedele.github.io/posts/the-context-package/</guid>
-      <description>Context in Go is a type that carries a request-scoped value across API boundaries. It is designed to be used in long-lived requests, such as an HTTP server handling multiple requests over the lifetime of a process.
-One of the primary use cases of context is to cancel long-running operations. For example, if an HTTP server receives a request with a cancelation token, it can use that token to cancel the request if the client closes the connection.</description>
+      <description>&lt;p&gt;Context in Go is a type that carries a request-scoped value across API boundaries. It is designed to be used in long-lived requests, such as an HTTP server handling multiple requests over the lifetime of a process.&lt;/p&gt;
+&lt;p&gt;One of the primary use cases of context is to cancel long-running operations. For example, if an HTTP server receives a request with a cancelation token, it can use that token to cancel the request if the client closes the connection. This helps to avoid resource leaks by freeing up resources that would have been used by the request.&lt;/p&gt;</description>
     </item>
     
   </channel>

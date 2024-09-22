@@ -18,8 +18,14 @@
       <pubDate>Sat, 31 Dec 2022 14:26:23 +0100</pubDate>
       
       <guid>https://manuelfedele.github.io/posts/create-a-telegram-bot-with-rust/</guid>
-      <description>Install Rust Before you can start writing Rust code, you&amp;rsquo;ll need to install the Rust programming language on your computer. You can do this by following the instructions on the Rust website (https://www.rust-lang.org/tools/install).
-Set up a new Rust project Once you have Rust installed, you&amp;rsquo;ll need to create a new Rust project using the cargo command-line tool. Open a terminal and navigate to the directory where you want to store your project, then run the following command: cargo new telegram-bot &amp;ndash;bin.</description>
+      <description>&lt;ol&gt;
+&lt;li&gt;
+&lt;h2 id=&#34;install-rust&#34;&gt;Install Rust&lt;/h2&gt;
+&lt;p&gt;Before you can start writing Rust code, you&amp;rsquo;ll need to install the Rust programming language on your computer. You can do this by following the instructions on the Rust website (&lt;a href=&#34;https://www.rust-lang.org/tools/install)&#34;&gt;https://www.rust-lang.org/tools/install)&lt;/a&gt;.&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;h2 id=&#34;set-up-a-new-rust-project&#34;&gt;Set up a new Rust project&lt;/h2&gt;
+&lt;p&gt;Once you have Rust installed, you&amp;rsquo;ll need to create a new Rust project using the cargo command-line tool. Open a terminal and navigate to the directory where you want to store your project, then run the following command: cargo new telegram-bot &amp;ndash;bin. This will create a new Rust project called &amp;ldquo;telegram-bot&amp;rdquo; with a binary crate (executable).&lt;/p&gt;</description>
     </item>
     
   </channel>

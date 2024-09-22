@@ -18,9 +18,10 @@
       <pubDate>Tue, 14 Apr 2020 09:37:07 +0100</pubDate>
       
       <guid>https://manuelfedele.github.io/posts/ubuntu-echo-plus-alexa-workaround-bluetooth-speaker/</guid>
-      <description>TLDR; I just unpaired the devices, then started a YouTube video on my Ubuntu machine and then repeated the steps below (pairing) while the audio was playing. At that point I’ve been able to send audio to my Echo Plus.
-Yesterday, I tried to use my Amazon Echo Plus as bluetooth speaker on my media center Running Ubuntu 20.04.
-I paired the Echo Plus using Alexa app on my phone following these steps:</description>
+      <description>&lt;h3 id=&#34;tldr&#34;&gt;TLDR;&lt;/h3&gt;
+&lt;p&gt;I just unpaired the devices, then started a YouTube video on my Ubuntu machine and then repeated the steps below (pairing) while the audio was playing. At that point I’ve been able to send audio to my Echo Plus.&lt;/p&gt;
+&lt;p&gt;Yesterday, I tried to use my Amazon Echo Plus as bluetooth speaker on my media center Running Ubuntu 20.04.&lt;/p&gt;
+&lt;p&gt;I paired the Echo Plus using Alexa app on my phone following these steps:&lt;/p&gt;</description>
     </item>
     
   </channel>

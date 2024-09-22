@@ -18,8 +18,9 @@
       <pubDate>Tue, 07 Mar 2023 17:14:30 +0100</pubDate>
       
       <guid>https://manuelfedele.github.io/posts/how-to-delete-git-branch-locally/</guid>
-      <description>To delete a Git branch locally, you can use the git branch command with the -d flag, followed by the name of the branch you want to delete. For example:
-git branch -d branch_name This will delete the specified branch if it has already been fully merged into the current branch. If the branch has not been fully merged, you can use the -D flag instead, which will force the deletion of the branch.</description>
+      <description>&lt;p&gt;To delete a Git branch locally, you can use the &lt;code&gt;git branch&lt;/code&gt; command with the &lt;code&gt;-d&lt;/code&gt; flag, followed by the name of the branch you want to delete. For example:&lt;/p&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; class=&#34;chroma&#34;&gt;&lt;code class=&#34;language-bash&#34; data-lang=&#34;bash&#34;&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;git branch -d branch_name
+&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;p&gt;This will delete the specified branch if it has already been fully merged into the current branch. If the branch has not been fully merged, you can use the -D flag instead, which will force the deletion of the branch.&lt;/p&gt;</description>
     </item>
     
     <item>
@@ -28,8 +29,8 @@ git branch -d branch_name This will delete the specified branch if it has alread
       <pubDate>Tue, 28 Feb 2023 17:09:02 +0100</pubDate>
       
       <guid>https://manuelfedele.github.io/posts/how-to-undo-most-recent-local-git-commit/</guid>
-      <description>Git is a version control system that allows developers to track changes to their codebase and collaborate with others. One of the useful features of Git is the ability to revert changes that have been made to the codebase. In this article, we will look at how to undo the most recent local commits in Git.
-There are several ways to undo commits in Git, and the method you choose will depend on your specific needs.</description>
+      <description>&lt;p&gt;Git is a version control system that allows developers to track changes to their codebase and collaborate with others. One of the useful features of Git is the ability to revert changes that have been made to the codebase. In this article, we will look at how to undo the most recent local commits in Git.&lt;/p&gt;
+&lt;p&gt;There are several ways to undo commits in Git, and the method you choose will depend on your specific needs. Here are three common ways to undo commits in Git:&lt;/p&gt;</description>
     </item>
     
     <item>
@@ -38,8 +39,8 @@ There are several ways to undo commits in Git, and the method you choose will de
       <pubDate>Sun, 08 Jan 2023 17:16:40 +0100</pubDate>
       
       <guid>https://manuelfedele.github.io/posts/what-is-the-difference-between-git-pull-and-git-fetch/</guid>
-      <description>Git is a version control system that is widely used in software development to track and manage changes to source code. Two of the most common Git commands that developers use to retrieve updates from a remote repository are git pull and git fetch. While these two commands may seem similar at first glance, they have some important differences that are worth understanding.
-The git pull command is a combination of git fetch and git merge.</description>
+      <description>&lt;p&gt;Git is a version control system that is widely used in software development to track and manage changes to source code. Two of the most common Git commands that developers use to retrieve updates from a remote repository are &lt;code&gt;git pull&lt;/code&gt; and &lt;code&gt;git fetch&lt;/code&gt;. While these two commands may seem similar at first glance, they have some important differences that are worth understanding.&lt;/p&gt;
+&lt;p&gt;The &lt;code&gt;git pull&lt;/code&gt; command is a combination of &lt;code&gt;git fetch&lt;/code&gt; and &lt;code&gt;git merge&lt;/code&gt;. When you run git pull, Git first retrieves the latest version of the repository from the remote server. It then merges the changes into your local copy of the repository. This means that git pull not only downloads the changes from the remote repository, but it also integrates them into your local copy.&lt;/p&gt;</description>
     </item>
     
   </channel>
