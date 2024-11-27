@@ -11,8 +11,18 @@
     </image>
     <generator>Hugo -- 0.139.2</generator>
     <language>en</language>
-    <lastBuildDate>Sun, 26 Nov 2023 11:29:46 +0100</lastBuildDate>
+    <lastBuildDate>Wed, 27 Nov 2024 17:01:00 +0000</lastBuildDate>
     <atom:link href="https://manuelfedele.github.io/posts/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Implementing Dijkstra’s Algorithm in Go</title>
+      <link>https://manuelfedele.github.io/posts/implementing-djikstra-algorithm-in-go/</link>
+      <pubDate>Wed, 27 Nov 2024 17:01:00 +0000</pubDate>
+      <guid>https://manuelfedele.github.io/posts/implementing-djikstra-algorithm-in-go/</guid>
+      <description>&lt;h1 id=&#34;a-beginners-guide-and-optimization-techniques&#34;&gt;A Beginner’s Guide and Optimization Techniques&lt;/h1&gt;
+&lt;p&gt;Graphs are fundamental data structures in computer science, representing relationships between entities. One of the most common problems involving graphs is finding the shortest path between nodes. Dijkstra’s algorithm is a classic solution to this problem for graphs with non-negative edge weights. In this guide, we’ll implement Dijkstra’s algorithm in Go and explore ways to optimize it using advanced data structures.\&lt;/p&gt;
+&lt;h2 id=&#34;basic-implementation-of-dijkstras-algorithm&#34;&gt;Basic Implementation of Dijkstra’s Algorithm&lt;/h2&gt;
+&lt;p&gt;Let’s begin by understanding the core concept. Dijkstra’s algorithm maintains a set of nodes whose shortest distance from the source is known and repeatedly selects the node with the minimum distance to explore its neighbors.&lt;/p&gt;</description>
+    </item>
     <item>
       <title>Clipboard Watch Remove Accidentally Typed Passwords</title>
       <link>https://manuelfedele.github.io/posts/clipboard-watch-remove-accidentally-typed-passwords/</link>

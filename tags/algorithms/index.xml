@@ -1,9 +1,9 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes"?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/">
   <channel>
-    <title>Algorithms on Git Push and Run</title>
+    <title>“Algorithms” on Git Push and Run</title>
     <link>https://manuelfedele.github.io/tags/algorithms/</link>
-    <description>Recent content in Algorithms on Git Push and Run</description>
+    <description>Recent content in “Algorithms” on Git Push and Run</description>
     <image>
       <title>Git Push and Run</title>
       <url>https://manuelfedele.github.io/img/card-pillow.jpg</url>
@@ -11,15 +11,17 @@
     </image>
     <generator>Hugo -- 0.139.2</generator>
     <language>en</language>
-    <lastBuildDate>Wed, 01 Feb 2023 21:09:26 +0100</lastBuildDate>
+    <lastBuildDate>Wed, 27 Nov 2024 17:01:00 +0000</lastBuildDate>
     <atom:link href="https://manuelfedele.github.io/tags/algorithms/index.xml" rel="self" type="application/rss+xml" />
     <item>
-      <title>Build a Sudoku Solver in Golang</title>
-      <link>https://manuelfedele.github.io/posts/build-a-sudoku-solver-in-golang/</link>
-      <pubDate>Wed, 01 Feb 2023 21:09:26 +0100</pubDate>
-      <guid>https://manuelfedele.github.io/posts/build-a-sudoku-solver-in-golang/</guid>
-      <description>&lt;h1 id=&#34;sudoku-solver-in-go-a-beginners-guide-and-optimization-techniques&#34;&gt;Sudoku Solver in Go: A Beginner&amp;rsquo;s Guide and Optimization Techniques&lt;/h1&gt;
-&lt;p&gt;The game of Sudoku has always been a popular pastime for many. Whether you&amp;rsquo;re an absolute novice or a seasoned veteran, the challenge of filling out a 9x9 grid with digits so that each column, each row, and each of the nine 3x3 subgrids contains all of the digits from 1 to 9, is an appealing task. Today, we&amp;rsquo;re going to see how we can automate this process in Golang, and how we can optimize it using memoization techniques.&lt;/p&gt;</description>
+      <title>Implementing Dijkstra’s Algorithm in Go</title>
+      <link>https://manuelfedele.github.io/posts/implementing-djikstra-algorithm-in-go/</link>
+      <pubDate>Wed, 27 Nov 2024 17:01:00 +0000</pubDate>
+      <guid>https://manuelfedele.github.io/posts/implementing-djikstra-algorithm-in-go/</guid>
+      <description>&lt;h1 id=&#34;a-beginners-guide-and-optimization-techniques&#34;&gt;A Beginner’s Guide and Optimization Techniques&lt;/h1&gt;
+&lt;p&gt;Graphs are fundamental data structures in computer science, representing relationships between entities. One of the most common problems involving graphs is finding the shortest path between nodes. Dijkstra’s algorithm is a classic solution to this problem for graphs with non-negative edge weights. In this guide, we’ll implement Dijkstra’s algorithm in Go and explore ways to optimize it using advanced data structures.\&lt;/p&gt;
+&lt;h2 id=&#34;basic-implementation-of-dijkstras-algorithm&#34;&gt;Basic Implementation of Dijkstra’s Algorithm&lt;/h2&gt;
+&lt;p&gt;Let’s begin by understanding the core concept. Dijkstra’s algorithm maintains a set of nodes whose shortest distance from the source is known and repeatedly selects the node with the minimum distance to explore its neighbors.&lt;/p&gt;</description>
     </item>
   </channel>
 </rss>
