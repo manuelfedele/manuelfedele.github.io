@@ -11,8 +11,18 @@
     </image>
     <generator>Hugo -- 0.139.2</generator>
     <language>en</language>
-    <lastBuildDate>Wed, 27 Nov 2024 17:18:00 +0000</lastBuildDate>
+    <lastBuildDate>Wed, 27 Nov 2024 17:33:00 +0000</lastBuildDate>
     <atom:link href="https://manuelfedele.github.io/posts/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Building a Chess Engine - From Position Evaluation to Search Techniques</title>
+      <link>https://manuelfedele.github.io/posts/evaluate-chess-position/</link>
+      <pubDate>Wed, 27 Nov 2024 17:33:00 +0000</pubDate>
+      <guid>https://manuelfedele.github.io/posts/evaluate-chess-position/</guid>
+      <description>&lt;h1 id=&#34;building-a-chess-engine-from-position-evaluation-to-search-techniques&#34;&gt;Building a Chess Engine: From Position Evaluation to Search Techniques&lt;/h1&gt;
+&lt;p&gt;Chess engines are fascinating pieces of software that combine various computer science concepts: position evaluation, tree search, move generation, and optimization techniques. This guide will walk you through implementing a chess engine, with a particular focus on position evaluation and search strategies.&lt;/p&gt;
+&lt;h2 id=&#34;part-1-basic-position-representation&#34;&gt;Part 1: Basic Position Representation&lt;/h2&gt;
+&lt;p&gt;First, let&amp;rsquo;s implement a basic board representation. While FEN (Forsyth–Edwards Notation) is the standard for chess positions, we&amp;rsquo;ll use a more computation-friendly format internally.&lt;/p&gt;</description>
+    </item>
     <item>
       <title>Implementing a JWT Issuer in Go</title>
       <link>https://manuelfedele.github.io/posts/jwt-issuer-in-go/</link>

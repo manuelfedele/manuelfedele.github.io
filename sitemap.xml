@@ -2,13 +2,22 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   <url>
-    <loc>https://manuelfedele.github.io/tags/authentication/</loc>
-    <lastmod>2024-11-27T17:18:00+00:00</lastmod>
+    <loc>https://manuelfedele.github.io/posts/evaluate-chess-position/</loc>
+    <lastmod>2024-11-27T17:33:00+00:00</lastmod>
   </url><url>
     <loc>https://manuelfedele.github.io/</loc>
-    <lastmod>2024-11-27T17:18:00+00:00</lastmod>
+    <lastmod>2024-11-27T17:33:00+00:00</lastmod>
   </url><url>
     <loc>https://manuelfedele.github.io/tags/golang/</loc>
+    <lastmod>2024-11-27T17:33:00+00:00</lastmod>
+  </url><url>
+    <loc>https://manuelfedele.github.io/posts/</loc>
+    <lastmod>2024-11-27T17:33:00+00:00</lastmod>
+  </url><url>
+    <loc>https://manuelfedele.github.io/tags/</loc>
+    <lastmod>2024-11-27T17:33:00+00:00</lastmod>
+  </url><url>
+    <loc>https://manuelfedele.github.io/tags/authentication/</loc>
     <lastmod>2024-11-27T17:18:00+00:00</lastmod>
   </url><url>
     <loc>https://manuelfedele.github.io/posts/jwt-issuer-in-go/</loc>
@@ -17,13 +26,7 @@
     <loc>https://manuelfedele.github.io/tags/jwt/</loc>
     <lastmod>2024-11-27T17:18:00+00:00</lastmod>
   </url><url>
-    <loc>https://manuelfedele.github.io/posts/</loc>
-    <lastmod>2024-11-27T17:18:00+00:00</lastmod>
-  </url><url>
     <loc>https://manuelfedele.github.io/tags/security/</loc>
-    <lastmod>2024-11-27T17:18:00+00:00</lastmod>
-  </url><url>
-    <loc>https://manuelfedele.github.io/tags/</loc>
     <lastmod>2024-11-27T17:18:00+00:00</lastmod>
   </url><url>
     <loc>https://manuelfedele.github.io/tags/algorithms/</loc>
