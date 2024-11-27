@@ -9,14 +9,14 @@
       <url>https://manuelfedele.github.io/img/card-pillow.jpg</url>
       <link>https://manuelfedele.github.io/img/card-pillow.jpg</link>
     </image>
-    <generator>Hugo -- gohugo.io</generator>
+    <generator>Hugo -- 0.139.2</generator>
     <language>en</language>
-    <lastBuildDate>Sat, 31 Dec 2022 14:26:23 +0100</lastBuildDate><atom:link href="https://manuelfedele.github.io/tags/rust/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Sat, 31 Dec 2022 14:26:23 +0100</lastBuildDate>
+    <atom:link href="https://manuelfedele.github.io/tags/rust/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Create a Telegram Bot With Rust</title>
       <link>https://manuelfedele.github.io/posts/create-a-telegram-bot-with-rust/</link>
       <pubDate>Sat, 31 Dec 2022 14:26:23 +0100</pubDate>
-      
       <guid>https://manuelfedele.github.io/posts/create-a-telegram-bot-with-rust/</guid>
       <description>&lt;ol&gt;
 &lt;li&gt;
@@ -27,6 +27,5 @@
 &lt;h2 id=&#34;set-up-a-new-rust-project&#34;&gt;Set up a new Rust project&lt;/h2&gt;
 &lt;p&gt;Once you have Rust installed, you&amp;rsquo;ll need to create a new Rust project using the cargo command-line tool. Open a terminal and navigate to the directory where you want to store your project, then run the following command: cargo new telegram-bot &amp;ndash;bin. This will create a new Rust project called &amp;ldquo;telegram-bot&amp;rdquo; with a binary crate (executable).&lt;/p&gt;</description>
     </item>
-    
   </channel>
 </rss>

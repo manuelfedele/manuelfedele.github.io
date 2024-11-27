@@ -9,24 +9,22 @@
       <url>https://manuelfedele.github.io/img/card-pillow.jpg</url>
       <link>https://manuelfedele.github.io/img/card-pillow.jpg</link>
     </image>
-    <generator>Hugo -- gohugo.io</generator>
+    <generator>Hugo -- 0.139.2</generator>
     <language>en</language>
-    <lastBuildDate>Wed, 04 Jan 2023 16:00:43 +0100</lastBuildDate><atom:link href="https://manuelfedele.github.io/tags/fastapi/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Wed, 04 Jan 2023 16:00:43 +0100</lastBuildDate>
+    <atom:link href="https://manuelfedele.github.io/tags/fastapi/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Use Protobuf With Fastapi</title>
       <link>https://manuelfedele.github.io/posts/use-protobuf-with-fastapi/</link>
       <pubDate>Wed, 04 Jan 2023 16:00:43 +0100</pubDate>
-      
       <guid>https://manuelfedele.github.io/posts/use-protobuf-with-fastapi/</guid>
       <description>&lt;p&gt;Protocol buffers, also known as Protobuf, are a popular data serialization format used for communication between services. They are efficient, easy to use, and language-agnostic. In this article, we will look at how to use Protobuf with FastAPI, a modern, high-performance web framework for building APIs with Python.&lt;/p&gt;
 &lt;p&gt;First, let&amp;rsquo;s start by installing the necessary dependencies. You will need to install fastapi, google-protobuf, and grpcio. You can do this by running the following command:&lt;/p&gt;</description>
     </item>
-    
     <item>
       <title>Create a Webserver With Fastapi and Uvicorn</title>
       <link>https://manuelfedele.github.io/posts/create-webserver-with-fastapi-and-uvicorn/</link>
       <pubDate>Fri, 30 Dec 2022 14:08:35 +0100</pubDate>
-      
       <guid>https://manuelfedele.github.io/posts/create-webserver-with-fastapi-and-uvicorn/</guid>
       <description>&lt;p&gt;FastAPI is a modern, fast, web framework for building APIs with Python 3.7 and above. It is built on top of Starlette, a lightweight ASGI framework, and uses the uvicorn ASGI server.&lt;/p&gt;
 &lt;p&gt;Here is an example of how to create a web server with FastAPI and uvicorn:&lt;/p&gt;
@@ -55,6 +53,5 @@
 &lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;    &lt;span class=&#34;n&#34;&gt;uvicorn&lt;/span&gt;&lt;span class=&#34;o&#34;&gt;.&lt;/span&gt;&lt;span class=&#34;n&#34;&gt;run&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;(&lt;/span&gt;&lt;span class=&#34;n&#34;&gt;app&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;,&lt;/span&gt; &lt;span class=&#34;n&#34;&gt;host&lt;/span&gt;&lt;span class=&#34;o&#34;&gt;=&lt;/span&gt;&lt;span class=&#34;s2&#34;&gt;&amp;#34;0.0.0.0&amp;#34;&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;,&lt;/span&gt; &lt;span class=&#34;n&#34;&gt;port&lt;/span&gt;&lt;span class=&#34;o&#34;&gt;=&lt;/span&gt;&lt;span class=&#34;mi&#34;&gt;8000&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;)&lt;/span&gt;
 &lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;p&gt;This will start the web server on the specified host and port (in this case, 0.0.0.0 and 8000). You can then access the endpoint at http://0.0.0.0:8000/.&lt;/p&gt;</description>
     </item>
-    
   </channel>
 </rss>

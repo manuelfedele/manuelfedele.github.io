@@ -9,34 +9,30 @@
       <url>https://manuelfedele.github.io/img/card-pillow.jpg</url>
       <link>https://manuelfedele.github.io/img/card-pillow.jpg</link>
     </image>
-    <generator>Hugo -- gohugo.io</generator>
+    <generator>Hugo -- 0.139.2</generator>
     <language>en</language>
-    <lastBuildDate>Wed, 04 Jan 2023 16:00:43 +0100</lastBuildDate><atom:link href="https://manuelfedele.github.io/tags/python/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Wed, 04 Jan 2023 16:00:43 +0100</lastBuildDate>
+    <atom:link href="https://manuelfedele.github.io/tags/python/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Use Protobuf With Fastapi</title>
       <link>https://manuelfedele.github.io/posts/use-protobuf-with-fastapi/</link>
       <pubDate>Wed, 04 Jan 2023 16:00:43 +0100</pubDate>
-      
       <guid>https://manuelfedele.github.io/posts/use-protobuf-with-fastapi/</guid>
       <description>&lt;p&gt;Protocol buffers, also known as Protobuf, are a popular data serialization format used for communication between services. They are efficient, easy to use, and language-agnostic. In this article, we will look at how to use Protobuf with FastAPI, a modern, high-performance web framework for building APIs with Python.&lt;/p&gt;
 &lt;p&gt;First, let&amp;rsquo;s start by installing the necessary dependencies. You will need to install fastapi, google-protobuf, and grpcio. You can do this by running the following command:&lt;/p&gt;</description>
     </item>
-    
     <item>
       <title>Understand Async Await in Python</title>
       <link>https://manuelfedele.github.io/posts/understand-async-await-in-python/</link>
       <pubDate>Sun, 01 Jan 2023 14:50:35 +0100</pubDate>
-      
       <guid>https://manuelfedele.github.io/posts/understand-async-await-in-python/</guid>
       <description>&lt;p&gt;Async/await is a powerful programming construct that allows you to write asynchronous code in a synchronous-like style. It was introduced in Python 3.5 as part of the asyncio module and has become a popular choice for writing concurrent and parallel code in Python.&lt;/p&gt;
 &lt;p&gt;In this post, we&amp;rsquo;ll take a look at what async/await is and how it works, as well as some of the benefits and drawbacks of using it. We&amp;rsquo;ll also see some examples of how to use async/await in Python to write efficient and scalable code.&lt;/p&gt;</description>
     </item>
-    
     <item>
       <title>Create a Webserver With Fastapi and Uvicorn</title>
       <link>https://manuelfedele.github.io/posts/create-webserver-with-fastapi-and-uvicorn/</link>
       <pubDate>Fri, 30 Dec 2022 14:08:35 +0100</pubDate>
-      
       <guid>https://manuelfedele.github.io/posts/create-webserver-with-fastapi-and-uvicorn/</guid>
       <description>&lt;p&gt;FastAPI is a modern, fast, web framework for building APIs with Python 3.7 and above. It is built on top of Starlette, a lightweight ASGI framework, and uses the uvicorn ASGI server.&lt;/p&gt;
 &lt;p&gt;Here is an example of how to create a web server with FastAPI and uvicorn:&lt;/p&gt;
@@ -65,22 +61,18 @@
 &lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;    &lt;span class=&#34;n&#34;&gt;uvicorn&lt;/span&gt;&lt;span class=&#34;o&#34;&gt;.&lt;/span&gt;&lt;span class=&#34;n&#34;&gt;run&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;(&lt;/span&gt;&lt;span class=&#34;n&#34;&gt;app&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;,&lt;/span&gt; &lt;span class=&#34;n&#34;&gt;host&lt;/span&gt;&lt;span class=&#34;o&#34;&gt;=&lt;/span&gt;&lt;span class=&#34;s2&#34;&gt;&amp;#34;0.0.0.0&amp;#34;&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;,&lt;/span&gt; &lt;span class=&#34;n&#34;&gt;port&lt;/span&gt;&lt;span class=&#34;o&#34;&gt;=&lt;/span&gt;&lt;span class=&#34;mi&#34;&gt;8000&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;)&lt;/span&gt;
 &lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;p&gt;This will start the web server on the specified host and port (in this case, 0.0.0.0 and 8000). You can then access the endpoint at http://0.0.0.0:8000/.&lt;/p&gt;</description>
     </item>
-    
     <item>
       <title>What Does Yield Keyword Do in Python</title>
       <link>https://manuelfedele.github.io/posts/what-does-yield-keyword-do-in-python/</link>
       <pubDate>Thu, 29 Dec 2022 10:19:25 +0100</pubDate>
-      
       <guid>https://manuelfedele.github.io/posts/what-does-yield-keyword-do-in-python/</guid>
       <description>&lt;p&gt;The keyword &amp;ldquo;yield&amp;rdquo; is a important part of the Python programming language, and it can be used in a number of different ways. In this article, we&amp;rsquo;ll take a closer look at what the yield keyword does in Python, and how it can be used to create more efficient and powerful programs.&lt;/p&gt;
 &lt;p&gt;The primary use of the yield keyword is to create a generator function. A generator function is a special type of function that produces a sequence of values, one at a time, when it is called. Unlike a regular function, which executes all of its code and returns a single value, a generator function can be paused at any point and resumed later, allowing it to produce a potentially infinite sequence of values.&lt;/p&gt;</description>
     </item>
-    
     <item>
       <title>Poetry No Module Seed via App Data</title>
       <link>https://manuelfedele.github.io/posts/poetry-no-module-seed-via-app-data/</link>
       <pubDate>Mon, 01 Nov 2021 15:15:47 +0100</pubDate>
-      
       <guid>https://manuelfedele.github.io/posts/poetry-no-module-seed-via-app-data/</guid>
       <description>&lt;p&gt;For my last project, I used &lt;strong&gt;poetry&lt;/strong&gt; to manage dependencies and package my code.
 Poetry comes with all the tools you might need to manage your projects in a deterministic way.&lt;/p&gt;
@@ -88,6 +80,5 @@ Poetry comes with all the tools you might need to manage your projects in a dete
 &lt;pre tabindex=&#34;0&#34;&gt;&lt;code&gt;No module named &amp;#39;virtualenv.seed.via_app_data&amp;#39;
 &lt;/code&gt;&lt;/pre&gt;&lt;p&gt;Why is that? Because &lt;strong&gt;poetry&lt;/strong&gt; was using the wrong virtualenv instance, so to solve this:&lt;/p&gt;</description>
     </item>
-    
   </channel>
 </rss>

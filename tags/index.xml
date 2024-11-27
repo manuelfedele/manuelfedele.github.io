@@ -9,431 +9,338 @@
       <url>https://manuelfedele.github.io/img/card-pillow.jpg</url>
       <link>https://manuelfedele.github.io/img/card-pillow.jpg</link>
     </image>
-    <generator>Hugo -- gohugo.io</generator>
+    <generator>Hugo -- 0.139.2</generator>
     <language>en</language>
-    <lastBuildDate>Wed, 12 Jul 2023 08:42:00 +0200</lastBuildDate><atom:link href="https://manuelfedele.github.io/tags/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Wed, 12 Jul 2023 08:42:00 +0200</lastBuildDate>
+    <atom:link href="https://manuelfedele.github.io/tags/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>AWS</title>
       <link>https://manuelfedele.github.io/tags/aws/</link>
       <pubDate>Wed, 12 Jul 2023 08:42:00 +0200</pubDate>
-      
       <guid>https://manuelfedele.github.io/tags/aws/</guid>
       <description></description>
     </item>
-    
     <item>
       <title>Cloudwatch</title>
       <link>https://manuelfedele.github.io/tags/cloudwatch/</link>
       <pubDate>Wed, 12 Jul 2023 08:42:00 +0200</pubDate>
-      
       <guid>https://manuelfedele.github.io/tags/cloudwatch/</guid>
       <description></description>
     </item>
-    
     <item>
       <title>Elasticsearch</title>
       <link>https://manuelfedele.github.io/tags/elasticsearch/</link>
       <pubDate>Wed, 12 Jul 2023 08:42:00 +0200</pubDate>
-      
       <guid>https://manuelfedele.github.io/tags/elasticsearch/</guid>
       <description></description>
     </item>
-    
     <item>
       <title>Kibana</title>
       <link>https://manuelfedele.github.io/tags/kibana/</link>
       <pubDate>Wed, 12 Jul 2023 08:42:00 +0200</pubDate>
-      
       <guid>https://manuelfedele.github.io/tags/kibana/</guid>
       <description></description>
     </item>
-    
     <item>
       <title>Lambda</title>
       <link>https://manuelfedele.github.io/tags/lambda/</link>
       <pubDate>Wed, 12 Jul 2023 08:42:00 +0200</pubDate>
-      
       <guid>https://manuelfedele.github.io/tags/lambda/</guid>
       <description></description>
     </item>
-    
     <item>
       <title>Logging</title>
       <link>https://manuelfedele.github.io/tags/logging/</link>
       <pubDate>Wed, 12 Jul 2023 08:42:00 +0200</pubDate>
-      
       <guid>https://manuelfedele.github.io/tags/logging/</guid>
       <description></description>
     </item>
-    
     <item>
       <title>Monitoring</title>
       <link>https://manuelfedele.github.io/tags/monitoring/</link>
       <pubDate>Wed, 12 Jul 2023 08:42:00 +0200</pubDate>
-      
       <guid>https://manuelfedele.github.io/tags/monitoring/</guid>
       <description></description>
     </item>
-    
     <item>
       <title>Opensearch</title>
       <link>https://manuelfedele.github.io/tags/opensearch/</link>
       <pubDate>Wed, 12 Jul 2023 08:42:00 +0200</pubDate>
-      
       <guid>https://manuelfedele.github.io/tags/opensearch/</guid>
       <description></description>
     </item>
-    
     <item>
       <title>Design Patterns</title>
       <link>https://manuelfedele.github.io/tags/design-patterns/</link>
       <pubDate>Tue, 21 Mar 2023 15:10:03 +0100</pubDate>
-      
       <guid>https://manuelfedele.github.io/tags/design-patterns/</guid>
       <description></description>
     </item>
-    
     <item>
       <title>Golang</title>
       <link>https://manuelfedele.github.io/tags/golang/</link>
       <pubDate>Tue, 21 Mar 2023 15:10:03 +0100</pubDate>
-      
       <guid>https://manuelfedele.github.io/tags/golang/</guid>
       <description></description>
     </item>
-    
     <item>
       <title>Github</title>
       <link>https://manuelfedele.github.io/tags/github/</link>
       <pubDate>Sun, 12 Mar 2023 15:03:40 +0100</pubDate>
-      
       <guid>https://manuelfedele.github.io/tags/github/</guid>
       <description></description>
     </item>
-    
     <item>
       <title>Git</title>
       <link>https://manuelfedele.github.io/tags/git/</link>
       <pubDate>Tue, 07 Mar 2023 17:14:30 +0100</pubDate>
-      
       <guid>https://manuelfedele.github.io/tags/git/</guid>
       <description></description>
     </item>
-    
     <item>
       <title>Nats</title>
       <link>https://manuelfedele.github.io/tags/nats/</link>
       <pubDate>Mon, 13 Feb 2023 18:57:15 +0100</pubDate>
-      
       <guid>https://manuelfedele.github.io/tags/nats/</guid>
       <description></description>
     </item>
-    
     <item>
       <title>Algorithms</title>
       <link>https://manuelfedele.github.io/tags/algorithms/</link>
       <pubDate>Wed, 01 Feb 2023 21:09:26 +0100</pubDate>
-      
       <guid>https://manuelfedele.github.io/tags/algorithms/</guid>
       <description></description>
     </item>
-    
     <item>
       <title>Socket</title>
       <link>https://manuelfedele.github.io/tags/socket/</link>
       <pubDate>Sun, 29 Jan 2023 18:44:12 +0100</pubDate>
-      
       <guid>https://manuelfedele.github.io/tags/socket/</guid>
       <description></description>
     </item>
-    
     <item>
       <title>Email</title>
       <link>https://manuelfedele.github.io/tags/email/</link>
       <pubDate>Sun, 22 Jan 2023 19:02:19 +0100</pubDate>
-      
       <guid>https://manuelfedele.github.io/tags/email/</guid>
       <description></description>
     </item>
-    
     <item>
       <title>Tracking</title>
       <link>https://manuelfedele.github.io/tags/tracking/</link>
       <pubDate>Sun, 22 Jan 2023 19:02:19 +0100</pubDate>
-      
       <guid>https://manuelfedele.github.io/tags/tracking/</guid>
       <description></description>
     </item>
-    
     <item>
       <title>Chess</title>
       <link>https://manuelfedele.github.io/tags/chess/</link>
       <pubDate>Thu, 19 Jan 2023 21:33:41 +0100</pubDate>
-      
       <guid>https://manuelfedele.github.io/tags/chess/</guid>
       <description></description>
     </item>
-    
     <item>
       <title>Alpaca</title>
       <link>https://manuelfedele.github.io/tags/alpaca/</link>
       <pubDate>Sun, 15 Jan 2023 19:24:09 +0100</pubDate>
-      
       <guid>https://manuelfedele.github.io/tags/alpaca/</guid>
       <description></description>
     </item>
-    
     <item>
       <title>Trading</title>
       <link>https://manuelfedele.github.io/tags/trading/</link>
       <pubDate>Sun, 15 Jan 2023 19:24:09 +0100</pubDate>
-      
       <guid>https://manuelfedele.github.io/tags/trading/</guid>
       <description></description>
     </item>
-    
     <item>
       <title>Testing</title>
       <link>https://manuelfedele.github.io/tags/testing/</link>
       <pubDate>Mon, 09 Jan 2023 20:49:03 +0100</pubDate>
-      
       <guid>https://manuelfedele.github.io/tags/testing/</guid>
       <description></description>
     </item>
-    
     <item>
       <title>Video Streaming</title>
       <link>https://manuelfedele.github.io/tags/video-streaming/</link>
       <pubDate>Wed, 04 Jan 2023 21:23:20 +0100</pubDate>
-      
       <guid>https://manuelfedele.github.io/tags/video-streaming/</guid>
       <description></description>
     </item>
-    
     <item>
       <title>Fastapi</title>
       <link>https://manuelfedele.github.io/tags/fastapi/</link>
       <pubDate>Wed, 04 Jan 2023 16:00:43 +0100</pubDate>
-      
       <guid>https://manuelfedele.github.io/tags/fastapi/</guid>
       <description></description>
     </item>
-    
     <item>
       <title>Protobuf</title>
       <link>https://manuelfedele.github.io/tags/protobuf/</link>
       <pubDate>Wed, 04 Jan 2023 16:00:43 +0100</pubDate>
-      
       <guid>https://manuelfedele.github.io/tags/protobuf/</guid>
       <description></description>
     </item>
-    
     <item>
       <title>Python</title>
       <link>https://manuelfedele.github.io/tags/python/</link>
       <pubDate>Wed, 04 Jan 2023 16:00:43 +0100</pubDate>
-      
       <guid>https://manuelfedele.github.io/tags/python/</guid>
       <description></description>
     </item>
-    
     <item>
       <title>Context</title>
       <link>https://manuelfedele.github.io/tags/context/</link>
       <pubDate>Tue, 03 Jan 2023 20:36:29 +0100</pubDate>
-      
       <guid>https://manuelfedele.github.io/tags/context/</guid>
       <description></description>
     </item>
-    
     <item>
       <title>Asyncio</title>
       <link>https://manuelfedele.github.io/tags/asyncio/</link>
       <pubDate>Sun, 01 Jan 2023 14:50:35 +0100</pubDate>
-      
       <guid>https://manuelfedele.github.io/tags/asyncio/</guid>
       <description></description>
     </item>
-    
     <item>
       <title>Rust</title>
       <link>https://manuelfedele.github.io/tags/rust/</link>
       <pubDate>Sat, 31 Dec 2022 14:26:23 +0100</pubDate>
-      
       <guid>https://manuelfedele.github.io/tags/rust/</guid>
       <description></description>
     </item>
-    
     <item>
       <title>Telegram</title>
       <link>https://manuelfedele.github.io/tags/telegram/</link>
       <pubDate>Sat, 31 Dec 2022 14:26:23 +0100</pubDate>
-      
       <guid>https://manuelfedele.github.io/tags/telegram/</guid>
       <description></description>
     </item>
-    
     <item>
       <title>Uvicorn</title>
       <link>https://manuelfedele.github.io/tags/uvicorn/</link>
       <pubDate>Fri, 30 Dec 2022 14:08:35 +0100</pubDate>
-      
       <guid>https://manuelfedele.github.io/tags/uvicorn/</guid>
       <description></description>
     </item>
-    
     <item>
       <title>Webserver</title>
       <link>https://manuelfedele.github.io/tags/webserver/</link>
       <pubDate>Fri, 30 Dec 2022 14:08:35 +0100</pubDate>
-      
       <guid>https://manuelfedele.github.io/tags/webserver/</guid>
       <description></description>
     </item>
-    
     <item>
       <title>Cli</title>
       <link>https://manuelfedele.github.io/tags/cli/</link>
       <pubDate>Tue, 20 Dec 2022 10:03:30 +0100</pubDate>
-      
       <guid>https://manuelfedele.github.io/tags/cli/</guid>
       <description></description>
     </item>
-    
     <item>
       <title>Gatsby</title>
       <link>https://manuelfedele.github.io/tags/gatsby/</link>
       <pubDate>Tue, 20 Dec 2022 09:49:01 +0100</pubDate>
-      
       <guid>https://manuelfedele.github.io/tags/gatsby/</guid>
       <description></description>
     </item>
-    
     <item>
       <title>Website</title>
       <link>https://manuelfedele.github.io/tags/website/</link>
       <pubDate>Tue, 20 Dec 2022 09:49:01 +0100</pubDate>
-      
       <guid>https://manuelfedele.github.io/tags/website/</guid>
       <description></description>
     </item>
-    
     <item>
       <title>Redis</title>
       <link>https://manuelfedele.github.io/tags/redis/</link>
       <pubDate>Mon, 19 Dec 2022 19:32:27 +0100</pubDate>
-      
       <guid>https://manuelfedele.github.io/tags/redis/</guid>
       <description></description>
     </item>
-    
     <item>
       <title>Desktop</title>
       <link>https://manuelfedele.github.io/tags/desktop/</link>
       <pubDate>Mon, 19 Dec 2022 19:08:58 +0100</pubDate>
-      
       <guid>https://manuelfedele.github.io/tags/desktop/</guid>
       <description></description>
     </item>
-    
     <item>
       <title>Fyne</title>
       <link>https://manuelfedele.github.io/tags/fyne/</link>
       <pubDate>Mon, 19 Dec 2022 19:08:58 +0100</pubDate>
-      
       <guid>https://manuelfedele.github.io/tags/fyne/</guid>
       <description></description>
     </item>
-    
     <item>
       <title>Stock</title>
       <link>https://manuelfedele.github.io/tags/stock/</link>
       <pubDate>Mon, 19 Dec 2022 19:08:58 +0100</pubDate>
-      
       <guid>https://manuelfedele.github.io/tags/stock/</guid>
       <description></description>
     </item>
-    
     <item>
       <title>Databases</title>
       <link>https://manuelfedele.github.io/tags/databases/</link>
       <pubDate>Mon, 19 Dec 2022 18:20:30 +0100</pubDate>
-      
       <guid>https://manuelfedele.github.io/tags/databases/</guid>
       <description></description>
     </item>
-    
     <item>
       <title>PostgreSQL</title>
       <link>https://manuelfedele.github.io/tags/postgresql/</link>
       <pubDate>Mon, 19 Dec 2022 18:20:30 +0100</pubDate>
-      
       <guid>https://manuelfedele.github.io/tags/postgresql/</guid>
       <description></description>
     </item>
-    
     <item>
       <title>Http</title>
       <link>https://manuelfedele.github.io/tags/http/</link>
       <pubDate>Sun, 11 Dec 2022 19:14:21 +0100</pubDate>
-      
       <guid>https://manuelfedele.github.io/tags/http/</guid>
       <description></description>
     </item>
-    
     <item>
       <title>Microservices</title>
       <link>https://manuelfedele.github.io/tags/microservices/</link>
       <pubDate>Sun, 11 Dec 2022 19:14:21 +0100</pubDate>
-      
       <guid>https://manuelfedele.github.io/tags/microservices/</guid>
       <description></description>
     </item>
-    
     <item>
       <title>Solid</title>
       <link>https://manuelfedele.github.io/tags/solid/</link>
       <pubDate>Sun, 11 Dec 2022 18:57:13 +0100</pubDate>
-      
       <guid>https://manuelfedele.github.io/tags/solid/</guid>
       <description></description>
     </item>
-    
     <item>
       <title>Hugo</title>
       <link>https://manuelfedele.github.io/tags/hugo/</link>
       <pubDate>Thu, 03 Nov 2022 14:57:41 +0100</pubDate>
-      
       <guid>https://manuelfedele.github.io/tags/hugo/</guid>
       <description></description>
     </item>
-    
     <item>
       <title>Theme</title>
       <link>https://manuelfedele.github.io/tags/theme/</link>
       <pubDate>Thu, 03 Nov 2022 14:57:41 +0100</pubDate>
-      
       <guid>https://manuelfedele.github.io/tags/theme/</guid>
       <description></description>
     </item>
-    
     <item>
       <title>Poetry</title>
       <link>https://manuelfedele.github.io/tags/poetry/</link>
       <pubDate>Mon, 01 Nov 2021 15:15:47 +0100</pubDate>
-      
       <guid>https://manuelfedele.github.io/tags/poetry/</guid>
       <description></description>
     </item>
-    
     <item>
       <title>Ubuntu</title>
       <link>https://manuelfedele.github.io/tags/ubuntu/</link>
       <pubDate>Tue, 14 Apr 2020 09:37:07 +0100</pubDate>
-      
       <guid>https://manuelfedele.github.io/tags/ubuntu/</guid>
       <description></description>
     </item>
-    
   </channel>
 </rss>

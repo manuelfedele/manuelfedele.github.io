@@ -9,14 +9,14 @@
       <url>https://manuelfedele.github.io/img/card-pillow.jpg</url>
       <link>https://manuelfedele.github.io/img/card-pillow.jpg</link>
     </image>
-    <generator>Hugo -- gohugo.io</generator>
+    <generator>Hugo -- 0.139.2</generator>
     <language>en</language>
-    <lastBuildDate>Fri, 30 Dec 2022 14:08:35 +0100</lastBuildDate><atom:link href="https://manuelfedele.github.io/tags/webserver/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Fri, 30 Dec 2022 14:08:35 +0100</lastBuildDate>
+    <atom:link href="https://manuelfedele.github.io/tags/webserver/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Create a Webserver With Fastapi and Uvicorn</title>
       <link>https://manuelfedele.github.io/posts/create-webserver-with-fastapi-and-uvicorn/</link>
       <pubDate>Fri, 30 Dec 2022 14:08:35 +0100</pubDate>
-      
       <guid>https://manuelfedele.github.io/posts/create-webserver-with-fastapi-and-uvicorn/</guid>
       <description>&lt;p&gt;FastAPI is a modern, fast, web framework for building APIs with Python 3.7 and above. It is built on top of Starlette, a lightweight ASGI framework, and uses the uvicorn ASGI server.&lt;/p&gt;
 &lt;p&gt;Here is an example of how to create a web server with FastAPI and uvicorn:&lt;/p&gt;
@@ -45,12 +45,10 @@
 &lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;    &lt;span class=&#34;n&#34;&gt;uvicorn&lt;/span&gt;&lt;span class=&#34;o&#34;&gt;.&lt;/span&gt;&lt;span class=&#34;n&#34;&gt;run&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;(&lt;/span&gt;&lt;span class=&#34;n&#34;&gt;app&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;,&lt;/span&gt; &lt;span class=&#34;n&#34;&gt;host&lt;/span&gt;&lt;span class=&#34;o&#34;&gt;=&lt;/span&gt;&lt;span class=&#34;s2&#34;&gt;&amp;#34;0.0.0.0&amp;#34;&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;,&lt;/span&gt; &lt;span class=&#34;n&#34;&gt;port&lt;/span&gt;&lt;span class=&#34;o&#34;&gt;=&lt;/span&gt;&lt;span class=&#34;mi&#34;&gt;8000&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;)&lt;/span&gt;
 &lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;p&gt;This will start the web server on the specified host and port (in this case, 0.0.0.0 and 8000). You can then access the endpoint at http://0.0.0.0:8000/.&lt;/p&gt;</description>
     </item>
-    
     <item>
       <title>How to Create a Webserver in Golang</title>
       <link>https://manuelfedele.github.io/posts/how-to-create-a-webserver-in-golang/</link>
       <pubDate>Sun, 11 Dec 2022 19:14:21 +0100</pubDate>
-      
       <guid>https://manuelfedele.github.io/posts/how-to-create-a-webserver-in-golang/</guid>
       <description>&lt;p&gt;To create a web server in Go, you can use the http package provided by the standard library. This package includes the http.Server type, which represents an HTTP server, and the http.ListenAndServe() function, which listens for incoming HTTP requests on a specified port and serves responses to those requests.&lt;/p&gt;
 &lt;p&gt;Here is an example of how you might create a simple web server in Go:&lt;/p&gt;
@@ -72,6 +70,5 @@
 &lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;&lt;span class=&#34;p&#34;&gt;}&lt;/span&gt;
 &lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;p&gt;In this example, the handler() function is defined to handle incoming HTTP requests. This function receives a http.ResponseWriter and a *http.Request as arguments, which are used to write the response message and access information about the incoming request, respectively. The main() function sets up a route that will call the handler() function for any requests to the root URL (&amp;quot;/&amp;quot;) and then starts the web server using the http.ListenAndServe() function. This web server will listen for incoming requests on port 8080 and serve responses using the handler() function.&lt;/p&gt;</description>
     </item>
-    
   </channel>
 </rss>

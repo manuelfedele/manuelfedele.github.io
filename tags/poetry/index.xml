@@ -9,14 +9,14 @@
       <url>https://manuelfedele.github.io/img/card-pillow.jpg</url>
       <link>https://manuelfedele.github.io/img/card-pillow.jpg</link>
     </image>
-    <generator>Hugo -- gohugo.io</generator>
+    <generator>Hugo -- 0.139.2</generator>
     <language>en</language>
-    <lastBuildDate>Mon, 01 Nov 2021 15:15:47 +0100</lastBuildDate><atom:link href="https://manuelfedele.github.io/tags/poetry/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Mon, 01 Nov 2021 15:15:47 +0100</lastBuildDate>
+    <atom:link href="https://manuelfedele.github.io/tags/poetry/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Poetry No Module Seed via App Data</title>
       <link>https://manuelfedele.github.io/posts/poetry-no-module-seed-via-app-data/</link>
       <pubDate>Mon, 01 Nov 2021 15:15:47 +0100</pubDate>
-      
       <guid>https://manuelfedele.github.io/posts/poetry-no-module-seed-via-app-data/</guid>
       <description>&lt;p&gt;For my last project, I used &lt;strong&gt;poetry&lt;/strong&gt; to manage dependencies and package my code.
 Poetry comes with all the tools you might need to manage your projects in a deterministic way.&lt;/p&gt;
@@ -24,6 +24,5 @@ Poetry comes with all the tools you might need to manage your projects in a dete
 &lt;pre tabindex=&#34;0&#34;&gt;&lt;code&gt;No module named &amp;#39;virtualenv.seed.via_app_data&amp;#39;
 &lt;/code&gt;&lt;/pre&gt;&lt;p&gt;Why is that? Because &lt;strong&gt;poetry&lt;/strong&gt; was using the wrong virtualenv instance, so to solve this:&lt;/p&gt;</description>
     </item>
-    
   </channel>
 </rss>

@@ -9,19 +9,18 @@
       <url>https://manuelfedele.github.io/img/card-pillow.jpg</url>
       <link>https://manuelfedele.github.io/img/card-pillow.jpg</link>
     </image>
-    <generator>Hugo -- gohugo.io</generator>
+    <generator>Hugo -- 0.139.2</generator>
     <language>en</language>
-    <lastBuildDate>Thu, 19 Jan 2023 21:33:41 +0100</lastBuildDate><atom:link href="https://manuelfedele.github.io/tags/chess/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Thu, 19 Jan 2023 21:33:41 +0100</lastBuildDate>
+    <atom:link href="https://manuelfedele.github.io/tags/chess/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Evaluate Chess Position With Golang</title>
       <link>https://manuelfedele.github.io/posts/evaluate-chess-position-with-golang/</link>
       <pubDate>Thu, 19 Jan 2023 21:33:41 +0100</pubDate>
-      
       <guid>https://manuelfedele.github.io/posts/evaluate-chess-position-with-golang/</guid>
       <description>&lt;p&gt;Evaluating chess positions is an important part of chess strategy and can help players make more informed decisions about which moves to make. In this blog post, we&amp;rsquo;ll look at how to use the powerful Stockfish chess engine and the Go programming language to evaluate chess positions.&lt;/p&gt;
 &lt;h2 id=&#34;installing-stockfish&#34;&gt;Installing Stockfish&lt;/h2&gt;
 &lt;p&gt;Before we can start using Stockfish, we need to install it. On Linux and macOS, you can install Stockfish using the package manager of your choice (e.g., apt-get, Homebrew, etc.). On Windows, you can download a pre-compiled executable from the Stockfish website (&lt;a href=&#34;https://stockfishchess.org/download/)&#34;&gt;https://stockfishchess.org/download/)&lt;/a&gt;.&lt;/p&gt;</description>
     </item>
-    
   </channel>
 </rss>

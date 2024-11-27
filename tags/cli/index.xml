@@ -9,18 +9,17 @@
       <url>https://manuelfedele.github.io/img/card-pillow.jpg</url>
       <link>https://manuelfedele.github.io/img/card-pillow.jpg</link>
     </image>
-    <generator>Hugo -- gohugo.io</generator>
+    <generator>Hugo -- 0.139.2</generator>
     <language>en</language>
-    <lastBuildDate>Tue, 20 Dec 2022 10:03:30 +0100</lastBuildDate><atom:link href="https://manuelfedele.github.io/tags/cli/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Tue, 20 Dec 2022 10:03:30 +0100</lastBuildDate>
+    <atom:link href="https://manuelfedele.github.io/tags/cli/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Create Command Line Application With Golang</title>
       <link>https://manuelfedele.github.io/posts/create-command-line-application-with-golang/</link>
       <pubDate>Tue, 20 Dec 2022 10:03:30 +0100</pubDate>
-      
       <guid>https://manuelfedele.github.io/posts/create-command-line-application-with-golang/</guid>
       <description>&lt;h2 id=&#34;creating-a-command-line-application-to-separate-files-by-extension-in-go&#34;&gt;Creating a Command Line Application to Separate Files by Extension in Go&lt;/h2&gt;
 &lt;p&gt;If you have a folder with a large number of files and you want to organize them by file extension, you can create a command line application to do this automatically using Go. Go, also known as Golang, is a programming language developed by Google that is designed to be fast, statically-typed, and easy to learn. In this article, we&amp;rsquo;ll walk through the steps to create a Go program that separates files in a given folder into subfolders based on their extension.&lt;/p&gt;</description>
     </item>
-    
   </channel>
 </rss>

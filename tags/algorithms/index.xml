@@ -9,18 +9,17 @@
       <url>https://manuelfedele.github.io/img/card-pillow.jpg</url>
       <link>https://manuelfedele.github.io/img/card-pillow.jpg</link>
     </image>
-    <generator>Hugo -- gohugo.io</generator>
+    <generator>Hugo -- 0.139.2</generator>
     <language>en</language>
-    <lastBuildDate>Wed, 01 Feb 2023 21:09:26 +0100</lastBuildDate><atom:link href="https://manuelfedele.github.io/tags/algorithms/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Wed, 01 Feb 2023 21:09:26 +0100</lastBuildDate>
+    <atom:link href="https://manuelfedele.github.io/tags/algorithms/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Build a Sudoku Solver in Golang</title>
       <link>https://manuelfedele.github.io/posts/build-a-sudoku-solver-in-golang/</link>
       <pubDate>Wed, 01 Feb 2023 21:09:26 +0100</pubDate>
-      
       <guid>https://manuelfedele.github.io/posts/build-a-sudoku-solver-in-golang/</guid>
       <description>&lt;h1 id=&#34;sudoku-solver-in-go-a-beginners-guide-and-optimization-techniques&#34;&gt;Sudoku Solver in Go: A Beginner&amp;rsquo;s Guide and Optimization Techniques&lt;/h1&gt;
 &lt;p&gt;The game of Sudoku has always been a popular pastime for many. Whether you&amp;rsquo;re an absolute novice or a seasoned veteran, the challenge of filling out a 9x9 grid with digits so that each column, each row, and each of the nine 3x3 subgrids contains all of the digits from 1 to 9, is an appealing task. Today, we&amp;rsquo;re going to see how we can automate this process in Golang, and how we can optimize it using memoization techniques.&lt;/p&gt;</description>
     </item>
-    
   </channel>
 </rss>

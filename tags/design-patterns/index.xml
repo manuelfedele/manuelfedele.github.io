@@ -9,36 +9,32 @@
       <url>https://manuelfedele.github.io/img/card-pillow.jpg</url>
       <link>https://manuelfedele.github.io/img/card-pillow.jpg</link>
     </image>
-    <generator>Hugo -- gohugo.io</generator>
+    <generator>Hugo -- 0.139.2</generator>
     <language>en</language>
-    <lastBuildDate>Tue, 21 Mar 2023 15:10:03 +0100</lastBuildDate><atom:link href="https://manuelfedele.github.io/tags/design-patterns/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Tue, 21 Mar 2023 15:10:03 +0100</lastBuildDate>
+    <atom:link href="https://manuelfedele.github.io/tags/design-patterns/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>The Single Responsibility Principle</title>
       <link>https://manuelfedele.github.io/posts/the-single-responsibility-principle/</link>
       <pubDate>Tue, 21 Mar 2023 15:10:03 +0100</pubDate>
-      
       <guid>https://manuelfedele.github.io/posts/the-single-responsibility-principle/</guid>
       <description>&lt;p&gt;The Single Responsibility Principle (SRP) is a software design principle that states that a software module or component should have only one reason to change. This means that a module or component should have a single, narrowly defined responsibility and all of its features should be related to that responsibility.&lt;/p&gt;
 &lt;p&gt;In Go, the SRP can be applied at both the package and the function level.&lt;/p&gt;
 &lt;p&gt;At the package level, it&amp;rsquo;s important to consider what a package should be responsible for. A package should contain all of the code related to a specific feature or set of features. For example, a package that handles user authentication and authorization should not also contain code related to sending email notifications. These are two distinct responsibilities and should be separated into different packages.&lt;/p&gt;</description>
     </item>
-    
     <item>
       <title>Implement Desing Patterns With Golang</title>
       <link>https://manuelfedele.github.io/posts/implement-desing-patterns-with-golang/</link>
       <pubDate>Tue, 21 Feb 2023 13:16:06 +0100</pubDate>
-      
       <guid>https://manuelfedele.github.io/posts/implement-desing-patterns-with-golang/</guid>
       <description>&lt;p&gt;Design patterns are reusable solutions to common software design problems. They are a way to structure and organize code in a way that makes it easier to understand, maintain, and extend. In this article, we&amp;rsquo;ll explore how to implement some popular design patterns in Go.&lt;/p&gt;
 &lt;h2 id=&#34;singleton-pattern&#34;&gt;Singleton pattern&lt;/h2&gt;
 &lt;p&gt;The singleton pattern is a creational design pattern that ensures a class has only one instance and provides a global access point to it. In Go, we can implement the singleton pattern using the sync.Once type. Here&amp;rsquo;s an example:&lt;/p&gt;</description>
     </item>
-    
     <item>
       <title>How to Use Interfaces in Golang</title>
       <link>https://manuelfedele.github.io/posts/how-to-use-interfaces-in-golang/</link>
       <pubDate>Sun, 11 Dec 2022 19:04:27 +0100</pubDate>
-      
       <guid>https://manuelfedele.github.io/posts/how-to-use-interfaces-in-golang/</guid>
       <description>&lt;p&gt;In Go, an interface is a type that defines a set of methods that a struct must implement in order to implement the interface. An interface defines the behavior or capabilities of a struct without specifying the implementation details. This allows different structs to implement the same interface in different ways, promoting loose coupling and flexibility in your code.&lt;/p&gt;
 &lt;p&gt;Here is an example of an interface in Go:&lt;/p&gt;
@@ -49,12 +45,10 @@
 &lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;&lt;span class=&#34;p&#34;&gt;}&lt;/span&gt;
 &lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;p&gt;In this example, the Animal interface defines a single method named Speak(), which takes no arguments and returns a string. Any struct that wants to implement the Animal interface must implement this Speak() method.&lt;/p&gt;</description>
     </item>
-    
     <item>
       <title>Implement Factory Design Pattern in Golang</title>
       <link>https://manuelfedele.github.io/posts/implement-factory-design-pattern-golang/</link>
       <pubDate>Sun, 11 Dec 2022 18:57:13 +0100</pubDate>
-      
       <guid>https://manuelfedele.github.io/posts/implement-factory-design-pattern-golang/</guid>
       <description>&lt;p&gt;To implement the factory design pattern in Go, you can create a factory function that returns an object that implements a common interface. This function can take parameters to specify the type of object to be created. Here is an example of how you might implement the factory design pattern in Go:&lt;/p&gt;
 &lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; class=&#34;chroma&#34;&gt;&lt;code class=&#34;language-go&#34; data-lang=&#34;go&#34;&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;&lt;span class=&#34;c1&#34;&gt;// Define an interface that the factory will create objects for
@@ -96,6 +90,5 @@
 &lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;&lt;span class=&#34;c1&#34;&gt;&lt;/span&gt;&lt;span class=&#34;nx&#34;&gt;fmt&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;.&lt;/span&gt;&lt;span class=&#34;nf&#34;&gt;Println&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;(&lt;/span&gt;&lt;span class=&#34;nx&#34;&gt;cat&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;.&lt;/span&gt;&lt;span class=&#34;nf&#34;&gt;Speak&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;())&lt;/span&gt; &lt;span class=&#34;c1&#34;&gt;// &amp;#34;Meow!&amp;#34;
 &lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;p&gt;In this example, the NewAnimal() function is the factory function that returns objects of different types (Dog or Cat in this case) that implement the Animal interface. The factory function takes a string parameter that specifies the type of object to be created. The Dog and Cat structs both implement the Animal interface by implementing the Speak() method. The NewAnimal() function uses a switch statement to determine which type of object to return based on the animalType parameter.&lt;/p&gt;</description>
     </item>
-    
   </channel>
 </rss>
