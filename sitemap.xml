@@ -2,22 +2,37 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   <url>
+    <loc>https://manuelfedele.github.io/tags/authentication/</loc>
+    <lastmod>2024-11-27T17:18:00+00:00</lastmod>
+  </url><url>
+    <loc>https://manuelfedele.github.io/</loc>
+    <lastmod>2024-11-27T17:18:00+00:00</lastmod>
+  </url><url>
+    <loc>https://manuelfedele.github.io/tags/golang/</loc>
+    <lastmod>2024-11-27T17:18:00+00:00</lastmod>
+  </url><url>
+    <loc>https://manuelfedele.github.io/posts/jwt-issuer-in-go/</loc>
+    <lastmod>2024-11-27T17:18:00+00:00</lastmod>
+  </url><url>
+    <loc>https://manuelfedele.github.io/tags/jwt/</loc>
+    <lastmod>2024-11-27T17:18:00+00:00</lastmod>
+  </url><url>
+    <loc>https://manuelfedele.github.io/posts/</loc>
+    <lastmod>2024-11-27T17:18:00+00:00</lastmod>
+  </url><url>
+    <loc>https://manuelfedele.github.io/tags/security/</loc>
+    <lastmod>2024-11-27T17:18:00+00:00</lastmod>
+  </url><url>
+    <loc>https://manuelfedele.github.io/tags/</loc>
+    <lastmod>2024-11-27T17:18:00+00:00</lastmod>
+  </url><url>
     <loc>https://manuelfedele.github.io/tags/algorithms/</loc>
     <lastmod>2024-11-27T17:01:00+00:00</lastmod>
   </url><url>
     <loc>https://manuelfedele.github.io/tags/golang/</loc>
     <lastmod>2024-11-27T17:01:00+00:00</lastmod>
   </url><url>
-    <loc>https://manuelfedele.github.io/</loc>
-    <lastmod>2024-11-27T17:01:00+00:00</lastmod>
-  </url><url>
     <loc>https://manuelfedele.github.io/posts/implementing-djikstra-algorithm-in-go/</loc>
-    <lastmod>2024-11-27T17:01:00+00:00</lastmod>
-  </url><url>
-    <loc>https://manuelfedele.github.io/posts/</loc>
-    <lastmod>2024-11-27T17:01:00+00:00</lastmod>
-  </url><url>
-    <loc>https://manuelfedele.github.io/tags/</loc>
     <lastmod>2024-11-27T17:01:00+00:00</lastmod>
   </url><url>
     <loc>https://manuelfedele.github.io/posts/clipboard-watch-remove-accidentally-typed-passwords/</loc>
@@ -51,9 +66,6 @@
     <lastmod>2023-07-12T08:42:00+02:00</lastmod>
   </url><url>
     <loc>https://manuelfedele.github.io/tags/design-patterns/</loc>
-    <lastmod>2023-03-21T15:10:03+01:00</lastmod>
-  </url><url>
-    <loc>https://manuelfedele.github.io/tags/golang/</loc>
     <lastmod>2023-03-21T15:10:03+01:00</lastmod>
   </url><url>
     <loc>https://manuelfedele.github.io/posts/the-single-responsibility-principle/</loc>
