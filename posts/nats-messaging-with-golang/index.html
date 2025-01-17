@@ -13,62 +13,62 @@ To use NATS with Golang, we first need to install the NATS server and client lib
 To connect to NATS, we will use the nats.Connect() function. This function takes a NATS server URL as an argument and returns a *nats.Conn type representing the connection.</p><div class=highlight><pre tabindex=0 class=chroma><code class=language-go data-lang=go><span class=line><span class=cl><span class=kn>import</span> <span class=s>&#34;github.com/nats-io/nats.go&#34;</span>
 </span></span><span class=line><span class=cl>
 </span></span><span class=line><span class=cl><span class=kd>func</span> <span class=nf>main</span><span class=p>()</span> <span class=p>{</span>
-</span></span><span class=line><span class=cl>    <span class=c1>// Connect to the NATS server
-</span></span></span><span class=line><span class=cl><span class=c1></span>    <span class=nx>nc</span><span class=p>,</span> <span class=nx>err</span> <span class=o>:=</span> <span class=nx>nats</span><span class=p>.</span><span class=nf>Connect</span><span class=p>(</span><span class=s>&#34;nats://localhost:4222&#34;</span><span class=p>)</span>
+</span></span><span class=line><span class=cl>    <span class=c1>// Connect to the NATS server</span>
+</span></span><span class=line><span class=cl>    <span class=nx>nc</span><span class=p>,</span> <span class=nx>err</span> <span class=o>:=</span> <span class=nx>nats</span><span class=p>.</span><span class=nf>Connect</span><span class=p>(</span><span class=s>&#34;nats://localhost:4222&#34;</span><span class=p>)</span>
 </span></span><span class=line><span class=cl>    <span class=k>if</span> <span class=nx>err</span> <span class=o>!=</span> <span class=kc>nil</span> <span class=p>{</span>
-</span></span><span class=line><span class=cl>        <span class=c1>// Handle error
-</span></span></span><span class=line><span class=cl><span class=c1></span>    <span class=p>}</span>
+</span></span><span class=line><span class=cl>        <span class=c1>// Handle error</span>
+</span></span><span class=line><span class=cl>    <span class=p>}</span>
 </span></span><span class=line><span class=cl>
-</span></span><span class=line><span class=cl><span class=c1>// Use the connection...
-</span></span></span><span class=line><span class=cl><span class=c1></span><span class=p>}</span>
+</span></span><span class=line><span class=cl><span class=c1>// Use the connection...</span>
+</span></span><span class=line><span class=cl><span class=p>}</span>
 </span></span></code></pre></div><p>Sending Messages
 To send a message using NATS, we can use the Publish() method of the *nats.Conn type. This method takes the subject, a message payload, and optional reply subject as arguments.</p><div class=highlight><pre tabindex=0 class=chroma><code class=language-go data-lang=go><span class=line><span class=cl><span class=kn>import</span> <span class=s>&#34;github.com/nats-io/nats.go&#34;</span>
 </span></span><span class=line><span class=cl>
 </span></span><span class=line><span class=cl><span class=kd>func</span> <span class=nf>main</span><span class=p>()</span> <span class=p>{</span>
-</span></span><span class=line><span class=cl>    <span class=c1>// Connect to the NATS server
-</span></span></span><span class=line><span class=cl><span class=c1></span>    <span class=nx>nc</span><span class=p>,</span> <span class=nx>err</span> <span class=o>:=</span> <span class=nx>nats</span><span class=p>.</span><span class=nf>Connect</span><span class=p>(</span><span class=s>&#34;nats://localhost:4222&#34;</span><span class=p>)</span>
+</span></span><span class=line><span class=cl>    <span class=c1>// Connect to the NATS server</span>
+</span></span><span class=line><span class=cl>    <span class=nx>nc</span><span class=p>,</span> <span class=nx>err</span> <span class=o>:=</span> <span class=nx>nats</span><span class=p>.</span><span class=nf>Connect</span><span class=p>(</span><span class=s>&#34;nats://localhost:4222&#34;</span><span class=p>)</span>
 </span></span><span class=line><span class=cl>    <span class=k>if</span> <span class=nx>err</span> <span class=o>!=</span> <span class=kc>nil</span> <span class=p>{</span>
-</span></span><span class=line><span class=cl>        <span class=c1>// Handle error
-</span></span></span><span class=line><span class=cl><span class=c1></span>    <span class=p>}</span>
+</span></span><span class=line><span class=cl>        <span class=c1>// Handle error</span>
+</span></span><span class=line><span class=cl>    <span class=p>}</span>
 </span></span><span class=line><span class=cl>
-</span></span><span class=line><span class=cl>    <span class=c1>// Send a message
-</span></span></span><span class=line><span class=cl><span class=c1></span>    <span class=nx>err</span> <span class=p>=</span> <span class=nx>nc</span><span class=p>.</span><span class=nf>Publish</span><span class=p>(</span><span class=s>&#34;subject&#34;</span><span class=p>,</span> <span class=p>[]</span><span class=nb>byte</span><span class=p>(</span><span class=s>&#34;Hello NATS!&#34;</span><span class=p>))</span>
+</span></span><span class=line><span class=cl>    <span class=c1>// Send a message</span>
+</span></span><span class=line><span class=cl>    <span class=nx>err</span> <span class=p>=</span> <span class=nx>nc</span><span class=p>.</span><span class=nf>Publish</span><span class=p>(</span><span class=s>&#34;subject&#34;</span><span class=p>,</span> <span class=p>[]</span><span class=nb>byte</span><span class=p>(</span><span class=s>&#34;Hello NATS!&#34;</span><span class=p>))</span>
 </span></span><span class=line><span class=cl>    <span class=k>if</span> <span class=nx>err</span> <span class=o>!=</span> <span class=kc>nil</span> <span class=p>{</span>
-</span></span><span class=line><span class=cl>        <span class=c1>// Handle error
-</span></span></span><span class=line><span class=cl><span class=c1></span>    <span class=p>}</span>
+</span></span><span class=line><span class=cl>        <span class=c1>// Handle error</span>
+</span></span><span class=line><span class=cl>    <span class=p>}</span>
 </span></span><span class=line><span class=cl><span class=p>}</span>
 </span></span></code></pre></div><p>Receiving Messages
 To receive messages from NATS, we can use the Subscribe() method of the *nats.Conn type. This method takes the subject and a callback function as arguments. The callback function will be called every time a message is received on the given subject.</p><div class=highlight><pre tabindex=0 class=chroma><code class=language-go data-lang=go><span class=line><span class=cl><span class=kn>import</span> <span class=s>&#34;github.com/nats-io/nats.go&#34;</span>
 </span></span><span class=line><span class=cl>
 </span></span><span class=line><span class=cl><span class=kd>func</span> <span class=nf>main</span><span class=p>()</span> <span class=p>{</span>
-</span></span><span class=line><span class=cl>    <span class=c1>// Connect to the NATS server
-</span></span></span><span class=line><span class=cl><span class=c1></span>    <span class=nx>nc</span><span class=p>,</span> <span class=nx>err</span> <span class=o>:=</span> <span class=nx>nats</span><span class=p>.</span><span class=nf>Connect</span><span class=p>(</span><span class=s>&#34;nats://localhost:4222&#34;</span><span class=p>)</span>
+</span></span><span class=line><span class=cl>    <span class=c1>// Connect to the NATS server</span>
+</span></span><span class=line><span class=cl>    <span class=nx>nc</span><span class=p>,</span> <span class=nx>err</span> <span class=o>:=</span> <span class=nx>nats</span><span class=p>.</span><span class=nf>Connect</span><span class=p>(</span><span class=s>&#34;nats://localhost:4222&#34;</span><span class=p>)</span>
 </span></span><span class=line><span class=cl>    <span class=k>if</span> <span class=nx>err</span> <span class=o>!=</span> <span class=kc>nil</span> <span class=p>{</span>
-</span></span><span class=line><span class=cl>        <span class=c1>// Handle error
-</span></span></span><span class=line><span class=cl><span class=c1></span>    <span class=p>}</span>
+</span></span><span class=line><span class=cl>        <span class=c1>// Handle error</span>
+</span></span><span class=line><span class=cl>    <span class=p>}</span>
 </span></span><span class=line><span class=cl>
-</span></span><span class=line><span class=cl>    <span class=c1>// Subscribe to a subject
-</span></span></span><span class=line><span class=cl><span class=c1></span>    <span class=nx>_</span><span class=p>,</span> <span class=nx>err</span> <span class=p>=</span> <span class=nx>nc</span><span class=p>.</span><span class=nf>Subscribe</span><span class=p>(</span><span class=s>&#34;subject&#34;</span><span class=p>,</span> <span class=kd>func</span><span class=p>(</span><span class=nx>msg</span> <span class=o>*</span><span class=nx>nats</span><span class=p>.</span><span class=nx>Msg</span><span class=p>)</span> <span class=p>{</span>
-</span></span><span class=line><span class=cl>        <span class=c1>// Handle message
-</span></span></span><span class=line><span class=cl><span class=c1></span>        <span class=nx>fmt</span><span class=p>.</span><span class=nf>Printf</span><span class=p>(</span><span class=s>&#34;Received message: %s\n&#34;</span><span class=p>,</span> <span class=nb>string</span><span class=p>(</span><span class=nx>msg</span><span class=p>.</span><span class=nx>Data</span><span class=p>))</span>
+</span></span><span class=line><span class=cl>    <span class=c1>// Subscribe to a subject</span>
+</span></span><span class=line><span class=cl>    <span class=nx>_</span><span class=p>,</span> <span class=nx>err</span> <span class=p>=</span> <span class=nx>nc</span><span class=p>.</span><span class=nf>Subscribe</span><span class=p>(</span><span class=s>&#34;subject&#34;</span><span class=p>,</span> <span class=kd>func</span><span class=p>(</span><span class=nx>msg</span> <span class=o>*</span><span class=nx>nats</span><span class=p>.</span><span class=nx>Msg</span><span class=p>)</span> <span class=p>{</span>
+</span></span><span class=line><span class=cl>        <span class=c1>// Handle message</span>
+</span></span><span class=line><span class=cl>        <span class=nx>fmt</span><span class=p>.</span><span class=nf>Printf</span><span class=p>(</span><span class=s>&#34;Received message: %s\n&#34;</span><span class=p>,</span> <span class=nb>string</span><span class=p>(</span><span class=nx>msg</span><span class=p>.</span><span class=nx>Data</span><span class=p>))</span>
 </span></span><span class=line><span class=cl>    <span class=p>})</span>
 </span></span><span class=line><span class=cl>    <span class=k>if</span> <span class=nx>err</span> <span class=o>!=</span> <span class=kc>nil</span> <span class=p>{</span>
-</span></span><span class=line><span class=cl>    <span class=c1>// Handle error
-</span></span></span><span class=line><span class=cl><span class=c1></span>    <span class=p>}</span>
+</span></span><span class=line><span class=cl>    <span class=c1>// Handle error</span>
+</span></span><span class=line><span class=cl>    <span class=p>}</span>
 </span></span><span class=line><span class=cl><span class=p>}</span>
 </span></span></code></pre></div><p>Closing the Connection
 When we are finished using NATS, it is important to close the connection to release resources and avoid leaks. To close the connection, we can use the Close() method of the *nats.Conn type.</p><div class=highlight><pre tabindex=0 class=chroma><code class=language-go data-lang=go><span class=line><span class=cl><span class=kn>import</span> <span class=s>&#34;github.com/nats-io/nats.go&#34;</span>
 </span></span><span class=line><span class=cl>
 </span></span><span class=line><span class=cl><span class=kd>func</span> <span class=nf>main</span><span class=p>()</span> <span class=p>{</span>
-</span></span><span class=line><span class=cl>    <span class=c1>// Connect to the NATS server
-</span></span></span><span class=line><span class=cl><span class=c1></span>    <span class=nx>nc</span><span class=p>,</span> <span class=nx>err</span> <span class=o>:=</span> <span class=nx>nats</span><span class=p>.</span><span class=nf>Connect</span><span class=p>(</span><span class=s>&#34;nats://localhost:4222&#34;</span><span class=p>)</span>
+</span></span><span class=line><span class=cl>    <span class=c1>// Connect to the NATS server</span>
+</span></span><span class=line><span class=cl>    <span class=nx>nc</span><span class=p>,</span> <span class=nx>err</span> <span class=o>:=</span> <span class=nx>nats</span><span class=p>.</span><span class=nf>Connect</span><span class=p>(</span><span class=s>&#34;nats://localhost:4222&#34;</span><span class=p>)</span>
 </span></span><span class=line><span class=cl>    <span class=k>if</span> <span class=nx>err</span> <span class=o>!=</span> <span class=kc>nil</span> <span class=p>{</span>
-</span></span><span class=line><span class=cl>        <span class=c1>// Handle error
-</span></span></span><span class=line><span class=cl><span class=c1></span>    <span class=p>}</span>
+</span></span><span class=line><span class=cl>        <span class=c1>// Handle error</span>
+</span></span><span class=line><span class=cl>    <span class=p>}</span>
 </span></span><span class=line><span class=cl>    <span class=k>defer</span> <span class=nx>nc</span><span class=p>.</span><span class=nf>Close</span><span class=p>()</span>
 </span></span><span class=line><span class=cl>
-</span></span><span class=line><span class=cl><span class=c1>// Use NATS...
-</span></span></span><span class=line><span class=cl><span class=c1></span><span class=p>}</span>
+</span></span><span class=line><span class=cl><span class=c1>// Use NATS...</span>
+</span></span><span class=line><span class=cl><span class=p>}</span>
 </span></span></code></pre></div><p>Additional Features
 NATS provides many additional features beyond basic message sending and receiving, such as queue subscriptions, request-response patterns, and message filtering. For more information on these features and how to use them, you can refer to the <a href=https://nats.io/documentation/>NATS documentation</a>.</p><p>Conclusion
 In this tutorial, we learned how to use NATS with Golang to send and receive messages. NATS is a powerful and easy-to-use messaging system that is well-suited for building distributed systems. With the techniques covered in this tutorial, you should be well on your way to using NATS in your own projects.</p></div><footer class=post-footer><ul class=post-tags><li><a href=https://manuelfedele.github.io/tags/golang/>Golang</a></li><li><a href=https://manuelfedele.github.io/tags/nats/>Nats</a></li></ul><nav class=paginav><a class=prev href=https://manuelfedele.github.io/posts/implement-desing-patterns-with-golang/><span class=title>« Prev</span><br><span>Implement Desing Patterns With Golang</span>

@@ -33,16 +33,16 @@ Let’s begin by understanding the core concept. Dijkstra’s algorithm maintain
 </span></span><span class=line><span class=cl>    <span class=nx>previous</span> <span class=p>=</span> <span class=nb>make</span><span class=p>(</span><span class=kd>map</span><span class=p>[</span><span class=kt>string</span><span class=p>]</span><span class=kt>string</span><span class=p>)</span>
 </span></span><span class=line><span class=cl>    <span class=nx>unvisited</span> <span class=o>:=</span> <span class=nb>make</span><span class=p>(</span><span class=kd>map</span><span class=p>[</span><span class=kt>string</span><span class=p>]</span><span class=kt>bool</span><span class=p>)</span>
 </span></span><span class=line><span class=cl>
-</span></span><span class=line><span class=cl>    <span class=c1>// Initialize distances and unvisited nodes
-</span></span></span><span class=line><span class=cl><span class=c1></span>    <span class=k>for</span> <span class=nx>node</span> <span class=o>:=</span> <span class=k>range</span> <span class=nx>graph</span><span class=p>.</span><span class=nx>nodes</span> <span class=p>{</span>
-</span></span><span class=line><span class=cl>        <span class=nx>distances</span><span class=p>[</span><span class=nx>node</span><span class=p>]</span> <span class=p>=</span> <span class=nb>int</span><span class=p>(^</span><span class=nb>uint</span><span class=p>(</span><span class=mi>0</span><span class=p>)</span> <span class=o>&gt;&gt;</span> <span class=mi>1</span><span class=p>)</span> <span class=c1>// Set to infinity
-</span></span></span><span class=line><span class=cl><span class=c1></span>        <span class=nx>unvisited</span><span class=p>[</span><span class=nx>node</span><span class=p>]</span> <span class=p>=</span> <span class=kc>true</span>
+</span></span><span class=line><span class=cl>    <span class=c1>// Initialize distances and unvisited nodes</span>
+</span></span><span class=line><span class=cl>    <span class=k>for</span> <span class=nx>node</span> <span class=o>:=</span> <span class=k>range</span> <span class=nx>graph</span><span class=p>.</span><span class=nx>nodes</span> <span class=p>{</span>
+</span></span><span class=line><span class=cl>        <span class=nx>distances</span><span class=p>[</span><span class=nx>node</span><span class=p>]</span> <span class=p>=</span> <span class=nb>int</span><span class=p>(^</span><span class=nb>uint</span><span class=p>(</span><span class=mi>0</span><span class=p>)</span> <span class=o>&gt;&gt;</span> <span class=mi>1</span><span class=p>)</span> <span class=c1>// Set to infinity</span>
+</span></span><span class=line><span class=cl>        <span class=nx>unvisited</span><span class=p>[</span><span class=nx>node</span><span class=p>]</span> <span class=p>=</span> <span class=kc>true</span>
 </span></span><span class=line><span class=cl>    <span class=p>}</span>
 </span></span><span class=line><span class=cl>    <span class=nx>distances</span><span class=p>[</span><span class=nx>start</span><span class=p>]</span> <span class=p>=</span> <span class=mi>0</span>
 </span></span><span class=line><span class=cl>
 </span></span><span class=line><span class=cl>    <span class=k>for</span> <span class=nb>len</span><span class=p>(</span><span class=nx>unvisited</span><span class=p>)</span> <span class=p>&gt;</span> <span class=mi>0</span> <span class=p>{</span>
-</span></span><span class=line><span class=cl>        <span class=c1>// Find the unvisited node with the smallest distance
-</span></span></span><span class=line><span class=cl><span class=c1></span>        <span class=kd>var</span> <span class=nx>currentNode</span> <span class=kt>string</span>
+</span></span><span class=line><span class=cl>        <span class=c1>// Find the unvisited node with the smallest distance</span>
+</span></span><span class=line><span class=cl>        <span class=kd>var</span> <span class=nx>currentNode</span> <span class=kt>string</span>
 </span></span><span class=line><span class=cl>        <span class=nx>smallestDistance</span> <span class=o>:=</span> <span class=nb>int</span><span class=p>(^</span><span class=nb>uint</span><span class=p>(</span><span class=mi>0</span><span class=p>)</span> <span class=o>&gt;&gt;</span> <span class=mi>1</span><span class=p>)</span>
 </span></span><span class=line><span class=cl>        <span class=k>for</span> <span class=nx>node</span> <span class=o>:=</span> <span class=k>range</span> <span class=nx>unvisited</span> <span class=p>{</span>
 </span></span><span class=line><span class=cl>            <span class=k>if</span> <span class=nx>distances</span><span class=p>[</span><span class=nx>node</span><span class=p>]</span> <span class=o>&lt;=</span> <span class=nx>smallestDistance</span> <span class=p>{</span>
@@ -51,11 +51,11 @@ Let’s begin by understanding the core concept. Dijkstra’s algorithm maintain
 </span></span><span class=line><span class=cl>            <span class=p>}</span>
 </span></span><span class=line><span class=cl>        <span class=p>}</span>
 </span></span><span class=line><span class=cl>
-</span></span><span class=line><span class=cl>        <span class=c1>// Remove the node from unvisited set
-</span></span></span><span class=line><span class=cl><span class=c1></span>        <span class=nb>delete</span><span class=p>(</span><span class=nx>unvisited</span><span class=p>,</span> <span class=nx>currentNode</span><span class=p>)</span>
+</span></span><span class=line><span class=cl>        <span class=c1>// Remove the node from unvisited set</span>
+</span></span><span class=line><span class=cl>        <span class=nb>delete</span><span class=p>(</span><span class=nx>unvisited</span><span class=p>,</span> <span class=nx>currentNode</span><span class=p>)</span>
 </span></span><span class=line><span class=cl>
-</span></span><span class=line><span class=cl>        <span class=c1>// Update distances to neighbors
-</span></span></span><span class=line><span class=cl><span class=c1></span>        <span class=k>for</span> <span class=nx>_</span><span class=p>,</span> <span class=nx>edge</span> <span class=o>:=</span> <span class=k>range</span> <span class=nx>graph</span><span class=p>.</span><span class=nx>nodes</span><span class=p>[</span><span class=nx>currentNode</span><span class=p>]</span> <span class=p>{</span>
+</span></span><span class=line><span class=cl>        <span class=c1>// Update distances to neighbors</span>
+</span></span><span class=line><span class=cl>        <span class=k>for</span> <span class=nx>_</span><span class=p>,</span> <span class=nx>edge</span> <span class=o>:=</span> <span class=k>range</span> <span class=nx>graph</span><span class=p>.</span><span class=nx>nodes</span><span class=p>[</span><span class=nx>currentNode</span><span class=p>]</span> <span class=p>{</span>
 </span></span><span class=line><span class=cl>            <span class=nx>alt</span> <span class=o>:=</span> <span class=nx>distances</span><span class=p>[</span><span class=nx>currentNode</span><span class=p>]</span> <span class=o>+</span> <span class=nx>edge</span><span class=p>.</span><span class=nx>weight</span>
 </span></span><span class=line><span class=cl>            <span class=k>if</span> <span class=nx>alt</span> <span class=p>&lt;</span> <span class=nx>distances</span><span class=p>[</span><span class=nx>edge</span><span class=p>.</span><span class=nx>node</span><span class=p>]</span> <span class=p>{</span>
 </span></span><span class=line><span class=cl>                <span class=nx>distances</span><span class=p>[</span><span class=nx>edge</span><span class=p>.</span><span class=nx>node</span><span class=p>]</span> <span class=p>=</span> <span class=nx>alt</span>
@@ -87,8 +87,8 @@ Let’s begin by understanding the core concept. Dijkstra’s algorithm maintain
 </span></span><span class=line><span class=cl>
 </span></span><span class=line><span class=cl>    <span class=k>for</span> <span class=nx>_</span><span class=p>,</span> <span class=nx>edge</span> <span class=o>:=</span> <span class=k>range</span> <span class=nx>edges</span> <span class=p>{</span>
 </span></span><span class=line><span class=cl>        <span class=nx>graph</span><span class=p>.</span><span class=nf>AddEdge</span><span class=p>(</span><span class=nx>edge</span><span class=p>.</span><span class=nx>from</span><span class=p>,</span> <span class=nx>edge</span><span class=p>.</span><span class=nx>to</span><span class=p>,</span> <span class=nx>edge</span><span class=p>.</span><span class=nx>weight</span><span class=p>)</span>
-</span></span><span class=line><span class=cl>        <span class=nx>graph</span><span class=p>.</span><span class=nf>AddEdge</span><span class=p>(</span><span class=nx>edge</span><span class=p>.</span><span class=nx>to</span><span class=p>,</span> <span class=nx>edge</span><span class=p>.</span><span class=nx>from</span><span class=p>,</span> <span class=nx>edge</span><span class=p>.</span><span class=nx>weight</span><span class=p>)</span> <span class=c1>// Assuming undirected graph
-</span></span></span><span class=line><span class=cl><span class=c1></span>    <span class=p>}</span>
+</span></span><span class=line><span class=cl>        <span class=nx>graph</span><span class=p>.</span><span class=nf>AddEdge</span><span class=p>(</span><span class=nx>edge</span><span class=p>.</span><span class=nx>to</span><span class=p>,</span> <span class=nx>edge</span><span class=p>.</span><span class=nx>from</span><span class=p>,</span> <span class=nx>edge</span><span class=p>.</span><span class=nx>weight</span><span class=p>)</span> <span class=c1>// Assuming undirected graph</span>
+</span></span><span class=line><span class=cl>    <span class=p>}</span>
 </span></span><span class=line><span class=cl>
 </span></span><span class=line><span class=cl>    <span class=nx>distances</span><span class=p>,</span> <span class=nx>previous</span> <span class=o>:=</span> <span class=nf>Dijkstra</span><span class=p>(</span><span class=nx>graph</span><span class=p>,</span> <span class=s>&#34;A&#34;</span><span class=p>)</span>
 </span></span><span class=line><span class=cl>
@@ -116,8 +116,8 @@ Let’s begin by understanding the core concept. Dijkstra’s algorithm maintain
 </span></span><span class=line><span class=cl>
 </span></span><span class=line><span class=cl>    <span class=k>for</span> <span class=nx>_</span><span class=p>,</span> <span class=nx>edge</span> <span class=o>:=</span> <span class=k>range</span> <span class=nx>edges</span> <span class=p>{</span>
 </span></span><span class=line><span class=cl>        <span class=nx>graph</span><span class=p>.</span><span class=nf>AddEdge</span><span class=p>(</span><span class=nx>edge</span><span class=p>.</span><span class=nx>from</span><span class=p>,</span> <span class=nx>edge</span><span class=p>.</span><span class=nx>to</span><span class=p>,</span> <span class=nx>edge</span><span class=p>.</span><span class=nx>weight</span><span class=p>)</span>
-</span></span><span class=line><span class=cl>        <span class=nx>graph</span><span class=p>.</span><span class=nf>AddEdge</span><span class=p>(</span><span class=nx>edge</span><span class=p>.</span><span class=nx>to</span><span class=p>,</span> <span class=nx>edge</span><span class=p>.</span><span class=nx>from</span><span class=p>,</span> <span class=nx>edge</span><span class=p>.</span><span class=nx>weight</span><span class=p>)</span> <span class=c1>// Assuming undirected graph
-</span></span></span><span class=line><span class=cl><span class=c1></span>    <span class=p>}</span>
+</span></span><span class=line><span class=cl>        <span class=nx>graph</span><span class=p>.</span><span class=nf>AddEdge</span><span class=p>(</span><span class=nx>edge</span><span class=p>.</span><span class=nx>to</span><span class=p>,</span> <span class=nx>edge</span><span class=p>.</span><span class=nx>from</span><span class=p>,</span> <span class=nx>edge</span><span class=p>.</span><span class=nx>weight</span><span class=p>)</span> <span class=c1>// Assuming undirected graph</span>
+</span></span><span class=line><span class=cl>    <span class=p>}</span>
 </span></span><span class=line><span class=cl>
 </span></span><span class=line><span class=cl>    <span class=nx>distances</span><span class=p>,</span> <span class=nx>previous</span> <span class=o>:=</span> <span class=nf>Dijkstra</span><span class=p>(</span><span class=nx>graph</span><span class=p>,</span> <span class=s>&#34;A&#34;</span><span class=p>)</span>
 </span></span><span class=line><span class=cl>
@@ -159,9 +159,9 @@ Let’s begin by understanding the core concept. Dijkstra’s algorithm maintain
 </span></span><span class=line><span class=cl>    <span class=nx>old</span> <span class=o>:=</span> <span class=o>*</span><span class=nx>pq</span>
 </span></span><span class=line><span class=cl>    <span class=nx>n</span> <span class=o>:=</span> <span class=nb>len</span><span class=p>(</span><span class=nx>old</span><span class=p>)</span>
 </span></span><span class=line><span class=cl>    <span class=nx>item</span> <span class=o>:=</span> <span class=nx>old</span><span class=p>[</span><span class=nx>n</span><span class=o>-</span><span class=mi>1</span><span class=p>]</span>
-</span></span><span class=line><span class=cl>    <span class=nx>old</span><span class=p>[</span><span class=nx>n</span><span class=o>-</span><span class=mi>1</span><span class=p>]</span> <span class=p>=</span> <span class=kc>nil</span>  <span class=c1>// Avoid memory leak
-</span></span></span><span class=line><span class=cl><span class=c1></span>    <span class=nx>item</span><span class=p>.</span><span class=nx>index</span> <span class=p>=</span> <span class=o>-</span><span class=mi>1</span> <span class=c1>// For safety
-</span></span></span><span class=line><span class=cl><span class=c1></span>    <span class=o>*</span><span class=nx>pq</span> <span class=p>=</span> <span class=nx>old</span><span class=p>[</span><span class=mi>0</span> <span class=p>:</span> <span class=nx>n</span><span class=o>-</span><span class=mi>1</span><span class=p>]</span>
+</span></span><span class=line><span class=cl>    <span class=nx>old</span><span class=p>[</span><span class=nx>n</span><span class=o>-</span><span class=mi>1</span><span class=p>]</span> <span class=p>=</span> <span class=kc>nil</span>  <span class=c1>// Avoid memory leak</span>
+</span></span><span class=line><span class=cl>    <span class=nx>item</span><span class=p>.</span><span class=nx>index</span> <span class=p>=</span> <span class=o>-</span><span class=mi>1</span> <span class=c1>// For safety</span>
+</span></span><span class=line><span class=cl>    <span class=o>*</span><span class=nx>pq</span> <span class=p>=</span> <span class=nx>old</span><span class=p>[</span><span class=mi>0</span> <span class=p>:</span> <span class=nx>n</span><span class=o>-</span><span class=mi>1</span><span class=p>]</span>
 </span></span><span class=line><span class=cl>    <span class=k>return</span> <span class=nx>item</span>
 </span></span><span class=line><span class=cl><span class=p>}</span>
 </span></span><span class=line><span class=cl>
@@ -184,8 +184,8 @@ Let’s begin by understanding the core concept. Dijkstra’s algorithm maintain
 </span></span><span class=line><span class=cl>        <span class=nx>currentDistance</span> <span class=o>:=</span> <span class=nx>item</span><span class=p>.</span><span class=nx>priority</span>
 </span></span><span class=line><span class=cl>
 </span></span><span class=line><span class=cl>        <span class=k>if</span> <span class=nx>_</span><span class=p>,</span> <span class=nx>ok</span> <span class=o>:=</span> <span class=nx>distances</span><span class=p>[</span><span class=nx>currentNode</span><span class=p>];</span> <span class=nx>ok</span> <span class=p>{</span>
-</span></span><span class=line><span class=cl>            <span class=k>continue</span> <span class=c1>// Node already visited
-</span></span></span><span class=line><span class=cl><span class=c1></span>        <span class=p>}</span>
+</span></span><span class=line><span class=cl>            <span class=k>continue</span> <span class=c1>// Node already visited</span>
+</span></span><span class=line><span class=cl>        <span class=p>}</span>
 </span></span><span class=line><span class=cl>
 </span></span><span class=line><span class=cl>        <span class=nx>distances</span><span class=p>[</span><span class=nx>currentNode</span><span class=p>]</span> <span class=p>=</span> <span class=nx>currentDistance</span>
 </span></span><span class=line><span class=cl>
@@ -221,8 +221,8 @@ Let’s begin by understanding the core concept. Dijkstra’s algorithm maintain
 </span></span><span class=line><span class=cl>
 </span></span><span class=line><span class=cl>    <span class=k>for</span> <span class=nx>_</span><span class=p>,</span> <span class=nx>edge</span> <span class=o>:=</span> <span class=k>range</span> <span class=nx>edges</span> <span class=p>{</span>
 </span></span><span class=line><span class=cl>        <span class=nx>graph</span><span class=p>.</span><span class=nf>AddEdge</span><span class=p>(</span><span class=nx>edge</span><span class=p>.</span><span class=nx>from</span><span class=p>,</span> <span class=nx>edge</span><span class=p>.</span><span class=nx>to</span><span class=p>,</span> <span class=nx>edge</span><span class=p>.</span><span class=nx>weight</span><span class=p>)</span>
-</span></span><span class=line><span class=cl>        <span class=nx>graph</span><span class=p>.</span><span class=nf>AddEdge</span><span class=p>(</span><span class=nx>edge</span><span class=p>.</span><span class=nx>to</span><span class=p>,</span> <span class=nx>edge</span><span class=p>.</span><span class=nx>from</span><span class=p>,</span> <span class=nx>edge</span><span class=p>.</span><span class=nx>weight</span><span class=p>)</span> <span class=c1>// Assuming undirected graph
-</span></span></span><span class=line><span class=cl><span class=c1></span>    <span class=p>}</span>
+</span></span><span class=line><span class=cl>        <span class=nx>graph</span><span class=p>.</span><span class=nf>AddEdge</span><span class=p>(</span><span class=nx>edge</span><span class=p>.</span><span class=nx>to</span><span class=p>,</span> <span class=nx>edge</span><span class=p>.</span><span class=nx>from</span><span class=p>,</span> <span class=nx>edge</span><span class=p>.</span><span class=nx>weight</span><span class=p>)</span> <span class=c1>// Assuming undirected graph</span>
+</span></span><span class=line><span class=cl>    <span class=p>}</span>
 </span></span><span class=line><span class=cl>
 </span></span><span class=line><span class=cl>    <span class=nx>distances</span><span class=p>,</span> <span class=nx>previous</span> <span class=o>:=</span> <span class=nf>DijkstraWithHeap</span><span class=p>(</span><span class=nx>graph</span><span class=p>,</span> <span class=s>&#34;A&#34;</span><span class=p>)</span>
 </span></span><span class=line><span class=cl>

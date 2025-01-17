@@ -28,21 +28,21 @@ One of the first things to consider when building a video streaming application 
 </span></span><span class=line><span class=cl><span class=kd>func</span> <span class=nf>main</span><span class=p>()</span> <span class=p>{</span>
 </span></span><span class=line><span class=cl>	<span class=nx>gst</span><span class=p>.</span><span class=nf>Init</span><span class=p>()</span>
 </span></span><span class=line><span class=cl>
-</span></span><span class=line><span class=cl>	<span class=c1>// Create a pipeline to read the video file and encode it to H.264
-</span></span></span><span class=line><span class=cl><span class=c1></span>	<span class=nx>pipeline</span> <span class=o>:=</span> <span class=nx>gst</span><span class=p>.</span><span class=nf>ParseLaunch</span><span class=p>(</span><span class=s>&#34;filesrc location=myvideo.mp4 ! qtdemux ! h264parse ! mpegtsmux ! hlssink target-duration=10 playlist-length=3&#34;</span><span class=p>)</span>
+</span></span><span class=line><span class=cl>	<span class=c1>// Create a pipeline to read the video file and encode it to H.264</span>
+</span></span><span class=line><span class=cl>	<span class=nx>pipeline</span> <span class=o>:=</span> <span class=nx>gst</span><span class=p>.</span><span class=nf>ParseLaunch</span><span class=p>(</span><span class=s>&#34;filesrc location=myvideo.mp4 ! qtdemux ! h264parse ! mpegtsmux ! hlssink target-duration=10 playlist-length=3&#34;</span><span class=p>)</span>
 </span></span><span class=line><span class=cl>
-</span></span><span class=line><span class=cl>	<span class=c1>// Set up an HTTP server to serve the HLS segments and playlist
-</span></span></span><span class=line><span class=cl><span class=c1></span>	<span class=nx>http</span><span class=p>.</span><span class=nf>HandleFunc</span><span class=p>(</span><span class=s>&#34;/video&#34;</span><span class=p>,</span> <span class=kd>func</span><span class=p>(</span><span class=nx>w</span> <span class=nx>http</span><span class=p>.</span><span class=nx>ResponseWriter</span><span class=p>,</span> <span class=nx>r</span> <span class=o>*</span><span class=nx>http</span><span class=p>.</span><span class=nx>Request</span><span class=p>)</span> <span class=p>{</span>
+</span></span><span class=line><span class=cl>	<span class=c1>// Set up an HTTP server to serve the HLS segments and playlist</span>
+</span></span><span class=line><span class=cl>	<span class=nx>http</span><span class=p>.</span><span class=nf>HandleFunc</span><span class=p>(</span><span class=s>&#34;/video&#34;</span><span class=p>,</span> <span class=kd>func</span><span class=p>(</span><span class=nx>w</span> <span class=nx>http</span><span class=p>.</span><span class=nx>ResponseWriter</span><span class=p>,</span> <span class=nx>r</span> <span class=o>*</span><span class=nx>http</span><span class=p>.</span><span class=nx>Request</span><span class=p>)</span> <span class=p>{</span>
 </span></span><span class=line><span class=cl>		<span class=nx>http</span><span class=p>.</span><span class=nf>ServeFile</span><span class=p>(</span><span class=nx>w</span><span class=p>,</span> <span class=nx>r</span><span class=p>,</span> <span class=nx>r</span><span class=p>.</span><span class=nx>URL</span><span class=p>.</span><span class=nx>Path</span><span class=p>[</span><span class=mi>1</span><span class=p>:])</span>
 </span></span><span class=line><span class=cl>	<span class=p>})</span>
 </span></span><span class=line><span class=cl>
 </span></span><span class=line><span class=cl>	<span class=nx>log</span><span class=p>.</span><span class=nf>Fatal</span><span class=p>(</span><span class=nx>http</span><span class=p>.</span><span class=nf>ListenAndServe</span><span class=p>(</span><span class=s>&#34;:8080&#34;</span><span class=p>,</span> <span class=kc>nil</span><span class=p>))</span>
 </span></span><span class=line><span class=cl>
-</span></span><span class=line><span class=cl>	<span class=c1>// Run the pipeline
-</span></span></span><span class=line><span class=cl><span class=c1></span>	<span class=nx>pipeline</span><span class=p>.</span><span class=nf>SetState</span><span class=p>(</span><span class=nx>gst</span><span class=p>.</span><span class=nx>StatePlaying</span><span class=p>)</span>
+</span></span><span class=line><span class=cl>	<span class=c1>// Run the pipeline</span>
+</span></span><span class=line><span class=cl>	<span class=nx>pipeline</span><span class=p>.</span><span class=nf>SetState</span><span class=p>(</span><span class=nx>gst</span><span class=p>.</span><span class=nx>StatePlaying</span><span class=p>)</span>
 </span></span><span class=line><span class=cl>
-</span></span><span class=line><span class=cl>	<span class=c1>// Wait for the pipeline to finish
-</span></span></span><span class=line><span class=cl><span class=c1></span>	<span class=nx>pipeline</span><span class=p>.</span><span class=nf>Wait</span><span class=p>()</span>
+</span></span><span class=line><span class=cl>	<span class=c1>// Wait for the pipeline to finish</span>
+</span></span><span class=line><span class=cl>	<span class=nx>pipeline</span><span class=p>.</span><span class=nf>Wait</span><span class=p>()</span>
 </span></span><span class=line><span class=cl><span class=p>}</span>
 </span></span></code></pre></div><p>This code sets up an HTTP server that listens on port 8080, and serves the HLS segments and playlist generated by the GStreamer pipeline. The pipeline reads the input video file myvideo.mp4, transcodes it to H.264, and muxes it into MPEG-TS segments using the mpegtsmux element. It then uses the hlssink element to generate an HLS playlist and segments, with a target duration of 10 seconds and a playlist length of 3 segments.</p><p>Last but not least, here is an example of how you might use the FFmpeg library to generate HLS segments on-the-fly in Go:</p><div class=highlight><pre tabindex=0 class=chroma><code class=language-Go data-lang=Go><span class=line><span class=cl><span class=kn>package</span> <span class=nx>main</span>
 </span></span><span class=line><span class=cl>
@@ -54,28 +54,28 @@ One of the first things to consider when building a video streaming application 
 </span></span><span class=line><span class=cl><span class=p>)</span>
 </span></span><span class=line><span class=cl>
 </span></span><span class=line><span class=cl><span class=kd>func</span> <span class=nf>main</span><span class=p>()</span> <span class=p>{</span>
-</span></span><span class=line><span class=cl>	<span class=c1>// Set up the FFmpeg command
-</span></span></span><span class=line><span class=cl><span class=c1></span>	<span class=nx>cmd</span> <span class=o>:=</span> <span class=nx>ffmpeg</span><span class=p>.</span><span class=nf>Command</span><span class=p>(</span><span class=s>&#34;ffmpeg&#34;</span><span class=p>)</span>
+</span></span><span class=line><span class=cl>	<span class=c1>// Set up the FFmpeg command</span>
+</span></span><span class=line><span class=cl>	<span class=nx>cmd</span> <span class=o>:=</span> <span class=nx>ffmpeg</span><span class=p>.</span><span class=nf>Command</span><span class=p>(</span><span class=s>&#34;ffmpeg&#34;</span><span class=p>)</span>
 </span></span><span class=line><span class=cl>
-</span></span><span class=line><span class=cl>	<span class=c1>// Set the input and output options
-</span></span></span><span class=line><span class=cl><span class=c1></span>	<span class=nx>cmd</span><span class=p>.</span><span class=nf>Input</span><span class=p>(</span><span class=s>&#34;myvideo.mp4&#34;</span><span class=p>)</span>
+</span></span><span class=line><span class=cl>	<span class=c1>// Set the input and output options</span>
+</span></span><span class=line><span class=cl>	<span class=nx>cmd</span><span class=p>.</span><span class=nf>Input</span><span class=p>(</span><span class=s>&#34;myvideo.mp4&#34;</span><span class=p>)</span>
 </span></span><span class=line><span class=cl>	<span class=nx>cmd</span><span class=p>.</span><span class=nf>Output</span><span class=p>(</span><span class=s>&#34;video.m3u8&#34;</span><span class=p>).</span><span class=nf>Type</span><span class=p>(</span><span class=s>&#34;hls&#34;</span><span class=p>).</span><span class=nf>HlsListSize</span><span class=p>(</span><span class=mi>3</span><span class=p>).</span><span class=nf>HlsSegmentDuration</span><span class=p>(</span><span class=mi>10</span><span class=p>)</span>
 </span></span><span class=line><span class=cl>
-</span></span><span class=line><span class=cl>	<span class=c1>// Start the command
-</span></span></span><span class=line><span class=cl><span class=c1></span>	<span class=nx>err</span> <span class=o>:=</span> <span class=nx>cmd</span><span class=p>.</span><span class=nf>Start</span><span class=p>()</span>
+</span></span><span class=line><span class=cl>	<span class=c1>// Start the command</span>
+</span></span><span class=line><span class=cl>	<span class=nx>err</span> <span class=o>:=</span> <span class=nx>cmd</span><span class=p>.</span><span class=nf>Start</span><span class=p>()</span>
 </span></span><span class=line><span class=cl>	<span class=k>if</span> <span class=nx>err</span> <span class=o>!=</span> <span class=kc>nil</span> <span class=p>{</span>
 </span></span><span class=line><span class=cl>		<span class=nx>log</span><span class=p>.</span><span class=nf>Fatal</span><span class=p>(</span><span class=nx>err</span><span class=p>)</span>
 </span></span><span class=line><span class=cl>	<span class=p>}</span>
 </span></span><span class=line><span class=cl>
-</span></span><span class=line><span class=cl>	<span class=c1>// Set up an HTTP server to serve the HLS segments and playlist
-</span></span></span><span class=line><span class=cl><span class=c1></span>	<span class=nx>http</span><span class=p>.</span><span class=nf>HandleFunc</span><span class=p>(</span><span class=s>&#34;/video&#34;</span><span class=p>,</span> <span class=kd>func</span><span class=p>(</span><span class=nx>w</span> <span class=nx>http</span><span class=p>.</span><span class=nx>ResponseWriter</span><span class=p>,</span> <span class=nx>r</span> <span class=o>*</span><span class=nx>http</span><span class=p>.</span><span class=nx>Request</span><span class=p>)</span> <span class=p>{</span>
+</span></span><span class=line><span class=cl>	<span class=c1>// Set up an HTTP server to serve the HLS segments and playlist</span>
+</span></span><span class=line><span class=cl>	<span class=nx>http</span><span class=p>.</span><span class=nf>HandleFunc</span><span class=p>(</span><span class=s>&#34;/video&#34;</span><span class=p>,</span> <span class=kd>func</span><span class=p>(</span><span class=nx>w</span> <span class=nx>http</span><span class=p>.</span><span class=nx>ResponseWriter</span><span class=p>,</span> <span class=nx>r</span> <span class=o>*</span><span class=nx>http</span><span class=p>.</span><span class=nx>Request</span><span class=p>)</span> <span class=p>{</span>
 </span></span><span class=line><span class=cl>		<span class=nx>http</span><span class=p>.</span><span class=nf>ServeFile</span><span class=p>(</span><span class=nx>w</span><span class=p>,</span> <span class=nx>r</span><span class=p>,</span> <span class=nx>r</span><span class=p>.</span><span class=nx>URL</span><span class=p>.</span><span class=nx>Path</span><span class=p>[</span><span class=mi>1</span><span class=p>:])</span>
 </span></span><span class=line><span class=cl>	<span class=p>})</span>
 </span></span><span class=line><span class=cl>
 </span></span><span class=line><span class=cl>	<span class=nx>log</span><span class=p>.</span><span class=nf>Fatal</span><span class=p>(</span><span class=nx>http</span><span class=p>.</span><span class=nf>ListenAndServe</span><span class=p>(</span><span class=s>&#34;:8080&#34;</span><span class=p>,</span> <span class=kc>nil</span><span class=p>))</span>
 </span></span><span class=line><span class=cl>
-</span></span><span class=line><span class=cl>	<span class=c1>// Wait for the command to finish
-</span></span></span><span class=line><span class=cl><span class=c1></span>	<span class=nx>err</span> <span class=p>=</span> <span class=nx>cmd</span><span class=p>.</span><span class=nf>Wait</span><span class=p>()</span>
+</span></span><span class=line><span class=cl>	<span class=c1>// Wait for the command to finish</span>
+</span></span><span class=line><span class=cl>	<span class=nx>err</span> <span class=p>=</span> <span class=nx>cmd</span><span class=p>.</span><span class=nf>Wait</span><span class=p>()</span>
 </span></span><span class=line><span class=cl>	<span class=k>if</span> <span class=nx>err</span> <span class=o>!=</span> <span class=kc>nil</span> <span class=p>{</span>
 </span></span><span class=line><span class=cl>		<span class=nx>log</span><span class=p>.</span><span class=nf>Fatal</span><span class=p>(</span><span class=nx>err</span><span class=p>)</span>
 </span></span><span class=line><span class=cl>	<span class=p>}</span>

@@ -16,23 +16,23 @@ To start, create a new file called &ldquo;main.go&rdquo; in your project directo
 </span></span><span class=line><span class=cl><span class=p>)</span>
 </span></span><span class=line><span class=cl>
 </span></span><span class=line><span class=cl><span class=kd>func</span> <span class=nf>main</span><span class=p>()</span> <span class=p>{</span>
-</span></span><span class=line><span class=cl>	<span class=c1>// Parse the command line arguments
-</span></span></span><span class=line><span class=cl><span class=c1></span>	<span class=nx>args</span> <span class=o>:=</span> <span class=nx>os</span><span class=p>.</span><span class=nx>Args</span><span class=p>[</span><span class=mi>1</span><span class=p>:]</span>
+</span></span><span class=line><span class=cl>	<span class=c1>// Parse the command line arguments</span>
+</span></span><span class=line><span class=cl>	<span class=nx>args</span> <span class=o>:=</span> <span class=nx>os</span><span class=p>.</span><span class=nx>Args</span><span class=p>[</span><span class=mi>1</span><span class=p>:]</span>
 </span></span><span class=line><span class=cl>	<span class=k>if</span> <span class=nb>len</span><span class=p>(</span><span class=nx>args</span><span class=p>)</span> <span class=o>!=</span> <span class=mi>1</span> <span class=p>{</span>
 </span></span><span class=line><span class=cl>		<span class=nx>fmt</span><span class=p>.</span><span class=nf>Println</span><span class=p>(</span><span class=s>&#34;Usage: separate-files &lt;folder&gt;&#34;</span><span class=p>)</span>
 </span></span><span class=line><span class=cl>		<span class=nx>os</span><span class=p>.</span><span class=nf>Exit</span><span class=p>(</span><span class=mi>1</span><span class=p>)</span>
 </span></span><span class=line><span class=cl>	<span class=p>}</span>
 </span></span><span class=line><span class=cl>	<span class=nx>folder</span> <span class=o>:=</span> <span class=nx>args</span><span class=p>[</span><span class=mi>0</span><span class=p>]</span>
 </span></span><span class=line><span class=cl>	
-</span></span><span class=line><span class=cl>	<span class=c1>// Read the list of files in the specified folder
-</span></span></span><span class=line><span class=cl><span class=c1></span>	<span class=nx>files</span><span class=p>,</span> <span class=nx>err</span> <span class=o>:=</span> <span class=nx>ioutil</span><span class=p>.</span><span class=nf>ReadDir</span><span class=p>(</span><span class=nx>folder</span><span class=p>)</span>
+</span></span><span class=line><span class=cl>	<span class=c1>// Read the list of files in the specified folder</span>
+</span></span><span class=line><span class=cl>	<span class=nx>files</span><span class=p>,</span> <span class=nx>err</span> <span class=o>:=</span> <span class=nx>ioutil</span><span class=p>.</span><span class=nf>ReadDir</span><span class=p>(</span><span class=nx>folder</span><span class=p>)</span>
 </span></span><span class=line><span class=cl>	<span class=k>if</span> <span class=nx>err</span> <span class=o>!=</span> <span class=kc>nil</span> <span class=p>{</span>
 </span></span><span class=line><span class=cl>		<span class=nx>fmt</span><span class=p>.</span><span class=nf>Printf</span><span class=p>(</span><span class=s>&#34;Error reading files in folder %s: %v\n&#34;</span><span class=p>,</span> <span class=nx>folder</span><span class=p>,</span> <span class=nx>err</span><span class=p>)</span>
 </span></span><span class=line><span class=cl>		<span class=nx>os</span><span class=p>.</span><span class=nf>Exit</span><span class=p>(</span><span class=mi>1</span><span class=p>)</span>
 </span></span><span class=line><span class=cl>	<span class=p>}</span>
 </span></span><span class=line><span class=cl>	
-</span></span><span class=line><span class=cl>	<span class=c1>// Iterate over the list of files and create a subfolder for each unique extension
-</span></span></span><span class=line><span class=cl><span class=c1></span>		<span class=nx>extensions</span> <span class=o>:=</span> <span class=nb>make</span><span class=p>(</span><span class=kd>map</span><span class=p>[</span><span class=kt>string</span><span class=p>]</span><span class=kt>bool</span><span class=p>)</span>
+</span></span><span class=line><span class=cl>	<span class=c1>// Iterate over the list of files and create a subfolder for each unique extension</span>
+</span></span><span class=line><span class=cl>		<span class=nx>extensions</span> <span class=o>:=</span> <span class=nb>make</span><span class=p>(</span><span class=kd>map</span><span class=p>[</span><span class=kt>string</span><span class=p>]</span><span class=kt>bool</span><span class=p>)</span>
 </span></span><span class=line><span class=cl>	<span class=k>for</span> <span class=nx>_</span><span class=p>,</span> <span class=nx>file</span> <span class=o>:=</span> <span class=k>range</span> <span class=nx>files</span> <span class=p>{</span>
 </span></span><span class=line><span class=cl>		<span class=k>if</span> <span class=nx>file</span><span class=p>.</span><span class=nf>IsDir</span><span class=p>()</span> <span class=p>{</span>
 </span></span><span class=line><span class=cl>			<span class=k>continue</span>
@@ -43,16 +43,16 @@ To start, create a new file called &ldquo;main.go&rdquo; in your project directo
 </span></span><span class=line><span class=cl>	<span class=p>}</span>
 </span></span><span class=line><span class=cl>	
 </span></span><span class=line><span class=cl>	<span class=k>for</span> <span class=nx>extension</span> <span class=o>:=</span> <span class=k>range</span> <span class=nx>extensions</span> <span class=p>{</span>
-</span></span><span class=line><span class=cl>		<span class=c1>// Create a subfolder for each unique extension
-</span></span></span><span class=line><span class=cl><span class=c1></span>		<span class=nx>err</span> <span class=o>:=</span> <span class=nx>os</span><span class=p>.</span><span class=nf>Mkdir</span><span class=p>(</span><span class=nx>filepath</span><span class=p>.</span><span class=nf>Join</span><span class=p>(</span><span class=nx>folder</span><span class=p>,</span> <span class=nx>extension</span><span class=p>),</span> <span class=mo>0700</span><span class=p>)</span>
+</span></span><span class=line><span class=cl>		<span class=c1>// Create a subfolder for each unique extension</span>
+</span></span><span class=line><span class=cl>		<span class=nx>err</span> <span class=o>:=</span> <span class=nx>os</span><span class=p>.</span><span class=nf>Mkdir</span><span class=p>(</span><span class=nx>filepath</span><span class=p>.</span><span class=nf>Join</span><span class=p>(</span><span class=nx>folder</span><span class=p>,</span> <span class=nx>extension</span><span class=p>),</span> <span class=mo>0700</span><span class=p>)</span>
 </span></span><span class=line><span class=cl>		<span class=k>if</span> <span class=nx>err</span> <span class=o>!=</span> <span class=kc>nil</span> <span class=p>{</span>
 </span></span><span class=line><span class=cl>			<span class=nx>fmt</span><span class=p>.</span><span class=nf>Printf</span><span class=p>(</span><span class=s>&#34;Error creating subfolder for extension %s: %v\n&#34;</span><span class=p>,</span> <span class=nx>extension</span><span class=p>,</span> <span class=nx>err</span><span class=p>)</span>
 </span></span><span class=line><span class=cl>			<span class=k>continue</span>
 </span></span><span class=line><span class=cl>		<span class=p>}</span>
 </span></span><span class=line><span class=cl>	<span class=p>}</span>
 </span></span><span class=line><span class=cl>	
-</span></span><span class=line><span class=cl>	<span class=c1>// Move each file into the appropriate subfolder based on its extension
-</span></span></span><span class=line><span class=cl><span class=c1></span>	<span class=k>for</span> <span class=nx>_</span><span class=p>,</span> <span class=nx>file</span> <span class=o>:=</span> <span class=k>range</span> <span class=nx>files</span> <span class=p>{</span>
+</span></span><span class=line><span class=cl>	<span class=c1>// Move each file into the appropriate subfolder based on its extension</span>
+</span></span><span class=line><span class=cl>	<span class=k>for</span> <span class=nx>_</span><span class=p>,</span> <span class=nx>file</span> <span class=o>:=</span> <span class=k>range</span> <span class=nx>files</span> <span class=p>{</span>
 </span></span><span class=line><span class=cl>		<span class=k>if</span> <span class=nx>file</span><span class=p>.</span><span class=nf>IsDir</span><span class=p>()</span> <span class=p>{</span>
 </span></span><span class=line><span class=cl>			<span class=k>continue</span>
 </span></span><span class=line><span class=cl>		<span class=p>}</span>

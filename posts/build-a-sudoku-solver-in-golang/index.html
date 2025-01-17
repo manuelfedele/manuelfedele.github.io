@@ -13,8 +13,8 @@ The game of Sudoku has always been a popular pastime for many. Whether you&rsquo
 </span></span><span class=line><span class=cl>            <span class=k>if</span> <span class=nf>solveSudoku</span><span class=p>(</span><span class=nx>grid</span><span class=p>)</span> <span class=p>{</span>
 </span></span><span class=line><span class=cl>              <span class=k>return</span> <span class=kc>true</span>
 </span></span><span class=line><span class=cl>            <span class=p>}</span> <span class=k>else</span> <span class=p>{</span>
-</span></span><span class=line><span class=cl>              <span class=c1>// Undo current cell for backtracking
-</span></span></span><span class=line><span class=cl><span class=c1></span>              <span class=nx>grid</span><span class=p>[</span><span class=nx>i</span><span class=p>][</span><span class=nx>j</span><span class=p>]</span> <span class=p>=</span> <span class=mi>0</span>
+</span></span><span class=line><span class=cl>              <span class=c1>// Undo current cell for backtracking</span>
+</span></span><span class=line><span class=cl>              <span class=nx>grid</span><span class=p>[</span><span class=nx>i</span><span class=p>][</span><span class=nx>j</span><span class=p>]</span> <span class=p>=</span> <span class=mi>0</span>
 </span></span><span class=line><span class=cl>            <span class=p>}</span>
 </span></span><span class=line><span class=cl>          <span class=p>}</span>
 </span></span><span class=line><span class=cl>        <span class=p>}</span>
@@ -25,22 +25,22 @@ The game of Sudoku has always been a popular pastime for many. Whether you&rsquo
 </span></span><span class=line><span class=cl>  <span class=k>return</span> <span class=kc>true</span>
 </span></span><span class=line><span class=cl><span class=p>}</span>
 </span></span></code></pre></div><p>The <code>solveSudoku</code> function works by iterating through each cell in the grid, filling in empty cells (those that contain a zero), and checking if the number being inserted is valid for that cell. If the number is valid, the function recursively tries to solve the rest of the grid. If it can&rsquo;t, it backtracks by setting the cell back to zero and tries the next number.</p><p>The <code>isValid</code> function checks if a given number is valid for a particular cell:</p><div class=highlight><pre tabindex=0 class=chroma><code class=language-go data-lang=go><span class=line><span class=cl><span class=kd>func</span> <span class=nf>isValid</span><span class=p>(</span><span class=nx>grid</span> <span class=o>*</span><span class=nx>SudokuGrid</span><span class=p>,</span> <span class=nx>row</span><span class=p>,</span> <span class=nx>col</span><span class=p>,</span> <span class=nx>num</span> <span class=kt>int</span><span class=p>)</span> <span class=kt>bool</span> <span class=p>{</span>
-</span></span><span class=line><span class=cl>  <span class=c1>// Check the line
-</span></span></span><span class=line><span class=cl><span class=c1></span>  <span class=k>for</span> <span class=nx>i</span> <span class=o>:=</span> <span class=mi>0</span><span class=p>;</span> <span class=nx>i</span> <span class=p>&lt;</span> <span class=mi>9</span><span class=p>;</span> <span class=nx>i</span><span class=o>++</span> <span class=p>{</span>
+</span></span><span class=line><span class=cl>  <span class=c1>// Check the line</span>
+</span></span><span class=line><span class=cl>  <span class=k>for</span> <span class=nx>i</span> <span class=o>:=</span> <span class=mi>0</span><span class=p>;</span> <span class=nx>i</span> <span class=p>&lt;</span> <span class=mi>9</span><span class=p>;</span> <span class=nx>i</span><span class=o>++</span> <span class=p>{</span>
 </span></span><span class=line><span class=cl>    <span class=k>if</span> <span class=nx>grid</span><span class=p>[</span><span class=nx>row</span><span class=p>][</span><span class=nx>i</span><span class=p>]</span> <span class=o>==</span> <span class=nx>num</span> <span class=p>{</span>
 </span></span><span class=line><span class=cl>      <span class=k>return</span> <span class=kc>false</span>
 </span></span><span class=line><span class=cl>    <span class=p>}</span>
 </span></span><span class=line><span class=cl>  <span class=p>}</span>
 </span></span><span class=line><span class=cl>
-</span></span><span class=line><span class=cl>  <span class=c1>// Check the column
-</span></span></span><span class=line><span class=cl><span class=c1></span>  <span class=k>for</span> <span class=nx>i</span> <span class=o>:=</span> <span class=mi>0</span><span class=p>;</span> <span class=nx>i</span> <span class=p>&lt;</span> <span class=mi>9</span><span class=p>;</span> <span class=nx>i</span><span class=o>++</span> <span class=p>{</span>
+</span></span><span class=line><span class=cl>  <span class=c1>// Check the column</span>
+</span></span><span class=line><span class=cl>  <span class=k>for</span> <span class=nx>i</span> <span class=o>:=</span> <span class=mi>0</span><span class=p>;</span> <span class=nx>i</span> <span class=p>&lt;</span> <span class=mi>9</span><span class=p>;</span> <span class=nx>i</span><span class=o>++</span> <span class=p>{</span>
 </span></span><span class=line><span class=cl>    <span class=k>if</span> <span class=nx>grid</span><span class=p>[</span><span class=nx>i</span><span class=p>][</span><span class=nx>col</span><span class=p>]</span> <span class=o>==</span> <span class=nx>num</span> <span class=p>{</span>
 </span></span><span class=line><span class=cl>      <span class=k>return</span> <span class=kc>false</span>
 </span></span><span class=line><span class=cl>    <span class=p>}</span>
 </span></span><span class=line><span class=cl>  <span class=p>}</span>
 </span></span><span class=line><span class=cl>
-</span></span><span class=line><span class=cl>  <span class=c1>// Check the box
-</span></span></span><span class=line><span class=cl><span class=c1></span>  <span class=nx>startRow</span><span class=p>,</span> <span class=nx>startCol</span> <span class=o>:=</span> <span class=nx>row</span><span class=o>-</span><span class=nx>row</span><span class=o>%</span><span class=mi>3</span><span class=p>,</span> <span class=nx>col</span><span class=o>-</span><span class=nx>col</span><span class=o>%</span><span class=mi>3</span>
+</span></span><span class=line><span class=cl>  <span class=c1>// Check the box</span>
+</span></span><span class=line><span class=cl>  <span class=nx>startRow</span><span class=p>,</span> <span class=nx>startCol</span> <span class=o>:=</span> <span class=nx>row</span><span class=o>-</span><span class=nx>row</span><span class=o>%</span><span class=mi>3</span><span class=p>,</span> <span class=nx>col</span><span class=o>-</span><span class=nx>col</span><span class=o>%</span><span class=mi>3</span>
 </span></span><span class=line><span class=cl>  <span class=k>for</span> <span class=nx>i</span> <span class=o>:=</span> <span class=mi>0</span><span class=p>;</span> <span class=nx>i</span> <span class=p>&lt;</span> <span class=mi>3</span><span class=p>;</span> <span class=nx>i</span><span class=o>++</span> <span class=p>{</span>
 </span></span><span class=line><span class=cl>    <span class=k>for</span> <span class=nx>j</span> <span class=o>:=</span> <span class=mi>0</span><span class=p>;</span> <span class=nx>j</span> <span class=p>&lt;</span> <span class=mi>3</span><span class=p>;</span> <span class=nx>j</span><span class=o>++</span> <span class=p>{</span>
 </span></span><span class=line><span class=cl>      <span class=k>if</span> <span class=nx>grid</span><span class=p>[</span><span class=nx>i</span><span class=o>+</span><span class=nx>startRow</span><span class=p>][</span><span class=nx>j</span><span class=o>+</span><span class=nx>startCol</span><span class=p>]</span> <span class=o>==</span> <span class=nx>num</span> <span class=p>{</span>

@@ -14,10 +14,10 @@ One of the primary use cases of context is to cancel long-running operations. Fo
 </span></span><span class=line><span class=cl>	<span class=nx>ctx</span><span class=p>,</span> <span class=nx>cancel</span> <span class=o>:=</span> <span class=nx>context</span><span class=p>.</span><span class=nf>WithTimeout</span><span class=p>(</span><span class=nx>r</span><span class=p>.</span><span class=nf>Context</span><span class=p>(),</span> <span class=nx>time</span><span class=p>.</span><span class=nx>Minute</span><span class=p>)</span>
 </span></span><span class=line><span class=cl>	<span class=k>defer</span> <span class=nf>cancel</span><span class=p>()</span>
 </span></span><span class=line><span class=cl>
-</span></span><span class=line><span class=cl>	<span class=c1>// Do some work with the request.
-</span></span></span><span class=line><span class=cl><span class=c1></span>	<span class=c1>// If the client closes the connection,
-</span></span></span><span class=line><span class=cl><span class=c1></span>	<span class=c1>// the cancel function is called and the work is stopped.
-</span></span></span><span class=line><span class=cl><span class=c1></span><span class=p>}</span>
+</span></span><span class=line><span class=cl>	<span class=c1>// Do some work with the request.</span>
+</span></span><span class=line><span class=cl>	<span class=c1>// If the client closes the connection,</span>
+</span></span><span class=line><span class=cl>	<span class=c1>// the cancel function is called and the work is stopped.</span>
+</span></span><span class=line><span class=cl><span class=p>}</span>
 </span></span><span class=line><span class=cl>
 </span></span><span class=line><span class=cl><span class=kd>func</span> <span class=nf>main</span><span class=p>()</span> <span class=p>{</span>
 </span></span><span class=line><span class=cl>	<span class=nx>http</span><span class=p>.</span><span class=nf>HandleFunc</span><span class=p>(</span><span class=s>&#34;/&#34;</span><span class=p>,</span> <span class=nx>handler</span><span class=p>)</span>
@@ -33,19 +33,19 @@ Here&rsquo;s an example of how you might use these functions to create a context
 </span></span><span class=line><span class=cl><span class=p>)</span>
 </span></span><span class=line><span class=cl>
 </span></span><span class=line><span class=cl><span class=kd>func</span> <span class=nf>main</span><span class=p>()</span> <span class=p>{</span>
-</span></span><span class=line><span class=cl>	<span class=c1>// Create a background context with a cancelation token.
-</span></span></span><span class=line><span class=cl><span class=c1></span>	<span class=nx>ctx</span><span class=p>,</span> <span class=nx>cancel</span> <span class=o>:=</span> <span class=nx>context</span><span class=p>.</span><span class=nf>WithCancel</span><span class=p>(</span><span class=nx>context</span><span class=p>.</span><span class=nf>Background</span><span class=p>())</span>
+</span></span><span class=line><span class=cl>	<span class=c1>// Create a background context with a cancelation token.</span>
+</span></span><span class=line><span class=cl>	<span class=nx>ctx</span><span class=p>,</span> <span class=nx>cancel</span> <span class=o>:=</span> <span class=nx>context</span><span class=p>.</span><span class=nf>WithCancel</span><span class=p>(</span><span class=nx>context</span><span class=p>.</span><span class=nf>Background</span><span class=p>())</span>
 </span></span><span class=line><span class=cl>	<span class=k>defer</span> <span class=nf>cancel</span><span class=p>()</span>
 </span></span><span class=line><span class=cl>
-</span></span><span class=line><span class=cl>	<span class=c1>// Create a new context with a request-scoped value.
-</span></span></span><span class=line><span class=cl><span class=c1></span>	<span class=nx>valueCtx</span> <span class=o>:=</span> <span class=nx>context</span><span class=p>.</span><span class=nf>WithValue</span><span class=p>(</span><span class=nx>ctx</span><span class=p>,</span> <span class=s>&#34;user_id&#34;</span><span class=p>,</span> <span class=mi>123</span><span class=p>)</span>
+</span></span><span class=line><span class=cl>	<span class=c1>// Create a new context with a request-scoped value.</span>
+</span></span><span class=line><span class=cl>	<span class=nx>valueCtx</span> <span class=o>:=</span> <span class=nx>context</span><span class=p>.</span><span class=nf>WithValue</span><span class=p>(</span><span class=nx>ctx</span><span class=p>,</span> <span class=s>&#34;user_id&#34;</span><span class=p>,</span> <span class=mi>123</span><span class=p>)</span>
 </span></span><span class=line><span class=cl>
-</span></span><span class=line><span class=cl>	<span class=c1>// Create a new context with a deadline.
-</span></span></span><span class=line><span class=cl><span class=c1></span>	<span class=nx>deadline</span><span class=p>,</span> <span class=nx>_</span> <span class=o>:=</span> <span class=nx>time</span><span class=p>.</span><span class=nf>Parse</span><span class=p>(</span><span class=nx>time</span><span class=p>.</span><span class=nx>RFC3339</span><span class=p>,</span> <span class=s>&#34;2022-01-01T00:00:00Z&#34;</span><span class=p>)</span>
+</span></span><span class=line><span class=cl>	<span class=c1>// Create a new context with a deadline.</span>
+</span></span><span class=line><span class=cl>	<span class=nx>deadline</span><span class=p>,</span> <span class=nx>_</span> <span class=o>:=</span> <span class=nx>time</span><span class=p>.</span><span class=nf>Parse</span><span class=p>(</span><span class=nx>time</span><span class=p>.</span><span class=nx>RFC3339</span><span class=p>,</span> <span class=s>&#34;2022-01-01T00:00:00Z&#34;</span><span class=p>)</span>
 </span></span><span class=line><span class=cl>	<span class=nx>deadlineCtx</span><span class=p>,</span> <span class=nx>_</span> <span class=o>:=</span> <span class=nx>context</span><span class=p>.</span><span class=nf>WithDeadline</span><span class=p>(</span><span class=nx>valueCtx</span><span class=p>,</span> <span class=nx>deadline</span><span class=p>)</span>
 </span></span><span class=line><span class=cl>
-</span></span><span class=line><span class=cl>	<span class=c1>// Print the values from all three contexts.
-</span></span></span><span class=line><span class=cl><span class=c1></span>	<span class=nx>fmt</span><span class=p>.</span><span class=nf>Println</span><span class=p>(</span><span class=s>&#34;Background:&#34;</span><span class=p>,</span> <span class=nx>ctx</span><span class=p>.</span><span class=nf>Value</span><span class=p>(</span><span class=s>&#34;user_id&#34;</span><span class=p>))</span>
+</span></span><span class=line><span class=cl>	<span class=c1>// Print the values from all three contexts.</span>
+</span></span><span class=line><span class=cl>	<span class=nx>fmt</span><span class=p>.</span><span class=nf>Println</span><span class=p>(</span><span class=s>&#34;Background:&#34;</span><span class=p>,</span> <span class=nx>ctx</span><span class=p>.</span><span class=nf>Value</span><span class=p>(</span><span class=s>&#34;user_id&#34;</span><span class=p>))</span>
 </span></span><span class=line><span class=cl>	<span class=nx>fmt</span><span class=p>.</span><span class=nf>Println</span><span class=p>(</span><span class=s>&#34;Value:&#34;</span><span class=p>,</span> <span class=nx>valueCtx</span><span class=p>.</span><span class=nf>Value</span><span class=p>(</span><span class=s>&#34;user_id&#34;</span><span class=p>))</span>
 </span></span><span class=line><span class=cl>	<span class=nx>fmt</span><span class=p>.</span><span class=nf>Println</span><span class=p>(</span><span class=s>&#34;Deadline:&#34;</span><span class=p>,</span> <span class=nx>deadlineCtx</span><span class=p>.</span><span class=nf>Value</span><span class=p>(</span><span class=s>&#34;user_id&#34;</span><span class=p>))</span>
 </span></span><span class=line><span class=cl><span class=p>}</span>
