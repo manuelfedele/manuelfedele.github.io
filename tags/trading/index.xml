@@ -1,29 +1,6 @@
-<?xml version="1.0" encoding="utf-8" standalone="yes"?>
-<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/">
-  <channel>
-    <title>Trading on Git Push and Run</title>
-    <link>https://manuelfedele.github.io/tags/trading/</link>
-    <description>Recent content in Trading on Git Push and Run</description>
-    <image>
-      <title>Git Push and Run</title>
-      <url>https://manuelfedele.github.io/img/card-pillow.jpg</url>
-      <link>https://manuelfedele.github.io/img/card-pillow.jpg</link>
-    </image>
-    <generator>Hugo -- 0.147.6</generator>
-    <language>en</language>
-    <lastBuildDate>Sun, 15 Jan 2023 19:24:09 +0100</lastBuildDate>
-    <atom:link href="https://manuelfedele.github.io/tags/trading/index.xml" rel="self" type="application/rss+xml" />
-    <item>
-      <title>Trading With Alpaca and Golang</title>
-      <link>https://manuelfedele.github.io/posts/trading-with-alpaca-and-golang/</link>
-      <pubDate>Sun, 15 Jan 2023 19:24:09 +0100</pubDate>
-      <guid>https://manuelfedele.github.io/posts/trading-with-alpaca-and-golang/</guid>
-      <description>&lt;p&gt;Alpaca is a popular platform for automated trading, offering APIs for accessing real-time market data and placing trades. In this article, we will discuss how to use Alpaca&amp;rsquo;s APIs with Golang, a popular programming language known for its simplicity, performance, and concurrency support.&lt;/p&gt;
-&lt;p&gt;Before we dive into the details of using Alpaca&amp;rsquo;s APIs with Golang, let&amp;rsquo;s first understand the requirements of the application.&lt;/p&gt;
-&lt;h3 id=&#34;requirements&#34;&gt;Requirements&lt;/h3&gt;
-&lt;p&gt;The application should be able to connect to the Alpaca API and authenticate the user.
+<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>Trading on Git Push and Run</title><link>https://manuelfedele.github.io/tags/trading/</link><description>Recent content in Trading on Git Push and Run</description><generator>Hugo</generator><language>en</language><lastBuildDate>Sun, 15 Jan 2023 19:24:09 +0100</lastBuildDate><atom:link href="https://manuelfedele.github.io/tags/trading/index.xml" rel="self" type="application/rss+xml"/><item><title>Trading With Alpaca and Golang</title><link>https://manuelfedele.github.io/posts/trading-with-alpaca-and-golang/</link><pubDate>Sun, 15 Jan 2023 19:24:09 +0100</pubDate><guid>https://manuelfedele.github.io/posts/trading-with-alpaca-and-golang/</guid><description>&lt;p>Alpaca is a popular platform for automated trading, offering APIs for accessing real-time market data and placing trades. In this article, we will discuss how to use Alpaca&amp;rsquo;s APIs with Golang, a popular programming language known for its simplicity, performance, and concurrency support.&lt;/p>
+&lt;p>Before we dive into the details of using Alpaca&amp;rsquo;s APIs with Golang, let&amp;rsquo;s first understand the requirements of the application.&lt;/p>
+&lt;h3 id="requirements">Requirements&lt;/h3>
+&lt;p>The application should be able to connect to the Alpaca API and authenticate the user.
 The application should be able to retrieve real-time market data and place trades.
-The application should be able to retrieve the user&amp;rsquo;s account information and trade history.&lt;/p&gt;</description>
-    </item>
-  </channel>
-</rss>
+The application should be able to retrieve the user&amp;rsquo;s account information and trade history.&lt;/p></description></item></channel></rss>

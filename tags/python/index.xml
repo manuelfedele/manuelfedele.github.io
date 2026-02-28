@@ -1,111 +1,39 @@
-<?xml version="1.0" encoding="utf-8" standalone="yes"?>
-<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/">
-  <channel>
-    <title>Python on Git Push and Run</title>
-    <link>https://manuelfedele.github.io/tags/python/</link>
-    <description>Recent content in Python on Git Push and Run</description>
-    <image>
-      <title>Git Push and Run</title>
-      <url>https://manuelfedele.github.io/img/card-pillow.jpg</url>
-      <link>https://manuelfedele.github.io/img/card-pillow.jpg</link>
-    </image>
-    <generator>Hugo -- 0.147.6</generator>
-    <language>en</language>
-    <lastBuildDate>Sun, 22 Feb 2026 09:30:00 +0100</lastBuildDate>
-    <atom:link href="https://manuelfedele.github.io/tags/python/index.xml" rel="self" type="application/rss+xml" />
-    <item>
-      <title>Building an AI SRE Assistant From Scratch: Architecture of an Autonomous Infrastructure Investigator</title>
-      <link>https://manuelfedele.github.io/posts/building-ai-sre-assistant-from-scratch/</link>
-      <pubDate>Sun, 22 Feb 2026 09:30:00 +0100</pubDate>
-      <guid>https://manuelfedele.github.io/posts/building-ai-sre-assistant-from-scratch/</guid>
-      <description>&lt;h1 id=&#34;building-an-ai-sre-assistant-from-scratch-architecture-of-an-autonomous-infrastructure-investigator&#34;&gt;Building an AI SRE Assistant From Scratch: Architecture of an Autonomous Infrastructure Investigator&lt;/h1&gt;
-&lt;p&gt;What if your on-call engineer never slept, had instant access to every repository and every AWS account, and could trace a production issue from DNS to database in under a minute?&lt;/p&gt;
-&lt;p&gt;That&amp;rsquo;s the question that led me to build TARS, an AI-powered SRE assistant that autonomously investigates infrastructure issues by combining LLM reasoning with deep integrations into GitLab and AWS. Named after the robot from Interstellar (because every good internal tool needs a movie reference), TARS is a full-stack application where engineers interact with an AI agent through a chat interface. The agent doesn&amp;rsquo;t just answer questions. It investigates. It clones repos, greps code, reads CloudWatch logs, traces DNS chains, inspects ECS services, and synthesizes findings into structured reports.&lt;/p&gt;</description>
-    </item>
-    <item>
-      <title>Building an AI-Powered Platform Operations Agent</title>
-      <link>https://manuelfedele.github.io/posts/building-ai-powered-platform-operations-agent/</link>
-      <pubDate>Sun, 15 Feb 2026 11:00:00 +0100</pubDate>
-      <guid>https://manuelfedele.github.io/posts/building-ai-powered-platform-operations-agent/</guid>
-      <description>&lt;h1 id=&#34;building-an-ai-powered-platform-operations-agent&#34;&gt;Building an AI-Powered Platform Operations Agent&lt;/h1&gt;
-&lt;p&gt;Platform engineering teams handle a constant stream of repetitive requests: onboarding users, managing API keys, checking service health, rotating credentials. Most of these tasks follow well-defined procedures that a human executes step by step. What if an AI agent could handle them instead?&lt;/p&gt;
-&lt;p&gt;In this post, I&amp;rsquo;ll walk through the architecture of an AI-powered operations agent that automates common platform tasks by giving an LLM access to your internal tools through a structured tool-calling interface.&lt;/p&gt;</description>
-    </item>
-    <item>
-      <title>Building an AI-Powered Document Processing Pipeline on AWS</title>
-      <link>https://manuelfedele.github.io/posts/building-ai-document-processing-pipeline-aws/</link>
-      <pubDate>Wed, 03 Dec 2025 16:45:00 +0100</pubDate>
-      <guid>https://manuelfedele.github.io/posts/building-ai-document-processing-pipeline-aws/</guid>
-      <description>&lt;h1 id=&#34;building-an-ai-powered-document-processing-pipeline-on-aws&#34;&gt;Building an AI-Powered Document Processing Pipeline on AWS&lt;/h1&gt;
-&lt;p&gt;Insurance companies process millions of documents every year: police reports, medical records, invoices, repair estimates. Traditionally, human operators read each document, classify it, extract the relevant fields, and enter the data into the claims system. This is slow, expensive, and error-prone.&lt;/p&gt;
-&lt;p&gt;In this post I&amp;rsquo;ll describe the architecture of a production document processing pipeline I helped build. The system ingests claim documents, extracts text using vision-based LLMs, clusters and classifies document sections, extracts structured data, and generates vector embeddings for semantic search. All of this runs on a fully serverless AWS architecture with no idle infrastructure costs.&lt;/p&gt;</description>
-    </item>
-    <item>
-      <title>Use Protobuf With Fastapi</title>
-      <link>https://manuelfedele.github.io/posts/use-protobuf-with-fastapi/</link>
-      <pubDate>Wed, 04 Jan 2023 16:00:43 +0100</pubDate>
-      <guid>https://manuelfedele.github.io/posts/use-protobuf-with-fastapi/</guid>
-      <description>&lt;p&gt;Protocol buffers, also known as Protobuf, are a popular data serialization format used for communication between services. They are efficient, easy to use, and language-agnostic. In this article, we will look at how to use Protobuf with FastAPI, a modern, high-performance web framework for building APIs with Python.&lt;/p&gt;
-&lt;p&gt;First, let&amp;rsquo;s start by installing the necessary dependencies. You will need to install fastapi, google-protobuf, and grpcio. You can do this by running the following command:&lt;/p&gt;</description>
-    </item>
-    <item>
-      <title>Understand Async Await in Python</title>
-      <link>https://manuelfedele.github.io/posts/understand-async-await-in-python/</link>
-      <pubDate>Sun, 01 Jan 2023 14:50:35 +0100</pubDate>
-      <guid>https://manuelfedele.github.io/posts/understand-async-await-in-python/</guid>
-      <description>&lt;p&gt;Async/await is a powerful programming construct that allows you to write asynchronous code in a synchronous-like style. It was introduced in Python 3.5 as part of the asyncio module and has become a popular choice for writing concurrent and parallel code in Python.&lt;/p&gt;
-&lt;p&gt;In this post, we&amp;rsquo;ll take a look at what async/await is and how it works, as well as some of the benefits and drawbacks of using it. We&amp;rsquo;ll also see some examples of how to use async/await in Python to write efficient and scalable code.&lt;/p&gt;</description>
-    </item>
-    <item>
-      <title>Create a Webserver With Fastapi and Uvicorn</title>
-      <link>https://manuelfedele.github.io/posts/create-webserver-with-fastapi-and-uvicorn/</link>
-      <pubDate>Fri, 30 Dec 2022 14:08:35 +0100</pubDate>
-      <guid>https://manuelfedele.github.io/posts/create-webserver-with-fastapi-and-uvicorn/</guid>
-      <description>&lt;p&gt;FastAPI is a modern, fast, web framework for building APIs with Python 3.7 and above. It is built on top of Starlette, a lightweight ASGI framework, and uses the uvicorn ASGI server.&lt;/p&gt;
-&lt;p&gt;Here is an example of how to create a web server with FastAPI and uvicorn:&lt;/p&gt;
-&lt;ol&gt;
-&lt;li&gt;Install FastAPI and uvicorn using pip:&lt;/li&gt;
-&lt;/ol&gt;
-&lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; class=&#34;chroma&#34;&gt;&lt;code class=&#34;language-bash&#34; data-lang=&#34;bash&#34;&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;pip install fastapi uvicorn
-&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;ol start=&#34;2&#34;&gt;
-&lt;li&gt;Create a file called main.py and import FastAPI:&lt;/li&gt;
-&lt;/ol&gt;
-&lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; class=&#34;chroma&#34;&gt;&lt;code class=&#34;language-python&#34; data-lang=&#34;python&#34;&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;&lt;span class=&#34;kn&#34;&gt;from&lt;/span&gt; &lt;span class=&#34;nn&#34;&gt;fastapi&lt;/span&gt; &lt;span class=&#34;kn&#34;&gt;import&lt;/span&gt; &lt;span class=&#34;n&#34;&gt;FastAPI&lt;/span&gt;
-&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;
-&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;&lt;span class=&#34;n&#34;&gt;app&lt;/span&gt; &lt;span class=&#34;o&#34;&gt;=&lt;/span&gt; &lt;span class=&#34;n&#34;&gt;FastAPI&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;()&lt;/span&gt;
-&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;ol start=&#34;3&#34;&gt;
-&lt;li&gt;Define a function that will be the endpoint for your API. This function should have a request parameter that specifies the HTTP request and a response parameter that specifies the HTTP response. You can use the @app.get decorator to define a function as a GET endpoint:&lt;/li&gt;
-&lt;/ol&gt;
-&lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; class=&#34;chroma&#34;&gt;&lt;code class=&#34;language-python&#34; data-lang=&#34;python&#34;&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;&lt;span class=&#34;nd&#34;&gt;@app.get&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;(&lt;/span&gt;&lt;span class=&#34;s2&#34;&gt;&amp;#34;/&amp;#34;&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;)&lt;/span&gt;
-&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;&lt;span class=&#34;k&#34;&gt;def&lt;/span&gt; &lt;span class=&#34;nf&#34;&gt;read_root&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;(&lt;/span&gt;&lt;span class=&#34;n&#34;&gt;request&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;,&lt;/span&gt; &lt;span class=&#34;n&#34;&gt;response&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;):&lt;/span&gt;
-&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;    &lt;span class=&#34;n&#34;&gt;response&lt;/span&gt;&lt;span class=&#34;o&#34;&gt;.&lt;/span&gt;&lt;span class=&#34;n&#34;&gt;status_code&lt;/span&gt; &lt;span class=&#34;o&#34;&gt;=&lt;/span&gt; &lt;span class=&#34;mi&#34;&gt;200&lt;/span&gt;
-&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;    &lt;span class=&#34;k&#34;&gt;return&lt;/span&gt; &lt;span class=&#34;p&#34;&gt;{&lt;/span&gt;&lt;span class=&#34;s2&#34;&gt;&amp;#34;Hello&amp;#34;&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;:&lt;/span&gt; &lt;span class=&#34;s2&#34;&gt;&amp;#34;World&amp;#34;&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;}&lt;/span&gt;
-&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;ol start=&#34;4&#34;&gt;
-&lt;li&gt;Run the web server using uvicorn:&lt;/li&gt;
-&lt;/ol&gt;
-&lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; class=&#34;chroma&#34;&gt;&lt;code class=&#34;language-python&#34; data-lang=&#34;python&#34;&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;&lt;span class=&#34;k&#34;&gt;if&lt;/span&gt; &lt;span class=&#34;vm&#34;&gt;__name__&lt;/span&gt; &lt;span class=&#34;o&#34;&gt;==&lt;/span&gt; &lt;span class=&#34;s2&#34;&gt;&amp;#34;__main__&amp;#34;&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;:&lt;/span&gt;
-&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;    &lt;span class=&#34;kn&#34;&gt;import&lt;/span&gt; &lt;span class=&#34;nn&#34;&gt;uvicorn&lt;/span&gt;
-&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;    &lt;span class=&#34;n&#34;&gt;uvicorn&lt;/span&gt;&lt;span class=&#34;o&#34;&gt;.&lt;/span&gt;&lt;span class=&#34;n&#34;&gt;run&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;(&lt;/span&gt;&lt;span class=&#34;n&#34;&gt;app&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;,&lt;/span&gt; &lt;span class=&#34;n&#34;&gt;host&lt;/span&gt;&lt;span class=&#34;o&#34;&gt;=&lt;/span&gt;&lt;span class=&#34;s2&#34;&gt;&amp;#34;0.0.0.0&amp;#34;&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;,&lt;/span&gt; &lt;span class=&#34;n&#34;&gt;port&lt;/span&gt;&lt;span class=&#34;o&#34;&gt;=&lt;/span&gt;&lt;span class=&#34;mi&#34;&gt;8000&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;)&lt;/span&gt;
-&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;p&gt;This will start the web server on the specified host and port (in this case, 0.0.0.0 and 8000). You can then access the endpoint at http://0.0.0.0:8000/.&lt;/p&gt;</description>
-    </item>
-    <item>
-      <title>What Does Yield Keyword Do in Python</title>
-      <link>https://manuelfedele.github.io/posts/what-does-yield-keyword-do-in-python/</link>
-      <pubDate>Thu, 29 Dec 2022 10:19:25 +0100</pubDate>
-      <guid>https://manuelfedele.github.io/posts/what-does-yield-keyword-do-in-python/</guid>
-      <description>&lt;p&gt;The keyword &amp;ldquo;yield&amp;rdquo; is a important part of the Python programming language, and it can be used in a number of different ways. In this article, we&amp;rsquo;ll take a closer look at what the yield keyword does in Python, and how it can be used to create more efficient and powerful programs.&lt;/p&gt;
-&lt;p&gt;The primary use of the yield keyword is to create a generator function. A generator function is a special type of function that produces a sequence of values, one at a time, when it is called. Unlike a regular function, which executes all of its code and returns a single value, a generator function can be paused at any point and resumed later, allowing it to produce a potentially infinite sequence of values.&lt;/p&gt;</description>
-    </item>
-    <item>
-      <title>Poetry No Module Seed via App Data</title>
-      <link>https://manuelfedele.github.io/posts/poetry-no-module-seed-via-app-data/</link>
-      <pubDate>Mon, 01 Nov 2021 15:15:47 +0100</pubDate>
-      <guid>https://manuelfedele.github.io/posts/poetry-no-module-seed-via-app-data/</guid>
-      <description>&lt;p&gt;For my last project, I used &lt;strong&gt;poetry&lt;/strong&gt; to manage dependencies and package my code.
-Poetry comes with all the tools you might need to manage your projects in a deterministic way.&lt;/p&gt;
-&lt;p&gt;Anyway, after running poetry init in an existing project, I tried to let poetry create a virtuale environment, by adding the first dependecy, but when I did poetry add twisted it suddenly hang out, printing:&lt;/p&gt;
-&lt;pre tabindex=&#34;0&#34;&gt;&lt;code&gt;No module named &amp;#39;virtualenv.seed.via_app_data&amp;#39;
-&lt;/code&gt;&lt;/pre&gt;&lt;p&gt;Why is that? Because &lt;strong&gt;poetry&lt;/strong&gt; was using the wrong virtualenv instance, so to solve this:&lt;/p&gt;</description>
-    </item>
-  </channel>
-</rss>
+<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>Python on Git Push and Run</title><link>https://manuelfedele.github.io/tags/python/</link><description>Recent content in Python on Git Push and Run</description><generator>Hugo</generator><language>en</language><lastBuildDate>Sun, 22 Feb 2026 09:30:00 +0100</lastBuildDate><atom:link href="https://manuelfedele.github.io/tags/python/index.xml" rel="self" type="application/rss+xml"/><item><title>Building an AI SRE Assistant From Scratch: Architecture of an Autonomous Infrastructure Investigator</title><link>https://manuelfedele.github.io/posts/building-ai-sre-assistant-from-scratch/</link><pubDate>Sun, 22 Feb 2026 09:30:00 +0100</pubDate><guid>https://manuelfedele.github.io/posts/building-ai-sre-assistant-from-scratch/</guid><description>&lt;h1 id="building-an-ai-sre-assistant-from-scratch-architecture-of-an-autonomous-infrastructure-investigator">Building an AI SRE Assistant From Scratch: Architecture of an Autonomous Infrastructure Investigator&lt;/h1>
+&lt;p>What if your on-call engineer never slept, had instant access to every repository and every AWS account, and could trace a production issue from DNS to database in under a minute?&lt;/p>
+&lt;p>That&amp;rsquo;s the question that led me to build TARS, an AI-powered SRE assistant that autonomously investigates infrastructure issues by combining LLM reasoning with deep integrations into GitLab and AWS. Named after the robot from Interstellar (because every good internal tool needs a movie reference), TARS is a full-stack application where engineers interact with an AI agent through a chat interface. The agent doesn&amp;rsquo;t just answer questions. It investigates. It clones repos, greps code, reads CloudWatch logs, traces DNS chains, inspects ECS services, and synthesizes findings into structured reports.&lt;/p></description></item><item><title>Building an AI-Powered Platform Operations Agent</title><link>https://manuelfedele.github.io/posts/building-ai-powered-platform-operations-agent/</link><pubDate>Sun, 15 Feb 2026 11:00:00 +0100</pubDate><guid>https://manuelfedele.github.io/posts/building-ai-powered-platform-operations-agent/</guid><description>&lt;h1 id="building-an-ai-powered-platform-operations-agent">Building an AI-Powered Platform Operations Agent&lt;/h1>
+&lt;p>Platform engineering teams handle a constant stream of repetitive requests: onboarding users, managing API keys, checking service health, rotating credentials. Most of these tasks follow well-defined procedures that a human executes step by step. What if an AI agent could handle them instead?&lt;/p>
+&lt;p>In this post, I&amp;rsquo;ll walk through the architecture of an AI-powered operations agent that automates common platform tasks by giving an LLM access to your internal tools through a structured tool-calling interface.&lt;/p></description></item><item><title>Building an AI-Powered Document Processing Pipeline on AWS</title><link>https://manuelfedele.github.io/posts/building-ai-document-processing-pipeline-aws/</link><pubDate>Wed, 03 Dec 2025 16:45:00 +0100</pubDate><guid>https://manuelfedele.github.io/posts/building-ai-document-processing-pipeline-aws/</guid><description>&lt;h1 id="building-an-ai-powered-document-processing-pipeline-on-aws">Building an AI-Powered Document Processing Pipeline on AWS&lt;/h1>
+&lt;p>Insurance companies process millions of documents every year: police reports, medical records, invoices, repair estimates. Traditionally, human operators read each document, classify it, extract the relevant fields, and enter the data into the claims system. This is slow, expensive, and error-prone.&lt;/p>
+&lt;p>In this post I&amp;rsquo;ll describe the architecture of a production document processing pipeline I helped build. The system ingests claim documents, extracts text using vision-based LLMs, clusters and classifies document sections, extracts structured data, and generates vector embeddings for semantic search. All of this runs on a fully serverless AWS architecture with no idle infrastructure costs.&lt;/p></description></item><item><title>Use Protobuf With Fastapi</title><link>https://manuelfedele.github.io/posts/use-protobuf-with-fastapi/</link><pubDate>Wed, 04 Jan 2023 16:00:43 +0100</pubDate><guid>https://manuelfedele.github.io/posts/use-protobuf-with-fastapi/</guid><description>&lt;p>Protocol buffers, also known as Protobuf, are a popular data serialization format used for communication between services. They are efficient, easy to use, and language-agnostic. In this article, we will look at how to use Protobuf with FastAPI, a modern, high-performance web framework for building APIs with Python.&lt;/p>
+&lt;p>First, let&amp;rsquo;s start by installing the necessary dependencies. You will need to install fastapi, google-protobuf, and grpcio. You can do this by running the following command:&lt;/p></description></item><item><title>Understand Async Await in Python</title><link>https://manuelfedele.github.io/posts/understand-async-await-in-python/</link><pubDate>Sun, 01 Jan 2023 14:50:35 +0100</pubDate><guid>https://manuelfedele.github.io/posts/understand-async-await-in-python/</guid><description>&lt;p>Async/await is a powerful programming construct that allows you to write asynchronous code in a synchronous-like style. It was introduced in Python 3.5 as part of the asyncio module and has become a popular choice for writing concurrent and parallel code in Python.&lt;/p>
+&lt;p>In this post, we&amp;rsquo;ll take a look at what async/await is and how it works, as well as some of the benefits and drawbacks of using it. We&amp;rsquo;ll also see some examples of how to use async/await in Python to write efficient and scalable code.&lt;/p></description></item><item><title>Create a Webserver With Fastapi and Uvicorn</title><link>https://manuelfedele.github.io/posts/create-webserver-with-fastapi-and-uvicorn/</link><pubDate>Fri, 30 Dec 2022 14:08:35 +0100</pubDate><guid>https://manuelfedele.github.io/posts/create-webserver-with-fastapi-and-uvicorn/</guid><description>&lt;p>FastAPI is a modern, fast, web framework for building APIs with Python 3.7 and above. It is built on top of Starlette, a lightweight ASGI framework, and uses the uvicorn ASGI server.&lt;/p>
+&lt;p>Here is an example of how to create a web server with FastAPI and uvicorn:&lt;/p>
+&lt;ol>
+&lt;li>Install FastAPI and uvicorn using pip:&lt;/li>
+&lt;/ol>
+&lt;div class="highlight">&lt;pre tabindex="0" class="chroma">&lt;code class="language-bash" data-lang="bash">&lt;span class="line">&lt;span class="cl">pip install fastapi uvicorn
+&lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/div>&lt;ol start="2">
+&lt;li>Create a file called main.py and import FastAPI:&lt;/li>
+&lt;/ol>
+&lt;div class="highlight">&lt;pre tabindex="0" class="chroma">&lt;code class="language-python" data-lang="python">&lt;span class="line">&lt;span class="cl">&lt;span class="kn">from&lt;/span> &lt;span class="nn">fastapi&lt;/span> &lt;span class="kn">import&lt;/span> &lt;span class="n">FastAPI&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">&lt;span class="n">app&lt;/span> &lt;span class="o">=&lt;/span> &lt;span class="n">FastAPI&lt;/span>&lt;span class="p">()&lt;/span>
+&lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/div>&lt;ol start="3">
+&lt;li>Define a function that will be the endpoint for your API. This function should have a request parameter that specifies the HTTP request and a response parameter that specifies the HTTP response. You can use the @app.get decorator to define a function as a GET endpoint:&lt;/li>
+&lt;/ol>
+&lt;div class="highlight">&lt;pre tabindex="0" class="chroma">&lt;code class="language-python" data-lang="python">&lt;span class="line">&lt;span class="cl">&lt;span class="nd">@app.get&lt;/span>&lt;span class="p">(&lt;/span>&lt;span class="s2">&amp;#34;/&amp;#34;&lt;/span>&lt;span class="p">)&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">&lt;span class="k">def&lt;/span> &lt;span class="nf">read_root&lt;/span>&lt;span class="p">(&lt;/span>&lt;span class="n">request&lt;/span>&lt;span class="p">,&lt;/span> &lt;span class="n">response&lt;/span>&lt;span class="p">):&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> &lt;span class="n">response&lt;/span>&lt;span class="o">.&lt;/span>&lt;span class="n">status_code&lt;/span> &lt;span class="o">=&lt;/span> &lt;span class="mi">200&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> &lt;span class="k">return&lt;/span> &lt;span class="p">{&lt;/span>&lt;span class="s2">&amp;#34;Hello&amp;#34;&lt;/span>&lt;span class="p">:&lt;/span> &lt;span class="s2">&amp;#34;World&amp;#34;&lt;/span>&lt;span class="p">}&lt;/span>
+&lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/div>&lt;ol start="4">
+&lt;li>Run the web server using uvicorn:&lt;/li>
+&lt;/ol>
+&lt;div class="highlight">&lt;pre tabindex="0" class="chroma">&lt;code class="language-python" data-lang="python">&lt;span class="line">&lt;span class="cl">&lt;span class="k">if&lt;/span> &lt;span class="vm">__name__&lt;/span> &lt;span class="o">==&lt;/span> &lt;span class="s2">&amp;#34;__main__&amp;#34;&lt;/span>&lt;span class="p">:&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> &lt;span class="kn">import&lt;/span> &lt;span class="nn">uvicorn&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> &lt;span class="n">uvicorn&lt;/span>&lt;span class="o">.&lt;/span>&lt;span class="n">run&lt;/span>&lt;span class="p">(&lt;/span>&lt;span class="n">app&lt;/span>&lt;span class="p">,&lt;/span> &lt;span class="n">host&lt;/span>&lt;span class="o">=&lt;/span>&lt;span class="s2">&amp;#34;0.0.0.0&amp;#34;&lt;/span>&lt;span class="p">,&lt;/span> &lt;span class="n">port&lt;/span>&lt;span class="o">=&lt;/span>&lt;span class="mi">8000&lt;/span>&lt;span class="p">)&lt;/span>
+&lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/div>&lt;p>This will start the web server on the specified host and port (in this case, 0.0.0.0 and 8000). You can then access the endpoint at http://0.0.0.0:8000/.&lt;/p></description></item><item><title>What Does Yield Keyword Do in Python</title><link>https://manuelfedele.github.io/posts/what-does-yield-keyword-do-in-python/</link><pubDate>Thu, 29 Dec 2022 10:19:25 +0100</pubDate><guid>https://manuelfedele.github.io/posts/what-does-yield-keyword-do-in-python/</guid><description>&lt;p>The keyword &amp;ldquo;yield&amp;rdquo; is a important part of the Python programming language, and it can be used in a number of different ways. In this article, we&amp;rsquo;ll take a closer look at what the yield keyword does in Python, and how it can be used to create more efficient and powerful programs.&lt;/p>
+&lt;p>The primary use of the yield keyword is to create a generator function. A generator function is a special type of function that produces a sequence of values, one at a time, when it is called. Unlike a regular function, which executes all of its code and returns a single value, a generator function can be paused at any point and resumed later, allowing it to produce a potentially infinite sequence of values.&lt;/p></description></item><item><title>Poetry No Module Seed via App Data</title><link>https://manuelfedele.github.io/posts/poetry-no-module-seed-via-app-data/</link><pubDate>Mon, 01 Nov 2021 15:15:47 +0100</pubDate><guid>https://manuelfedele.github.io/posts/poetry-no-module-seed-via-app-data/</guid><description>&lt;p>For my last project, I used &lt;strong>poetry&lt;/strong> to manage dependencies and package my code.
+Poetry comes with all the tools you might need to manage your projects in a deterministic way.&lt;/p>
+&lt;p>Anyway, after running poetry init in an existing project, I tried to let poetry create a virtuale environment, by adding the first dependecy, but when I did poetry add twisted it suddenly hang out, printing:&lt;/p>
+&lt;pre tabindex="0">&lt;code>No module named &amp;#39;virtualenv.seed.via_app_data&amp;#39;
+&lt;/code>&lt;/pre>&lt;p>Why is that? Because &lt;strong>poetry&lt;/strong> was using the wrong virtualenv instance, so to solve this:&lt;/p></description></item></channel></rss>

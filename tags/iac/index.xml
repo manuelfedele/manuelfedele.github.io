@@ -1,27 +1,4 @@
-<?xml version="1.0" encoding="utf-8" standalone="yes"?>
-<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/">
-  <channel>
-    <title>IaC on Git Push and Run</title>
-    <link>https://manuelfedele.github.io/tags/iac/</link>
-    <description>Recent content in IaC on Git Push and Run</description>
-    <image>
-      <title>Git Push and Run</title>
-      <url>https://manuelfedele.github.io/img/card-pillow.jpg</url>
-      <link>https://manuelfedele.github.io/img/card-pillow.jpg</link>
-    </image>
-    <generator>Hugo -- 0.147.6</generator>
-    <language>en</language>
-    <lastBuildDate>Mon, 22 Sep 2025 09:15:00 +0200</lastBuildDate>
-    <atom:link href="https://manuelfedele.github.io/tags/iac/index.xml" rel="self" type="application/rss+xml" />
-    <item>
-      <title>Managing Multi-Account AWS Infrastructure with Terraform Workspaces</title>
-      <link>https://manuelfedele.github.io/posts/multi-account-aws-terraform-workspaces/</link>
-      <pubDate>Mon, 22 Sep 2025 09:15:00 +0200</pubDate>
-      <guid>https://manuelfedele.github.io/posts/multi-account-aws-terraform-workspaces/</guid>
-      <description>&lt;h1 id=&#34;managing-multi-account-aws-infrastructure-with-terraform-workspaces&#34;&gt;Managing Multi-Account AWS Infrastructure with Terraform Workspaces&lt;/h1&gt;
-&lt;p&gt;When you&amp;rsquo;re managing infrastructure across dozens of AWS accounts, you need patterns that scale. In this post I&amp;rsquo;ll share the approach I use to manage multi-account, multi-environment AWS infrastructure using Terraform workspaces, modular code, and a consistent tagging strategy.&lt;/p&gt;
-&lt;h2 id=&#34;the-problem&#34;&gt;The Problem&lt;/h2&gt;
-&lt;p&gt;Imagine this setup: you have multiple organizational scopes (teams, business units, projects), each with their own AWS accounts for non-production and production. On top of that, your non-production account hosts multiple environments (dev, integration, certification). Multiply this by several countries or regions, and you&amp;rsquo;re looking at a lot of infrastructure to manage.&lt;/p&gt;</description>
-    </item>
-  </channel>
-</rss>
+<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>IaC on Git Push and Run</title><link>https://manuelfedele.github.io/tags/iac/</link><description>Recent content in IaC on Git Push and Run</description><generator>Hugo</generator><language>en</language><lastBuildDate>Mon, 22 Sep 2025 09:15:00 +0200</lastBuildDate><atom:link href="https://manuelfedele.github.io/tags/iac/index.xml" rel="self" type="application/rss+xml"/><item><title>Managing Multi-Account AWS Infrastructure with Terraform Workspaces</title><link>https://manuelfedele.github.io/posts/multi-account-aws-terraform-workspaces/</link><pubDate>Mon, 22 Sep 2025 09:15:00 +0200</pubDate><guid>https://manuelfedele.github.io/posts/multi-account-aws-terraform-workspaces/</guid><description>&lt;h1 id="managing-multi-account-aws-infrastructure-with-terraform-workspaces">Managing Multi-Account AWS Infrastructure with Terraform Workspaces&lt;/h1>
+&lt;p>When you&amp;rsquo;re managing infrastructure across dozens of AWS accounts, you need patterns that scale. In this post I&amp;rsquo;ll share the approach I use to manage multi-account, multi-environment AWS infrastructure using Terraform workspaces, modular code, and a consistent tagging strategy.&lt;/p>
+&lt;h2 id="the-problem">The Problem&lt;/h2>
+&lt;p>Imagine this setup: you have multiple organizational scopes (teams, business units, projects), each with their own AWS accounts for non-production and production. On top of that, your non-production account hosts multiple environments (dev, integration, certification). Multiply this by several countries or regions, and you&amp;rsquo;re looking at a lot of infrastructure to manage.&lt;/p></description></item></channel></rss>

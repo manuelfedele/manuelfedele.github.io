@@ -1,27 +1,4 @@
-<?xml version="1.0" encoding="utf-8" standalone="yes"?>
-<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/">
-  <channel>
-    <title>Nats on Git Push and Run</title>
-    <link>https://manuelfedele.github.io/tags/nats/</link>
-    <description>Recent content in Nats on Git Push and Run</description>
-    <image>
-      <title>Git Push and Run</title>
-      <url>https://manuelfedele.github.io/img/card-pillow.jpg</url>
-      <link>https://manuelfedele.github.io/img/card-pillow.jpg</link>
-    </image>
-    <generator>Hugo -- 0.147.6</generator>
-    <language>en</language>
-    <lastBuildDate>Mon, 13 Feb 2023 18:57:15 +0100</lastBuildDate>
-    <atom:link href="https://manuelfedele.github.io/tags/nats/index.xml" rel="self" type="application/rss+xml" />
-    <item>
-      <title>Nats Messaging With Golang</title>
-      <link>https://manuelfedele.github.io/posts/nats-messaging-with-golang/</link>
-      <pubDate>Mon, 13 Feb 2023 18:57:15 +0100</pubDate>
-      <guid>https://manuelfedele.github.io/posts/nats-messaging-with-golang/</guid>
-      <description>&lt;p&gt;NATS Messaging with Golang
-NATS is a high-performance, lightweight messaging system that is widely used for building distributed systems. It is designed to be simple, fast, and easy to use, making it a popular choice for many developers. In this tutorial, we will learn how to use NATS with Golang to send and receive messages.&lt;/p&gt;
-&lt;p&gt;Setting up NATS
-To use NATS with Golang, we first need to install the NATS server and client libraries. The NATS server can be downloaded from the NATS website or installed using a package manager like apt or brew.&lt;/p&gt;</description>
-    </item>
-  </channel>
-</rss>
+<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>Nats on Git Push and Run</title><link>https://manuelfedele.github.io/tags/nats/</link><description>Recent content in Nats on Git Push and Run</description><generator>Hugo</generator><language>en</language><lastBuildDate>Mon, 13 Feb 2023 18:57:15 +0100</lastBuildDate><atom:link href="https://manuelfedele.github.io/tags/nats/index.xml" rel="self" type="application/rss+xml"/><item><title>Nats Messaging With Golang</title><link>https://manuelfedele.github.io/posts/nats-messaging-with-golang/</link><pubDate>Mon, 13 Feb 2023 18:57:15 +0100</pubDate><guid>https://manuelfedele.github.io/posts/nats-messaging-with-golang/</guid><description>&lt;p>NATS Messaging with Golang
+NATS is a high-performance, lightweight messaging system that is widely used for building distributed systems. It is designed to be simple, fast, and easy to use, making it a popular choice for many developers. In this tutorial, we will learn how to use NATS with Golang to send and receive messages.&lt;/p>
+&lt;p>Setting up NATS
+To use NATS with Golang, we first need to install the NATS server and client libraries. The NATS server can be downloaded from the NATS website or installed using a package manager like apt or brew.&lt;/p></description></item></channel></rss>

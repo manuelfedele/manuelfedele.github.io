@@ -1,67 +1,16 @@
-<?xml version="1.0" encoding="utf-8" standalone="yes"?>
-<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/">
-  <channel>
-    <title>AWS on Git Push and Run</title>
-    <link>https://manuelfedele.github.io/tags/aws/</link>
-    <description>Recent content in AWS on Git Push and Run</description>
-    <image>
-      <title>Git Push and Run</title>
-      <url>https://manuelfedele.github.io/img/card-pillow.jpg</url>
-      <link>https://manuelfedele.github.io/img/card-pillow.jpg</link>
-    </image>
-    <generator>Hugo -- 0.147.6</generator>
-    <language>en</language>
-    <lastBuildDate>Sun, 22 Feb 2026 09:30:00 +0100</lastBuildDate>
-    <atom:link href="https://manuelfedele.github.io/tags/aws/index.xml" rel="self" type="application/rss+xml" />
-    <item>
-      <title>Building an AI SRE Assistant From Scratch: Architecture of an Autonomous Infrastructure Investigator</title>
-      <link>https://manuelfedele.github.io/posts/building-ai-sre-assistant-from-scratch/</link>
-      <pubDate>Sun, 22 Feb 2026 09:30:00 +0100</pubDate>
-      <guid>https://manuelfedele.github.io/posts/building-ai-sre-assistant-from-scratch/</guid>
-      <description>&lt;h1 id=&#34;building-an-ai-sre-assistant-from-scratch-architecture-of-an-autonomous-infrastructure-investigator&#34;&gt;Building an AI SRE Assistant From Scratch: Architecture of an Autonomous Infrastructure Investigator&lt;/h1&gt;
-&lt;p&gt;What if your on-call engineer never slept, had instant access to every repository and every AWS account, and could trace a production issue from DNS to database in under a minute?&lt;/p&gt;
-&lt;p&gt;That&amp;rsquo;s the question that led me to build TARS, an AI-powered SRE assistant that autonomously investigates infrastructure issues by combining LLM reasoning with deep integrations into GitLab and AWS. Named after the robot from Interstellar (because every good internal tool needs a movie reference), TARS is a full-stack application where engineers interact with an AI agent through a chat interface. The agent doesn&amp;rsquo;t just answer questions. It investigates. It clones repos, greps code, reads CloudWatch logs, traces DNS chains, inspects ECS services, and synthesizes findings into structured reports.&lt;/p&gt;</description>
-    </item>
-    <item>
-      <title>ECS Fargate Production Patterns That Actually Work</title>
-      <link>https://manuelfedele.github.io/posts/ecs-fargate-production-patterns/</link>
-      <pubDate>Thu, 08 Jan 2026 14:20:00 +0100</pubDate>
-      <guid>https://manuelfedele.github.io/posts/ecs-fargate-production-patterns/</guid>
-      <description>&lt;h1 id=&#34;ecs-fargate-production-patterns-that-actually-work&#34;&gt;ECS Fargate Production Patterns That Actually Work&lt;/h1&gt;
-&lt;p&gt;I&amp;rsquo;ve deployed and managed many containerized services on ECS Fargate. Over time, a set of patterns has emerged that I apply consistently to every new service. This post documents those patterns with Terraform examples, covering everything from Fargate Spot strategies to deployment circuit breakers and ARM64 migration.&lt;/p&gt;
-&lt;h2 id=&#34;the-standard-architecture&#34;&gt;The Standard Architecture&lt;/h2&gt;
-&lt;p&gt;Every service I deploy follows the same high-level architecture:&lt;/p&gt;
-&lt;pre tabindex=&#34;0&#34;&gt;&lt;code&gt;Internet/VPC -&amp;gt; ALB (HTTPS, TLS 1.3) -&amp;gt; ECS Fargate -&amp;gt; Aurora PostgreSQL Serverless v2
-                 |
-                WAF (rate limiting + AWS managed rules)
-&lt;/code&gt;&lt;/pre&gt;&lt;p&gt;Each component has its own security group, with traffic flowing only from the layer above. The ALB sits in private subnets (no public-facing services), and Route53 private hosted zones handle internal DNS.&lt;/p&gt;</description>
-    </item>
-    <item>
-      <title>Building an AI-Powered Document Processing Pipeline on AWS</title>
-      <link>https://manuelfedele.github.io/posts/building-ai-document-processing-pipeline-aws/</link>
-      <pubDate>Wed, 03 Dec 2025 16:45:00 +0100</pubDate>
-      <guid>https://manuelfedele.github.io/posts/building-ai-document-processing-pipeline-aws/</guid>
-      <description>&lt;h1 id=&#34;building-an-ai-powered-document-processing-pipeline-on-aws&#34;&gt;Building an AI-Powered Document Processing Pipeline on AWS&lt;/h1&gt;
-&lt;p&gt;Insurance companies process millions of documents every year: police reports, medical records, invoices, repair estimates. Traditionally, human operators read each document, classify it, extract the relevant fields, and enter the data into the claims system. This is slow, expensive, and error-prone.&lt;/p&gt;
-&lt;p&gt;In this post I&amp;rsquo;ll describe the architecture of a production document processing pipeline I helped build. The system ingests claim documents, extracts text using vision-based LLMs, clusters and classifies document sections, extracts structured data, and generates vector embeddings for semantic search. All of this runs on a fully serverless AWS architecture with no idle infrastructure costs.&lt;/p&gt;</description>
-    </item>
-    <item>
-      <title>Managing Multi-Account AWS Infrastructure with Terraform Workspaces</title>
-      <link>https://manuelfedele.github.io/posts/multi-account-aws-terraform-workspaces/</link>
-      <pubDate>Mon, 22 Sep 2025 09:15:00 +0200</pubDate>
-      <guid>https://manuelfedele.github.io/posts/multi-account-aws-terraform-workspaces/</guid>
-      <description>&lt;h1 id=&#34;managing-multi-account-aws-infrastructure-with-terraform-workspaces&#34;&gt;Managing Multi-Account AWS Infrastructure with Terraform Workspaces&lt;/h1&gt;
-&lt;p&gt;When you&amp;rsquo;re managing infrastructure across dozens of AWS accounts, you need patterns that scale. In this post I&amp;rsquo;ll share the approach I use to manage multi-account, multi-environment AWS infrastructure using Terraform workspaces, modular code, and a consistent tagging strategy.&lt;/p&gt;
-&lt;h2 id=&#34;the-problem&#34;&gt;The Problem&lt;/h2&gt;
-&lt;p&gt;Imagine this setup: you have multiple organizational scopes (teams, business units, projects), each with their own AWS accounts for non-production and production. On top of that, your non-production account hosts multiple environments (dev, integration, certification). Multiply this by several countries or regions, and you&amp;rsquo;re looking at a lot of infrastructure to manage.&lt;/p&gt;</description>
-    </item>
-    <item>
-      <title>Aws Opensearch as Monitoring Tool</title>
-      <link>https://manuelfedele.github.io/posts/aws-opensearch-as-monitoring-tool/</link>
-      <pubDate>Wed, 12 Jul 2023 08:42:00 +0200</pubDate>
-      <guid>https://manuelfedele.github.io/posts/aws-opensearch-as-monitoring-tool/</guid>
-      <description>&lt;h1 id=&#34;cross-account-logging-shipping-aws-lambda-logs-to-opensearch&#34;&gt;Cross-Account Logging: Shipping AWS Lambda Logs to OpenSearch&lt;/h1&gt;
-&lt;p&gt;In today&amp;rsquo;s distributed systems, logging and monitoring play a crucial role in detecting anomalies and ensuring system health. AWS Lambda and OpenSearch are often paired to deliver efficient, scalable logging solutions. However, complexities can arise when these resources live in separate AWS accounts. This blog post will guide you through the process of sending AWS Lambda logs from Account A to an OpenSearch cluster in Account B using Terraform as the Infrastructure as Code (IAC) tool and GitLab for CI/CD pipelines.&lt;/p&gt;</description>
-    </item>
-  </channel>
-</rss>
+<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>AWS on Git Push and Run</title><link>https://manuelfedele.github.io/tags/aws/</link><description>Recent content in AWS on Git Push and Run</description><generator>Hugo</generator><language>en</language><lastBuildDate>Sun, 22 Feb 2026 09:30:00 +0100</lastBuildDate><atom:link href="https://manuelfedele.github.io/tags/aws/index.xml" rel="self" type="application/rss+xml"/><item><title>Building an AI SRE Assistant From Scratch: Architecture of an Autonomous Infrastructure Investigator</title><link>https://manuelfedele.github.io/posts/building-ai-sre-assistant-from-scratch/</link><pubDate>Sun, 22 Feb 2026 09:30:00 +0100</pubDate><guid>https://manuelfedele.github.io/posts/building-ai-sre-assistant-from-scratch/</guid><description>&lt;h1 id="building-an-ai-sre-assistant-from-scratch-architecture-of-an-autonomous-infrastructure-investigator">Building an AI SRE Assistant From Scratch: Architecture of an Autonomous Infrastructure Investigator&lt;/h1>
+&lt;p>What if your on-call engineer never slept, had instant access to every repository and every AWS account, and could trace a production issue from DNS to database in under a minute?&lt;/p>
+&lt;p>That&amp;rsquo;s the question that led me to build TARS, an AI-powered SRE assistant that autonomously investigates infrastructure issues by combining LLM reasoning with deep integrations into GitLab and AWS. Named after the robot from Interstellar (because every good internal tool needs a movie reference), TARS is a full-stack application where engineers interact with an AI agent through a chat interface. The agent doesn&amp;rsquo;t just answer questions. It investigates. It clones repos, greps code, reads CloudWatch logs, traces DNS chains, inspects ECS services, and synthesizes findings into structured reports.&lt;/p></description></item><item><title>ECS Fargate Production Patterns That Actually Work</title><link>https://manuelfedele.github.io/posts/ecs-fargate-production-patterns/</link><pubDate>Thu, 08 Jan 2026 14:20:00 +0100</pubDate><guid>https://manuelfedele.github.io/posts/ecs-fargate-production-patterns/</guid><description>&lt;h1 id="ecs-fargate-production-patterns-that-actually-work">ECS Fargate Production Patterns That Actually Work&lt;/h1>
+&lt;p>I&amp;rsquo;ve deployed and managed many containerized services on ECS Fargate. Over time, a set of patterns has emerged that I apply consistently to every new service. This post documents those patterns with Terraform examples, covering everything from Fargate Spot strategies to deployment circuit breakers and ARM64 migration.&lt;/p>
+&lt;h2 id="the-standard-architecture">The Standard Architecture&lt;/h2>
+&lt;p>Every service I deploy follows the same high-level architecture:&lt;/p>
+&lt;pre tabindex="0">&lt;code>Internet/VPC -&amp;gt; ALB (HTTPS, TLS 1.3) -&amp;gt; ECS Fargate -&amp;gt; Aurora PostgreSQL Serverless v2
+ |
+ WAF (rate limiting + AWS managed rules)
+&lt;/code>&lt;/pre>&lt;p>Each component has its own security group, with traffic flowing only from the layer above. The ALB sits in private subnets (no public-facing services), and Route53 private hosted zones handle internal DNS.&lt;/p></description></item><item><title>Building an AI-Powered Document Processing Pipeline on AWS</title><link>https://manuelfedele.github.io/posts/building-ai-document-processing-pipeline-aws/</link><pubDate>Wed, 03 Dec 2025 16:45:00 +0100</pubDate><guid>https://manuelfedele.github.io/posts/building-ai-document-processing-pipeline-aws/</guid><description>&lt;h1 id="building-an-ai-powered-document-processing-pipeline-on-aws">Building an AI-Powered Document Processing Pipeline on AWS&lt;/h1>
+&lt;p>Insurance companies process millions of documents every year: police reports, medical records, invoices, repair estimates. Traditionally, human operators read each document, classify it, extract the relevant fields, and enter the data into the claims system. This is slow, expensive, and error-prone.&lt;/p>
+&lt;p>In this post I&amp;rsquo;ll describe the architecture of a production document processing pipeline I helped build. The system ingests claim documents, extracts text using vision-based LLMs, clusters and classifies document sections, extracts structured data, and generates vector embeddings for semantic search. All of this runs on a fully serverless AWS architecture with no idle infrastructure costs.&lt;/p></description></item><item><title>Managing Multi-Account AWS Infrastructure with Terraform Workspaces</title><link>https://manuelfedele.github.io/posts/multi-account-aws-terraform-workspaces/</link><pubDate>Mon, 22 Sep 2025 09:15:00 +0200</pubDate><guid>https://manuelfedele.github.io/posts/multi-account-aws-terraform-workspaces/</guid><description>&lt;h1 id="managing-multi-account-aws-infrastructure-with-terraform-workspaces">Managing Multi-Account AWS Infrastructure with Terraform Workspaces&lt;/h1>
+&lt;p>When you&amp;rsquo;re managing infrastructure across dozens of AWS accounts, you need patterns that scale. In this post I&amp;rsquo;ll share the approach I use to manage multi-account, multi-environment AWS infrastructure using Terraform workspaces, modular code, and a consistent tagging strategy.&lt;/p>
+&lt;h2 id="the-problem">The Problem&lt;/h2>
+&lt;p>Imagine this setup: you have multiple organizational scopes (teams, business units, projects), each with their own AWS accounts for non-production and production. On top of that, your non-production account hosts multiple environments (dev, integration, certification). Multiply this by several countries or regions, and you&amp;rsquo;re looking at a lot of infrastructure to manage.&lt;/p></description></item><item><title>Aws Opensearch as Monitoring Tool</title><link>https://manuelfedele.github.io/posts/aws-opensearch-as-monitoring-tool/</link><pubDate>Wed, 12 Jul 2023 08:42:00 +0200</pubDate><guid>https://manuelfedele.github.io/posts/aws-opensearch-as-monitoring-tool/</guid><description>&lt;h1 id="cross-account-logging-shipping-aws-lambda-logs-to-opensearch">Cross-Account Logging: Shipping AWS Lambda Logs to OpenSearch&lt;/h1>
+&lt;p>In today&amp;rsquo;s distributed systems, logging and monitoring play a crucial role in detecting anomalies and ensuring system health. AWS Lambda and OpenSearch are often paired to deliver efficient, scalable logging solutions. However, complexities can arise when these resources live in separate AWS accounts. This blog post will guide you through the process of sending AWS Lambda logs from Account A to an OpenSearch cluster in Account B using Terraform as the Infrastructure as Code (IAC) tool and GitLab for CI/CD pipelines.&lt;/p></description></item></channel></rss>

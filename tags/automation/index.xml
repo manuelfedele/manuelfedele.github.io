@@ -1,26 +1,3 @@
-<?xml version="1.0" encoding="utf-8" standalone="yes"?>
-<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/">
-  <channel>
-    <title>Automation on Git Push and Run</title>
-    <link>https://manuelfedele.github.io/tags/automation/</link>
-    <description>Recent content in Automation on Git Push and Run</description>
-    <image>
-      <title>Git Push and Run</title>
-      <url>https://manuelfedele.github.io/img/card-pillow.jpg</url>
-      <link>https://manuelfedele.github.io/img/card-pillow.jpg</link>
-    </image>
-    <generator>Hugo -- 0.147.6</generator>
-    <language>en</language>
-    <lastBuildDate>Sun, 15 Feb 2026 11:00:00 +0100</lastBuildDate>
-    <atom:link href="https://manuelfedele.github.io/tags/automation/index.xml" rel="self" type="application/rss+xml" />
-    <item>
-      <title>Building an AI-Powered Platform Operations Agent</title>
-      <link>https://manuelfedele.github.io/posts/building-ai-powered-platform-operations-agent/</link>
-      <pubDate>Sun, 15 Feb 2026 11:00:00 +0100</pubDate>
-      <guid>https://manuelfedele.github.io/posts/building-ai-powered-platform-operations-agent/</guid>
-      <description>&lt;h1 id=&#34;building-an-ai-powered-platform-operations-agent&#34;&gt;Building an AI-Powered Platform Operations Agent&lt;/h1&gt;
-&lt;p&gt;Platform engineering teams handle a constant stream of repetitive requests: onboarding users, managing API keys, checking service health, rotating credentials. Most of these tasks follow well-defined procedures that a human executes step by step. What if an AI agent could handle them instead?&lt;/p&gt;
-&lt;p&gt;In this post, I&amp;rsquo;ll walk through the architecture of an AI-powered operations agent that automates common platform tasks by giving an LLM access to your internal tools through a structured tool-calling interface.&lt;/p&gt;</description>
-    </item>
-  </channel>
-</rss>
+<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>Automation on Git Push and Run</title><link>https://manuelfedele.github.io/tags/automation/</link><description>Recent content in Automation on Git Push and Run</description><generator>Hugo</generator><language>en</language><lastBuildDate>Sun, 15 Feb 2026 11:00:00 +0100</lastBuildDate><atom:link href="https://manuelfedele.github.io/tags/automation/index.xml" rel="self" type="application/rss+xml"/><item><title>Building an AI-Powered Platform Operations Agent</title><link>https://manuelfedele.github.io/posts/building-ai-powered-platform-operations-agent/</link><pubDate>Sun, 15 Feb 2026 11:00:00 +0100</pubDate><guid>https://manuelfedele.github.io/posts/building-ai-powered-platform-operations-agent/</guid><description>&lt;h1 id="building-an-ai-powered-platform-operations-agent">Building an AI-Powered Platform Operations Agent&lt;/h1>
+&lt;p>Platform engineering teams handle a constant stream of repetitive requests: onboarding users, managing API keys, checking service health, rotating credentials. Most of these tasks follow well-defined procedures that a human executes step by step. What if an AI agent could handle them instead?&lt;/p>
+&lt;p>In this post, I&amp;rsquo;ll walk through the architecture of an AI-powered operations agent that automates common platform tasks by giving an LLM access to your internal tools through a structured tool-calling interface.&lt;/p></description></item></channel></rss>
