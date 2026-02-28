@@ -9,10 +9,19 @@
       <url>https://manuelfedele.github.io/img/card-pillow.jpg</url>
       <link>https://manuelfedele.github.io/img/card-pillow.jpg</link>
     </image>
-    <generator>Hugo -- 0.143.1</generator>
+    <generator>Hugo -- 0.147.6</generator>
     <language>en</language>
-    <lastBuildDate>Wed, 12 Jul 2023 08:42:00 +0200</lastBuildDate>
+    <lastBuildDate>Wed, 03 Dec 2025 16:45:00 +0100</lastBuildDate>
     <atom:link href="https://manuelfedele.github.io/tags/lambda/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Building an AI-Powered Document Processing Pipeline on AWS</title>
+      <link>https://manuelfedele.github.io/posts/building-ai-document-processing-pipeline-aws/</link>
+      <pubDate>Wed, 03 Dec 2025 16:45:00 +0100</pubDate>
+      <guid>https://manuelfedele.github.io/posts/building-ai-document-processing-pipeline-aws/</guid>
+      <description>&lt;h1 id=&#34;building-an-ai-powered-document-processing-pipeline-on-aws&#34;&gt;Building an AI-Powered Document Processing Pipeline on AWS&lt;/h1&gt;
+&lt;p&gt;Insurance companies process millions of documents every year: police reports, medical records, invoices, repair estimates. Traditionally, human operators read each document, classify it, extract the relevant fields, and enter the data into the claims system. This is slow, expensive, and error-prone.&lt;/p&gt;
+&lt;p&gt;In this post I&amp;rsquo;ll describe the architecture of a production document processing pipeline I helped build. The system ingests claim documents, extracts text using vision-based LLMs, clusters and classifies document sections, extracts structured data, and generates vector embeddings for semantic search. All of this runs on a fully serverless AWS architecture with no idle infrastructure costs.&lt;/p&gt;</description>
+    </item>
     <item>
       <title>Aws Opensearch as Monitoring Tool</title>
       <link>https://manuelfedele.github.io/posts/aws-opensearch-as-monitoring-tool/</link>

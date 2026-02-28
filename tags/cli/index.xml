@@ -9,10 +9,18 @@
       <url>https://manuelfedele.github.io/img/card-pillow.jpg</url>
       <link>https://manuelfedele.github.io/img/card-pillow.jpg</link>
     </image>
-    <generator>Hugo -- 0.143.1</generator>
+    <generator>Hugo -- 0.147.6</generator>
     <language>en</language>
-    <lastBuildDate>Tue, 20 Dec 2022 10:03:30 +0100</lastBuildDate>
+    <lastBuildDate>Fri, 14 Nov 2025 10:30:00 +0100</lastBuildDate>
     <atom:link href="https://manuelfedele.github.io/tags/cli/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Building Interactive CLI Tools in Go with Bubbletea</title>
+      <link>https://manuelfedele.github.io/posts/building-interactive-cli-tools-in-go-with-bubbletea/</link>
+      <pubDate>Fri, 14 Nov 2025 10:30:00 +0100</pubDate>
+      <guid>https://manuelfedele.github.io/posts/building-interactive-cli-tools-in-go-with-bubbletea/</guid>
+      <description>&lt;h1 id=&#34;building-interactive-cli-tools-in-go-with-bubbletea&#34;&gt;Building Interactive CLI Tools in Go with Bubbletea&lt;/h1&gt;
+&lt;p&gt;If you&amp;rsquo;ve ever wanted to build a terminal application that feels more like a proper UI than a wall of text, the &lt;a href=&#34;https://github.com/charmbracelet&#34;&gt;charmbracelet&lt;/a&gt; ecosystem is the way to go. I&amp;rsquo;ve been using it to build internal DevOps tools, and the developer experience is excellent. In this post, I&amp;rsquo;ll walk through building an interactive CLI tool using &lt;a href=&#34;https://github.com/charmbracelet/bubbletea&#34;&gt;Bubbletea&lt;/a&gt; and &lt;a href=&#34;https://github.com/charmbracelet/huh&#34;&gt;Huh&lt;/a&gt;, the same libraries behind tools like &lt;code&gt;gum&lt;/code&gt; and &lt;code&gt;soft-serve&lt;/code&gt;.&lt;/p&gt;</description>
+    </item>
     <item>
       <title>Create Command Line Application With Golang</title>
       <link>https://manuelfedele.github.io/posts/create-command-line-application-with-golang/</link>
