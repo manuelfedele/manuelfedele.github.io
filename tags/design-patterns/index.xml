@@ -23,7 +23,7 @@
 &lt;p&gt;At the package level, it&amp;rsquo;s important to consider what a package should be responsible for. A package should contain all of the code related to a specific feature or set of features. For example, a package that handles user authentication and authorization should not also contain code related to sending email notifications. These are two distinct responsibilities and should be separated into different packages.&lt;/p&gt;</description>
     </item>
     <item>
-      <title>Implement Desing Patterns With Golang</title>
+      <title>Implement Design Patterns With Golang</title>
       <link>https://manuelfedele.github.io/posts/implement-desing-patterns-with-golang/</link>
       <pubDate>Tue, 21 Feb 2023 13:16:06 +0100</pubDate>
       <guid>https://manuelfedele.github.io/posts/implement-desing-patterns-with-golang/</guid>
