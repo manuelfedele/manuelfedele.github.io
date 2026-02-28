@@ -11,13 +11,76 @@
     </image>
     <generator>Hugo -- 0.147.6</generator>
     <language>en</language>
-    <lastBuildDate>Sun, 15 Feb 2026 11:00:00 +0100</lastBuildDate>
+    <lastBuildDate>Sun, 22 Feb 2026 09:30:00 +0100</lastBuildDate>
     <atom:link href="https://manuelfedele.github.io/tags/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>AI</title>
       <link>https://manuelfedele.github.io/tags/ai/</link>
-      <pubDate>Sun, 15 Feb 2026 11:00:00 +0100</pubDate>
+      <pubDate>Sun, 22 Feb 2026 09:30:00 +0100</pubDate>
       <guid>https://manuelfedele.github.io/tags/ai/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Architecture</title>
+      <link>https://manuelfedele.github.io/tags/architecture/</link>
+      <pubDate>Sun, 22 Feb 2026 09:30:00 +0100</pubDate>
+      <guid>https://manuelfedele.github.io/tags/architecture/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>AWS</title>
+      <link>https://manuelfedele.github.io/tags/aws/</link>
+      <pubDate>Sun, 22 Feb 2026 09:30:00 +0100</pubDate>
+      <guid>https://manuelfedele.github.io/tags/aws/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>DevOps</title>
+      <link>https://manuelfedele.github.io/tags/devops/</link>
+      <pubDate>Sun, 22 Feb 2026 09:30:00 +0100</pubDate>
+      <guid>https://manuelfedele.github.io/tags/devops/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Django</title>
+      <link>https://manuelfedele.github.io/tags/django/</link>
+      <pubDate>Sun, 22 Feb 2026 09:30:00 +0100</pubDate>
+      <guid>https://manuelfedele.github.io/tags/django/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>GitLab</title>
+      <link>https://manuelfedele.github.io/tags/gitlab/</link>
+      <pubDate>Sun, 22 Feb 2026 09:30:00 +0100</pubDate>
+      <guid>https://manuelfedele.github.io/tags/gitlab/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>LLM</title>
+      <link>https://manuelfedele.github.io/tags/llm/</link>
+      <pubDate>Sun, 22 Feb 2026 09:30:00 +0100</pubDate>
+      <guid>https://manuelfedele.github.io/tags/llm/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Python</title>
+      <link>https://manuelfedele.github.io/tags/python/</link>
+      <pubDate>Sun, 22 Feb 2026 09:30:00 +0100</pubDate>
+      <guid>https://manuelfedele.github.io/tags/python/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>React</title>
+      <link>https://manuelfedele.github.io/tags/react/</link>
+      <pubDate>Sun, 22 Feb 2026 09:30:00 +0100</pubDate>
+      <guid>https://manuelfedele.github.io/tags/react/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>SRE</title>
+      <link>https://manuelfedele.github.io/tags/sre/</link>
+      <pubDate>Sun, 22 Feb 2026 09:30:00 +0100</pubDate>
+      <guid>https://manuelfedele.github.io/tags/sre/</guid>
       <description></description>
     </item>
     <item>
@@ -25,34 +88,6 @@
       <link>https://manuelfedele.github.io/tags/automation/</link>
       <pubDate>Sun, 15 Feb 2026 11:00:00 +0100</pubDate>
       <guid>https://manuelfedele.github.io/tags/automation/</guid>
-      <description></description>
-    </item>
-    <item>
-      <title>DevOps</title>
-      <link>https://manuelfedele.github.io/tags/devops/</link>
-      <pubDate>Sun, 15 Feb 2026 11:00:00 +0100</pubDate>
-      <guid>https://manuelfedele.github.io/tags/devops/</guid>
-      <description></description>
-    </item>
-    <item>
-      <title>LLM</title>
-      <link>https://manuelfedele.github.io/tags/llm/</link>
-      <pubDate>Sun, 15 Feb 2026 11:00:00 +0100</pubDate>
-      <guid>https://manuelfedele.github.io/tags/llm/</guid>
-      <description></description>
-    </item>
-    <item>
-      <title>Python</title>
-      <link>https://manuelfedele.github.io/tags/python/</link>
-      <pubDate>Sun, 15 Feb 2026 11:00:00 +0100</pubDate>
-      <guid>https://manuelfedele.github.io/tags/python/</guid>
-      <description></description>
-    </item>
-    <item>
-      <title>AWS</title>
-      <link>https://manuelfedele.github.io/tags/aws/</link>
-      <pubDate>Thu, 08 Jan 2026 14:20:00 +0100</pubDate>
-      <guid>https://manuelfedele.github.io/tags/aws/</guid>
       <description></description>
     </item>
     <item>
@@ -88,13 +123,6 @@
       <link>https://manuelfedele.github.io/tags/terraform/</link>
       <pubDate>Thu, 08 Jan 2026 14:20:00 +0100</pubDate>
       <guid>https://manuelfedele.github.io/tags/terraform/</guid>
-      <description></description>
-    </item>
-    <item>
-      <title>Architecture</title>
-      <link>https://manuelfedele.github.io/tags/architecture/</link>
-      <pubDate>Wed, 03 Dec 2025 16:45:00 +0100</pubDate>
-      <guid>https://manuelfedele.github.io/tags/architecture/</guid>
       <description></description>
     </item>
     <item>

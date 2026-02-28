@@ -11,8 +11,17 @@
     </image>
     <generator>Hugo -- 0.147.6</generator>
     <language>en</language>
-    <lastBuildDate>Sun, 15 Feb 2026 11:00:00 +0100</lastBuildDate>
+    <lastBuildDate>Sun, 22 Feb 2026 09:30:00 +0100</lastBuildDate>
     <atom:link href="https://manuelfedele.github.io/tags/devops/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Building an AI SRE Assistant From Scratch: Architecture of an Autonomous Infrastructure Investigator</title>
+      <link>https://manuelfedele.github.io/posts/building-ai-sre-assistant-from-scratch/</link>
+      <pubDate>Sun, 22 Feb 2026 09:30:00 +0100</pubDate>
+      <guid>https://manuelfedele.github.io/posts/building-ai-sre-assistant-from-scratch/</guid>
+      <description>&lt;h1 id=&#34;building-an-ai-sre-assistant-from-scratch-architecture-of-an-autonomous-infrastructure-investigator&#34;&gt;Building an AI SRE Assistant From Scratch: Architecture of an Autonomous Infrastructure Investigator&lt;/h1&gt;
+&lt;p&gt;What if your on-call engineer never slept, had instant access to every repository and every AWS account, and could trace a production issue from DNS to database in under a minute?&lt;/p&gt;
+&lt;p&gt;That&amp;rsquo;s the question that led me to build TARS, an AI-powered SRE assistant that autonomously investigates infrastructure issues by combining LLM reasoning with deep integrations into GitLab and AWS. Named after the robot from Interstellar (because every good internal tool needs a movie reference), TARS is a full-stack application where engineers interact with an AI agent through a chat interface. The agent doesn&amp;rsquo;t just answer questions. It investigates. It clones repos, greps code, reads CloudWatch logs, traces DNS chains, inspects ECS services, and synthesizes findings into structured reports.&lt;/p&gt;</description>
+    </item>
     <item>
       <title>Building an AI-Powered Platform Operations Agent</title>
       <link>https://manuelfedele.github.io/posts/building-ai-powered-platform-operations-agent/</link>
