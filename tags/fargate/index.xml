@@ -1,8 +1,21 @@
-<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>Fargate on Git Push and Run</title><link>https://manuelfedele.github.io/tags/fargate/</link><description>Recent content in Fargate on Git Push and Run</description><generator>Hugo</generator><language>en</language><lastBuildDate>Thu, 08 Jan 2026 14:20:00 +0100</lastBuildDate><atom:link href="https://manuelfedele.github.io/tags/fargate/index.xml" rel="self" type="application/rss+xml"/><item><title>ECS Fargate Production Patterns That Actually Work</title><link>https://manuelfedele.github.io/posts/ecs-fargate-production-patterns/</link><pubDate>Thu, 08 Jan 2026 14:20:00 +0100</pubDate><guid>https://manuelfedele.github.io/posts/ecs-fargate-production-patterns/</guid><description>&lt;h1 id="ecs-fargate-production-patterns-that-actually-work">ECS Fargate Production Patterns That Actually Work&lt;/h1>
+<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>Fargate on Git Push and Run</title><link>https://manuelfedele.github.io/tags/fargate/</link><description>Recent content in Fargate on Git Push and Run</description><generator>Hugo -- gohugo.io</generator><language>en</language><copyright>© 2026 Manuel Fedele</copyright><lastBuildDate>Thu, 08 Jan 2026 14:20:00 +0100</lastBuildDate><atom:link href="https://manuelfedele.github.io/tags/fargate/index.xml" rel="self" type="application/rss+xml"/><item><title>ECS Fargate Production Patterns That Actually Work</title><link>https://manuelfedele.github.io/posts/ecs-fargate-production-patterns/</link><pubDate>Thu, 08 Jan 2026 14:20:00 +0100</pubDate><guid>https://manuelfedele.github.io/posts/ecs-fargate-production-patterns/</guid><description>&lt;h1 class="relative group">ECS Fargate Production Patterns That Actually Work
+ &lt;div id="ecs-fargate-production-patterns-that-actually-work" class="anchor">&lt;/div>
+ 
+ &lt;span
+ class="absolute top-0 w-6 transition-opacity opacity-0 -start-6 not-prose group-hover:opacity-100 select-none">
+ &lt;a class="text-primary-300 dark:text-neutral-700 !no-underline" href="#ecs-fargate-production-patterns-that-actually-work" aria-label="Anchor">#&lt;/a>
+ &lt;/span>
+ 
+&lt;/h1>
 &lt;p>I&amp;rsquo;ve deployed and managed many containerized services on ECS Fargate. Over time, a set of patterns has emerged that I apply consistently to every new service. This post documents those patterns with Terraform examples, covering everything from Fargate Spot strategies to deployment circuit breakers and ARM64 migration.&lt;/p>
-&lt;h2 id="the-standard-architecture">The Standard Architecture&lt;/h2>
-&lt;p>Every service I deploy follows the same high-level architecture:&lt;/p>
-&lt;pre tabindex="0">&lt;code>Internet/VPC -&amp;gt; ALB (HTTPS, TLS 1.3) -&amp;gt; ECS Fargate -&amp;gt; Aurora PostgreSQL Serverless v2
- |
- WAF (rate limiting + AWS managed rules)
-&lt;/code>&lt;/pre>&lt;p>Each component has its own security group, with traffic flowing only from the layer above. The ALB sits in private subnets (no public-facing services), and Route53 private hosted zones handle internal DNS.&lt;/p></description></item></channel></rss>
+
+&lt;h2 class="relative group">The Standard Architecture
+ &lt;div id="the-standard-architecture" class="anchor">&lt;/div>
+ 
+ &lt;span
+ class="absolute top-0 w-6 transition-opacity opacity-0 -start-6 not-prose group-hover:opacity-100 select-none">
+ &lt;a class="text-primary-300 dark:text-neutral-700 !no-underline" href="#the-standard-architecture" aria-label="Anchor">#&lt;/a>
+ &lt;/span>
+ 
+&lt;/h2>
+&lt;p>Every service I deploy follows the same high-level architecture:&lt;/p></description></item></channel></rss>

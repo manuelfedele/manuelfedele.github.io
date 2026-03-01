@@ -1,3 +1,11 @@
-<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>Redis on Git Push and Run</title><link>https://manuelfedele.github.io/tags/redis/</link><description>Recent content in Redis on Git Push and Run</description><generator>Hugo</generator><language>en</language><lastBuildDate>Mon, 19 Dec 2022 19:32:27 +0100</lastBuildDate><atom:link href="https://manuelfedele.github.io/tags/redis/index.xml" rel="self" type="application/rss+xml"/><item><title>Use Redis With Golang</title><link>https://manuelfedele.github.io/posts/use-redis-with-golang/</link><pubDate>Mon, 19 Dec 2022 19:32:27 +0100</pubDate><guid>https://manuelfedele.github.io/posts/use-redis-with-golang/</guid><description>&lt;h2 id="using-golang-and-redis">Using Golang and Redis&lt;/h2>
+<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>Redis on Git Push and Run</title><link>https://manuelfedele.github.io/tags/redis/</link><description>Recent content in Redis on Git Push and Run</description><generator>Hugo -- gohugo.io</generator><language>en</language><copyright>© 2026 Manuel Fedele</copyright><lastBuildDate>Mon, 19 Dec 2022 19:32:27 +0100</lastBuildDate><atom:link href="https://manuelfedele.github.io/tags/redis/index.xml" rel="self" type="application/rss+xml"/><item><title>Use Redis With Golang</title><link>https://manuelfedele.github.io/posts/use-redis-with-golang/</link><pubDate>Mon, 19 Dec 2022 19:32:27 +0100</pubDate><guid>https://manuelfedele.github.io/posts/use-redis-with-golang/</guid><description>&lt;h2 class="relative group">Using Golang and Redis
+ &lt;div id="using-golang-and-redis" class="anchor">&lt;/div>
+ 
+ &lt;span
+ class="absolute top-0 w-6 transition-opacity opacity-0 -start-6 not-prose group-hover:opacity-100 select-none">
+ &lt;a class="text-primary-300 dark:text-neutral-700 !no-underline" href="#using-golang-and-redis" aria-label="Anchor">#&lt;/a>
+ &lt;/span>
+ 
+&lt;/h2>
 &lt;p>Redis is an in-memory data structure store that can be used as a database, cache, and message broker. It is known for its speed, simplicity, and flexibility. In this article, we will discuss how to use Redis with Golang, a popular programming language known for its simplicity, performance, and concurrency support.&lt;/p>
 &lt;p>Before we dive into the details of using Redis with Golang, let&amp;rsquo;s first understand the requirements of the application.&lt;/p></description></item></channel></rss>
