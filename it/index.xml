@@ -1,4 +1,311 @@
-<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>Git Push and Run</title><link>https://manuelfedele.github.io/it/</link><description>Recent content on Git Push and Run</description><generator>Hugo -- gohugo.io</generator><language>it</language><copyright>© 2026 Manuel Fedele</copyright><atom:link href="https://manuelfedele.github.io/it/index.xml" rel="self" type="application/rss+xml"/><item><title>Chi sono</title><link>https://manuelfedele.github.io/it/about/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://manuelfedele.github.io/it/about/</guid><description>&lt;div class="lead text-neutral-500 dark:text-neutral-400 !mb-9 text-xl">
+<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>Git Push and Run</title><link>https://manuelfedele.github.io/it/</link><description>Recent content on Git Push and Run</description><generator>Hugo -- gohugo.io</generator><language>it</language><copyright>© 2026 Manuel Fedele</copyright><lastBuildDate>Sun, 01 Mar 2026 12:00:00 +0100</lastBuildDate><atom:link href="https://manuelfedele.github.io/it/index.xml" rel="self" type="application/rss+xml"/><item><title>Leveraging AI as a Software Engineer: What Actually Works</title><link>https://manuelfedele.github.io/it/posts/leveraging-ai-as-a-platform-engineer/</link><pubDate>Sun, 01 Mar 2026 12:00:00 +0100</pubDate><guid>https://manuelfedele.github.io/it/posts/leveraging-ai-as-a-platform-engineer/</guid><description>&lt;div class="lead text-neutral-500 dark:text-neutral-400 !mb-9 text-xl">
+ I have been using AI coding assistants seriously for about a year — not casually, not experimentally, but as a core part of how I do my job every day. This is not a post about AI generating code. It is about how AI changes the way an experienced engineer thinks, investigates, and makes decisions.
+&lt;/div>
+
+
+&lt;h2 class="relative group">The Shift That Actually Matters
+ &lt;div id="the-shift-that-actually-matters" class="anchor">&lt;/div>
+ 
+ &lt;span
+ class="absolute top-0 w-6 transition-opacity opacity-0 -start-6 not-prose group-hover:opacity-100 select-none">
+ &lt;a class="text-primary-300 dark:text-neutral-700 !no-underline" href="#the-shift-that-actually-matters" aria-label="Ancora">#&lt;/a>
+ &lt;/span>
+ 
+&lt;/h2>
+&lt;p>The naive version of AI-assisted development is: you describe what you want, the AI writes it, you review and move on. This is real and useful, but it is also the least interesting thing AI does for me.&lt;/p></description></item><item><title>WASM in the Browser: Deploying VERT on CloudFront for Free</title><link>https://manuelfedele.github.io/it/posts/wasm-vert-cloudfront-zero-cost/</link><pubDate>Sun, 01 Mar 2026 10:00:00 +0100</pubDate><guid>https://manuelfedele.github.io/it/posts/wasm-vert-cloudfront-zero-cost/</guid><description>&lt;div class="lead text-neutral-500 dark:text-neutral-400 !mb-9 text-xl">
+ WebAssembly lets CPU-heavy work run entirely inside the browser tab — no server, no uploads, no cost. This post covers what WASM actually is, and how to self-host VERT, a fully local file converter, on AWS CloudFront for effectively zero dollars.
+&lt;/div>
+
+
+&lt;h2 class="relative group">What is WebAssembly?
+ &lt;div id="what-is-webassembly" class="anchor">&lt;/div>
+ 
+ &lt;span
+ class="absolute top-0 w-6 transition-opacity opacity-0 -start-6 not-prose group-hover:opacity-100 select-none">
+ &lt;a class="text-primary-300 dark:text-neutral-700 !no-underline" href="#what-is-webassembly" aria-label="Ancora">#&lt;/a>
+ &lt;/span>
+ 
+&lt;/h2>
+&lt;p>WebAssembly (WASM) is a binary instruction format that runs inside the browser at near-native speed. Think of it as a portable compilation target: you write code in Rust, C, C++, or Go, compile it to &lt;code>.wasm&lt;/code>, and the browser executes it directly in a sandboxed VM alongside JavaScript.&lt;/p></description></item><item><title>Building an AI SRE Assistant From Scratch: Architecture of an Autonomous Infrastructure Investigator</title><link>https://manuelfedele.github.io/it/posts/building-ai-sre-assistant-from-scratch/</link><pubDate>Sun, 22 Feb 2026 09:30:00 +0100</pubDate><guid>https://manuelfedele.github.io/it/posts/building-ai-sre-assistant-from-scratch/</guid><description>&lt;div class="lead text-neutral-500 dark:text-neutral-400 !mb-9 text-xl">
+ What if your on-call engineer never slept, had instant access to every repository and every AWS account, and could trace a production issue from DNS to database in under a minute? This post walks through every layer of the architecture — from the authentication system to the agent framework, tool registry, streaming infrastructure, and deployment.
+&lt;/div>
+
+&lt;div class="admonition relative overflow-hidden rounded-lg border-l-4 my-3 px-4 py-3 shadow-sm" data-type="note">
+ &lt;div class="flex items-center gap-2 font-semibold text-inherit">
+ &lt;div class="flex shrink-0 h-5 w-5 items-center justify-center text-lg">&lt;span class="relative block icon">&lt;svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">&lt;path fill="currentColor" d="M256 0C114.6 0 0 114.6 0 256s114.6 256 256 256s256-114.6 256-256S397.4 0 256 0zM256 128c17.67 0 32 14.33 32 32c0 17.67-14.33 32-32 32S224 177.7 224 160C224 142.3 238.3 128 256 128zM296 384h-80C202.8 384 192 373.3 192 360s10.75-24 24-24h16v-64H224c-13.25 0-24-10.75-24-24S210.8 224 224 224h32c13.25 0 24 10.75 24 24v88h16c13.25 0 24 10.75 24 24S309.3 384 296 384z"/>&lt;/svg>
+&lt;/span>&lt;/div>
+ &lt;div class="grow">
+ Nota
+ &lt;/div>
+ &lt;/div>&lt;div class="admonition-content mt-3 text-base leading-relaxed text-inherit">&lt;p>This article describes an AI-powered SRE assistant built with the Strands Agents SDK, Django, React, and AWS. The agent autonomously investigates infrastructure issues by combining LLM reasoning with deep integrations into GitLab and AWS.&lt;/p></description></item><item><title>Building an AI-Powered Platform Operations Agent</title><link>https://manuelfedele.github.io/it/posts/building-ai-powered-platform-operations-agent/</link><pubDate>Sun, 15 Feb 2026 11:00:00 +0100</pubDate><guid>https://manuelfedele.github.io/it/posts/building-ai-powered-platform-operations-agent/</guid><description>&lt;div class="lead text-neutral-500 dark:text-neutral-400 !mb-9 text-xl">
+ Platform engineering teams handle a constant stream of repetitive requests. This post walks through building an AI agent that automates common platform tasks — user provisioning, key rotation, service health checks — by giving an LLM access to internal tools through a structured tool-calling interface.
+&lt;/div>
+
+&lt;p>Platform engineering teams handle a constant stream of repetitive requests: onboarding users, managing API keys, checking service health, rotating credentials. Most of these tasks follow well-defined procedures that a human executes step by step. What if an AI agent could handle them instead?&lt;/p></description></item><item><title>ECS Fargate Production Patterns That Actually Work</title><link>https://manuelfedele.github.io/it/posts/ecs-fargate-production-patterns/</link><pubDate>Thu, 08 Jan 2026 14:20:00 +0100</pubDate><guid>https://manuelfedele.github.io/it/posts/ecs-fargate-production-patterns/</guid><description>&lt;div class="lead text-neutral-500 dark:text-neutral-400 !mb-9 text-xl">
+ A set of battle-tested ECS Fargate patterns I apply to every production service — covering Spot strategies, deployment circuit breakers, ARM64 migration, health checks, and Aurora Serverless v2 cost optimization.
+&lt;/div>
+
+&lt;p>I&amp;rsquo;ve deployed and managed many containerized services on ECS Fargate. Over time, a set of patterns has emerged that I apply consistently to every new service. This post documents those patterns with Terraform examples, covering everything from Fargate Spot strategies to deployment circuit breakers and ARM64 migration.&lt;/p></description></item><item><title>Building an AI-Powered Document Processing Pipeline on AWS</title><link>https://manuelfedele.github.io/it/posts/building-ai-document-processing-pipeline-aws/</link><pubDate>Wed, 03 Dec 2025 16:45:00 +0100</pubDate><guid>https://manuelfedele.github.io/it/posts/building-ai-document-processing-pipeline-aws/</guid><description>&lt;div class="lead text-neutral-500 dark:text-neutral-400 !mb-9 text-xl">
+ A serverless document processing pipeline on AWS that uses LLMs to extract structured data from unstructured documents — invoices, contracts, reports — at scale. No GPU clusters required.
+&lt;/div>
+
+&lt;p>Insurance companies process millions of documents every year: police reports, medical records, invoices, repair estimates. Traditionally, human operators read each document, classify it, extract the relevant fields, and enter the data into the claims system. This is slow, expensive, and error-prone.&lt;/p></description></item><item><title>Building Interactive CLI Tools in Go with Bubbletea</title><link>https://manuelfedele.github.io/it/posts/building-interactive-cli-tools-in-go-with-bubbletea/</link><pubDate>Fri, 14 Nov 2025 10:30:00 +0100</pubDate><guid>https://manuelfedele.github.io/it/posts/building-interactive-cli-tools-in-go-with-bubbletea/</guid><description>&lt;div class="lead text-neutral-500 dark:text-neutral-400 !mb-9 text-xl">
+ Bubbletea brings the Elm architecture to the terminal, making it possible to build rich, interactive CLI tools in Go with clean state management. This post covers the fundamentals with a practical example.
+&lt;/div>
+
+&lt;p>If you&amp;rsquo;ve ever wanted to build a terminal application that feels more like a proper UI than a wall of text, the &lt;a href="https://github.com/charmbracelet" target="_blank" rel="noreferrer">charmbracelet&lt;/a> ecosystem is the way to go. I&amp;rsquo;ve been using it to build internal DevOps tools, and the developer experience is excellent. In this post, I&amp;rsquo;ll walk through building an interactive CLI tool using &lt;a href="https://github.com/charmbracelet/bubbletea" target="_blank" rel="noreferrer">Bubbletea&lt;/a> and &lt;a href="https://github.com/charmbracelet/huh" target="_blank" rel="noreferrer">Huh&lt;/a>, the same libraries behind tools like &lt;code>gum&lt;/code> and &lt;code>soft-serve&lt;/code>.&lt;/p></description></item><item><title>Managing Multi-Account AWS Infrastructure with Terraform Workspaces</title><link>https://manuelfedele.github.io/it/posts/multi-account-aws-terraform-workspaces/</link><pubDate>Mon, 22 Sep 2025 09:15:00 +0200</pubDate><guid>https://manuelfedele.github.io/it/posts/multi-account-aws-terraform-workspaces/</guid><description>&lt;div class="lead text-neutral-500 dark:text-neutral-400 !mb-9 text-xl">
+ Managing Terraform across multiple AWS accounts and environments without duplicating code. This post covers the workspace pattern, remote state, cross-account role assumptions, and the module structure that scales from 3 accounts to 30.
+&lt;/div>
+
+&lt;p>When you&amp;rsquo;re managing infrastructure across dozens of AWS accounts, you need patterns that scale. In this post I&amp;rsquo;ll share the approach I use to manage multi-account, multi-environment AWS infrastructure using Terraform workspaces, modular code, and a consistent tagging strategy.&lt;/p></description></item><item><title>Building a Chess Engine - From Position Evaluation to Search Techniques</title><link>https://manuelfedele.github.io/it/posts/evaluate-chess-position/</link><pubDate>Wed, 27 Nov 2024 17:33:00 +0000</pubDate><guid>https://manuelfedele.github.io/it/posts/evaluate-chess-position/</guid><description>&lt;div class="lead text-neutral-500 dark:text-neutral-400 !mb-9 text-xl">
+ Chess engines are fascinating pieces of software that combine various computer science concepts: position evaluation, tree search, move generation, and optimization techniques. This guide will walk you through implementing a chess engine, with a particular focus on position&amp;hellip;
+&lt;/div>
+
+&lt;p>Chess engines are fascinating pieces of software that combine various computer science concepts: position evaluation, tree search, move generation, and optimization techniques. This guide will walk you through implementing a chess engine, with a particular focus on position evaluation and search strategies.&lt;/p></description></item><item><title>Implementing a JWT Issuer in Go</title><link>https://manuelfedele.github.io/it/posts/jwt-issuer-in-go/</link><pubDate>Wed, 27 Nov 2024 17:18:00 +0000</pubDate><guid>https://manuelfedele.github.io/it/posts/jwt-issuer-in-go/</guid><description>&lt;div class="lead text-neutral-500 dark:text-neutral-400 !mb-9 text-xl">
+ JSON Web Tokens (JWT) have become the de facto standard for implementing stateless authentication in modern web applications. In this guide, we&amp;rsquo;ll implement a secure JWT issuer in Go, covering both basic implementation and advanced security considerations.
+&lt;/div>
+
+&lt;p>JSON Web Tokens (JWT) have become the de facto standard for implementing stateless authentication in modern web applications. In this guide, we&amp;rsquo;ll implement a secure JWT issuer in Go, covering both basic implementation and advanced security considerations.&lt;/p></description></item><item><title>Implementing Dijkstra’s Algorithm in Go</title><link>https://manuelfedele.github.io/it/posts/implementing-djikstra-algorithm-in-go/</link><pubDate>Wed, 27 Nov 2024 17:01:00 +0000</pubDate><guid>https://manuelfedele.github.io/it/posts/implementing-djikstra-algorithm-in-go/</guid><description>&lt;div class="lead text-neutral-500 dark:text-neutral-400 !mb-9 text-xl">
+ Graphs are fundamental data structures in computer science, representing relationships between entities. One of the most common problems involving graphs is finding the shortest path between nodes. Dijkstra’s algorithm is a classic solution to this problem for graphs with&amp;hellip;
+&lt;/div>
+
+&lt;p>Graphs are fundamental data structures in computer science, representing relationships between entities. One of the most common problems involving graphs is finding the shortest path between nodes. Dijkstra’s algorithm is a classic solution to this problem for graphs with non-negative edge weights. In this guide, we’ll implement Dijkstra’s algorithm in Go and explore ways to optimize it using advanced data structures.\&lt;/p></description></item><item><title>Clipboard Watch Remove Accidentally Typed Passwords</title><link>https://manuelfedele.github.io/it/posts/clipboard-watch-remove-accidentally-typed-passwords/</link><pubDate>Sun, 26 Nov 2023 11:29:46 +0100</pubDate><guid>https://manuelfedele.github.io/it/posts/clipboard-watch-remove-accidentally-typed-passwords/</guid><description>&lt;div class="lead text-neutral-500 dark:text-neutral-400 !mb-9 text-xl">
+ In this article, we explore creating a Go program that monitors the system clipboard, automatically substituting passwords with asterisks. Uniquely, the program leaves the last few characters (minimum 1, maximum 3) of the password visible when the password length exceeds 8&amp;hellip;
+&lt;/div>
+
+
+&lt;h2 class="relative group">Introduction
+ &lt;div id="introduction" class="anchor">&lt;/div>
+ 
+ &lt;span
+ class="absolute top-0 w-6 transition-opacity opacity-0 -start-6 not-prose group-hover:opacity-100 select-none">
+ &lt;a class="text-primary-300 dark:text-neutral-700 !no-underline" href="#introduction" aria-label="Ancora">#&lt;/a>
+ &lt;/span>
+ 
+&lt;/h2>
+&lt;p>In this article, we explore creating a Go program that monitors the system clipboard, automatically substituting passwords with asterisks. Uniquely, the program leaves the last few characters (minimum 1, maximum 3) of the password visible when the password length exceeds 8 characters.&lt;/p></description></item><item><title>Aws Opensearch as Monitoring Tool</title><link>https://manuelfedele.github.io/it/posts/aws-opensearch-as-monitoring-tool/</link><pubDate>Wed, 12 Jul 2023 08:42:00 +0200</pubDate><guid>https://manuelfedele.github.io/it/posts/aws-opensearch-as-monitoring-tool/</guid><description>&lt;div class="lead text-neutral-500 dark:text-neutral-400 !mb-9 text-xl">
+ In today&amp;rsquo;s distributed systems, logging and monitoring play a crucial role in detecting anomalies and ensuring system health. AWS Lambda and OpenSearch are often paired to deliver efficient, scalable logging solutions. However, complexities can arise when these resources live in&amp;hellip;
+&lt;/div>
+
+&lt;p>In today&amp;rsquo;s distributed systems, logging and monitoring play a crucial role in detecting anomalies and ensuring system health. AWS Lambda and OpenSearch are often paired to deliver efficient, scalable logging solutions. However, complexities can arise when these resources live in separate AWS accounts. This blog post will guide you through the process of sending AWS Lambda logs from Account A to an OpenSearch cluster in Account B using Terraform as the Infrastructure as Code (IAC) tool and GitLab for CI/CD pipelines.&lt;/p></description></item><item><title>The Single Responsibility Principle</title><link>https://manuelfedele.github.io/it/posts/the-single-responsibility-principle/</link><pubDate>Tue, 21 Mar 2023 15:10:03 +0100</pubDate><guid>https://manuelfedele.github.io/it/posts/the-single-responsibility-principle/</guid><description>&lt;div class="lead text-neutral-500 dark:text-neutral-400 !mb-9 text-xl">
+ The Single Responsibility Principle (SRP) is a software design principle that states that a software module or component should have only one reason to change. This means that a module or component should have a single, narrowly defined responsibility and all of its features&amp;hellip;
+&lt;/div>
+
+&lt;p>The Single Responsibility Principle (SRP) is a software design principle that states that a software module or component should have only one reason to change. This means that a module or component should have a single, narrowly defined responsibility and all of its features should be related to that responsibility.&lt;/p></description></item><item><title>Schedule Github Action With Cron</title><link>https://manuelfedele.github.io/it/posts/schedule-github-action-with-cron/</link><pubDate>Sun, 12 Mar 2023 15:03:40 +0100</pubDate><guid>https://manuelfedele.github.io/it/posts/schedule-github-action-with-cron/</guid><description>&lt;div class="lead text-neutral-500 dark:text-neutral-400 !mb-9 text-xl">
+ Cron scheduling is a useful feature in GitHub Actions that allows you to run a workflow on a schedule. This can be useful for tasks such as running tests or deploying code at regular intervals.
+&lt;/div>
+
+&lt;p>Cron scheduling is a useful feature in GitHub Actions that allows you to run a workflow on a schedule. This can be useful for tasks such as running tests or deploying code at regular intervals.&lt;/p></description></item><item><title>How to Delete Git Branch Locally</title><link>https://manuelfedele.github.io/it/posts/how-to-delete-git-branch-locally/</link><pubDate>Tue, 07 Mar 2023 17:14:30 +0100</pubDate><guid>https://manuelfedele.github.io/it/posts/how-to-delete-git-branch-locally/</guid><description>&lt;div class="lead text-neutral-500 dark:text-neutral-400 !mb-9 text-xl">
+ To delete a Git branch locally, you can use the &lt;code>git branch&lt;/code> command with the &lt;code>-d&lt;/code> flag, followed by the name of the branch you want to delete. For example:
+&lt;/div>
+
+&lt;p>To delete a Git branch locally, you can use the &lt;code>git branch&lt;/code> command with the &lt;code>-d&lt;/code> flag, followed by the name of the branch you want to delete. For example:&lt;/p>
+&lt;div class="highlight-wrapper">&lt;div class="highlight">&lt;pre tabindex="0" style="color:#d8dee9;background-color:#2e3440;-moz-tab-size:4;-o-tab-size:4;tab-size:4;">&lt;code class="language-bash" data-lang="bash">&lt;span style="display:flex;">&lt;span>git branch -d branch_name&lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/div>&lt;/div>
+&lt;p>This will delete the specified branch if it has already been fully merged into the current branch. If the branch has not been fully merged, you can use the -D flag instead, which will force the deletion of the branch.&lt;/p></description></item><item><title>How to Undo Most Recent Local Git Commit</title><link>https://manuelfedele.github.io/it/posts/how-to-undo-most-recent-local-git-commit/</link><pubDate>Tue, 28 Feb 2023 17:09:02 +0100</pubDate><guid>https://manuelfedele.github.io/it/posts/how-to-undo-most-recent-local-git-commit/</guid><description>&lt;div class="lead text-neutral-500 dark:text-neutral-400 !mb-9 text-xl">
+ Git is a version control system that allows developers to track changes to their codebase and collaborate with others. One of the useful features of Git is the ability to revert changes that have been made to the codebase. In this article, we will look at how to undo the most&amp;hellip;
+&lt;/div>
+
+&lt;p>Git is a version control system that allows developers to track changes to their codebase and collaborate with others. One of the useful features of Git is the ability to revert changes that have been made to the codebase. In this article, we will look at how to undo the most recent local commits in Git.&lt;/p></description></item><item><title>Implement Design Patterns With Golang</title><link>https://manuelfedele.github.io/it/posts/implement-desing-patterns-with-golang/</link><pubDate>Tue, 21 Feb 2023 13:16:06 +0100</pubDate><guid>https://manuelfedele.github.io/it/posts/implement-desing-patterns-with-golang/</guid><description>&lt;div class="lead text-neutral-500 dark:text-neutral-400 !mb-9 text-xl">
+ Design patterns are reusable solutions to common software design problems. They are a way to structure and organize code in a way that makes it easier to understand, maintain, and extend. In this article, we&amp;rsquo;ll explore how to implement some popular design patterns in Go.
+&lt;/div>
+
+&lt;p>Design patterns are reusable solutions to common software design problems. They are a way to structure and organize code in a way that makes it easier to understand, maintain, and extend. In this article, we&amp;rsquo;ll explore how to implement some popular design patterns in Go.&lt;/p></description></item><item><title>Nats Messaging With Golang</title><link>https://manuelfedele.github.io/it/posts/nats-messaging-with-golang/</link><pubDate>Mon, 13 Feb 2023 18:57:15 +0100</pubDate><guid>https://manuelfedele.github.io/it/posts/nats-messaging-with-golang/</guid><description>&lt;div class="lead text-neutral-500 dark:text-neutral-400 !mb-9 text-xl">
+ NATS Messaging with Golang NATS is a high-performance, lightweight messaging system that is widely used for building distributed systems. It is designed to be simple, fast, and easy to use, making it a popular choice for many developers. In this tutorial, we will learn how to&amp;hellip;
+&lt;/div>
+
+&lt;p>NATS Messaging with Golang
+NATS is a high-performance, lightweight messaging system that is widely used for building distributed systems. It is designed to be simple, fast, and easy to use, making it a popular choice for many developers. In this tutorial, we will learn how to use NATS with Golang to send and receive messages.&lt;/p></description></item><item><title>Build a Sudoku Solver in Golang</title><link>https://manuelfedele.github.io/it/posts/build-a-sudoku-solver-in-golang/</link><pubDate>Wed, 01 Feb 2023 21:09:26 +0100</pubDate><guid>https://manuelfedele.github.io/it/posts/build-a-sudoku-solver-in-golang/</guid><description>&lt;div class="lead text-neutral-500 dark:text-neutral-400 !mb-9 text-xl">
+ The game of Sudoku has always been a popular pastime for many. Whether you&amp;rsquo;re an absolute novice or a seasoned veteran, the challenge of filling out a 9x9 grid with digits so that each column, each row, and each of the nine 3x3 subgrids contains all of the digits from 1 to 9, is&amp;hellip;
+&lt;/div>
+
+&lt;p>The game of Sudoku has always been a popular pastime for many. Whether you&amp;rsquo;re an absolute novice or a seasoned veteran, the challenge of filling out a 9x9 grid with digits so that each column, each row, and each of the nine 3x3 subgrids contains all of the digits from 1 to 9, is an appealing task. Today, we&amp;rsquo;re going to see how we can automate this process in Golang, and how we can optimize it using memoization techniques.&lt;/p></description></item><item><title>Socket Messaging With Golang</title><link>https://manuelfedele.github.io/it/posts/socket-messaging-with-golang/</link><pubDate>Sun, 29 Jan 2023 18:44:12 +0100</pubDate><guid>https://manuelfedele.github.io/it/posts/socket-messaging-with-golang/</guid><description>&lt;div class="lead text-neutral-500 dark:text-neutral-400 !mb-9 text-xl">
+ Socket messaging allows two or more processes to communicate with each other over a network by sending and receiving messages through a socket connection. In this article, we&amp;rsquo;ll look at how to use Go to implement socket messaging between two processes.
+&lt;/div>
+
+&lt;p>Socket messaging allows two or more processes to communicate with each other over a network by sending and receiving messages through a socket connection. In this article, we&amp;rsquo;ll look at how to use Go to implement socket messaging between two processes.&lt;/p></description></item><item><title>Tracking Pixel Technology with Golang</title><link>https://manuelfedele.github.io/it/posts/tracking-pixel-technology-email-golang/</link><pubDate>Sun, 22 Jan 2023 19:02:19 +0100</pubDate><guid>https://manuelfedele.github.io/it/posts/tracking-pixel-technology-email-golang/</guid><description>&lt;div class="lead text-neutral-500 dark:text-neutral-400 !mb-9 text-xl">
+ Tracking pixels, also known as web beacons, are small transparent images that are used to track the effectiveness of emails. They work by including a unique image in the email that is hosted on a server, and when the email is opened and the image is loaded, it sends a request to&amp;hellip;
+&lt;/div>
+
+&lt;p>Tracking pixels, also known as web beacons, are small transparent images that are used to track the effectiveness of emails. They work by including a unique image in the email that is hosted on a server, and when the email is opened and the image is loaded, it sends a request to the server with information about the email opening. This information can be used to track the effectiveness of the email and see how many people have opened it.&lt;/p></description></item><item><title>Evaluate Chess Position With Golang</title><link>https://manuelfedele.github.io/it/posts/evaluate-chess-position-with-golang/</link><pubDate>Thu, 19 Jan 2023 21:33:41 +0100</pubDate><guid>https://manuelfedele.github.io/it/posts/evaluate-chess-position-with-golang/</guid><description>&lt;div class="lead text-neutral-500 dark:text-neutral-400 !mb-9 text-xl">
+ Evaluating chess positions is an important part of chess strategy and can help players make more informed decisions about which moves to make. In this blog post, we&amp;rsquo;ll look at how to use the powerful Stockfish chess engine and the Go programming language to evaluate chess&amp;hellip;
+&lt;/div>
+
+&lt;p>Evaluating chess positions is an important part of chess strategy and can help players make more informed decisions about which moves to make. In this blog post, we&amp;rsquo;ll look at how to use the powerful Stockfish chess engine and the Go programming language to evaluate chess positions.&lt;/p></description></item><item><title>The Memoization Technique</title><link>https://manuelfedele.github.io/it/posts/the-memoization-technique/</link><pubDate>Mon, 16 Jan 2023 21:07:26 +0100</pubDate><guid>https://manuelfedele.github.io/it/posts/the-memoization-technique/</guid><description>&lt;div class="lead text-neutral-500 dark:text-neutral-400 !mb-9 text-xl">
+ Memoization is a technique that is used to speed up the execution of a function by storing the results of expensive function calls and returning the cached result when the same input occurs again. This can be particularly useful for algorithms that have a large number of&amp;hellip;
+&lt;/div>
+
+&lt;p>Memoization is a technique that is used to speed up the execution of a function by storing the results of expensive function calls and returning the cached result when the same input occurs again. This can be particularly useful for algorithms that have a large number of recursive calls or for functions that are called multiple times with the same input.&lt;/p></description></item><item><title>Trading With Alpaca and Golang</title><link>https://manuelfedele.github.io/it/posts/trading-with-alpaca-and-golang/</link><pubDate>Sun, 15 Jan 2023 19:24:09 +0100</pubDate><guid>https://manuelfedele.github.io/it/posts/trading-with-alpaca-and-golang/</guid><description>&lt;div class="lead text-neutral-500 dark:text-neutral-400 !mb-9 text-xl">
+ Alpaca is a popular platform for automated trading, offering APIs for accessing real-time market data and placing trades. In this article, we will discuss how to use Alpaca&amp;rsquo;s APIs with Golang, a popular programming language known for its simplicity, performance, and concurrency&amp;hellip;
+&lt;/div>
+
+&lt;p>Alpaca is a popular platform for automated trading, offering APIs for accessing real-time market data and placing trades. In this article, we will discuss how to use Alpaca&amp;rsquo;s APIs with Golang, a popular programming language known for its simplicity, performance, and concurrency support.&lt;/p></description></item><item><title>A Quick Overview of Elasticsearch</title><link>https://manuelfedele.github.io/it/posts/a-quick-overview-of-elasticsearch/</link><pubDate>Fri, 13 Jan 2023 17:24:25 +0100</pubDate><guid>https://manuelfedele.github.io/it/posts/a-quick-overview-of-elasticsearch/</guid><description>&lt;div class="lead text-neutral-500 dark:text-neutral-400 !mb-9 text-xl">
+ Elastic, also known as Elasticsearch, is a powerful search and analytics engine that can be used to index, search, and analyze large volumes of data quickly and in near real-time. It is open-source and built on top of the Lucene library. In this blog post, we will go over the&amp;hellip;
+&lt;/div>
+
+
+&lt;h2 class="relative group">Introduction
+ &lt;div id="introduction" class="anchor">&lt;/div>
+ 
+ &lt;span
+ class="absolute top-0 w-6 transition-opacity opacity-0 -start-6 not-prose group-hover:opacity-100 select-none">
+ &lt;a class="text-primary-300 dark:text-neutral-700 !no-underline" href="#introduction" aria-label="Ancora">#&lt;/a>
+ &lt;/span>
+ 
+&lt;/h2>
+&lt;p>Elastic, also known as Elasticsearch, is a powerful search and analytics engine that can be used to index, search, and analyze large volumes of data quickly and in near real-time. It is open-source and built on top of the Lucene library. In this blog post, we will go over the basics of Elastic and how to get started using it.&lt;/p></description></item><item><title>Unit Testing in Golang</title><link>https://manuelfedele.github.io/it/posts/unit-testing-in-golang/</link><pubDate>Mon, 09 Jan 2023 20:49:03 +0100</pubDate><guid>https://manuelfedele.github.io/it/posts/unit-testing-in-golang/</guid><description>&lt;div class="lead text-neutral-500 dark:text-neutral-400 !mb-9 text-xl">
+ Unit testing is a software testing technique in which individual units (smallest testable parts) of a software application are tested in isolation from the rest of the application. The goal of unit testing is to validate that each unit of the application is working as intended&amp;hellip;
+&lt;/div>
+
+&lt;p>Unit testing is a software testing technique in which individual units (smallest testable parts) of a software application are tested in isolation from the rest of the application. The goal of unit testing is to validate that each unit of the application is working as intended and meets the specified requirements.&lt;/p></description></item><item><title>What Is the Difference Between Git Pull and Git Fetch</title><link>https://manuelfedele.github.io/it/posts/what-is-the-difference-between-git-pull-and-git-fetch/</link><pubDate>Sun, 08 Jan 2023 17:16:40 +0100</pubDate><guid>https://manuelfedele.github.io/it/posts/what-is-the-difference-between-git-pull-and-git-fetch/</guid><description>&lt;div class="lead text-neutral-500 dark:text-neutral-400 !mb-9 text-xl">
+ Git is a version control system that is widely used in software development to track and manage changes to source code. Two of the most common Git commands that developers use to retrieve updates from a remote repository are &lt;code>git pull&lt;/code> and &lt;code>git fetch&lt;/code>. While these two commands&amp;hellip;
+&lt;/div>
+
+&lt;p>Git is a version control system that is widely used in software development to track and manage changes to source code. Two of the most common Git commands that developers use to retrieve updates from a remote repository are &lt;code>git pull&lt;/code> and &lt;code>git fetch&lt;/code>. While these two commands may seem similar at first glance, they have some important differences that are worth understanding.&lt;/p></description></item><item><title>Streaming Video With Golang</title><link>https://manuelfedele.github.io/it/posts/streaming-video-with-golang/</link><pubDate>Wed, 04 Jan 2023 21:23:20 +0100</pubDate><guid>https://manuelfedele.github.io/it/posts/streaming-video-with-golang/</guid><description>&lt;div class="lead text-neutral-500 dark:text-neutral-400 !mb-9 text-xl">
+ Streaming video with Go (Golang) is a popular choice for building efficient and scalable video streaming applications. In this blog post, we&amp;rsquo;ll discuss some of the key concepts and considerations for building a video streaming application with Go.
+&lt;/div>
+
+&lt;p>Streaming video with Go (Golang) is a popular choice for building efficient and scalable video streaming applications. In this blog post, we&amp;rsquo;ll discuss some of the key concepts and considerations for building a video streaming application with Go.&lt;/p></description></item><item><title>Use Protobuf With Fastapi</title><link>https://manuelfedele.github.io/it/posts/use-protobuf-with-fastapi/</link><pubDate>Wed, 04 Jan 2023 16:00:43 +0100</pubDate><guid>https://manuelfedele.github.io/it/posts/use-protobuf-with-fastapi/</guid><description>&lt;div class="lead text-neutral-500 dark:text-neutral-400 !mb-9 text-xl">
+ Protocol buffers, also known as Protobuf, are a popular data serialization format used for communication between services. They are efficient, easy to use, and language-agnostic. In this article, we will look at how to use Protobuf with FastAPI, a modern, high-performance web&amp;hellip;
+&lt;/div>
+
+&lt;p>Protocol buffers, also known as Protobuf, are a popular data serialization format used for communication between services. They are efficient, easy to use, and language-agnostic. In this article, we will look at how to use Protobuf with FastAPI, a modern, high-performance web framework for building APIs with Python.&lt;/p></description></item><item><title>The Context Package</title><link>https://manuelfedele.github.io/it/posts/the-context-package/</link><pubDate>Tue, 03 Jan 2023 20:36:29 +0100</pubDate><guid>https://manuelfedele.github.io/it/posts/the-context-package/</guid><description>&lt;div class="lead text-neutral-500 dark:text-neutral-400 !mb-9 text-xl">
+ Context in Go is a type that carries a request-scoped value across API boundaries. It is designed to be used in long-lived requests, such as an HTTP server handling multiple requests over the lifetime of a process.
+&lt;/div>
+
+&lt;p>Context in Go is a type that carries a request-scoped value across API boundaries. It is designed to be used in long-lived requests, such as an HTTP server handling multiple requests over the lifetime of a process.&lt;/p></description></item><item><title>Understand Async Await in Python</title><link>https://manuelfedele.github.io/it/posts/understand-async-await-in-python/</link><pubDate>Sun, 01 Jan 2023 14:50:35 +0100</pubDate><guid>https://manuelfedele.github.io/it/posts/understand-async-await-in-python/</guid><description>&lt;div class="lead text-neutral-500 dark:text-neutral-400 !mb-9 text-xl">
+ Async/await is a powerful programming construct that allows you to write asynchronous code in a synchronous-like style. It was introduced in Python 3.5 as part of the asyncio module and has become a popular choice for writing concurrent and parallel code in Python.
+&lt;/div>
+
+&lt;p>Async/await is a powerful programming construct that allows you to write asynchronous code in a synchronous-like style. It was introduced in Python 3.5 as part of the asyncio module and has become a popular choice for writing concurrent and parallel code in Python.&lt;/p></description></item><item><title>Create a Telegram Bot With Rust</title><link>https://manuelfedele.github.io/it/posts/create-a-telegram-bot-with-rust/</link><pubDate>Sat, 31 Dec 2022 14:26:23 +0100</pubDate><guid>https://manuelfedele.github.io/it/posts/create-a-telegram-bot-with-rust/</guid><description>&lt;div class="lead text-neutral-500 dark:text-neutral-400 !mb-9 text-xl">
+ &lt;ol>
+&lt;li>
+
+&lt;h2 class="relative group">Install Rust Before you can start writing Rust code, you&amp;rsquo;ll need to install the Rust programming language on your computer. You can do this by following the instructions on the Rust website (&lt;a href="https://www.rust-lang.org/tools/install%29" target="_blank" rel="noreferrer">https://www.rust-lang.org/tools/install)&lt;/a>.
+ &lt;div id="install-rust-before-you-can-start-writing-rust-code-youll-need-to-install-the-rust-programming-language-on-your-computer-you-can-do-this-by-following-the-instructions-on-the-rust-website-" class="anchor">&lt;/div>
+ 
+ &lt;span
+ class="absolute top-0 w-6 transition-opacity opacity-0 -start-6 not-prose group-hover:opacity-100 select-none">
+ &lt;a class="text-primary-300 dark:text-neutral-700 !no-underline" href="#install-rust-before-you-can-start-writing-rust-code-youll-need-to-install-the-rust-programming-language-on-your-computer-you-can-do-this-by-following-the-instructions-on-the-rust-website-" aria-label="Ancora">#&lt;/a>
+ &lt;/span>
+ 
+&lt;/h2>
+&lt;/li>
+&lt;/ol>
+
+&lt;/div>
+
+&lt;ol>
+&lt;li>
+
+&lt;h2 class="relative group">Install Rust
+ &lt;div id="install-rust" class="anchor">&lt;/div>
+ 
+ &lt;span
+ class="absolute top-0 w-6 transition-opacity opacity-0 -start-6 not-prose group-hover:opacity-100 select-none">
+ &lt;a class="text-primary-300 dark:text-neutral-700 !no-underline" href="#install-rust" aria-label="Ancora">#&lt;/a>
+ &lt;/span>
+ 
+&lt;/h2>
+&lt;p>Before you can start writing Rust code, you&amp;rsquo;ll need to install the Rust programming language on your computer. You can do this by following the instructions on the Rust website (&lt;a href="https://www.rust-lang.org/tools/install%29" target="_blank" rel="noreferrer">https://www.rust-lang.org/tools/install)&lt;/a>.&lt;/p></description></item><item><title>Create a Webserver With Fastapi and Uvicorn</title><link>https://manuelfedele.github.io/it/posts/create-webserver-with-fastapi-and-uvicorn/</link><pubDate>Fri, 30 Dec 2022 14:08:35 +0100</pubDate><guid>https://manuelfedele.github.io/it/posts/create-webserver-with-fastapi-and-uvicorn/</guid><description>&lt;div class="lead text-neutral-500 dark:text-neutral-400 !mb-9 text-xl">
+ FastAPI is a modern, fast, web framework for building APIs with Python 3.7 and above. It is built on top of Starlette, a lightweight ASGI framework, and uses the uvicorn ASGI server.
+&lt;/div>
+
+&lt;p>FastAPI is a modern, fast, web framework for building APIs with Python 3.7 and above. It is built on top of Starlette, a lightweight ASGI framework, and uses the uvicorn ASGI server.&lt;/p>
+&lt;p>Here is an example of how to create a web server with FastAPI and uvicorn:&lt;/p></description></item><item><title>What Does Yield Keyword Do in Python</title><link>https://manuelfedele.github.io/it/posts/what-does-yield-keyword-do-in-python/</link><pubDate>Thu, 29 Dec 2022 10:19:25 +0100</pubDate><guid>https://manuelfedele.github.io/it/posts/what-does-yield-keyword-do-in-python/</guid><description>&lt;div class="lead text-neutral-500 dark:text-neutral-400 !mb-9 text-xl">
+ The keyword &amp;ldquo;yield&amp;rdquo; is a important part of the Python programming language, and it can be used in a number of different ways. In this article, we&amp;rsquo;ll take a closer look at what the yield keyword does in Python, and how it can be used to create more efficient and powerful programs.
+&lt;/div>
+
+&lt;p>The keyword &amp;ldquo;yield&amp;rdquo; is a important part of the Python programming language, and it can be used in a number of different ways. In this article, we&amp;rsquo;ll take a closer look at what the yield keyword does in Python, and how it can be used to create more efficient and powerful programs.&lt;/p></description></item><item><title>Use Protobuf With Golang</title><link>https://manuelfedele.github.io/it/posts/use-protobuf-with-golang/</link><pubDate>Tue, 27 Dec 2022 18:48:44 +0100</pubDate><guid>https://manuelfedele.github.io/it/posts/use-protobuf-with-golang/</guid><description>&lt;div class="lead text-neutral-500 dark:text-neutral-400 !mb-9 text-xl">
+ Protocol Buffers (Protobuf) is a language- and platform-neutral data serialization format developed by Google. It allows you to define data structures in a .proto file and then use code generation tools to generate code in various languages for working with those data structures.
+&lt;/div>
+
+&lt;p>Protocol Buffers (Protobuf) is a language- and platform-neutral data serialization format developed by Google. It allows you to define data structures in a .proto file and then use code generation tools to generate code in various languages for working with those data structures.&lt;/p></description></item><item><title>Create Command Line Application With Golang</title><link>https://manuelfedele.github.io/it/posts/create-command-line-application-with-golang/</link><pubDate>Tue, 20 Dec 2022 10:03:30 +0100</pubDate><guid>https://manuelfedele.github.io/it/posts/create-command-line-application-with-golang/</guid><description>&lt;div class="lead text-neutral-500 dark:text-neutral-400 !mb-9 text-xl">
+ If you have a folder with a large number of files and you want to organize them by file extension, you can create a command line application to do this automatically using Go. Go, also known as Golang, is a programming language developed by Google that is designed to be fast,&amp;hellip;
+&lt;/div>
+
+
+&lt;h2 class="relative group">Creating a Command Line Application to Separate Files by Extension in Go
+ &lt;div id="creating-a-command-line-application-to-separate-files-by-extension-in-go" class="anchor">&lt;/div>
+ 
+ &lt;span
+ class="absolute top-0 w-6 transition-opacity opacity-0 -start-6 not-prose group-hover:opacity-100 select-none">
+ &lt;a class="text-primary-300 dark:text-neutral-700 !no-underline" href="#creating-a-command-line-application-to-separate-files-by-extension-in-go" aria-label="Ancora">#&lt;/a>
+ &lt;/span>
+ 
+&lt;/h2>
+&lt;p>If you have a folder with a large number of files and you want to organize them by file extension, you can create a command line application to do this automatically using Go. Go, also known as Golang, is a programming language developed by Google that is designed to be fast, statically-typed, and easy to learn. In this article, we&amp;rsquo;ll walk through the steps to create a Go program that separates files in a given folder into subfolders based on their extension.&lt;/p></description></item><item><title>Create Website With Gatsby and Github Pages</title><link>https://manuelfedele.github.io/it/posts/create-website-with-gatsby-and-github-pages/</link><pubDate>Tue, 20 Dec 2022 09:49:01 +0100</pubDate><guid>https://manuelfedele.github.io/it/posts/create-website-with-gatsby-and-github-pages/</guid><description>&lt;div class="lead text-neutral-500 dark:text-neutral-400 !mb-9 text-xl">
+ GitHub Pages is a free service that allows you to host your website directly from a GitHub repository. It is a great platform for developers to showcase their portfolio, document their projects, or create a personal blog. In this article, we will walk through the steps of&amp;hellip;
+&lt;/div>
+
+&lt;p>GitHub Pages is a free service that allows you to host your website directly from a GitHub repository. It is a great platform for developers to showcase their portfolio, document their projects, or create a personal blog. In this article, we will walk through the steps of creating a static website using GitHub Pages and Gatsby, a popular static site generator.&lt;/p></description></item><item><title>Use Redis With Golang</title><link>https://manuelfedele.github.io/it/posts/use-redis-with-golang/</link><pubDate>Mon, 19 Dec 2022 19:32:27 +0100</pubDate><guid>https://manuelfedele.github.io/it/posts/use-redis-with-golang/</guid><description>&lt;div class="lead text-neutral-500 dark:text-neutral-400 !mb-9 text-xl">
+ Redis is an in-memory data structure store that can be used as a database, cache, and message broker. It is known for its speed, simplicity, and flexibility. In this article, we will discuss how to use Redis with Golang, a popular programming language known for its simplicity,&amp;hellip;
+&lt;/div>
+
+
+&lt;h2 class="relative group">Using Golang and Redis
+ &lt;div id="using-golang-and-redis" class="anchor">&lt;/div>
+ 
+ &lt;span
+ class="absolute top-0 w-6 transition-opacity opacity-0 -start-6 not-prose group-hover:opacity-100 select-none">
+ &lt;a class="text-primary-300 dark:text-neutral-700 !no-underline" href="#using-golang-and-redis" aria-label="Ancora">#&lt;/a>
+ &lt;/span>
+ 
+&lt;/h2>
+&lt;p>Redis is an in-memory data structure store that can be used as a database, cache, and message broker. It is known for its speed, simplicity, and flexibility. In this article, we will discuss how to use Redis with Golang, a popular programming language known for its simplicity, performance, and concurrency support.&lt;/p></description></item><item><title>Create Desktop Application to fetch Stock Market Data with Golang</title><link>https://manuelfedele.github.io/it/posts/create-desktop-application-stock-market-data-golang/</link><pubDate>Mon, 19 Dec 2022 19:08:58 +0100</pubDate><guid>https://manuelfedele.github.io/it/posts/create-desktop-application-stock-market-data-golang/</guid><description>&lt;div class="lead text-neutral-500 dark:text-neutral-400 !mb-9 text-xl">
+ Golang, also known as Go, is a popular programming language known for its simplicity, performance, and concurrency support. Fyne is an open-source cross-platform UI toolkit written in Go, which makes it an excellent choice for building desktop applications. In this article, we&amp;hellip;
+&lt;/div>
+
+&lt;p>Golang, also known as Go, is a popular programming language known for its simplicity, performance, and concurrency support. Fyne is an open-source cross-platform UI toolkit written in Go, which makes it an excellent choice for building desktop applications. In this article, we will discuss how to build a desktop application for stock market data using Golang and Fyne.&lt;/p></description></item><item><title>Work with Json field on Postgresql</title><link>https://manuelfedele.github.io/it/posts/work-with-json-postgresql/</link><pubDate>Mon, 19 Dec 2022 18:20:30 +0100</pubDate><guid>https://manuelfedele.github.io/it/posts/work-with-json-postgresql/</guid><description>&lt;div class="lead text-neutral-500 dark:text-neutral-400 !mb-9 text-xl">
+ In PostgreSQL, the json data type can be used to store JSON data. You can use the -&amp;gt; operator to access elements of a JSON object, and the -&amp;raquo; operator to access values of a JSON object as text.
+&lt;/div>
+
+&lt;p>In PostgreSQL, the json data type can be used to store JSON data. You can use the -&amp;gt; operator to access elements of a JSON object, and the -&amp;raquo; operator to access values of a JSON object as text.&lt;/p></description></item><item><title>How to Create a Webserver in Golang</title><link>https://manuelfedele.github.io/it/posts/how-to-create-a-webserver-in-golang/</link><pubDate>Sun, 11 Dec 2022 19:14:21 +0100</pubDate><guid>https://manuelfedele.github.io/it/posts/how-to-create-a-webserver-in-golang/</guid><description>&lt;div class="lead text-neutral-500 dark:text-neutral-400 !mb-9 text-xl">
+ To create a web server in Go, you can use the http package provided by the standard library. This package includes the http.Server type, which represents an HTTP server, and the http.ListenAndServe() function, which listens for incoming HTTP requests on a specified port and&amp;hellip;
+&lt;/div>
+
+&lt;p>To create a web server in Go, you can use the http package provided by the standard library. This package includes the http.Server type, which represents an HTTP server, and the http.ListenAndServe() function, which listens for incoming HTTP requests on a specified port and serves responses to those requests.&lt;/p></description></item><item><title>How to Use Interfaces in Golang</title><link>https://manuelfedele.github.io/it/posts/how-to-use-interfaces-in-golang/</link><pubDate>Sun, 11 Dec 2022 19:04:27 +0100</pubDate><guid>https://manuelfedele.github.io/it/posts/how-to-use-interfaces-in-golang/</guid><description>&lt;div class="lead text-neutral-500 dark:text-neutral-400 !mb-9 text-xl">
+ In Go, an interface is a type that defines a set of methods that a struct must implement in order to implement the interface. An interface defines the behavior or capabilities of a struct without specifying the implementation details. This allows different structs to implement&amp;hellip;
+&lt;/div>
+
+&lt;p>In Go, an interface is a type that defines a set of methods that a struct must implement in order to implement the interface. An interface defines the behavior or capabilities of a struct without specifying the implementation details. This allows different structs to implement the same interface in different ways, promoting loose coupling and flexibility in your code.&lt;/p></description></item><item><title>Implement Factory Design Pattern in Golang</title><link>https://manuelfedele.github.io/it/posts/implement-factory-design-pattern-golang/</link><pubDate>Sun, 11 Dec 2022 18:57:13 +0100</pubDate><guid>https://manuelfedele.github.io/it/posts/implement-factory-design-pattern-golang/</guid><description>&lt;div class="lead text-neutral-500 dark:text-neutral-400 !mb-9 text-xl">
+ To implement the factory design pattern in Go, you can create a factory function that returns an object that implements a common interface. This function can take parameters to specify the type of object to be created. Here is an example of how you might implement the factory&amp;hellip;
+&lt;/div>
+
+&lt;p>To implement the factory design pattern in Go, you can create a factory function that returns an object that implements a common interface. This function can take parameters to specify the type of object to be created. Here is an example of how you might implement the factory design pattern in Go:&lt;/p></description></item><item><title>Create a template for Hugo</title><link>https://manuelfedele.github.io/it/posts/create-template-hugo/</link><pubDate>Thu, 03 Nov 2022 14:57:41 +0100</pubDate><guid>https://manuelfedele.github.io/it/posts/create-template-hugo/</guid><description>&lt;div class="lead text-neutral-500 dark:text-neutral-400 !mb-9 text-xl">
+ This tutorial will show you how to create a simple theme in Hugo. I assume that you are familiar with HTML, the bash command line, and that you are comfortable using Markdown to format content. I&amp;rsquo;ll explain how Hugo uses templates and how you can organize your templates to&amp;hellip;
+&lt;/div>
+
+
+&lt;h2 class="relative group">Introduction
+ &lt;div id="introduction" class="anchor">&lt;/div>
+ 
+ &lt;span
+ class="absolute top-0 w-6 transition-opacity opacity-0 -start-6 not-prose group-hover:opacity-100 select-none">
+ &lt;a class="text-primary-300 dark:text-neutral-700 !no-underline" href="#introduction" aria-label="Ancora">#&lt;/a>
+ &lt;/span>
+ 
+&lt;/h2>
+&lt;p>This tutorial will show you how to create a simple theme in Hugo. I assume that you are familiar with HTML, the bash command line, and that you are comfortable using Markdown to format content. I&amp;rsquo;ll explain how Hugo uses templates and how you can organize your templates to create a theme. I won&amp;rsquo;t cover using CSS to style your theme.&lt;/p></description></item><item><title>Poetry No Module Seed via App Data</title><link>https://manuelfedele.github.io/it/posts/poetry-no-module-seed-via-app-data/</link><pubDate>Mon, 01 Nov 2021 15:15:47 +0100</pubDate><guid>https://manuelfedele.github.io/it/posts/poetry-no-module-seed-via-app-data/</guid><description>&lt;div class="lead text-neutral-500 dark:text-neutral-400 !mb-9 text-xl">
+ For my last project, I used &lt;strong>poetry&lt;/strong> to manage dependencies and package my code. Poetry comes with all the tools you might need to manage your projects in a deterministic way.
+&lt;/div>
+
+&lt;p>For my last project, I used &lt;strong>poetry&lt;/strong> to manage dependencies and package my code.
+Poetry comes with all the tools you might need to manage your projects in a deterministic way.&lt;/p>
+&lt;p>Anyway, after running poetry init in an existing project, I tried to let poetry create a virtuale environment, by adding the first dependecy, but when I did poetry add twisted it suddenly hang out, printing:&lt;/p></description></item><item><title>Amazon Echo Plus as bluetooth speaker on Ubuntu 20.04</title><link>https://manuelfedele.github.io/it/posts/ubuntu-echo-plus-alexa-workaround-bluetooth-speaker/</link><pubDate>Tue, 14 Apr 2020 09:37:07 +0100</pubDate><guid>https://manuelfedele.github.io/it/posts/ubuntu-echo-plus-alexa-workaround-bluetooth-speaker/</guid><description>&lt;div class="lead text-neutral-500 dark:text-neutral-400 !mb-9 text-xl">
+ I just unpaired the devices, then started a YouTube video on my Ubuntu machine and then repeated the steps below (pairing) while the audio was playing. At that point I’ve been able to send audio to my Echo Plus.
+&lt;/div>
+
+
+&lt;h3 class="relative group">TLDR;
+ &lt;div id="tldr" class="anchor">&lt;/div>
+ 
+ &lt;span
+ class="absolute top-0 w-6 transition-opacity opacity-0 -start-6 not-prose group-hover:opacity-100 select-none">
+ &lt;a class="text-primary-300 dark:text-neutral-700 !no-underline" href="#tldr" aria-label="Ancora">#&lt;/a>
+ &lt;/span>
+ 
+&lt;/h3>
+&lt;p>I just unpaired the devices, then started a YouTube video on my Ubuntu machine and then repeated the steps below (pairing) while the audio was playing. At that point I’ve been able to send audio to my Echo Plus.&lt;/p></description></item><item><title>Chi sono</title><link>https://manuelfedele.github.io/it/about/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://manuelfedele.github.io/it/about/</guid><description>&lt;div class="lead text-neutral-500 dark:text-neutral-400 !mb-9 text-xl">
  Head of AI Platforms e Cloud Architect. Costruisco infrastrutture AI su larga scala, progetto sistemi agentici e opero piattaforme cloud che gestiscono migliaia di servizi in più paesi.
 &lt;/div>
 

@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>LLM on Git Push and Run</title><link>https://manuelfedele.github.io/it/tags/llm/</link><description>Recent content in LLM on Git Push and Run</description><generator>Hugo -- gohugo.io</generator><language>it</language><copyright>© 2026 Manuel Fedele</copyright><lastBuildDate>Sun, 01 Mar 2026 12:00:00 +0100</lastBuildDate><atom:link href="https://manuelfedele.github.io/it/tags/llm/index.xml" rel="self" type="application/rss+xml"/><item><title>Leveraging AI as a Software Engineer: What Actually Works</title><link>https://manuelfedele.github.io/it/posts/leveraging-ai-as-a-platform-engineer/</link><pubDate>Sun, 01 Mar 2026 12:00:00 +0100</pubDate><guid>https://manuelfedele.github.io/it/posts/leveraging-ai-as-a-platform-engineer/</guid><description>&lt;div class="lead text-neutral-500 dark:text-neutral-400 !mb-9 text-xl">
+ I have been using AI coding assistants seriously for about a year — not casually, not experimentally, but as a core part of how I do my job every day. This is not a post about AI generating code. It is about how AI changes the way an experienced engineer thinks, investigates, and makes decisions.
+&lt;/div>
+
+
+&lt;h2 class="relative group">The Shift That Actually Matters
+ &lt;div id="the-shift-that-actually-matters" class="anchor">&lt;/div>
+ 
+ &lt;span
+ class="absolute top-0 w-6 transition-opacity opacity-0 -start-6 not-prose group-hover:opacity-100 select-none">
+ &lt;a class="text-primary-300 dark:text-neutral-700 !no-underline" href="#the-shift-that-actually-matters" aria-label="Ancora">#&lt;/a>
+ &lt;/span>
+ 
+&lt;/h2>
+&lt;p>The naive version of AI-assisted development is: you describe what you want, the AI writes it, you review and move on. This is real and useful, but it is also the least interesting thing AI does for me.&lt;/p></description></item><item><title>Building an AI SRE Assistant From Scratch: Architecture of an Autonomous Infrastructure Investigator</title><link>https://manuelfedele.github.io/it/posts/building-ai-sre-assistant-from-scratch/</link><pubDate>Sun, 22 Feb 2026 09:30:00 +0100</pubDate><guid>https://manuelfedele.github.io/it/posts/building-ai-sre-assistant-from-scratch/</guid><description>&lt;div class="lead text-neutral-500 dark:text-neutral-400 !mb-9 text-xl">
+ What if your on-call engineer never slept, had instant access to every repository and every AWS account, and could trace a production issue from DNS to database in under a minute? This post walks through every layer of the architecture — from the authentication system to the agent framework, tool registry, streaming infrastructure, and deployment.
+&lt;/div>
+
+&lt;div class="admonition relative overflow-hidden rounded-lg border-l-4 my-3 px-4 py-3 shadow-sm" data-type="note">
+ &lt;div class="flex items-center gap-2 font-semibold text-inherit">
+ &lt;div class="flex shrink-0 h-5 w-5 items-center justify-center text-lg">&lt;span class="relative block icon">&lt;svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">&lt;path fill="currentColor" d="M256 0C114.6 0 0 114.6 0 256s114.6 256 256 256s256-114.6 256-256S397.4 0 256 0zM256 128c17.67 0 32 14.33 32 32c0 17.67-14.33 32-32 32S224 177.7 224 160C224 142.3 238.3 128 256 128zM296 384h-80C202.8 384 192 373.3 192 360s10.75-24 24-24h16v-64H224c-13.25 0-24-10.75-24-24S210.8 224 224 224h32c13.25 0 24 10.75 24 24v88h16c13.25 0 24 10.75 24 24S309.3 384 296 384z"/>&lt;/svg>
+&lt;/span>&lt;/div>
+ &lt;div class="grow">
+ Nota
+ &lt;/div>
+ &lt;/div>&lt;div class="admonition-content mt-3 text-base leading-relaxed text-inherit">&lt;p>This article describes an AI-powered SRE assistant built with the Strands Agents SDK, Django, React, and AWS. The agent autonomously investigates infrastructure issues by combining LLM reasoning with deep integrations into GitLab and AWS.&lt;/p></description></item><item><title>Building an AI-Powered Platform Operations Agent</title><link>https://manuelfedele.github.io/it/posts/building-ai-powered-platform-operations-agent/</link><pubDate>Sun, 15 Feb 2026 11:00:00 +0100</pubDate><guid>https://manuelfedele.github.io/it/posts/building-ai-powered-platform-operations-agent/</guid><description>&lt;div class="lead text-neutral-500 dark:text-neutral-400 !mb-9 text-xl">
+ Platform engineering teams handle a constant stream of repetitive requests. This post walks through building an AI agent that automates common platform tasks — user provisioning, key rotation, service health checks — by giving an LLM access to internal tools through a structured tool-calling interface.
+&lt;/div>
+
+&lt;p>Platform engineering teams handle a constant stream of repetitive requests: onboarding users, managing API keys, checking service health, rotating credentials. Most of these tasks follow well-defined procedures that a human executes step by step. What if an AI agent could handle them instead?&lt;/p></description></item><item><title>Building an AI-Powered Document Processing Pipeline on AWS</title><link>https://manuelfedele.github.io/it/posts/building-ai-document-processing-pipeline-aws/</link><pubDate>Wed, 03 Dec 2025 16:45:00 +0100</pubDate><guid>https://manuelfedele.github.io/it/posts/building-ai-document-processing-pipeline-aws/</guid><description>&lt;div class="lead text-neutral-500 dark:text-neutral-400 !mb-9 text-xl">
+ A serverless document processing pipeline on AWS that uses LLMs to extract structured data from unstructured documents — invoices, contracts, reports — at scale. No GPU clusters required.
+&lt;/div>
+
+&lt;p>Insurance companies process millions of documents every year: police reports, medical records, invoices, repair estimates. Traditionally, human operators read each document, classify it, extract the relevant fields, and enter the data into the claims system. This is slow, expensive, and error-prone.&lt;/p></description></item></channel></rss>

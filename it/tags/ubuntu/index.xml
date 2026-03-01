@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>Ubuntu on Git Push and Run</title><link>https://manuelfedele.github.io/it/tags/ubuntu/</link><description>Recent content in Ubuntu on Git Push and Run</description><generator>Hugo -- gohugo.io</generator><language>it</language><copyright>© 2026 Manuel Fedele</copyright><lastBuildDate>Tue, 14 Apr 2020 09:37:07 +0100</lastBuildDate><atom:link href="https://manuelfedele.github.io/it/tags/ubuntu/index.xml" rel="self" type="application/rss+xml"/><item><title>Amazon Echo Plus as bluetooth speaker on Ubuntu 20.04</title><link>https://manuelfedele.github.io/it/posts/ubuntu-echo-plus-alexa-workaround-bluetooth-speaker/</link><pubDate>Tue, 14 Apr 2020 09:37:07 +0100</pubDate><guid>https://manuelfedele.github.io/it/posts/ubuntu-echo-plus-alexa-workaround-bluetooth-speaker/</guid><description>&lt;div class="lead text-neutral-500 dark:text-neutral-400 !mb-9 text-xl">
+ I just unpaired the devices, then started a YouTube video on my Ubuntu machine and then repeated the steps below (pairing) while the audio was playing. At that point I’ve been able to send audio to my Echo Plus.
+&lt;/div>
+
+
+&lt;h3 class="relative group">TLDR;
+ &lt;div id="tldr" class="anchor">&lt;/div>
+ 
+ &lt;span
+ class="absolute top-0 w-6 transition-opacity opacity-0 -start-6 not-prose group-hover:opacity-100 select-none">
+ &lt;a class="text-primary-300 dark:text-neutral-700 !no-underline" href="#tldr" aria-label="Ancora">#&lt;/a>
+ &lt;/span>
+ 
+&lt;/h3>
+&lt;p>I just unpaired the devices, then started a YouTube video on my Ubuntu machine and then repeated the steps below (pairing) while the audio was playing. At that point I’ve been able to send audio to my Echo Plus.&lt;/p></description></item></channel></rss>
