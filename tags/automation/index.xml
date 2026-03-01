@@ -12,14 +12,8 @@
  &lt;/span>
  
 &lt;/h2>
-&lt;p>The naive version of AI-assisted development is: you describe what you want, the AI writes it, you review and move on. This is real and useful, but it is also the least interesting thing AI does for me.&lt;/p></description></item><item><title>Building an AI-Powered Platform Operations Agent</title><link>https://manuelfedele.github.io/posts/building-ai-powered-platform-operations-agent/</link><pubDate>Sun, 15 Feb 2026 11:00:00 +0100</pubDate><guid>https://manuelfedele.github.io/posts/building-ai-powered-platform-operations-agent/</guid><description>&lt;h1 class="relative group">Building an AI-Powered Platform Operations Agent
- &lt;div id="building-an-ai-powered-platform-operations-agent" class="anchor">&lt;/div>
- 
- &lt;span
- class="absolute top-0 w-6 transition-opacity opacity-0 -start-6 not-prose group-hover:opacity-100 select-none">
- &lt;a class="text-primary-300 dark:text-neutral-700 !no-underline" href="#building-an-ai-powered-platform-operations-agent" aria-label="Anchor">#&lt;/a>
- &lt;/span>
- 
-&lt;/h1>
-&lt;p>Platform engineering teams handle a constant stream of repetitive requests: onboarding users, managing API keys, checking service health, rotating credentials. Most of these tasks follow well-defined procedures that a human executes step by step. What if an AI agent could handle them instead?&lt;/p>
-&lt;p>In this post, I&amp;rsquo;ll walk through the architecture of an AI-powered operations agent that automates common platform tasks by giving an LLM access to your internal tools through a structured tool-calling interface.&lt;/p></description></item></channel></rss>
+&lt;p>The naive version of AI-assisted development is: you describe what you want, the AI writes it, you review and move on. This is real and useful, but it is also the least interesting thing AI does for me.&lt;/p></description></item><item><title>Building an AI-Powered Platform Operations Agent</title><link>https://manuelfedele.github.io/posts/building-ai-powered-platform-operations-agent/</link><pubDate>Sun, 15 Feb 2026 11:00:00 +0100</pubDate><guid>https://manuelfedele.github.io/posts/building-ai-powered-platform-operations-agent/</guid><description>&lt;div class="lead text-neutral-500 dark:text-neutral-400 !mb-9 text-xl">
+ Platform engineering teams handle a constant stream of repetitive requests. This post walks through building an AI agent that automates common platform tasks — user provisioning, key rotation, service health checks — by giving an LLM access to internal tools through a structured tool-calling interface.
+&lt;/div>
+
+&lt;p>Platform engineering teams handle a constant stream of repetitive requests: onboarding users, managing API keys, checking service health, rotating credentials. Most of these tasks follow well-defined procedures that a human executes step by step. What if an AI agent could handle them instead?&lt;/p></description></item></channel></rss>

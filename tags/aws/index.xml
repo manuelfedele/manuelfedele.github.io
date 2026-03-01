@@ -12,73 +12,31 @@
  &lt;/span>
  
 &lt;/h2>
-&lt;p>WebAssembly (WASM) is a binary instruction format that runs inside the browser at near-native speed. Think of it as a portable compilation target: you write code in Rust, C, C++, or Go, compile it to &lt;code>.wasm&lt;/code>, and the browser executes it directly in a sandboxed VM alongside JavaScript.&lt;/p></description></item><item><title>Building an AI SRE Assistant From Scratch: Architecture of an Autonomous Infrastructure Investigator</title><link>https://manuelfedele.github.io/posts/building-ai-sre-assistant-from-scratch/</link><pubDate>Sun, 22 Feb 2026 09:30:00 +0100</pubDate><guid>https://manuelfedele.github.io/posts/building-ai-sre-assistant-from-scratch/</guid><description>&lt;h1 class="relative group">Building an AI SRE Assistant From Scratch: Architecture of an Autonomous Infrastructure Investigator
- &lt;div id="building-an-ai-sre-assistant-from-scratch-architecture-of-an-autonomous-infrastructure-investigator" class="anchor">&lt;/div>
- 
- &lt;span
- class="absolute top-0 w-6 transition-opacity opacity-0 -start-6 not-prose group-hover:opacity-100 select-none">
- &lt;a class="text-primary-300 dark:text-neutral-700 !no-underline" href="#building-an-ai-sre-assistant-from-scratch-architecture-of-an-autonomous-infrastructure-investigator" aria-label="Anchor">#&lt;/a>
- &lt;/span>
- 
-&lt;/h1>
-&lt;p>What if your on-call engineer never slept, had instant access to every repository and every AWS account, and could trace a production issue from DNS to database in under a minute?&lt;/p>
-&lt;p>That&amp;rsquo;s the question that led me to build TARS, an AI-powered SRE assistant that autonomously investigates infrastructure issues by combining LLM reasoning with deep integrations into GitLab and AWS. Named after the robot from Interstellar (because every good internal tool needs a movie reference), TARS is a full-stack application where engineers interact with an AI agent through a chat interface. The agent doesn&amp;rsquo;t just answer questions. It investigates. It clones repos, greps code, reads CloudWatch logs, traces DNS chains, inspects ECS services, and synthesizes findings into structured reports.&lt;/p></description></item><item><title>ECS Fargate Production Patterns That Actually Work</title><link>https://manuelfedele.github.io/posts/ecs-fargate-production-patterns/</link><pubDate>Thu, 08 Jan 2026 14:20:00 +0100</pubDate><guid>https://manuelfedele.github.io/posts/ecs-fargate-production-patterns/</guid><description>&lt;h1 class="relative group">ECS Fargate Production Patterns That Actually Work
- &lt;div id="ecs-fargate-production-patterns-that-actually-work" class="anchor">&lt;/div>
- 
- &lt;span
- class="absolute top-0 w-6 transition-opacity opacity-0 -start-6 not-prose group-hover:opacity-100 select-none">
- &lt;a class="text-primary-300 dark:text-neutral-700 !no-underline" href="#ecs-fargate-production-patterns-that-actually-work" aria-label="Anchor">#&lt;/a>
- &lt;/span>
- 
-&lt;/h1>
-&lt;p>I&amp;rsquo;ve deployed and managed many containerized services on ECS Fargate. Over time, a set of patterns has emerged that I apply consistently to every new service. This post documents those patterns with Terraform examples, covering everything from Fargate Spot strategies to deployment circuit breakers and ARM64 migration.&lt;/p>
+&lt;p>WebAssembly (WASM) is a binary instruction format that runs inside the browser at near-native speed. Think of it as a portable compilation target: you write code in Rust, C, C++, or Go, compile it to &lt;code>.wasm&lt;/code>, and the browser executes it directly in a sandboxed VM alongside JavaScript.&lt;/p></description></item><item><title>Building an AI SRE Assistant From Scratch: Architecture of an Autonomous Infrastructure Investigator</title><link>https://manuelfedele.github.io/posts/building-ai-sre-assistant-from-scratch/</link><pubDate>Sun, 22 Feb 2026 09:30:00 +0100</pubDate><guid>https://manuelfedele.github.io/posts/building-ai-sre-assistant-from-scratch/</guid><description>&lt;div class="lead text-neutral-500 dark:text-neutral-400 !mb-9 text-xl">
+ What if your on-call engineer never slept, had instant access to every repository and every AWS account, and could trace a production issue from DNS to database in under a minute? This post walks through every layer of the architecture — from the authentication system to the agent framework, tool registry, streaming infrastructure, and deployment.
+&lt;/div>
 
-&lt;h2 class="relative group">The Standard Architecture
- &lt;div id="the-standard-architecture" class="anchor">&lt;/div>
- 
- &lt;span
- class="absolute top-0 w-6 transition-opacity opacity-0 -start-6 not-prose group-hover:opacity-100 select-none">
- &lt;a class="text-primary-300 dark:text-neutral-700 !no-underline" href="#the-standard-architecture" aria-label="Anchor">#&lt;/a>
- &lt;/span>
- 
-&lt;/h2>
-&lt;p>Every service I deploy follows the same high-level architecture:&lt;/p></description></item><item><title>Building an AI-Powered Document Processing Pipeline on AWS</title><link>https://manuelfedele.github.io/posts/building-ai-document-processing-pipeline-aws/</link><pubDate>Wed, 03 Dec 2025 16:45:00 +0100</pubDate><guid>https://manuelfedele.github.io/posts/building-ai-document-processing-pipeline-aws/</guid><description>&lt;h1 class="relative group">Building an AI-Powered Document Processing Pipeline on AWS
- &lt;div id="building-an-ai-powered-document-processing-pipeline-on-aws" class="anchor">&lt;/div>
- 
- &lt;span
- class="absolute top-0 w-6 transition-opacity opacity-0 -start-6 not-prose group-hover:opacity-100 select-none">
- &lt;a class="text-primary-300 dark:text-neutral-700 !no-underline" href="#building-an-ai-powered-document-processing-pipeline-on-aws" aria-label="Anchor">#&lt;/a>
- &lt;/span>
- 
-&lt;/h1>
-&lt;p>Insurance companies process millions of documents every year: police reports, medical records, invoices, repair estimates. Traditionally, human operators read each document, classify it, extract the relevant fields, and enter the data into the claims system. This is slow, expensive, and error-prone.&lt;/p>
-&lt;p>In this post I&amp;rsquo;ll describe the architecture of a production document processing pipeline I helped build. The system ingests claim documents, extracts text using vision-based LLMs, clusters and classifies document sections, extracts structured data, and generates vector embeddings for semantic search. All of this runs on a fully serverless AWS architecture with no idle infrastructure costs.&lt;/p></description></item><item><title>Managing Multi-Account AWS Infrastructure with Terraform Workspaces</title><link>https://manuelfedele.github.io/posts/multi-account-aws-terraform-workspaces/</link><pubDate>Mon, 22 Sep 2025 09:15:00 +0200</pubDate><guid>https://manuelfedele.github.io/posts/multi-account-aws-terraform-workspaces/</guid><description>&lt;h1 class="relative group">Managing Multi-Account AWS Infrastructure with Terraform Workspaces
- &lt;div id="managing-multi-account-aws-infrastructure-with-terraform-workspaces" class="anchor">&lt;/div>
- 
- &lt;span
- class="absolute top-0 w-6 transition-opacity opacity-0 -start-6 not-prose group-hover:opacity-100 select-none">
- &lt;a class="text-primary-300 dark:text-neutral-700 !no-underline" href="#managing-multi-account-aws-infrastructure-with-terraform-workspaces" aria-label="Anchor">#&lt;/a>
- &lt;/span>
- 
-&lt;/h1>
-&lt;p>When you&amp;rsquo;re managing infrastructure across dozens of AWS accounts, you need patterns that scale. In this post I&amp;rsquo;ll share the approach I use to manage multi-account, multi-environment AWS infrastructure using Terraform workspaces, modular code, and a consistent tagging strategy.&lt;/p>
+&lt;div class="admonition relative overflow-hidden rounded-lg border-l-4 my-3 px-4 py-3 shadow-sm" data-type="note">
+ &lt;div class="flex items-center gap-2 font-semibold text-inherit">
+ &lt;div class="flex shrink-0 h-5 w-5 items-center justify-center text-lg">&lt;span class="relative block icon">&lt;svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">&lt;path fill="currentColor" d="M256 0C114.6 0 0 114.6 0 256s114.6 256 256 256s256-114.6 256-256S397.4 0 256 0zM256 128c17.67 0 32 14.33 32 32c0 17.67-14.33 32-32 32S224 177.7 224 160C224 142.3 238.3 128 256 128zM296 384h-80C202.8 384 192 373.3 192 360s10.75-24 24-24h16v-64H224c-13.25 0-24-10.75-24-24S210.8 224 224 224h32c13.25 0 24 10.75 24 24v88h16c13.25 0 24 10.75 24 24S309.3 384 296 384z"/>&lt;/svg>
+&lt;/span>&lt;/div>
+ &lt;div class="grow">
+ Note
+ &lt;/div>
+ &lt;/div>&lt;div class="admonition-content mt-3 text-base leading-relaxed text-inherit">&lt;p>This article describes an AI-powered SRE assistant built with the Strands Agents SDK, Django, React, and AWS. The agent autonomously investigates infrastructure issues by combining LLM reasoning with deep integrations into GitLab and AWS.&lt;/p></description></item><item><title>ECS Fargate Production Patterns That Actually Work</title><link>https://manuelfedele.github.io/posts/ecs-fargate-production-patterns/</link><pubDate>Thu, 08 Jan 2026 14:20:00 +0100</pubDate><guid>https://manuelfedele.github.io/posts/ecs-fargate-production-patterns/</guid><description>&lt;div class="lead text-neutral-500 dark:text-neutral-400 !mb-9 text-xl">
+ A set of battle-tested ECS Fargate patterns I apply to every production service — covering Spot strategies, deployment circuit breakers, ARM64 migration, health checks, and Aurora Serverless v2 cost optimization.
+&lt;/div>
 
-&lt;h2 class="relative group">The Problem
- &lt;div id="the-problem" class="anchor">&lt;/div>
- 
- &lt;span
- class="absolute top-0 w-6 transition-opacity opacity-0 -start-6 not-prose group-hover:opacity-100 select-none">
- &lt;a class="text-primary-300 dark:text-neutral-700 !no-underline" href="#the-problem" aria-label="Anchor">#&lt;/a>
- &lt;/span>
- 
-&lt;/h2>
-&lt;p>Imagine this setup: you have multiple organizational scopes (teams, business units, projects), each with their own AWS accounts for non-production and production. On top of that, your non-production account hosts multiple environments (dev, integration, certification). Multiply this by several countries or regions, and you&amp;rsquo;re looking at a lot of infrastructure to manage.&lt;/p></description></item><item><title>Aws Opensearch as Monitoring Tool</title><link>https://manuelfedele.github.io/posts/aws-opensearch-as-monitoring-tool/</link><pubDate>Wed, 12 Jul 2023 08:42:00 +0200</pubDate><guid>https://manuelfedele.github.io/posts/aws-opensearch-as-monitoring-tool/</guid><description>&lt;h1 class="relative group">Cross-Account Logging: Shipping AWS Lambda Logs to OpenSearch
- &lt;div id="cross-account-logging-shipping-aws-lambda-logs-to-opensearch" class="anchor">&lt;/div>
- 
- &lt;span
- class="absolute top-0 w-6 transition-opacity opacity-0 -start-6 not-prose group-hover:opacity-100 select-none">
- &lt;a class="text-primary-300 dark:text-neutral-700 !no-underline" href="#cross-account-logging-shipping-aws-lambda-logs-to-opensearch" aria-label="Anchor">#&lt;/a>
- &lt;/span>
- 
-&lt;/h1>
+&lt;p>I&amp;rsquo;ve deployed and managed many containerized services on ECS Fargate. Over time, a set of patterns has emerged that I apply consistently to every new service. This post documents those patterns with Terraform examples, covering everything from Fargate Spot strategies to deployment circuit breakers and ARM64 migration.&lt;/p></description></item><item><title>Building an AI-Powered Document Processing Pipeline on AWS</title><link>https://manuelfedele.github.io/posts/building-ai-document-processing-pipeline-aws/</link><pubDate>Wed, 03 Dec 2025 16:45:00 +0100</pubDate><guid>https://manuelfedele.github.io/posts/building-ai-document-processing-pipeline-aws/</guid><description>&lt;div class="lead text-neutral-500 dark:text-neutral-400 !mb-9 text-xl">
+ A serverless document processing pipeline on AWS that uses LLMs to extract structured data from unstructured documents — invoices, contracts, reports — at scale. No GPU clusters required.
+&lt;/div>
+
+&lt;p>Insurance companies process millions of documents every year: police reports, medical records, invoices, repair estimates. Traditionally, human operators read each document, classify it, extract the relevant fields, and enter the data into the claims system. This is slow, expensive, and error-prone.&lt;/p></description></item><item><title>Managing Multi-Account AWS Infrastructure with Terraform Workspaces</title><link>https://manuelfedele.github.io/posts/multi-account-aws-terraform-workspaces/</link><pubDate>Mon, 22 Sep 2025 09:15:00 +0200</pubDate><guid>https://manuelfedele.github.io/posts/multi-account-aws-terraform-workspaces/</guid><description>&lt;div class="lead text-neutral-500 dark:text-neutral-400 !mb-9 text-xl">
+ Managing Terraform across multiple AWS accounts and environments without duplicating code. This post covers the workspace pattern, remote state, cross-account role assumptions, and the module structure that scales from 3 accounts to 30.
+&lt;/div>
+
+&lt;p>When you&amp;rsquo;re managing infrastructure across dozens of AWS accounts, you need patterns that scale. In this post I&amp;rsquo;ll share the approach I use to manage multi-account, multi-environment AWS infrastructure using Terraform workspaces, modular code, and a consistent tagging strategy.&lt;/p></description></item><item><title>Aws Opensearch as Monitoring Tool</title><link>https://manuelfedele.github.io/posts/aws-opensearch-as-monitoring-tool/</link><pubDate>Wed, 12 Jul 2023 08:42:00 +0200</pubDate><guid>https://manuelfedele.github.io/posts/aws-opensearch-as-monitoring-tool/</guid><description>&lt;div class="lead text-neutral-500 dark:text-neutral-400 !mb-9 text-xl">
+ In today&amp;rsquo;s distributed systems, logging and monitoring play a crucial role in detecting anomalies and ensuring system health. AWS Lambda and OpenSearch are often paired to deliver efficient, scalable logging solutions. However, complexities can arise when these resources live in&amp;hellip;
+&lt;/div>
+
 &lt;p>In today&amp;rsquo;s distributed systems, logging and monitoring play a crucial role in detecting anomalies and ensuring system health. AWS Lambda and OpenSearch are often paired to deliver efficient, scalable logging solutions. However, complexities can arise when these resources live in separate AWS accounts. This blog post will guide you through the process of sending AWS Lambda logs from Account A to an OpenSearch cluster in Account B using Terraform as the Infrastructure as Code (IAC) tool and GitLab for CI/CD pipelines.&lt;/p></description></item></channel></rss>

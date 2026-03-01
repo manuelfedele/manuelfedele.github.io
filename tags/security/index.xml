@@ -1,21 +1,5 @@
-<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>Security on Git Push and Run</title><link>https://manuelfedele.github.io/tags/security/</link><description>Recent content in Security on Git Push and Run</description><generator>Hugo -- gohugo.io</generator><language>en</language><copyright>© 2026 Manuel Fedele</copyright><lastBuildDate>Wed, 27 Nov 2024 17:18:00 +0000</lastBuildDate><atom:link href="https://manuelfedele.github.io/tags/security/index.xml" rel="self" type="application/rss+xml"/><item><title>Implementing a JWT Issuer in Go</title><link>https://manuelfedele.github.io/posts/jwt-issuer-in-go/</link><pubDate>Wed, 27 Nov 2024 17:18:00 +0000</pubDate><guid>https://manuelfedele.github.io/posts/jwt-issuer-in-go/</guid><description>&lt;h1 class="relative group">Building a Secure JWT Issuer in Go: A Complete Guide
- &lt;div id="building-a-secure-jwt-issuer-in-go-a-complete-guide" class="anchor">&lt;/div>
- 
- &lt;span
- class="absolute top-0 w-6 transition-opacity opacity-0 -start-6 not-prose group-hover:opacity-100 select-none">
- &lt;a class="text-primary-300 dark:text-neutral-700 !no-underline" href="#building-a-secure-jwt-issuer-in-go-a-complete-guide" aria-label="Anchor">#&lt;/a>
- &lt;/span>
- 
-&lt;/h1>
-&lt;p>JSON Web Tokens (JWT) have become the de facto standard for implementing stateless authentication in modern web applications. In this guide, we&amp;rsquo;ll implement a secure JWT issuer in Go, covering both basic implementation and advanced security considerations.&lt;/p>
+<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>Security on Git Push and Run</title><link>https://manuelfedele.github.io/tags/security/</link><description>Recent content in Security on Git Push and Run</description><generator>Hugo -- gohugo.io</generator><language>en</language><copyright>© 2026 Manuel Fedele</copyright><lastBuildDate>Wed, 27 Nov 2024 17:18:00 +0000</lastBuildDate><atom:link href="https://manuelfedele.github.io/tags/security/index.xml" rel="self" type="application/rss+xml"/><item><title>Implementing a JWT Issuer in Go</title><link>https://manuelfedele.github.io/posts/jwt-issuer-in-go/</link><pubDate>Wed, 27 Nov 2024 17:18:00 +0000</pubDate><guid>https://manuelfedele.github.io/posts/jwt-issuer-in-go/</guid><description>&lt;div class="lead text-neutral-500 dark:text-neutral-400 !mb-9 text-xl">
+ JSON Web Tokens (JWT) have become the de facto standard for implementing stateless authentication in modern web applications. In this guide, we&amp;rsquo;ll implement a secure JWT issuer in Go, covering both basic implementation and advanced security considerations.
+&lt;/div>
 
-&lt;h2 class="relative group">Understanding JWT Basics
- &lt;div id="understanding-jwt-basics" class="anchor">&lt;/div>
- 
- &lt;span
- class="absolute top-0 w-6 transition-opacity opacity-0 -start-6 not-prose group-hover:opacity-100 select-none">
- &lt;a class="text-primary-300 dark:text-neutral-700 !no-underline" href="#understanding-jwt-basics" aria-label="Anchor">#&lt;/a>
- &lt;/span>
- 
-&lt;/h2>
-&lt;p>A JWT consists of three parts: header, payload, and signature. These parts are Base64URL encoded and concatenated with dots. The signature ensures the token hasn&amp;rsquo;t been tampered with, while the payload carries the claims (data) we want to transmit securely.&lt;/p></description></item></channel></rss>
+&lt;p>JSON Web Tokens (JWT) have become the de facto standard for implementing stateless authentication in modern web applications. In this guide, we&amp;rsquo;ll implement a secure JWT issuer in Go, covering both basic implementation and advanced security considerations.&lt;/p></description></item></channel></rss>

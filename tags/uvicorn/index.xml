@@ -1,26 +1,6 @@
-<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>Uvicorn on Git Push and Run</title><link>https://manuelfedele.github.io/tags/uvicorn/</link><description>Recent content in Uvicorn on Git Push and Run</description><generator>Hugo -- gohugo.io</generator><language>en</language><copyright>© 2026 Manuel Fedele</copyright><lastBuildDate>Fri, 30 Dec 2022 14:08:35 +0100</lastBuildDate><atom:link href="https://manuelfedele.github.io/tags/uvicorn/index.xml" rel="self" type="application/rss+xml"/><item><title>Create a Webserver With Fastapi and Uvicorn</title><link>https://manuelfedele.github.io/posts/create-webserver-with-fastapi-and-uvicorn/</link><pubDate>Fri, 30 Dec 2022 14:08:35 +0100</pubDate><guid>https://manuelfedele.github.io/posts/create-webserver-with-fastapi-and-uvicorn/</guid><description>&lt;p>FastAPI is a modern, fast, web framework for building APIs with Python 3.7 and above. It is built on top of Starlette, a lightweight ASGI framework, and uses the uvicorn ASGI server.&lt;/p>
-&lt;p>Here is an example of how to create a web server with FastAPI and uvicorn:&lt;/p>
-&lt;ol>
-&lt;li>Install FastAPI and uvicorn using pip:&lt;/li>
-&lt;/ol>
-&lt;div class="highlight-wrapper">&lt;div class="highlight">&lt;pre tabindex="0" style="color:#f8f8f2;background-color:#282a36;-moz-tab-size:4;-o-tab-size:4;tab-size:4;">&lt;code class="language-bash" data-lang="bash">&lt;span style="display:flex;">&lt;span>pip install fastapi uvicorn&lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/div>&lt;/div>
-&lt;ol start="2">
-&lt;li>Create a file called main.py and import FastAPI:&lt;/li>
-&lt;/ol>
-&lt;div class="highlight-wrapper">&lt;div class="highlight">&lt;pre tabindex="0" style="color:#f8f8f2;background-color:#282a36;-moz-tab-size:4;-o-tab-size:4;tab-size:4;">&lt;code class="language-python" data-lang="python">&lt;span style="display:flex;">&lt;span>&lt;span style="color:#ff79c6">from&lt;/span> fastapi &lt;span style="color:#ff79c6">import&lt;/span> FastAPI
-&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>
-&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>app &lt;span style="color:#ff79c6">=&lt;/span> FastAPI()&lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/div>&lt;/div>
-&lt;ol start="3">
-&lt;li>Define a function that will be the endpoint for your API. This function should have a request parameter that specifies the HTTP request and a response parameter that specifies the HTTP response. You can use the @app.get decorator to define a function as a GET endpoint:&lt;/li>
-&lt;/ol>
-&lt;div class="highlight-wrapper">&lt;div class="highlight">&lt;pre tabindex="0" style="color:#f8f8f2;background-color:#282a36;-moz-tab-size:4;-o-tab-size:4;tab-size:4;">&lt;code class="language-python" data-lang="python">&lt;span style="display:flex;">&lt;span>@app.get(&lt;span style="color:#f1fa8c">&amp;#34;/&amp;#34;&lt;/span>)
-&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>&lt;span style="color:#ff79c6">def&lt;/span> &lt;span style="color:#50fa7b">read_root&lt;/span>(request, response):
-&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span> response&lt;span style="color:#ff79c6">.&lt;/span>status_code &lt;span style="color:#ff79c6">=&lt;/span> &lt;span style="color:#bd93f9">200&lt;/span>
-&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span> &lt;span style="color:#ff79c6">return&lt;/span> {&lt;span style="color:#f1fa8c">&amp;#34;Hello&amp;#34;&lt;/span>: &lt;span style="color:#f1fa8c">&amp;#34;World&amp;#34;&lt;/span>}&lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/div>&lt;/div>
-&lt;ol start="4">
-&lt;li>Run the web server using uvicorn:&lt;/li>
-&lt;/ol>
-&lt;div class="highlight-wrapper">&lt;div class="highlight">&lt;pre tabindex="0" style="color:#f8f8f2;background-color:#282a36;-moz-tab-size:4;-o-tab-size:4;tab-size:4;">&lt;code class="language-python" data-lang="python">&lt;span style="display:flex;">&lt;span>&lt;span style="color:#ff79c6">if&lt;/span> &lt;span style="color:#8be9fd;font-style:italic">__name__&lt;/span> &lt;span style="color:#ff79c6">==&lt;/span> &lt;span style="color:#f1fa8c">&amp;#34;__main__&amp;#34;&lt;/span>:
-&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span> &lt;span style="color:#ff79c6">import&lt;/span> uvicorn
-&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span> uvicorn&lt;span style="color:#ff79c6">.&lt;/span>run(app, host&lt;span style="color:#ff79c6">=&lt;/span>&lt;span style="color:#f1fa8c">&amp;#34;0.0.0.0&amp;#34;&lt;/span>, port&lt;span style="color:#ff79c6">=&lt;/span>&lt;span style="color:#bd93f9">8000&lt;/span>)&lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/div>&lt;/div>
-&lt;p>This will start the web server on the specified host and port (in this case, 0.0.0.0 and 8000). You can then access the endpoint at http://0.0.0.0:8000/.&lt;/p></description></item></channel></rss>
+<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>Uvicorn on Git Push and Run</title><link>https://manuelfedele.github.io/tags/uvicorn/</link><description>Recent content in Uvicorn on Git Push and Run</description><generator>Hugo -- gohugo.io</generator><language>en</language><copyright>© 2026 Manuel Fedele</copyright><lastBuildDate>Fri, 30 Dec 2022 14:08:35 +0100</lastBuildDate><atom:link href="https://manuelfedele.github.io/tags/uvicorn/index.xml" rel="self" type="application/rss+xml"/><item><title>Create a Webserver With Fastapi and Uvicorn</title><link>https://manuelfedele.github.io/posts/create-webserver-with-fastapi-and-uvicorn/</link><pubDate>Fri, 30 Dec 2022 14:08:35 +0100</pubDate><guid>https://manuelfedele.github.io/posts/create-webserver-with-fastapi-and-uvicorn/</guid><description>&lt;div class="lead text-neutral-500 dark:text-neutral-400 !mb-9 text-xl">
+ FastAPI is a modern, fast, web framework for building APIs with Python 3.7 and above. It is built on top of Starlette, a lightweight ASGI framework, and uses the uvicorn ASGI server.
+&lt;/div>
+
+&lt;p>FastAPI is a modern, fast, web framework for building APIs with Python 3.7 and above. It is built on top of Starlette, a lightweight ASGI framework, and uses the uvicorn ASGI server.&lt;/p>
+&lt;p>Here is an example of how to create a web server with FastAPI and uvicorn:&lt;/p></description></item></channel></rss>

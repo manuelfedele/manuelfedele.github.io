@@ -1,4 +1,9 @@
-<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>Theme on Git Push and Run</title><link>https://manuelfedele.github.io/tags/theme/</link><description>Recent content in Theme on Git Push and Run</description><generator>Hugo -- gohugo.io</generator><language>en</language><copyright>© 2026 Manuel Fedele</copyright><lastBuildDate>Thu, 03 Nov 2022 14:57:41 +0100</lastBuildDate><atom:link href="https://manuelfedele.github.io/tags/theme/index.xml" rel="self" type="application/rss+xml"/><item><title>Create a template for Hugo</title><link>https://manuelfedele.github.io/posts/create-template-hugo/</link><pubDate>Thu, 03 Nov 2022 14:57:41 +0100</pubDate><guid>https://manuelfedele.github.io/posts/create-template-hugo/</guid><description>&lt;h2 class="relative group">Introduction
+<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>Theme on Git Push and Run</title><link>https://manuelfedele.github.io/tags/theme/</link><description>Recent content in Theme on Git Push and Run</description><generator>Hugo -- gohugo.io</generator><language>en</language><copyright>© 2026 Manuel Fedele</copyright><lastBuildDate>Thu, 03 Nov 2022 14:57:41 +0100</lastBuildDate><atom:link href="https://manuelfedele.github.io/tags/theme/index.xml" rel="self" type="application/rss+xml"/><item><title>Create a template for Hugo</title><link>https://manuelfedele.github.io/posts/create-template-hugo/</link><pubDate>Thu, 03 Nov 2022 14:57:41 +0100</pubDate><guid>https://manuelfedele.github.io/posts/create-template-hugo/</guid><description>&lt;div class="lead text-neutral-500 dark:text-neutral-400 !mb-9 text-xl">
+ This tutorial will show you how to create a simple theme in Hugo. I assume that you are familiar with HTML, the bash command line, and that you are comfortable using Markdown to format content. I&amp;rsquo;ll explain how Hugo uses templates and how you can organize your templates to&amp;hellip;
+&lt;/div>
+
+
+&lt;h2 class="relative group">Introduction
  &lt;div id="introduction" class="anchor">&lt;/div>
  
  &lt;span

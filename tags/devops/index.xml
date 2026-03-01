@@ -12,53 +12,27 @@
  &lt;/span>
  
 &lt;/h2>
-&lt;p>The naive version of AI-assisted development is: you describe what you want, the AI writes it, you review and move on. This is real and useful, but it is also the least interesting thing AI does for me.&lt;/p></description></item><item><title>Building an AI SRE Assistant From Scratch: Architecture of an Autonomous Infrastructure Investigator</title><link>https://manuelfedele.github.io/posts/building-ai-sre-assistant-from-scratch/</link><pubDate>Sun, 22 Feb 2026 09:30:00 +0100</pubDate><guid>https://manuelfedele.github.io/posts/building-ai-sre-assistant-from-scratch/</guid><description>&lt;h1 class="relative group">Building an AI SRE Assistant From Scratch: Architecture of an Autonomous Infrastructure Investigator
- &lt;div id="building-an-ai-sre-assistant-from-scratch-architecture-of-an-autonomous-infrastructure-investigator" class="anchor">&lt;/div>
- 
- &lt;span
- class="absolute top-0 w-6 transition-opacity opacity-0 -start-6 not-prose group-hover:opacity-100 select-none">
- &lt;a class="text-primary-300 dark:text-neutral-700 !no-underline" href="#building-an-ai-sre-assistant-from-scratch-architecture-of-an-autonomous-infrastructure-investigator" aria-label="Anchor">#&lt;/a>
- &lt;/span>
- 
-&lt;/h1>
-&lt;p>What if your on-call engineer never slept, had instant access to every repository and every AWS account, and could trace a production issue from DNS to database in under a minute?&lt;/p>
-&lt;p>That&amp;rsquo;s the question that led me to build TARS, an AI-powered SRE assistant that autonomously investigates infrastructure issues by combining LLM reasoning with deep integrations into GitLab and AWS. Named after the robot from Interstellar (because every good internal tool needs a movie reference), TARS is a full-stack application where engineers interact with an AI agent through a chat interface. The agent doesn&amp;rsquo;t just answer questions. It investigates. It clones repos, greps code, reads CloudWatch logs, traces DNS chains, inspects ECS services, and synthesizes findings into structured reports.&lt;/p></description></item><item><title>Building an AI-Powered Platform Operations Agent</title><link>https://manuelfedele.github.io/posts/building-ai-powered-platform-operations-agent/</link><pubDate>Sun, 15 Feb 2026 11:00:00 +0100</pubDate><guid>https://manuelfedele.github.io/posts/building-ai-powered-platform-operations-agent/</guid><description>&lt;h1 class="relative group">Building an AI-Powered Platform Operations Agent
- &lt;div id="building-an-ai-powered-platform-operations-agent" class="anchor">&lt;/div>
- 
- &lt;span
- class="absolute top-0 w-6 transition-opacity opacity-0 -start-6 not-prose group-hover:opacity-100 select-none">
- &lt;a class="text-primary-300 dark:text-neutral-700 !no-underline" href="#building-an-ai-powered-platform-operations-agent" aria-label="Anchor">#&lt;/a>
- &lt;/span>
- 
-&lt;/h1>
-&lt;p>Platform engineering teams handle a constant stream of repetitive requests: onboarding users, managing API keys, checking service health, rotating credentials. Most of these tasks follow well-defined procedures that a human executes step by step. What if an AI agent could handle them instead?&lt;/p>
-&lt;p>In this post, I&amp;rsquo;ll walk through the architecture of an AI-powered operations agent that automates common platform tasks by giving an LLM access to your internal tools through a structured tool-calling interface.&lt;/p></description></item><item><title>Building Interactive CLI Tools in Go with Bubbletea</title><link>https://manuelfedele.github.io/posts/building-interactive-cli-tools-in-go-with-bubbletea/</link><pubDate>Fri, 14 Nov 2025 10:30:00 +0100</pubDate><guid>https://manuelfedele.github.io/posts/building-interactive-cli-tools-in-go-with-bubbletea/</guid><description>&lt;h1 class="relative group">Building Interactive CLI Tools in Go with Bubbletea
- &lt;div id="building-interactive-cli-tools-in-go-with-bubbletea" class="anchor">&lt;/div>
- 
- &lt;span
- class="absolute top-0 w-6 transition-opacity opacity-0 -start-6 not-prose group-hover:opacity-100 select-none">
- &lt;a class="text-primary-300 dark:text-neutral-700 !no-underline" href="#building-interactive-cli-tools-in-go-with-bubbletea" aria-label="Anchor">#&lt;/a>
- &lt;/span>
- 
-&lt;/h1>
-&lt;p>If you&amp;rsquo;ve ever wanted to build a terminal application that feels more like a proper UI than a wall of text, the &lt;a href="https://github.com/charmbracelet" target="_blank" rel="noreferrer">charmbracelet&lt;/a> ecosystem is the way to go. I&amp;rsquo;ve been using it to build internal DevOps tools, and the developer experience is excellent. In this post, I&amp;rsquo;ll walk through building an interactive CLI tool using &lt;a href="https://github.com/charmbracelet/bubbletea" target="_blank" rel="noreferrer">Bubbletea&lt;/a> and &lt;a href="https://github.com/charmbracelet/huh" target="_blank" rel="noreferrer">Huh&lt;/a>, the same libraries behind tools like &lt;code>gum&lt;/code> and &lt;code>soft-serve&lt;/code>.&lt;/p></description></item><item><title>Managing Multi-Account AWS Infrastructure with Terraform Workspaces</title><link>https://manuelfedele.github.io/posts/multi-account-aws-terraform-workspaces/</link><pubDate>Mon, 22 Sep 2025 09:15:00 +0200</pubDate><guid>https://manuelfedele.github.io/posts/multi-account-aws-terraform-workspaces/</guid><description>&lt;h1 class="relative group">Managing Multi-Account AWS Infrastructure with Terraform Workspaces
- &lt;div id="managing-multi-account-aws-infrastructure-with-terraform-workspaces" class="anchor">&lt;/div>
- 
- &lt;span
- class="absolute top-0 w-6 transition-opacity opacity-0 -start-6 not-prose group-hover:opacity-100 select-none">
- &lt;a class="text-primary-300 dark:text-neutral-700 !no-underline" href="#managing-multi-account-aws-infrastructure-with-terraform-workspaces" aria-label="Anchor">#&lt;/a>
- &lt;/span>
- 
-&lt;/h1>
-&lt;p>When you&amp;rsquo;re managing infrastructure across dozens of AWS accounts, you need patterns that scale. In this post I&amp;rsquo;ll share the approach I use to manage multi-account, multi-environment AWS infrastructure using Terraform workspaces, modular code, and a consistent tagging strategy.&lt;/p>
+&lt;p>The naive version of AI-assisted development is: you describe what you want, the AI writes it, you review and move on. This is real and useful, but it is also the least interesting thing AI does for me.&lt;/p></description></item><item><title>Building an AI SRE Assistant From Scratch: Architecture of an Autonomous Infrastructure Investigator</title><link>https://manuelfedele.github.io/posts/building-ai-sre-assistant-from-scratch/</link><pubDate>Sun, 22 Feb 2026 09:30:00 +0100</pubDate><guid>https://manuelfedele.github.io/posts/building-ai-sre-assistant-from-scratch/</guid><description>&lt;div class="lead text-neutral-500 dark:text-neutral-400 !mb-9 text-xl">
+ What if your on-call engineer never slept, had instant access to every repository and every AWS account, and could trace a production issue from DNS to database in under a minute? This post walks through every layer of the architecture — from the authentication system to the agent framework, tool registry, streaming infrastructure, and deployment.
+&lt;/div>
 
-&lt;h2 class="relative group">The Problem
- &lt;div id="the-problem" class="anchor">&lt;/div>
- 
- &lt;span
- class="absolute top-0 w-6 transition-opacity opacity-0 -start-6 not-prose group-hover:opacity-100 select-none">
- &lt;a class="text-primary-300 dark:text-neutral-700 !no-underline" href="#the-problem" aria-label="Anchor">#&lt;/a>
- &lt;/span>
- 
-&lt;/h2>
-&lt;p>Imagine this setup: you have multiple organizational scopes (teams, business units, projects), each with their own AWS accounts for non-production and production. On top of that, your non-production account hosts multiple environments (dev, integration, certification). Multiply this by several countries or regions, and you&amp;rsquo;re looking at a lot of infrastructure to manage.&lt;/p></description></item></channel></rss>
+&lt;div class="admonition relative overflow-hidden rounded-lg border-l-4 my-3 px-4 py-3 shadow-sm" data-type="note">
+ &lt;div class="flex items-center gap-2 font-semibold text-inherit">
+ &lt;div class="flex shrink-0 h-5 w-5 items-center justify-center text-lg">&lt;span class="relative block icon">&lt;svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">&lt;path fill="currentColor" d="M256 0C114.6 0 0 114.6 0 256s114.6 256 256 256s256-114.6 256-256S397.4 0 256 0zM256 128c17.67 0 32 14.33 32 32c0 17.67-14.33 32-32 32S224 177.7 224 160C224 142.3 238.3 128 256 128zM296 384h-80C202.8 384 192 373.3 192 360s10.75-24 24-24h16v-64H224c-13.25 0-24-10.75-24-24S210.8 224 224 224h32c13.25 0 24 10.75 24 24v88h16c13.25 0 24 10.75 24 24S309.3 384 296 384z"/>&lt;/svg>
+&lt;/span>&lt;/div>
+ &lt;div class="grow">
+ Note
+ &lt;/div>
+ &lt;/div>&lt;div class="admonition-content mt-3 text-base leading-relaxed text-inherit">&lt;p>This article describes an AI-powered SRE assistant built with the Strands Agents SDK, Django, React, and AWS. The agent autonomously investigates infrastructure issues by combining LLM reasoning with deep integrations into GitLab and AWS.&lt;/p></description></item><item><title>Building an AI-Powered Platform Operations Agent</title><link>https://manuelfedele.github.io/posts/building-ai-powered-platform-operations-agent/</link><pubDate>Sun, 15 Feb 2026 11:00:00 +0100</pubDate><guid>https://manuelfedele.github.io/posts/building-ai-powered-platform-operations-agent/</guid><description>&lt;div class="lead text-neutral-500 dark:text-neutral-400 !mb-9 text-xl">
+ Platform engineering teams handle a constant stream of repetitive requests. This post walks through building an AI agent that automates common platform tasks — user provisioning, key rotation, service health checks — by giving an LLM access to internal tools through a structured tool-calling interface.
+&lt;/div>
+
+&lt;p>Platform engineering teams handle a constant stream of repetitive requests: onboarding users, managing API keys, checking service health, rotating credentials. Most of these tasks follow well-defined procedures that a human executes step by step. What if an AI agent could handle them instead?&lt;/p></description></item><item><title>Building Interactive CLI Tools in Go with Bubbletea</title><link>https://manuelfedele.github.io/posts/building-interactive-cli-tools-in-go-with-bubbletea/</link><pubDate>Fri, 14 Nov 2025 10:30:00 +0100</pubDate><guid>https://manuelfedele.github.io/posts/building-interactive-cli-tools-in-go-with-bubbletea/</guid><description>&lt;div class="lead text-neutral-500 dark:text-neutral-400 !mb-9 text-xl">
+ Bubbletea brings the Elm architecture to the terminal, making it possible to build rich, interactive CLI tools in Go with clean state management. This post covers the fundamentals with a practical example.
+&lt;/div>
+
+&lt;p>If you&amp;rsquo;ve ever wanted to build a terminal application that feels more like a proper UI than a wall of text, the &lt;a href="https://github.com/charmbracelet" target="_blank" rel="noreferrer">charmbracelet&lt;/a> ecosystem is the way to go. I&amp;rsquo;ve been using it to build internal DevOps tools, and the developer experience is excellent. In this post, I&amp;rsquo;ll walk through building an interactive CLI tool using &lt;a href="https://github.com/charmbracelet/bubbletea" target="_blank" rel="noreferrer">Bubbletea&lt;/a> and &lt;a href="https://github.com/charmbracelet/huh" target="_blank" rel="noreferrer">Huh&lt;/a>, the same libraries behind tools like &lt;code>gum&lt;/code> and &lt;code>soft-serve&lt;/code>.&lt;/p></description></item><item><title>Managing Multi-Account AWS Infrastructure with Terraform Workspaces</title><link>https://manuelfedele.github.io/posts/multi-account-aws-terraform-workspaces/</link><pubDate>Mon, 22 Sep 2025 09:15:00 +0200</pubDate><guid>https://manuelfedele.github.io/posts/multi-account-aws-terraform-workspaces/</guid><description>&lt;div class="lead text-neutral-500 dark:text-neutral-400 !mb-9 text-xl">
+ Managing Terraform across multiple AWS accounts and environments without duplicating code. This post covers the workspace pattern, remote state, cross-account role assumptions, and the module structure that scales from 3 accounts to 30.
+&lt;/div>
+
+&lt;p>When you&amp;rsquo;re managing infrastructure across dozens of AWS accounts, you need patterns that scale. In this post I&amp;rsquo;ll share the approach I use to manage multi-account, multi-environment AWS infrastructure using Terraform workspaces, modular code, and a consistent tagging strategy.&lt;/p></description></item></channel></rss>

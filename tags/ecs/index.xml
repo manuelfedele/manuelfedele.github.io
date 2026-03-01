@@ -1,21 +1,5 @@
-<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>ECS on Git Push and Run</title><link>https://manuelfedele.github.io/tags/ecs/</link><description>Recent content in ECS on Git Push and Run</description><generator>Hugo -- gohugo.io</generator><language>en</language><copyright>© 2026 Manuel Fedele</copyright><lastBuildDate>Thu, 08 Jan 2026 14:20:00 +0100</lastBuildDate><atom:link href="https://manuelfedele.github.io/tags/ecs/index.xml" rel="self" type="application/rss+xml"/><item><title>ECS Fargate Production Patterns That Actually Work</title><link>https://manuelfedele.github.io/posts/ecs-fargate-production-patterns/</link><pubDate>Thu, 08 Jan 2026 14:20:00 +0100</pubDate><guid>https://manuelfedele.github.io/posts/ecs-fargate-production-patterns/</guid><description>&lt;h1 class="relative group">ECS Fargate Production Patterns That Actually Work
- &lt;div id="ecs-fargate-production-patterns-that-actually-work" class="anchor">&lt;/div>
- 
- &lt;span
- class="absolute top-0 w-6 transition-opacity opacity-0 -start-6 not-prose group-hover:opacity-100 select-none">
- &lt;a class="text-primary-300 dark:text-neutral-700 !no-underline" href="#ecs-fargate-production-patterns-that-actually-work" aria-label="Anchor">#&lt;/a>
- &lt;/span>
- 
-&lt;/h1>
-&lt;p>I&amp;rsquo;ve deployed and managed many containerized services on ECS Fargate. Over time, a set of patterns has emerged that I apply consistently to every new service. This post documents those patterns with Terraform examples, covering everything from Fargate Spot strategies to deployment circuit breakers and ARM64 migration.&lt;/p>
+<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>ECS on Git Push and Run</title><link>https://manuelfedele.github.io/tags/ecs/</link><description>Recent content in ECS on Git Push and Run</description><generator>Hugo -- gohugo.io</generator><language>en</language><copyright>© 2026 Manuel Fedele</copyright><lastBuildDate>Thu, 08 Jan 2026 14:20:00 +0100</lastBuildDate><atom:link href="https://manuelfedele.github.io/tags/ecs/index.xml" rel="self" type="application/rss+xml"/><item><title>ECS Fargate Production Patterns That Actually Work</title><link>https://manuelfedele.github.io/posts/ecs-fargate-production-patterns/</link><pubDate>Thu, 08 Jan 2026 14:20:00 +0100</pubDate><guid>https://manuelfedele.github.io/posts/ecs-fargate-production-patterns/</guid><description>&lt;div class="lead text-neutral-500 dark:text-neutral-400 !mb-9 text-xl">
+ A set of battle-tested ECS Fargate patterns I apply to every production service — covering Spot strategies, deployment circuit breakers, ARM64 migration, health checks, and Aurora Serverless v2 cost optimization.
+&lt;/div>
 
-&lt;h2 class="relative group">The Standard Architecture
- &lt;div id="the-standard-architecture" class="anchor">&lt;/div>
- 
- &lt;span
- class="absolute top-0 w-6 transition-opacity opacity-0 -start-6 not-prose group-hover:opacity-100 select-none">
- &lt;a class="text-primary-300 dark:text-neutral-700 !no-underline" href="#the-standard-architecture" aria-label="Anchor">#&lt;/a>
- &lt;/span>
- 
-&lt;/h2>
-&lt;p>Every service I deploy follows the same high-level architecture:&lt;/p></description></item></channel></rss>
+&lt;p>I&amp;rsquo;ve deployed and managed many containerized services on ECS Fargate. Over time, a set of patterns has emerged that I apply consistently to every new service. This post documents those patterns with Terraform examples, covering everything from Fargate Spot strategies to deployment circuit breakers and ARM64 migration.&lt;/p></description></item></channel></rss>

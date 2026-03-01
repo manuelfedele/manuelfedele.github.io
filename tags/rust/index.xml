@@ -1,4 +1,22 @@
-<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>Rust on Git Push and Run</title><link>https://manuelfedele.github.io/tags/rust/</link><description>Recent content in Rust on Git Push and Run</description><generator>Hugo -- gohugo.io</generator><language>en</language><copyright>© 2026 Manuel Fedele</copyright><lastBuildDate>Sat, 31 Dec 2022 14:26:23 +0100</lastBuildDate><atom:link href="https://manuelfedele.github.io/tags/rust/index.xml" rel="self" type="application/rss+xml"/><item><title>Create a Telegram Bot With Rust</title><link>https://manuelfedele.github.io/posts/create-a-telegram-bot-with-rust/</link><pubDate>Sat, 31 Dec 2022 14:26:23 +0100</pubDate><guid>https://manuelfedele.github.io/posts/create-a-telegram-bot-with-rust/</guid><description>&lt;ol>
+<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>Rust on Git Push and Run</title><link>https://manuelfedele.github.io/tags/rust/</link><description>Recent content in Rust on Git Push and Run</description><generator>Hugo -- gohugo.io</generator><language>en</language><copyright>© 2026 Manuel Fedele</copyright><lastBuildDate>Sat, 31 Dec 2022 14:26:23 +0100</lastBuildDate><atom:link href="https://manuelfedele.github.io/tags/rust/index.xml" rel="self" type="application/rss+xml"/><item><title>Create a Telegram Bot With Rust</title><link>https://manuelfedele.github.io/posts/create-a-telegram-bot-with-rust/</link><pubDate>Sat, 31 Dec 2022 14:26:23 +0100</pubDate><guid>https://manuelfedele.github.io/posts/create-a-telegram-bot-with-rust/</guid><description>&lt;div class="lead text-neutral-500 dark:text-neutral-400 !mb-9 text-xl">
+ &lt;ol>
+&lt;li>
+
+&lt;h2 class="relative group">Install Rust Before you can start writing Rust code, you&amp;rsquo;ll need to install the Rust programming language on your computer. You can do this by following the instructions on the Rust website (&lt;a href="https://www.rust-lang.org/tools/install%29" target="_blank" rel="noreferrer">https://www.rust-lang.org/tools/install)&lt;/a>.
+ &lt;div id="install-rust-before-you-can-start-writing-rust-code-youll-need-to-install-the-rust-programming-language-on-your-computer-you-can-do-this-by-following-the-instructions-on-the-rust-website-" class="anchor">&lt;/div>
+ 
+ &lt;span
+ class="absolute top-0 w-6 transition-opacity opacity-0 -start-6 not-prose group-hover:opacity-100 select-none">
+ &lt;a class="text-primary-300 dark:text-neutral-700 !no-underline" href="#install-rust-before-you-can-start-writing-rust-code-youll-need-to-install-the-rust-programming-language-on-your-computer-you-can-do-this-by-following-the-instructions-on-the-rust-website-" aria-label="Anchor">#&lt;/a>
+ &lt;/span>
+ 
+&lt;/h2>
+&lt;/li>
+&lt;/ol>
+
+&lt;/div>
+
+&lt;ol>
 &lt;li>
 
 &lt;h2 class="relative group">Install Rust
@@ -10,17 +28,4 @@
  &lt;/span>
  
 &lt;/h2>
-&lt;p>Before you can start writing Rust code, you&amp;rsquo;ll need to install the Rust programming language on your computer. You can do this by following the instructions on the Rust website (&lt;a href="https://www.rust-lang.org/tools/install%29" target="_blank" rel="noreferrer">https://www.rust-lang.org/tools/install)&lt;/a>.&lt;/p>
-&lt;/li>
-&lt;li>
-
-&lt;h2 class="relative group">Set up a new Rust project
- &lt;div id="set-up-a-new-rust-project" class="anchor">&lt;/div>
- 
- &lt;span
- class="absolute top-0 w-6 transition-opacity opacity-0 -start-6 not-prose group-hover:opacity-100 select-none">
- &lt;a class="text-primary-300 dark:text-neutral-700 !no-underline" href="#set-up-a-new-rust-project" aria-label="Anchor">#&lt;/a>
- &lt;/span>
- 
-&lt;/h2>
-&lt;p>Once you have Rust installed, you&amp;rsquo;ll need to create a new Rust project using the cargo command-line tool. Open a terminal and navigate to the directory where you want to store your project, then run the following command: cargo new telegram-bot &amp;ndash;bin. This will create a new Rust project called &amp;ldquo;telegram-bot&amp;rdquo; with a binary crate (executable).&lt;/p></description></item></channel></rss>
+&lt;p>Before you can start writing Rust code, you&amp;rsquo;ll need to install the Rust programming language on your computer. You can do this by following the instructions on the Rust website (&lt;a href="https://www.rust-lang.org/tools/install%29" target="_blank" rel="noreferrer">https://www.rust-lang.org/tools/install)&lt;/a>.&lt;/p></description></item></channel></rss>

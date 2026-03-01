@@ -1,21 +1,5 @@
-<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>IaC on Git Push and Run</title><link>https://manuelfedele.github.io/tags/iac/</link><description>Recent content in IaC on Git Push and Run</description><generator>Hugo -- gohugo.io</generator><language>en</language><copyright>© 2026 Manuel Fedele</copyright><lastBuildDate>Mon, 22 Sep 2025 09:15:00 +0200</lastBuildDate><atom:link href="https://manuelfedele.github.io/tags/iac/index.xml" rel="self" type="application/rss+xml"/><item><title>Managing Multi-Account AWS Infrastructure with Terraform Workspaces</title><link>https://manuelfedele.github.io/posts/multi-account-aws-terraform-workspaces/</link><pubDate>Mon, 22 Sep 2025 09:15:00 +0200</pubDate><guid>https://manuelfedele.github.io/posts/multi-account-aws-terraform-workspaces/</guid><description>&lt;h1 class="relative group">Managing Multi-Account AWS Infrastructure with Terraform Workspaces
- &lt;div id="managing-multi-account-aws-infrastructure-with-terraform-workspaces" class="anchor">&lt;/div>
- 
- &lt;span
- class="absolute top-0 w-6 transition-opacity opacity-0 -start-6 not-prose group-hover:opacity-100 select-none">
- &lt;a class="text-primary-300 dark:text-neutral-700 !no-underline" href="#managing-multi-account-aws-infrastructure-with-terraform-workspaces" aria-label="Anchor">#&lt;/a>
- &lt;/span>
- 
-&lt;/h1>
-&lt;p>When you&amp;rsquo;re managing infrastructure across dozens of AWS accounts, you need patterns that scale. In this post I&amp;rsquo;ll share the approach I use to manage multi-account, multi-environment AWS infrastructure using Terraform workspaces, modular code, and a consistent tagging strategy.&lt;/p>
+<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>IaC on Git Push and Run</title><link>https://manuelfedele.github.io/tags/iac/</link><description>Recent content in IaC on Git Push and Run</description><generator>Hugo -- gohugo.io</generator><language>en</language><copyright>© 2026 Manuel Fedele</copyright><lastBuildDate>Mon, 22 Sep 2025 09:15:00 +0200</lastBuildDate><atom:link href="https://manuelfedele.github.io/tags/iac/index.xml" rel="self" type="application/rss+xml"/><item><title>Managing Multi-Account AWS Infrastructure with Terraform Workspaces</title><link>https://manuelfedele.github.io/posts/multi-account-aws-terraform-workspaces/</link><pubDate>Mon, 22 Sep 2025 09:15:00 +0200</pubDate><guid>https://manuelfedele.github.io/posts/multi-account-aws-terraform-workspaces/</guid><description>&lt;div class="lead text-neutral-500 dark:text-neutral-400 !mb-9 text-xl">
+ Managing Terraform across multiple AWS accounts and environments without duplicating code. This post covers the workspace pattern, remote state, cross-account role assumptions, and the module structure that scales from 3 accounts to 30.
+&lt;/div>
 
-&lt;h2 class="relative group">The Problem
- &lt;div id="the-problem" class="anchor">&lt;/div>
- 
- &lt;span
- class="absolute top-0 w-6 transition-opacity opacity-0 -start-6 not-prose group-hover:opacity-100 select-none">
- &lt;a class="text-primary-300 dark:text-neutral-700 !no-underline" href="#the-problem" aria-label="Anchor">#&lt;/a>
- &lt;/span>
- 
-&lt;/h2>
-&lt;p>Imagine this setup: you have multiple organizational scopes (teams, business units, projects), each with their own AWS accounts for non-production and production. On top of that, your non-production account hosts multiple environments (dev, integration, certification). Multiply this by several countries or regions, and you&amp;rsquo;re looking at a lot of infrastructure to manage.&lt;/p></description></item></channel></rss>
+&lt;p>When you&amp;rsquo;re managing infrastructure across dozens of AWS accounts, you need patterns that scale. In this post I&amp;rsquo;ll share the approach I use to manage multi-account, multi-environment AWS infrastructure using Terraform workspaces, modular code, and a consistent tagging strategy.&lt;/p></description></item></channel></rss>
