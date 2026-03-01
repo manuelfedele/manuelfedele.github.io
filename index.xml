@@ -305,18 +305,12 @@ Poetry comes with all the tools you might need to manage your projects in a dete
  &lt;/span>
  
 &lt;/h3>
-&lt;p>I just unpaired the devices, then started a YouTube video on my Ubuntu machine and then repeated the steps below (pairing) while the audio was playing. At that point I’ve been able to send audio to my Echo Plus.&lt;/p></description></item><item><title>About</title><link>https://manuelfedele.github.io/about/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://manuelfedele.github.io/about/</guid><description>&lt;h2 class="relative group">Hi, I&amp;rsquo;m Manuel
- &lt;div id="hi-im-manuel" class="anchor">&lt;/div>
- 
- &lt;span
- class="absolute top-0 w-6 transition-opacity opacity-0 -start-6 not-prose group-hover:opacity-100 select-none">
- &lt;a class="text-primary-300 dark:text-neutral-700 !no-underline" href="#hi-im-manuel" aria-label="Anchor">#&lt;/a>
- &lt;/span>
- 
-&lt;/h2>
-&lt;p>I&amp;rsquo;m a Platform Engineer and Cloud Architect working on the GOSP IT Factory team. I build internal tools, manage multi-account AWS infrastructure with Terraform, and automate everything I can.&lt;/p>
+&lt;p>I just unpaired the devices, then started a YouTube video on my Ubuntu machine and then repeated the steps below (pairing) while the audio was playing. At that point I’ve been able to send audio to my Echo Plus.&lt;/p></description></item><item><title>About</title><link>https://manuelfedele.github.io/about/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://manuelfedele.github.io/about/</guid><description>&lt;div class="lead text-neutral-500 dark:text-neutral-400 !mb-9 text-xl">
+ Head of AI Platforms and Cloud Architect. I build large-scale AI infrastructure, design agentic systems, and operate cloud platforms that span thousands of services across multiple countries.
+&lt;/div>
 
-&lt;h3 class="relative group">What I Do
+
+&lt;h2 class="relative group">What I Do
  &lt;div id="what-i-do" class="anchor">&lt;/div>
  
  &lt;span
@@ -324,5 +318,5 @@ Poetry comes with all the tools you might need to manage your projects in a dete
  &lt;a class="text-primary-300 dark:text-neutral-700 !no-underline" href="#what-i-do" aria-label="Anchor">#&lt;/a>
  &lt;/span>
  
-&lt;/h3>
-&lt;p>By day, I design and operate cloud infrastructure across dozens of AWS accounts, build AI-powered document processing pipelines, and write internal CLI tools that make my team&amp;rsquo;s life easier. I work primarily with &lt;strong>Go&lt;/strong>, &lt;strong>Python&lt;/strong>, &lt;strong>Terraform&lt;/strong>, and the AWS ecosystem (ECS Fargate, Aurora, Lambda, Step Functions).&lt;/p></description></item></channel></rss>
+&lt;/h2>
+&lt;p>I lead the AI Platforms practice at a major European insurance group, owning the full lifecycle from strategy and architecture through to production operations.&lt;/p></description></item></channel></rss>
