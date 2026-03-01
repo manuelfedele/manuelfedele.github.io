@@ -322,4 +322,26 @@ Poetry mette a disposizione tutti gli strumenti necessari per gestire i propri p
  &lt;/span>
  
 &lt;/h2>
-&lt;p>Guido la practice AI Platforms in un grande gruppo assicurativo europeo, gestendo l&amp;rsquo;intero ciclo di vita dalla strategia e architettura fino alle operazioni in produzione.&lt;/p></description></item></channel></rss>
+&lt;p>Guido la practice AI Platforms in un grande gruppo assicurativo europeo, gestendo l&amp;rsquo;intero ciclo di vita dalla strategia e architettura fino alle operazioni in produzione.&lt;/p></description></item><item><title>Coaching</title><link>https://manuelfedele.github.io/it/coaching/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://manuelfedele.github.io/it/coaching/</guid><description>&lt;div class="lead text-neutral-500 dark:text-neutral-400 !mb-9 text-xl">
+ Sessioni di coaching 1:1 per ingegneri software che vogliono migliorare le proprie competenze — costruire sistemi AI, progettare infrastrutture cloud, o integrare strumenti come Claude Code nel lavoro quotidiano.
+&lt;/div>
+
+
+&lt;h2 class="relative group">A Chi È Rivolto
+ &lt;div id="a-chi-è-rivolto" class="anchor">&lt;/div>
+ 
+ &lt;span
+ class="absolute top-0 w-6 transition-opacity opacity-0 -start-6 not-prose group-hover:opacity-100 select-none">
+ &lt;a class="text-primary-300 dark:text-neutral-700 !no-underline" href="#a-chi-%c3%a8-rivolto" aria-label="Ancora">#&lt;/a>
+ &lt;/span>
+ 
+&lt;/h2>
+&lt;p>Sei un ingegnere software, tech lead o architetto che vuole:&lt;/p>
+&lt;ul>
+&lt;li>Capire come integrare concretamente AI e LLM nel lavoro di ingegneria — non demo, ma sistemi in produzione&lt;/li>
+&lt;li>Aggiornarti sui pattern di platform engineering: AWS multi-account, Terraform su larga scala, ECS, pipeline serverless&lt;/li>
+&lt;li>Imparare a usare Claude Code e gli strumenti di agentic AI per moltiplicare davvero la tua produttività&lt;/li>
+&lt;li>Costruire cose come LLM gateway, agenti autonomi, pipeline di elaborazione documenti, o tooling di ottimizzazione dei costi&lt;/li>
+&lt;li>Ricevere feedback onesto ed esperto sulla tua architettura, codice, o approccio&lt;/li>
+&lt;/ul>
+&lt;p>Lo faccio concretamente da anni — costruendo piattaforme AI su scala enterprise, scrivendo Go e Python in produzione, operando infrastruttura AWS su decine di account — non solo consigliando.&lt;/p></description></item></channel></rss>
