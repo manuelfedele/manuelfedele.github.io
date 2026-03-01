@@ -1,2 +1,15 @@
-<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>Tools on Git Push and Run</title><link>https://manuelfedele.github.io/tags/tools/</link><description>Recent content in Tools on Git Push and Run</description><generator>Hugo -- gohugo.io</generator><language>en</language><copyright>© 2026 Manuel Fedele</copyright><lastBuildDate>Sun, 01 Mar 2026 12:00:00 +0100</lastBuildDate><atom:link href="https://manuelfedele.github.io/tags/tools/index.xml" rel="self" type="application/rss+xml"/><item><title>Leveraging AI as a Software Engineer: What Actually Works</title><link>https://manuelfedele.github.io/posts/leveraging-ai-as-a-platform-engineer/</link><pubDate>Sun, 01 Mar 2026 12:00:00 +0100</pubDate><guid>https://manuelfedele.github.io/posts/leveraging-ai-as-a-platform-engineer/</guid><description>&lt;p>I have been using AI coding assistants seriously for about a year. Not casually, not experimentally: as a core part of how I do my job every day. I work across a wide surface area, writing Go and Python, managing cloud infrastructure, debugging distributed systems, automating operational workflows. AI has changed how I approach all of it, but not in the ways the marketing copy says.&lt;/p>
-&lt;p>This is not a post about AI generating code. It is about how AI changes the way an experienced engineer thinks, investigates, and makes decisions.&lt;/p></description></item></channel></rss>
+<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>Tools on Git Push and Run</title><link>https://manuelfedele.github.io/tags/tools/</link><description>Recent content in Tools on Git Push and Run</description><generator>Hugo -- gohugo.io</generator><language>en</language><copyright>© 2026 Manuel Fedele</copyright><lastBuildDate>Sun, 01 Mar 2026 12:00:00 +0100</lastBuildDate><atom:link href="https://manuelfedele.github.io/tags/tools/index.xml" rel="self" type="application/rss+xml"/><item><title>Leveraging AI as a Software Engineer: What Actually Works</title><link>https://manuelfedele.github.io/posts/leveraging-ai-as-a-platform-engineer/</link><pubDate>Sun, 01 Mar 2026 12:00:00 +0100</pubDate><guid>https://manuelfedele.github.io/posts/leveraging-ai-as-a-platform-engineer/</guid><description>&lt;div class="lead text-neutral-500 dark:text-neutral-400 !mb-9 text-xl">
+ I have been using AI coding assistants seriously for about a year — not casually, not experimentally, but as a core part of how I do my job every day. This is not a post about AI generating code. It is about how AI changes the way an experienced engineer thinks, investigates, and makes decisions.
+&lt;/div>
+
+
+&lt;h2 class="relative group">The Shift That Actually Matters
+ &lt;div id="the-shift-that-actually-matters" class="anchor">&lt;/div>
+ 
+ &lt;span
+ class="absolute top-0 w-6 transition-opacity opacity-0 -start-6 not-prose group-hover:opacity-100 select-none">
+ &lt;a class="text-primary-300 dark:text-neutral-700 !no-underline" href="#the-shift-that-actually-matters" aria-label="Anchor">#&lt;/a>
+ &lt;/span>
+ 
+&lt;/h2>
+&lt;p>The naive version of AI-assisted development is: you describe what you want, the AI writes it, you review and move on. This is real and useful, but it is also the least interesting thing AI does for me.&lt;/p></description></item></channel></rss>

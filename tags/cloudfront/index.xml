@@ -1,4 +1,9 @@
-<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>CloudFront on Git Push and Run</title><link>https://manuelfedele.github.io/tags/cloudfront/</link><description>Recent content in CloudFront on Git Push and Run</description><generator>Hugo -- gohugo.io</generator><language>en</language><copyright>© 2026 Manuel Fedele</copyright><lastBuildDate>Sun, 01 Mar 2026 10:00:00 +0100</lastBuildDate><atom:link href="https://manuelfedele.github.io/tags/cloudfront/index.xml" rel="self" type="application/rss+xml"/><item><title>WASM in the Browser: Deploying VERT on CloudFront for Free</title><link>https://manuelfedele.github.io/posts/wasm-vert-cloudfront-zero-cost/</link><pubDate>Sun, 01 Mar 2026 10:00:00 +0100</pubDate><guid>https://manuelfedele.github.io/posts/wasm-vert-cloudfront-zero-cost/</guid><description>&lt;h2 class="relative group">What is WebAssembly?
+<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>CloudFront on Git Push and Run</title><link>https://manuelfedele.github.io/tags/cloudfront/</link><description>Recent content in CloudFront on Git Push and Run</description><generator>Hugo -- gohugo.io</generator><language>en</language><copyright>© 2026 Manuel Fedele</copyright><lastBuildDate>Sun, 01 Mar 2026 10:00:00 +0100</lastBuildDate><atom:link href="https://manuelfedele.github.io/tags/cloudfront/index.xml" rel="self" type="application/rss+xml"/><item><title>WASM in the Browser: Deploying VERT on CloudFront for Free</title><link>https://manuelfedele.github.io/posts/wasm-vert-cloudfront-zero-cost/</link><pubDate>Sun, 01 Mar 2026 10:00:00 +0100</pubDate><guid>https://manuelfedele.github.io/posts/wasm-vert-cloudfront-zero-cost/</guid><description>&lt;div class="lead text-neutral-500 dark:text-neutral-400 !mb-9 text-xl">
+ WebAssembly lets CPU-heavy work run entirely inside the browser tab — no server, no uploads, no cost. This post covers what WASM actually is, and how to self-host VERT, a fully local file converter, on AWS CloudFront for effectively zero dollars.
+&lt;/div>
+
+
+&lt;h2 class="relative group">What is WebAssembly?
  &lt;div id="what-is-webassembly" class="anchor">&lt;/div>
  
  &lt;span
@@ -7,5 +12,4 @@
  &lt;/span>
  
 &lt;/h2>
-&lt;p>WebAssembly (WASM) is a binary instruction format that runs inside the browser at near-native speed. Think of it as a portable compilation target: you write code in Rust, C, C++, or Go, compile it to &lt;code>.wasm&lt;/code>, and the browser executes it directly in a sandboxed VM alongside JavaScript.&lt;/p>
-&lt;p>The browser has always been able to run &lt;em>computation&lt;/em>, but JavaScript is an interpreted, dynamically typed language. It is fast enough for most tasks, but there are workloads where it simply is not competitive: video encoding, image processing, cryptography, physics simulations. Before WASM, these had to live on a server. Now they can live in the browser tab.&lt;/p></description></item></channel></rss>
+&lt;p>WebAssembly (WASM) is a binary instruction format that runs inside the browser at near-native speed. Think of it as a portable compilation target: you write code in Rust, C, C++, or Go, compile it to &lt;code>.wasm&lt;/code>, and the browser executes it directly in a sandboxed VM alongside JavaScript.&lt;/p></description></item></channel></rss>

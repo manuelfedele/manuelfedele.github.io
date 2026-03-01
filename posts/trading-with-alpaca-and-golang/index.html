@@ -19,82 +19,82 @@ bf-scrollbar"><label for=mobile-menu-toggle class="fixed end-8 top-5 flex items-
 The application should be able to retrieve real-time market data and place trades.
 The application should be able to retrieve the user&rsquo;s account information and trade history.</p><h3 class="relative group">Setting up the Alpaca API<div id=setting-up-the-alpaca-api class=anchor></div><span class="absolute top-0 w-6 transition-opacity opacity-0 -start-6 not-prose group-hover:opacity-100 select-none"><a class="text-primary-300 dark:text-neutral-700 !no-underline" href=#setting-up-the-alpaca-api aria-label=Anchor>#</a></span></h3><p>To use the Alpaca API, you will need to sign up for an Alpaca account and obtain an API key. The API key is used to authenticate your requests to the API.</p><p>Once you have an API key, you can use the following Go libraries to access the Alpaca API:</p><p>alpaca-trade-api-go: A Go client library for the Alpaca Trade API.
 alpaca-go: A Go wrapper for the Alpaca Trade API.
-Both libraries provide functions for accessing various types of data and placing trades, including real-time quotes, historical data, and account information.</p><p>For example, the following code snippet demonstrates how to place a market order using the alpaca-trade-api-go library:</p><div class=highlight-wrapper><div class=highlight><pre tabindex=0 class=chroma><code class=language-go data-lang=go><span class=line><span class=cl><span class=kn>package</span> <span class=nx>main</span>
-</span></span><span class=line><span class=cl>
-</span></span><span class=line><span class=cl><span class=kn>import</span> <span class=p>(</span>
-</span></span><span class=line><span class=cl>    <span class=s>&#34;fmt&#34;</span>
-</span></span><span class=line><span class=cl>    <span class=s>&#34;log&#34;</span>
-</span></span><span class=line><span class=cl>
-</span></span><span class=line><span class=cl>    <span class=nx>alpaca</span> <span class=s>&#34;github.com/alpacahq/alpaca-trade-api-go&#34;</span>
-</span></span><span class=line><span class=cl><span class=p>)</span>
-</span></span><span class=line><span class=cl>
-</span></span><span class=line><span class=cl><span class=kd>func</span> <span class=nf>main</span><span class=p>()</span> <span class=p>{</span>
-</span></span><span class=line><span class=cl>    <span class=c1>// Set the API key and secret</span>
-</span></span><span class=line><span class=cl>    <span class=nx>alpaca</span><span class=p>.</span><span class=nf>SetAPIKey</span><span class=p>(</span><span class=s>&#34;YOUR_API_KEY&#34;</span><span class=p>)</span>
-</span></span><span class=line><span class=cl>    <span class=nx>alpaca</span><span class=p>.</span><span class=nf>SetAPISecret</span><span class=p>(</span><span class=s>&#34;YOUR_API_SECRET&#34;</span><span class=p>)</span>
-</span></span><span class=line><span class=cl>
-</span></span><span class=line><span class=cl>    <span class=c1>// Place a market order to buy 100 shares of the stock &#34;AAPL&#34;</span>
-</span></span><span class=line><span class=cl>    <span class=nx>order</span><span class=p>,</span> <span class=nx>err</span> <span class=o>:=</span> <span class=nx>alpaca</span><span class=p>.</span><span class=nf>PlaceOrder</span><span class=p>(</span><span class=s>&#34;AAPL&#34;</span><span class=p>,</span> <span class=mi>100</span><span class=p>,</span> <span class=nx>alpaca</span><span class=p>.</span><span class=nx>MarketOrder</span><span class=p>,</span> <span class=nx>alpaca</span><span class=p>.</span><span class=nx>Buy</span><span class=p>,</span> <span class=s>&#34;day&#34;</span><span class=p>)</span>
-</span></span><span class=line><span class=cl>    <span class=k>if</span> <span class=nx>err</span> <span class=o>!=</span> <span class=kc>nil</span> <span class=p>{</span>
-</span></span><span class=line><span class=cl>        <span class=nx>log</span><span class=p>.</span><span class=nf>Fatal</span><span class=p>(</span><span class=nx>err</span><span class=p>)</span>
-</span></span><span class=line><span class=cl>    <span class=p>}</span>
-</span></span><span class=line><span class=cl>
-</span></span><span class=line><span class=cl>    <span class=c1>// Print the order details</span>
-</span></span><span class=line><span class=cl>    <span class=nx>fmt</span><span class=p>.</span><span class=nf>Printf</span><span class=p>(</span><span class=s>&#34;%+v\n&#34;</span><span class=p>,</span> <span class=nx>order</span><span class=p>)</span>
-</span></span><span class=line><span class=cl><span class=p>}</span></span></span></code></pre></div></div><p>This will place a market order to buy 100 shares of the stock &ldquo;AAPL&rdquo; and print the order details, including the order ID and status.</p><h3 class="relative group">Retrieving Market Data<div id=retrieving-market-data class=anchor></div><span class="absolute top-0 w-6 transition-opacity opacity-0 -start-6 not-prose group-hover:opacity-100 select-none"><a class="text-primary-300 dark:text-neutral-700 !no-underline" href=#retrieving-market-data aria-label=Anchor>#</a></span></h3><p>In addition to placing trades, you can also use the Alpaca API to retrieve real-time market data. The following code snippet demonstrates how to retrieve the real-time quote for the stock &ldquo;AAPL&rdquo; using the alpaca-trade-api-go library:</p><div class=highlight-wrapper><div class=highlight><pre tabindex=0 class=chroma><code class=language-go data-lang=go><span class=line><span class=cl><span class=kn>package</span> <span class=nx>main</span>
-</span></span><span class=line><span class=cl>
-</span></span><span class=line><span class=cl><span class=kn>import</span> <span class=p>(</span>
-</span></span><span class=line><span class=cl>    <span class=s>&#34;fmt&#34;</span>
-</span></span><span class=line><span class=cl>    <span class=s>&#34;log&#34;</span>
-</span></span><span class=line><span class=cl>
-</span></span><span class=line><span class=cl>    <span class=nx>alpaca</span> <span class=s>&#34;github.com/alpacahq/alpaca-trade-api-go&#34;</span>
-</span></span><span class=line><span class=cl><span class=p>)</span>
-</span></span><span class=line><span class=cl>
-</span></span><span class=line><span class=cl><span class=kd>func</span> <span class=nf>main</span><span class=p>()</span> <span class=p>{</span>
-</span></span><span class=line><span class=cl>    <span class=c1>// Set the API key and secret</span>
-</span></span><span class=line><span class=cl>    <span class=nx>alpaca</span><span class=p>.</span><span class=nf>SetAPIKey</span><span class=p>(</span><span class=s>&#34;YOUR_API_KEY&#34;</span><span class=p>)</span>
-</span></span><span class=line><span class=cl>    <span class=nx>alpaca</span><span class=p>.</span><span class=nf>SetAPISecret</span><span class=p>(</span><span class=s>&#34;YOUR_API_SECRET&#34;</span><span class=p>)</span>
-</span></span><span class=line><span class=cl>
-</span></span><span class=line><span class=cl>    <span class=c1>// Retrieve the real-time quote for the stock &#34;AAPL&#34;</span>
-</span></span><span class=line><span class=cl>    <span class=nx>quote</span><span class=p>,</span> <span class=nx>err</span> <span class=o>:=</span> <span class=nx>alpaca</span><span class=p>.</span><span class=nf>GetQuote</span><span class=p>(</span><span class=s>&#34;AAPL&#34;</span><span class=p>)</span>
-</span></span><span class=line><span class=cl>    <span class=k>if</span> <span class=nx>err</span> <span class=o>!=</span> <span class=kc>nil</span> <span class=p>{</span>
-</span></span><span class=line><span class=cl>        <span class=nx>log</span><span class=p>.</span><span class=nf>Fatal</span><span class=p>(</span><span class=nx>err</span><span class=p>)</span>
-</span></span><span class=line><span class=cl>    <span class=p>}</span>
-</span></span><span class=line><span class=cl>
-</span></span><span class=line><span class=cl>    <span class=c1>// Print the quote</span>
-</span></span><span class=line><span class=cl>    <span class=nx>fmt</span><span class=p>.</span><span class=nf>Printf</span><span class=p>(</span><span class=s>&#34;%+v\n&#34;</span><span class=p>,</span> <span class=nx>quote</span><span class=p>)</span>
-</span></span><span class=line><span class=cl><span class=p>}</span></span></span></code></pre></div></div><p>This will retrieve the real-time quote for the stock &ldquo;AAPL&rdquo; and print the quote, including the current price, volume, and other information.</p><h3 class="relative group">Retrieving Account Information and Trade History<div id=retrieving-account-information-and-trade-history class=anchor></div><span class="absolute top-0 w-6 transition-opacity opacity-0 -start-6 not-prose group-hover:opacity-100 select-none"><a class="text-primary-300 dark:text-neutral-700 !no-underline" href=#retrieving-account-information-and-trade-history aria-label=Anchor>#</a></span></h3><p>In addition to retrieving market data, you can also use the Alpaca API to retrieve information about your account and trade history. The following code snippet demonstrates how to retrieve your account balance and trade history using the alpaca-trade-api-go library:</p><div class=highlight-wrapper><div class=highlight><pre tabindex=0 class=chroma><code class=language-go data-lang=go><span class=line><span class=cl><span class=kn>package</span> <span class=nx>main</span>
-</span></span><span class=line><span class=cl>
-</span></span><span class=line><span class=cl><span class=kn>import</span> <span class=p>(</span>
-</span></span><span class=line><span class=cl>    <span class=s>&#34;fmt&#34;</span>
-</span></span><span class=line><span class=cl>    <span class=s>&#34;log&#34;</span>
-</span></span><span class=line><span class=cl>
-</span></span><span class=line><span class=cl>    <span class=nx>alpaca</span> <span class=s>&#34;github.com/alpacahq/alpaca-trade-api-go&#34;</span>
-</span></span><span class=line><span class=cl><span class=p>)</span>
-</span></span><span class=line><span class=cl>
-</span></span><span class=line><span class=cl><span class=kd>func</span> <span class=nf>main</span><span class=p>()</span> <span class=p>{</span>
-</span></span><span class=line><span class=cl>    <span class=c1>// Set the API key and secret</span>
-</span></span><span class=line><span class=cl>    <span class=nx>alpaca</span><span class=p>.</span><span class=nf>SetAPIKey</span><span class=p>(</span><span class=s>&#34;YOUR_API_KEY&#34;</span><span class=p>)</span>
-</span></span><span class=line><span class=cl>    <span class=nx>alpaca</span><span class=p>.</span><span class=nf>SetAPISecret</span><span class=p>(</span><span class=s>&#34;YOUR_API_SECRET&#34;</span><span class=p>)</span>
-</span></span><span class=line><span class=cl>
-</span></span><span class=line><span class=cl>    <span class=c1>// Retrieve the account balance</span>
-</span></span><span class=line><span class=cl>    <span class=nx>balance</span><span class=p>,</span> <span class=nx>err</span> <span class=o>:=</span> <span class=nx>alpaca</span><span class=p>.</span><span class=nf>GetAccount</span><span class=p>()</span>
-</span></span><span class=line><span class=cl>    <span class=k>if</span> <span class=nx>err</span> <span class=o>!=</span> <span class=kc>nil</span> <span class=p>{</span>
-</span></span><span class=line><span class=cl>        <span class=nx>log</span><span class=p>.</span><span class=nf>Fatal</span><span class=p>(</span><span class=nx>err</span><span class=p>)</span>
-</span></span><span class=line><span class=cl>    <span class=p>}</span>
-</span></span><span class=line><span class=cl>
-</span></span><span class=line><span class=cl>    <span class=c1>// Print the account balance</span>
-</span></span><span class=line><span class=cl>    <span class=nx>fmt</span><span class=p>.</span><span class=nf>Printf</span><span class=p>(</span><span class=s>&#34;Account balance: %+v\n&#34;</span><span class=p>,</span> <span class=nx>balance</span><span class=p>)</span>
-</span></span><span class=line><span class=cl>
-</span></span><span class=line><span class=cl>    <span class=c1>// Retrieve the trade history</span>
-</span></span><span class=line><span class=cl>    <span class=nx>trades</span><span class=p>,</span> <span class=nx>err</span> <span class=o>:=</span> <span class=nx>alpaca</span><span class=p>.</span><span class=nf>ListTrades</span><span class=p>()</span>
-</span></span><span class=line><span class=cl>    <span class=k>if</span> <span class=nx>err</span> <span class=o>!=</span> <span class=kc>nil</span> <span class=p>{</span>
-</span></span><span class=line><span class=cl>        <span class=nx>log</span><span class=p>.</span><span class=nf>Fatal</span><span class=p>(</span><span class=nx>err</span><span class=p>)</span>
-</span></span><span class=line><span class=cl>    <span class=p>}</span>
-</span></span><span class=line><span class=cl>
-</span></span><span class=line><span class=cl>    <span class=c1>// Print the trade history</span>
-</span></span><span class=line><span class=cl>    <span class=nx>fmt</span><span class=p>.</span><span class=nf>Printf</span><span class=p>(</span><span class=s>&#34;Trade history: %+v\n&#34;</span><span class=p>,</span> <span class=nx>trades</span><span class=p>)</span>
-</span></span><span class=line><span class=cl><span class=p>}</span></span></span></code></pre></div></div><p>This will retrieve your account balance and trade history and print the information.</p><h3 class="relative group">Conclusion<div id=conclusion class=anchor></div><span class="absolute top-0 w-6 transition-opacity opacity-0 -start-6 not-prose group-hover:opacity-100 select-none"><a class="text-primary-300 dark:text-neutral-700 !no-underline" href=#conclusion aria-label=Anchor>#</a></span></h3><p>In this tutorial, we have discussed how to use Alpaca&rsquo;s APIs with Golang to automate trading. We have seen how to connect to the Alpaca API, place trades, retrieve market data, and retrieve account information and trade history. With these tools and techniques, you can create a powerful and efficient application for automated trading.</p></div><h2 class="mt-8 text-2xl font-extrabold mb-10">Related</h2><section class="w-full grid gap-4 sm:grid-cols-2 md:grid-cols-3"><article class="article-link--related relative min-h-full min-w-full overflow-hidden rounded-lg border border-neutral-300 dark:border-neutral-600"><div class=p-4><header><a href=/posts/unit-testing-in-golang/ class="not-prose before:absolute before:inset-0 decoration-primary-500 dark:text-neutral text-xl font-bold text-neutral-800 hover:underline hover:underline-offset-2"><h2>Unit Testing in Golang</h2></a></header><div class="text-sm text-neutral-500 dark:text-neutral-400"><div class="flex flex-row flex-wrap items-center"><time datetime=2023-01-09T20:49:03+01:00>9 January 2023</time><span class="px-2 text-primary-500">&#183;</span><span title="Reading time">3 mins</span></div><div class="flex flex-row flex-wrap items-center"><a class="relative mt-[0.5rem] me-2" href=/tags/testing/><span class="flex cursor-pointer"><span class="rounded-md border border-primary-400 px-1 py-[1px] text-xs font-normal text-primary-700 dark:border-primary-600 dark:text-primary-400">Testing
+Both libraries provide functions for accessing various types of data and placing trades, including real-time quotes, historical data, and account information.</p><p>For example, the following code snippet demonstrates how to place a market order using the alpaca-trade-api-go library:</p><div class=highlight-wrapper><div class=highlight><pre tabindex=0 style=color:#f8f8f2;background-color:#282a36;-moz-tab-size:4;-o-tab-size:4;tab-size:4><code class=language-go data-lang=go><span style=display:flex><span><span style=color:#ff79c6>package</span> main
+</span></span><span style=display:flex><span>
+</span></span><span style=display:flex><span><span style=color:#ff79c6>import</span> (
+</span></span><span style=display:flex><span>    <span style=color:#f1fa8c>&#34;fmt&#34;</span>
+</span></span><span style=display:flex><span>    <span style=color:#f1fa8c>&#34;log&#34;</span>
+</span></span><span style=display:flex><span>
+</span></span><span style=display:flex><span>    alpaca <span style=color:#f1fa8c>&#34;github.com/alpacahq/alpaca-trade-api-go&#34;</span>
+</span></span><span style=display:flex><span>)
+</span></span><span style=display:flex><span>
+</span></span><span style=display:flex><span><span style=color:#8be9fd;font-style:italic>func</span> <span style=color:#50fa7b>main</span>() {
+</span></span><span style=display:flex><span>    <span style=color:#6272a4>// Set the API key and secret</span>
+</span></span><span style=display:flex><span>    alpaca.<span style=color:#50fa7b>SetAPIKey</span>(<span style=color:#f1fa8c>&#34;YOUR_API_KEY&#34;</span>)
+</span></span><span style=display:flex><span>    alpaca.<span style=color:#50fa7b>SetAPISecret</span>(<span style=color:#f1fa8c>&#34;YOUR_API_SECRET&#34;</span>)
+</span></span><span style=display:flex><span>
+</span></span><span style=display:flex><span>    <span style=color:#6272a4>// Place a market order to buy 100 shares of the stock &#34;AAPL&#34;</span>
+</span></span><span style=display:flex><span>    order, err <span style=color:#ff79c6>:=</span> alpaca.<span style=color:#50fa7b>PlaceOrder</span>(<span style=color:#f1fa8c>&#34;AAPL&#34;</span>, <span style=color:#bd93f9>100</span>, alpaca.MarketOrder, alpaca.Buy, <span style=color:#f1fa8c>&#34;day&#34;</span>)
+</span></span><span style=display:flex><span>    <span style=color:#ff79c6>if</span> err <span style=color:#ff79c6>!=</span> <span style=color:#ff79c6>nil</span> {
+</span></span><span style=display:flex><span>        log.<span style=color:#50fa7b>Fatal</span>(err)
+</span></span><span style=display:flex><span>    }
+</span></span><span style=display:flex><span>
+</span></span><span style=display:flex><span>    <span style=color:#6272a4>// Print the order details</span>
+</span></span><span style=display:flex><span>    fmt.<span style=color:#50fa7b>Printf</span>(<span style=color:#f1fa8c>&#34;%+v\n&#34;</span>, order)
+</span></span><span style=display:flex><span>}</span></span></code></pre></div></div><p>This will place a market order to buy 100 shares of the stock &ldquo;AAPL&rdquo; and print the order details, including the order ID and status.</p><h3 class="relative group">Retrieving Market Data<div id=retrieving-market-data class=anchor></div><span class="absolute top-0 w-6 transition-opacity opacity-0 -start-6 not-prose group-hover:opacity-100 select-none"><a class="text-primary-300 dark:text-neutral-700 !no-underline" href=#retrieving-market-data aria-label=Anchor>#</a></span></h3><p>In addition to placing trades, you can also use the Alpaca API to retrieve real-time market data. The following code snippet demonstrates how to retrieve the real-time quote for the stock &ldquo;AAPL&rdquo; using the alpaca-trade-api-go library:</p><div class=highlight-wrapper><div class=highlight><pre tabindex=0 style=color:#f8f8f2;background-color:#282a36;-moz-tab-size:4;-o-tab-size:4;tab-size:4><code class=language-go data-lang=go><span style=display:flex><span><span style=color:#ff79c6>package</span> main
+</span></span><span style=display:flex><span>
+</span></span><span style=display:flex><span><span style=color:#ff79c6>import</span> (
+</span></span><span style=display:flex><span>    <span style=color:#f1fa8c>&#34;fmt&#34;</span>
+</span></span><span style=display:flex><span>    <span style=color:#f1fa8c>&#34;log&#34;</span>
+</span></span><span style=display:flex><span>
+</span></span><span style=display:flex><span>    alpaca <span style=color:#f1fa8c>&#34;github.com/alpacahq/alpaca-trade-api-go&#34;</span>
+</span></span><span style=display:flex><span>)
+</span></span><span style=display:flex><span>
+</span></span><span style=display:flex><span><span style=color:#8be9fd;font-style:italic>func</span> <span style=color:#50fa7b>main</span>() {
+</span></span><span style=display:flex><span>    <span style=color:#6272a4>// Set the API key and secret</span>
+</span></span><span style=display:flex><span>    alpaca.<span style=color:#50fa7b>SetAPIKey</span>(<span style=color:#f1fa8c>&#34;YOUR_API_KEY&#34;</span>)
+</span></span><span style=display:flex><span>    alpaca.<span style=color:#50fa7b>SetAPISecret</span>(<span style=color:#f1fa8c>&#34;YOUR_API_SECRET&#34;</span>)
+</span></span><span style=display:flex><span>
+</span></span><span style=display:flex><span>    <span style=color:#6272a4>// Retrieve the real-time quote for the stock &#34;AAPL&#34;</span>
+</span></span><span style=display:flex><span>    quote, err <span style=color:#ff79c6>:=</span> alpaca.<span style=color:#50fa7b>GetQuote</span>(<span style=color:#f1fa8c>&#34;AAPL&#34;</span>)
+</span></span><span style=display:flex><span>    <span style=color:#ff79c6>if</span> err <span style=color:#ff79c6>!=</span> <span style=color:#ff79c6>nil</span> {
+</span></span><span style=display:flex><span>        log.<span style=color:#50fa7b>Fatal</span>(err)
+</span></span><span style=display:flex><span>    }
+</span></span><span style=display:flex><span>
+</span></span><span style=display:flex><span>    <span style=color:#6272a4>// Print the quote</span>
+</span></span><span style=display:flex><span>    fmt.<span style=color:#50fa7b>Printf</span>(<span style=color:#f1fa8c>&#34;%+v\n&#34;</span>, quote)
+</span></span><span style=display:flex><span>}</span></span></code></pre></div></div><p>This will retrieve the real-time quote for the stock &ldquo;AAPL&rdquo; and print the quote, including the current price, volume, and other information.</p><h3 class="relative group">Retrieving Account Information and Trade History<div id=retrieving-account-information-and-trade-history class=anchor></div><span class="absolute top-0 w-6 transition-opacity opacity-0 -start-6 not-prose group-hover:opacity-100 select-none"><a class="text-primary-300 dark:text-neutral-700 !no-underline" href=#retrieving-account-information-and-trade-history aria-label=Anchor>#</a></span></h3><p>In addition to retrieving market data, you can also use the Alpaca API to retrieve information about your account and trade history. The following code snippet demonstrates how to retrieve your account balance and trade history using the alpaca-trade-api-go library:</p><div class=highlight-wrapper><div class=highlight><pre tabindex=0 style=color:#f8f8f2;background-color:#282a36;-moz-tab-size:4;-o-tab-size:4;tab-size:4><code class=language-go data-lang=go><span style=display:flex><span><span style=color:#ff79c6>package</span> main
+</span></span><span style=display:flex><span>
+</span></span><span style=display:flex><span><span style=color:#ff79c6>import</span> (
+</span></span><span style=display:flex><span>    <span style=color:#f1fa8c>&#34;fmt&#34;</span>
+</span></span><span style=display:flex><span>    <span style=color:#f1fa8c>&#34;log&#34;</span>
+</span></span><span style=display:flex><span>
+</span></span><span style=display:flex><span>    alpaca <span style=color:#f1fa8c>&#34;github.com/alpacahq/alpaca-trade-api-go&#34;</span>
+</span></span><span style=display:flex><span>)
+</span></span><span style=display:flex><span>
+</span></span><span style=display:flex><span><span style=color:#8be9fd;font-style:italic>func</span> <span style=color:#50fa7b>main</span>() {
+</span></span><span style=display:flex><span>    <span style=color:#6272a4>// Set the API key and secret</span>
+</span></span><span style=display:flex><span>    alpaca.<span style=color:#50fa7b>SetAPIKey</span>(<span style=color:#f1fa8c>&#34;YOUR_API_KEY&#34;</span>)
+</span></span><span style=display:flex><span>    alpaca.<span style=color:#50fa7b>SetAPISecret</span>(<span style=color:#f1fa8c>&#34;YOUR_API_SECRET&#34;</span>)
+</span></span><span style=display:flex><span>
+</span></span><span style=display:flex><span>    <span style=color:#6272a4>// Retrieve the account balance</span>
+</span></span><span style=display:flex><span>    balance, err <span style=color:#ff79c6>:=</span> alpaca.<span style=color:#50fa7b>GetAccount</span>()
+</span></span><span style=display:flex><span>    <span style=color:#ff79c6>if</span> err <span style=color:#ff79c6>!=</span> <span style=color:#ff79c6>nil</span> {
+</span></span><span style=display:flex><span>        log.<span style=color:#50fa7b>Fatal</span>(err)
+</span></span><span style=display:flex><span>    }
+</span></span><span style=display:flex><span>
+</span></span><span style=display:flex><span>    <span style=color:#6272a4>// Print the account balance</span>
+</span></span><span style=display:flex><span>    fmt.<span style=color:#50fa7b>Printf</span>(<span style=color:#f1fa8c>&#34;Account balance: %+v\n&#34;</span>, balance)
+</span></span><span style=display:flex><span>
+</span></span><span style=display:flex><span>    <span style=color:#6272a4>// Retrieve the trade history</span>
+</span></span><span style=display:flex><span>    trades, err <span style=color:#ff79c6>:=</span> alpaca.<span style=color:#50fa7b>ListTrades</span>()
+</span></span><span style=display:flex><span>    <span style=color:#ff79c6>if</span> err <span style=color:#ff79c6>!=</span> <span style=color:#ff79c6>nil</span> {
+</span></span><span style=display:flex><span>        log.<span style=color:#50fa7b>Fatal</span>(err)
+</span></span><span style=display:flex><span>    }
+</span></span><span style=display:flex><span>
+</span></span><span style=display:flex><span>    <span style=color:#6272a4>// Print the trade history</span>
+</span></span><span style=display:flex><span>    fmt.<span style=color:#50fa7b>Printf</span>(<span style=color:#f1fa8c>&#34;Trade history: %+v\n&#34;</span>, trades)
+</span></span><span style=display:flex><span>}</span></span></code></pre></div></div><p>This will retrieve your account balance and trade history and print the information.</p><h3 class="relative group">Conclusion<div id=conclusion class=anchor></div><span class="absolute top-0 w-6 transition-opacity opacity-0 -start-6 not-prose group-hover:opacity-100 select-none"><a class="text-primary-300 dark:text-neutral-700 !no-underline" href=#conclusion aria-label=Anchor>#</a></span></h3><p>In this tutorial, we have discussed how to use Alpaca&rsquo;s APIs with Golang to automate trading. We have seen how to connect to the Alpaca API, place trades, retrieve market data, and retrieve account information and trade history. With these tools and techniques, you can create a powerful and efficient application for automated trading.</p></div><h2 class="mt-8 text-2xl font-extrabold mb-10">Related</h2><section class="w-full grid gap-4 sm:grid-cols-2 md:grid-cols-3"><article class="article-link--related relative min-h-full min-w-full overflow-hidden rounded-lg border border-neutral-300 dark:border-neutral-600"><div class=p-4><header><a href=/posts/unit-testing-in-golang/ class="not-prose before:absolute before:inset-0 decoration-primary-500 dark:text-neutral text-xl font-bold text-neutral-800 hover:underline hover:underline-offset-2"><h2>Unit Testing in Golang</h2></a></header><div class="text-sm text-neutral-500 dark:text-neutral-400"><div class="flex flex-row flex-wrap items-center"><time datetime=2023-01-09T20:49:03+01:00>9 January 2023</time><span class="px-2 text-primary-500">&#183;</span><span title="Reading time">3 mins</span></div><div class="flex flex-row flex-wrap items-center"><a class="relative mt-[0.5rem] me-2" href=/tags/testing/><span class="flex cursor-pointer"><span class="rounded-md border border-primary-400 px-1 py-[1px] text-xs font-normal text-primary-700 dark:border-primary-600 dark:text-primary-400">Testing
 </span></span></a><a class="relative mt-[0.5rem] me-2" href=/tags/golang/><span class="flex cursor-pointer"><span class="rounded-md border border-primary-400 px-1 py-[1px] text-xs font-normal text-primary-700 dark:border-primary-600 dark:text-primary-400">Golang</span></span></a></div></div></div><div class="px-6 pt-4 pb-2"></div></article><article class="article-link--related relative min-h-full min-w-full overflow-hidden rounded-lg border border-neutral-300 dark:border-neutral-600"><div class=p-4><header><a href=/posts/streaming-video-with-golang/ class="not-prose before:absolute before:inset-0 decoration-primary-500 dark:text-neutral text-xl font-bold text-neutral-800 hover:underline hover:underline-offset-2"><h2>Streaming Video With Golang</h2></a></header><div class="text-sm text-neutral-500 dark:text-neutral-400"><div class="flex flex-row flex-wrap items-center"><time datetime=2023-01-04T21:23:20+01:00>4 January 2023</time><span class="px-2 text-primary-500">&#183;</span><span title="Reading time">5 mins</span></div><div class="flex flex-row flex-wrap items-center"><a class="relative mt-[0.5rem] me-2" href=/tags/golang/><span class="flex cursor-pointer"><span class="rounded-md border border-primary-400 px-1 py-[1px] text-xs font-normal text-primary-700 dark:border-primary-600 dark:text-primary-400">Golang
 </span></span></a><a class="relative mt-[0.5rem] me-2" href=/tags/video-streaming/><span class="flex cursor-pointer"><span class="rounded-md border border-primary-400 px-1 py-[1px] text-xs font-normal text-primary-700 dark:border-primary-600 dark:text-primary-400">Video Streaming</span></span></a></div></div></div><div class="px-6 pt-4 pb-2"></div></article><article class="article-link--related relative min-h-full min-w-full overflow-hidden rounded-lg border border-neutral-300 dark:border-neutral-600"><div class=p-4><header><a href=/posts/the-context-package/ class="not-prose before:absolute before:inset-0 decoration-primary-500 dark:text-neutral text-xl font-bold text-neutral-800 hover:underline hover:underline-offset-2"><h2>The Context Package</h2></a></header><div class="text-sm text-neutral-500 dark:text-neutral-400"><div class="flex flex-row flex-wrap items-center"><time datetime=2023-01-03T20:36:29+01:00>3 January 2023</time><span class="px-2 text-primary-500">&#183;</span><span title="Reading time">4 mins</span></div><div class="flex flex-row flex-wrap items-center"><a class="relative mt-[0.5rem] me-2" href=/tags/golang/><span class="flex cursor-pointer"><span class="rounded-md border border-primary-400 px-1 py-[1px] text-xs font-normal text-primary-700 dark:border-primary-600 dark:text-primary-400">Golang
 </span></span></a><a class="relative mt-[0.5rem] me-2" href=/tags/context/><span class="flex cursor-pointer"><span class="rounded-md border border-primary-400 px-1 py-[1px] text-xs font-normal text-primary-700 dark:border-primary-600 dark:text-primary-400">Context</span></span></a></div></div></div><div class="px-6 pt-4 pb-2"></div></article><article class="article-link--related relative min-h-full min-w-full overflow-hidden rounded-lg border border-neutral-300 dark:border-neutral-600"><div class=p-4><header><a href=/posts/use-protobuf-with-golang/ class="not-prose before:absolute before:inset-0 decoration-primary-500 dark:text-neutral text-xl font-bold text-neutral-800 hover:underline hover:underline-offset-2"><h2>Use Protobuf With Golang</h2></a></header><div class="text-sm text-neutral-500 dark:text-neutral-400"><div class="flex flex-row flex-wrap items-center"><time datetime=2022-12-27T18:48:44+01:00>27 December 2022</time><span class="px-2 text-primary-500">&#183;</span><span title="Reading time">2 mins</span></div><div class="flex flex-row flex-wrap items-center"><a class="relative mt-[0.5rem] me-2" href=/tags/golang/><span class="flex cursor-pointer"><span class="rounded-md border border-primary-400 px-1 py-[1px] text-xs font-normal text-primary-700 dark:border-primary-600 dark:text-primary-400">Golang
