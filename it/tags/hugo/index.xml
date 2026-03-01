@@ -1,15 +1,26 @@
-<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>Hugo on Git Push and Run</title><link>https://manuelfedele.github.io/it/tags/hugo/</link><description>Recent content in Hugo on Git Push and Run</description><generator>Hugo -- gohugo.io</generator><language>it</language><copyright>© 2026 Manuel Fedele</copyright><lastBuildDate>Thu, 03 Nov 2022 14:57:41 +0100</lastBuildDate><atom:link href="https://manuelfedele.github.io/it/tags/hugo/index.xml" rel="self" type="application/rss+xml"/><item><title>Creare un tema per Hugo</title><link>https://manuelfedele.github.io/it/posts/create-template-hugo/</link><pubDate>Thu, 03 Nov 2022 14:57:41 +0100</pubDate><guid>https://manuelfedele.github.io/it/posts/create-template-hugo/</guid><description>&lt;div class="lead text-neutral-500 dark:text-neutral-400 !mb-9 text-xl">
- Questo tutorial mostra come creare un tema semplice in Hugo. Si presuppone una certa familiarità con HTML, la riga di comando bash e Markdown. Vedremo come Hugo usa i template e come organizzarli per creare un tema. Non tratteremo l&amp;rsquo;uso dei CSS per lo stile del tema.
+<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>Hugo on Git Push and Run</title><link>https://manuelfedele.github.io/it/tags/hugo/</link><description>Recent content in Hugo on Git Push and Run</description><generator>Hugo -- gohugo.io</generator><language>it</language><copyright>© 2026 Manuel Fedele</copyright><lastBuildDate>Tue, 20 Dec 2022 09:49:01 +0100</lastBuildDate><atom:link href="https://manuelfedele.github.io/it/tags/hugo/index.xml" rel="self" type="application/rss+xml"/><item><title>Deploy di un sito statico con Hugo e GitHub Actions: hosting a costo zero</title><link>https://manuelfedele.github.io/it/posts/create-website-with-gatsby-and-github-pages/</link><pubDate>Tue, 20 Dec 2022 09:49:01 +0100</pubDate><guid>https://manuelfedele.github.io/it/posts/create-website-with-gatsby-and-github-pages/</guid><description>&lt;div class="lead text-neutral-500 dark:text-neutral-400 !mb-9 text-xl">
+ I siti statici sono il modo più efficiente per pubblicare contenuti. Nessun server da gestire, nessun costo di runtime, nessuna sorpresa di scalabilità. Con Hugo e GitHub Actions ottieni un blog veloce e versionato, deployato automaticamente a ogni push, a costo effettivamente zero.
 &lt;/div>
 
 
-&lt;h2 class="relative group">Introduzione
- &lt;div id="introduzione" class="anchor">&lt;/div>
+&lt;h2 class="relative group">Perché Hugo e non Gatsby o Next.js
+ &lt;div id="perché-hugo-e-non-gatsby-o-nextjs" class="anchor">&lt;/div>
  
  &lt;span
  class="absolute top-0 w-6 transition-opacity opacity-0 -start-6 not-prose group-hover:opacity-100 select-none">
- &lt;a class="text-primary-300 dark:text-neutral-700 !no-underline" href="#introduzione" aria-label="Ancora">#&lt;/a>
+ &lt;a class="text-primary-300 dark:text-neutral-700 !no-underline" href="#perch%c3%a9-hugo-e-non-gatsby-o-nextjs" aria-label="Ancora">#&lt;/a>
  &lt;/span>
  
 &lt;/h2>
-&lt;p>Questo tutorial mostra come creare un tema semplice in Hugo. Si presuppone una certa familiarità con HTML, la riga di comando bash e Markdown per formattare il contenuto. Vedremo come Hugo usa i template e come organizzarli per creare un tema. Non tratteremo l&amp;rsquo;uso dei CSS per lo stile.&lt;/p></description></item></channel></rss>
+&lt;p>Gatsby ha avuto il suo momento, ma l&amp;rsquo;ecosistema si è spostato. Il progetto è stato acquisito, la manutenzione è rallentata e la maggior parte dei team che lo usavano è migrata a Next.js o a un generatore statico. Hugo occupa una nicchia diversa: non dipende da React, non richiede Node.js e compila migliaia di pagine in meno di un secondo. Se stai costruendo un blog o un sito di documentazione, e non una vera applicazione React, Hugo è lo strumento giusto.&lt;/p></description></item><item><title>Creare un tema Hugo da zero: layout, partial e template inheritance</title><link>https://manuelfedele.github.io/it/posts/create-template-hugo/</link><pubDate>Thu, 03 Nov 2022 14:57:41 +0100</pubDate><guid>https://manuelfedele.github.io/it/posts/create-template-hugo/</guid><description>&lt;div class="lead text-neutral-500 dark:text-neutral-400 !mb-9 text-xl">
+ Questo tutorial mostra come creare un tema semplice in Hugo. Si presuppone familiarita con HTML, la riga di comando bash e Markdown. Vedremo come Hugo usa i template e come organizzarli per creare un tema. Non tratteremo l&amp;rsquo;uso dei CSS per lo stile.
+&lt;/div>
+
+&lt;div class="admonition relative overflow-hidden rounded-lg border-l-4 my-3 px-4 py-3 shadow-sm" data-type="note">
+ &lt;div class="flex items-center gap-2 font-semibold text-inherit">
+ &lt;div class="flex shrink-0 h-5 w-5 items-center justify-center text-lg">&lt;span class="relative block icon">&lt;svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">&lt;path fill="currentColor" d="M256 0C114.6 0 0 114.6 0 256s114.6 256 256 256s256-114.6 256-256S397.4 0 256 0zM256 128c17.67 0 32 14.33 32 32c0 17.67-14.33 32-32 32S224 177.7 224 160C224 142.3 238.3 128 256 128zM296 384h-80C202.8 384 192 373.3 192 360s10.75-24 24-24h16v-64H224c-13.25 0-24-10.75-24-24S210.8 224 224 224h32c13.25 0 24 10.75 24 24v88h16c13.25 0 24 10.75 24 24S309.3 384 296 384z"/>&lt;/svg>
+&lt;/span>&lt;/div>
+ &lt;div class="grow">
+ Nota
+ &lt;/div>
+ &lt;/div>&lt;div class="admonition-content mt-3 text-base leading-relaxed text-inherit">&lt;p>Questo tutorial e rivolto a Hugo v0.100+. Il sistema di layout e cambiato significativamente rispetto alle versioni piu vecchie. Se usi Hugo prima della v0.90, aspettati differenze nelle regole di lookup dei template, nella sintassi di configurazione e nel modo in cui vengono risolte le partial.&lt;/p></description></item></channel></rss>

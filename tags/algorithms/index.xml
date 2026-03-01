@@ -1,5 +1,29 @@
-<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>“Algorithms” on Git Push and Run</title><link>https://manuelfedele.github.io/tags/algorithms/</link><description>Recent content in “Algorithms” on Git Push and Run</description><generator>Hugo -- gohugo.io</generator><language>en</language><copyright>© 2026 Manuel Fedele</copyright><lastBuildDate>Wed, 27 Nov 2024 17:01:00 +0000</lastBuildDate><atom:link href="https://manuelfedele.github.io/tags/algorithms/index.xml" rel="self" type="application/rss+xml"/><item><title>Implementing Dijkstra’s Algorithm in Go</title><link>https://manuelfedele.github.io/posts/implementing-djikstra-algorithm-in-go/</link><pubDate>Wed, 27 Nov 2024 17:01:00 +0000</pubDate><guid>https://manuelfedele.github.io/posts/implementing-djikstra-algorithm-in-go/</guid><description>&lt;div class="lead text-neutral-500 dark:text-neutral-400 !mb-9 text-xl">
- Graphs are fundamental data structures in computer science, representing relationships between entities. One of the most common problems involving graphs is finding the shortest path between nodes. Dijkstra’s algorithm is a classic solution to this problem for graphs with&amp;hellip;
+<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>Algorithms on Git Push and Run</title><link>https://manuelfedele.github.io/tags/algorithms/</link><description>Recent content in Algorithms on Git Push and Run</description><generator>Hugo -- gohugo.io</generator><language>en</language><copyright>© 2026 Manuel Fedele</copyright><lastBuildDate>Wed, 27 Nov 2024 17:01:00 +0000</lastBuildDate><atom:link href="https://manuelfedele.github.io/tags/algorithms/index.xml" rel="self" type="application/rss+xml"/><item><title>Dijkstra's Algorithm in Go: Implementation, Optimization, and Real-World Use</title><link>https://manuelfedele.github.io/posts/implementing-djikstra-algorithm-in-go/</link><pubDate>Wed, 27 Nov 2024 17:01:00 +0000</pubDate><guid>https://manuelfedele.github.io/posts/implementing-djikstra-algorithm-in-go/</guid><description>&lt;div class="lead text-neutral-500 dark:text-neutral-400 !mb-9 text-xl">
+ Graph shortest-path problems appear constantly in platform engineering: network routing, dependency resolution, service mesh path optimization, and CI pipeline scheduling all reduce to finding the minimum-cost path through a directed weighted graph. Dijkstra&amp;rsquo;s algorithm is the workhorse for these problems when edge weights are non-negative. This post covers a correct Go implementation, the heap-based optimization that makes it practical on large graphs, path reconstruction, and a realistic dependency-resolution use case.
 &lt;/div>
 
-&lt;p>Graphs are fundamental data structures in computer science, representing relationships between entities. One of the most common problems involving graphs is finding the shortest path between nodes. Dijkstra’s algorithm is a classic solution to this problem for graphs with non-negative edge weights. In this guide, we’ll implement Dijkstra’s algorithm in Go and explore ways to optimize it using advanced data structures.\&lt;/p></description></item></channel></rss>
+
+&lt;h2 class="relative group">Graph Representation
+ &lt;div id="graph-representation" class="anchor">&lt;/div>
+ 
+ &lt;span
+ class="absolute top-0 w-6 transition-opacity opacity-0 -start-6 not-prose group-hover:opacity-100 select-none">
+ &lt;a class="text-primary-300 dark:text-neutral-700 !no-underline" href="#graph-representation" aria-label="Anchor">#&lt;/a>
+ &lt;/span>
+ 
+&lt;/h2>
+&lt;p>An adjacency list using integer node IDs is the right choice for Dijkstra in Go. String keys are convenient for small examples but add unnecessary hashing overhead on graphs with thousands of nodes. We represent weighted edges as structs and store the graph as a slice of slices (indexed by node ID).&lt;/p></description></item><item><title>Solving Sudoku in Go: Backtracking, Constraint Caching, and Benchmarks</title><link>https://manuelfedele.github.io/posts/build-a-sudoku-solver-in-golang/</link><pubDate>Wed, 01 Feb 2023 21:09:26 +0100</pubDate><guid>https://manuelfedele.github.io/posts/build-a-sudoku-solver-in-golang/</guid><description>&lt;div class="lead text-neutral-500 dark:text-neutral-400 !mb-9 text-xl">
+ Sudoku solving is a classic constraint satisfaction problem (CSP). The same algorithmic techniques &amp;ndash; backtracking with constraint propagation &amp;ndash; appear in production systems for job scheduling, resource allocation, and configuration validation. Understanding how to implement and optimize a Sudoku solver gives you a concrete mental model for tackling these problems at scale.
+&lt;/div>
+
+
+&lt;h2 class="relative group">Problem Representation
+ &lt;div id="problem-representation" class="anchor">&lt;/div>
+ 
+ &lt;span
+ class="absolute top-0 w-6 transition-opacity opacity-0 -start-6 not-prose group-hover:opacity-100 select-none">
+ &lt;a class="text-primary-300 dark:text-neutral-700 !no-underline" href="#problem-representation" aria-label="Anchor">#&lt;/a>
+ &lt;/span>
+ 
+&lt;/h2>
+&lt;p>A Sudoku grid is a 9x9 matrix of integers where 0 represents an empty cell. A fixed-size array is the right type: it lives on the stack, has no allocation overhead, and can be passed by value for snapshot semantics during backtracking.&lt;/p></description></item></channel></rss>

@@ -1,5 +1,15 @@
-<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>Desktop on Git Push and Run</title><link>https://manuelfedele.github.io/tags/desktop/</link><description>Recent content in Desktop on Git Push and Run</description><generator>Hugo -- gohugo.io</generator><language>en</language><copyright>© 2026 Manuel Fedele</copyright><lastBuildDate>Mon, 19 Dec 2022 19:08:58 +0100</lastBuildDate><atom:link href="https://manuelfedele.github.io/tags/desktop/index.xml" rel="self" type="application/rss+xml"/><item><title>Create Desktop Application to fetch Stock Market Data with Golang</title><link>https://manuelfedele.github.io/posts/create-desktop-application-stock-market-data-golang/</link><pubDate>Mon, 19 Dec 2022 19:08:58 +0100</pubDate><guid>https://manuelfedele.github.io/posts/create-desktop-application-stock-market-data-golang/</guid><description>&lt;div class="lead text-neutral-500 dark:text-neutral-400 !mb-9 text-xl">
- Golang, also known as Go, is a popular programming language known for its simplicity, performance, and concurrency support. Fyne is an open-source cross-platform UI toolkit written in Go, which makes it an excellent choice for building desktop applications. In this article, we&amp;hellip;
+<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>Desktop on Git Push and Run</title><link>https://manuelfedele.github.io/tags/desktop/</link><description>Recent content in Desktop on Git Push and Run</description><generator>Hugo -- gohugo.io</generator><language>en</language><copyright>© 2026 Manuel Fedele</copyright><lastBuildDate>Mon, 19 Dec 2022 19:08:58 +0100</lastBuildDate><atom:link href="https://manuelfedele.github.io/tags/desktop/index.xml" rel="self" type="application/rss+xml"/><item><title>Building Desktop Applications in Go with Fyne: Stock Market Dashboard</title><link>https://manuelfedele.github.io/posts/create-desktop-application-stock-market-data-golang/</link><pubDate>Mon, 19 Dec 2022 19:08:58 +0100</pubDate><guid>https://manuelfedele.github.io/posts/create-desktop-application-stock-market-data-golang/</guid><description>&lt;div class="lead text-neutral-500 dark:text-neutral-400 !mb-9 text-xl">
+ Fyne is Go&amp;rsquo;s best cross-platform UI toolkit. One codebase compiles to Windows, macOS, and Linux, shipping as a native binary with no runtime dependency. This post builds a real stock market dashboard, covering Fyne&amp;rsquo;s widget system, layout engine, goroutine safety rules, and distribution.
 &lt;/div>
 
-&lt;p>Golang, also known as Go, is a popular programming language known for its simplicity, performance, and concurrency support. Fyne is an open-source cross-platform UI toolkit written in Go, which makes it an excellent choice for building desktop applications. In this article, we will discuss how to build a desktop application for stock market data using Golang and Fyne.&lt;/p></description></item></channel></rss>
+
+&lt;h2 class="relative group">Why Fyne
+ &lt;div id="why-fyne" class="anchor">&lt;/div>
+ 
+ &lt;span
+ class="absolute top-0 w-6 transition-opacity opacity-0 -start-6 not-prose group-hover:opacity-100 select-none">
+ &lt;a class="text-primary-300 dark:text-neutral-700 !no-underline" href="#why-fyne" aria-label="Anchor">#&lt;/a>
+ &lt;/span>
+ 
+&lt;/h2>
+&lt;p>Go desktop applications have historically been awkward. CGo-based bindings to GTK or Qt work, but the build complexity is painful. Fyne takes a different approach: it uses OpenGL for rendering, keeping the API pure Go and the resulting binary fully self-contained.&lt;/p></description></item></channel></rss>

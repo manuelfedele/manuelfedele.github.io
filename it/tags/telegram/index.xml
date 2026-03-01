@@ -1,31 +1,5 @@
-<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>Telegram on Git Push and Run</title><link>https://manuelfedele.github.io/it/tags/telegram/</link><description>Recent content in Telegram on Git Push and Run</description><generator>Hugo -- gohugo.io</generator><language>it</language><copyright>© 2026 Manuel Fedele</copyright><lastBuildDate>Sat, 31 Dec 2022 14:26:23 +0100</lastBuildDate><atom:link href="https://manuelfedele.github.io/it/tags/telegram/index.xml" rel="self" type="application/rss+xml"/><item><title>Creare un bot Telegram con Rust</title><link>https://manuelfedele.github.io/it/posts/create-a-telegram-bot-with-rust/</link><pubDate>Sat, 31 Dec 2022 14:26:23 +0100</pubDate><guid>https://manuelfedele.github.io/it/posts/create-a-telegram-bot-with-rust/</guid><description>&lt;div class="lead text-neutral-500 dark:text-neutral-400 !mb-9 text-xl">
- &lt;ol>
-&lt;li>
-
-&lt;h2 class="relative group">Installare Rust Prima di poter iniziare a scrivere codice Rust, è necessario installare il linguaggio di programmazione Rust sul proprio computer. È possibile seguire le istruzioni sul sito ufficiale di Rust (&lt;a href="https://www.rust-lang.org/tools/install%29" target="_blank" rel="noreferrer">https://www.rust-lang.org/tools/install)&lt;/a>.
- &lt;div id="installare-rust-prima-di-poter-iniziare-a-scrivere-codice-rust-è-necessario-installare-il-linguaggio-di-programmazione-rust-sul-proprio-computer-è-possibile-seguire-le-istruzioni-sul-sito-ufficiale-di-rust-" class="anchor">&lt;/div>
- 
- &lt;span
- class="absolute top-0 w-6 transition-opacity opacity-0 -start-6 not-prose group-hover:opacity-100 select-none">
- &lt;a class="text-primary-300 dark:text-neutral-700 !no-underline" href="#installare-rust-prima-di-poter-iniziare-a-scrivere-codice-rust-%c3%a8-necessario-installare-il-linguaggio-di-programmazione-rust-sul-proprio-computer-%c3%a8-possibile-seguire-le-istruzioni-sul-sito-ufficiale-di-rust-" aria-label="Ancora">#&lt;/a>
- &lt;/span>
- 
-&lt;/h2>
-&lt;/li>
-&lt;/ol>
-
+<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>Telegram on Git Push and Run</title><link>https://manuelfedele.github.io/it/tags/telegram/</link><description>Recent content in Telegram on Git Push and Run</description><generator>Hugo -- gohugo.io</generator><language>it</language><copyright>© 2026 Manuel Fedele</copyright><lastBuildDate>Sat, 31 Dec 2022 14:26:23 +0100</lastBuildDate><atom:link href="https://manuelfedele.github.io/it/tags/telegram/index.xml" rel="self" type="application/rss+xml"/><item><title>Costruire un Bot Telegram in Rust con Teloxide</title><link>https://manuelfedele.github.io/it/posts/create-a-telegram-bot-with-rust/</link><pubDate>Sat, 31 Dec 2022 14:26:23 +0100</pubDate><guid>https://manuelfedele.github.io/it/posts/create-a-telegram-bot-with-rust/</guid><description>&lt;div class="lead text-neutral-500 dark:text-neutral-400 !mb-9 text-xl">
+ Rust e una scelta insolita per un bot Telegram, ma i trade-off sono reali: un singolo binario linkato staticamente, immagini Docker sotto i 10MB e utilizzo di memoria che rimane stabile sotto carico. Teloxide e la libreria Telegram standard della community Rust e rende invisibile il plumbing async.
 &lt;/div>
 
-&lt;ol>
-&lt;li>
-
-&lt;h2 class="relative group">Installare Rust
- &lt;div id="installare-rust" class="anchor">&lt;/div>
- 
- &lt;span
- class="absolute top-0 w-6 transition-opacity opacity-0 -start-6 not-prose group-hover:opacity-100 select-none">
- &lt;a class="text-primary-300 dark:text-neutral-700 !no-underline" href="#installare-rust" aria-label="Ancora">#&lt;/a>
- &lt;/span>
- 
-&lt;/h2>
-&lt;p>Prima di iniziare a scrivere codice Rust, è necessario installare il linguaggio sul proprio computer. È possibile seguire le istruzioni sul sito ufficiale di Rust (&lt;a href="https://www.rust-lang.org/tools/install%29" target="_blank" rel="noreferrer">https://www.rust-lang.org/tools/install)&lt;/a>.&lt;/p></description></item></channel></rss>
+&lt;p>La maggior parte dei tutorial per bot Telegram sceglie Python o Node. Rust vale davvero la pena di essere considerato se ti importa della semplicita di deployment (un binario, nessun interprete), dell&amp;rsquo;impronta di memoria, o sei gia in un codebase Rust. Questo articolo illustra un bot completo usando &lt;code>teloxide&lt;/code>: comandi, inline keyboard, una macchina a stati multi-step e deployment in produzione.&lt;/p></description></item></channel></rss>

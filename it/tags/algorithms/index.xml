@@ -1,9 +1,29 @@
-<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>Algorithms on Git Push and Run</title><link>https://manuelfedele.github.io/it/tags/algorithms/</link><description>Recent content in Algorithms on Git Push and Run</description><generator>Hugo -- gohugo.io</generator><language>it</language><copyright>© 2026 Manuel Fedele</copyright><lastBuildDate>Wed, 27 Nov 2024 17:01:00 +0000</lastBuildDate><atom:link href="https://manuelfedele.github.io/it/tags/algorithms/index.xml" rel="self" type="application/rss+xml"/><item><title>Implementare l'algoritmo di Dijkstra in Go</title><link>https://manuelfedele.github.io/it/posts/implementing-djikstra-algorithm-in-go/</link><pubDate>Wed, 27 Nov 2024 17:01:00 +0000</pubDate><guid>https://manuelfedele.github.io/it/posts/implementing-djikstra-algorithm-in-go/</guid><description>&lt;div class="lead text-neutral-500 dark:text-neutral-400 !mb-9 text-xl">
- I grafi sono strutture dati fondamentali in informatica, che rappresentano relazioni tra entità. Uno dei problemi più comuni riguardanti i grafi è trovare il percorso più breve tra nodi. L&amp;rsquo;algoritmo di Dijkstra è una soluzione classica a questo problema per grafi con pesi degli archi non negativi. In questa guida&amp;hellip;
+<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>Algorithms on Git Push and Run</title><link>https://manuelfedele.github.io/it/tags/algorithms/</link><description>Recent content in Algorithms on Git Push and Run</description><generator>Hugo -- gohugo.io</generator><language>it</language><copyright>© 2026 Manuel Fedele</copyright><lastBuildDate>Wed, 27 Nov 2024 17:01:00 +0000</lastBuildDate><atom:link href="https://manuelfedele.github.io/it/tags/algorithms/index.xml" rel="self" type="application/rss+xml"/><item><title>L'Algoritmo di Dijkstra in Go: Implementazione, Ottimizzazione e Uso Reale</title><link>https://manuelfedele.github.io/it/posts/implementing-djikstra-algorithm-in-go/</link><pubDate>Wed, 27 Nov 2024 17:01:00 +0000</pubDate><guid>https://manuelfedele.github.io/it/posts/implementing-djikstra-algorithm-in-go/</guid><description>&lt;div class="lead text-neutral-500 dark:text-neutral-400 !mb-9 text-xl">
+ I problemi di percorso minimo sui grafi compaiono costantemente nel platform engineering: routing di rete, risoluzione delle dipendenze, ottimizzazione dei percorsi in un service mesh e scheduling di pipeline CI si riducono tutti a trovare il percorso a costo minimo in un grafo diretto e pesato. L&amp;rsquo;algoritmo di Dijkstra e il cavallo di battaglia per questi problemi quando i pesi degli archi sono non negativi. Questo articolo copre una corretta implementazione in Go, l&amp;rsquo;ottimizzazione basata su heap che la rende pratica su grafi di grandi dimensioni, la ricostruzione del percorso e un caso d&amp;rsquo;uso realistico di risoluzione delle dipendenze.
 &lt;/div>
 
-&lt;p>I grafi sono strutture dati fondamentali in informatica, che rappresentano relazioni tra entità. Uno dei problemi più comuni riguardanti i grafi è trovare il percorso più breve tra nodi. L&amp;rsquo;algoritmo di Dijkstra è una soluzione classica a questo problema per grafi con pesi degli archi non negativi. In questa guida implementeremo l&amp;rsquo;algoritmo di Dijkstra in Go ed esploreremo modi per ottimizzarlo con strutture dati avanzate.&lt;/p></description></item><item><title>Costruire un risolutore di Sudoku in Golang</title><link>https://manuelfedele.github.io/it/posts/build-a-sudoku-solver-in-golang/</link><pubDate>Wed, 01 Feb 2023 21:09:26 +0100</pubDate><guid>https://manuelfedele.github.io/it/posts/build-a-sudoku-solver-in-golang/</guid><description>&lt;div class="lead text-neutral-500 dark:text-neutral-400 !mb-9 text-xl">
- Il Sudoku è sempre stato un passatempo apprezzato da molti. Che siate principianti assoluti o giocatori esperti, la sfida di riempire una griglia 9x9 con cifre in modo che ogni colonna, ogni riga e ognuno dei nove sottogriglie 3x3 contenga tutti i numeri da 1 a 9 è un&amp;hellip;
+
+&lt;h2 class="relative group">Rappresentazione del Grafo
+ &lt;div id="rappresentazione-del-grafo" class="anchor">&lt;/div>
+ 
+ &lt;span
+ class="absolute top-0 w-6 transition-opacity opacity-0 -start-6 not-prose group-hover:opacity-100 select-none">
+ &lt;a class="text-primary-300 dark:text-neutral-700 !no-underline" href="#rappresentazione-del-grafo" aria-label="Ancora">#&lt;/a>
+ &lt;/span>
+ 
+&lt;/h2>
+&lt;p>Una lista di adiacenza con ID di nodo interi e la scelta giusta per Dijkstra in Go. Le chiavi stringa sono comode per esempi piccoli ma aggiungono overhead di hashing inutile su grafi con migliaia di nodi. Rappresentiamo gli archi pesati come struct e memorizziamo il grafo come una slice di slice (indicizzata per ID nodo).&lt;/p></description></item><item><title>Risolvere il Sudoku in Go: Backtracking, Constraint Caching e Benchmark</title><link>https://manuelfedele.github.io/it/posts/build-a-sudoku-solver-in-golang/</link><pubDate>Wed, 01 Feb 2023 21:09:26 +0100</pubDate><guid>https://manuelfedele.github.io/it/posts/build-a-sudoku-solver-in-golang/</guid><description>&lt;div class="lead text-neutral-500 dark:text-neutral-400 !mb-9 text-xl">
+ Il Sudoku e un classico problema di soddisfacimento di vincoli (CSP). Le stesse tecniche algoritmiche &amp;ndash; backtracking con propagazione dei vincoli &amp;ndash; compaiono in sistemi di produzione per la pianificazione di job, l&amp;rsquo;allocazione di risorse e la validazione delle configurazioni. Capire come implementare e ottimizzare un solver Sudoku ti da un modello mentale concreto per affrontare questi problemi su larga scala.
 &lt;/div>
 
-&lt;p>Il Sudoku è sempre stato un passatempo apprezzato da molti. Che siate principianti assoluti o giocatori esperti, la sfida di riempire una griglia 9x9 con cifre in modo che ogni colonna, ogni riga e ognuno dei nove sottogriglie 3x3 contenga tutti i numeri da 1 a 9 è un compito affascinante. Oggi vedremo come automatizzare questo processo in Golang e come ottimizzarlo con la tecnica della memoizzazione.&lt;/p></description></item></channel></rss>
+
+&lt;h2 class="relative group">Rappresentazione del Problema
+ &lt;div id="rappresentazione-del-problema" class="anchor">&lt;/div>
+ 
+ &lt;span
+ class="absolute top-0 w-6 transition-opacity opacity-0 -start-6 not-prose group-hover:opacity-100 select-none">
+ &lt;a class="text-primary-300 dark:text-neutral-700 !no-underline" href="#rappresentazione-del-problema" aria-label="Ancora">#&lt;/a>
+ &lt;/span>
+ 
+&lt;/h2>
+&lt;p>Una griglia Sudoku e una matrice 9x9 di interi dove 0 rappresenta una cella vuota. Un array di dimensione fissa e il tipo giusto: risiede sullo stack, non ha overhead di allocazione e puo essere passato per valore per la semantica di snapshot durante il backtracking.&lt;/p></description></item></channel></rss>
