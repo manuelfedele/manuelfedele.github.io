@@ -31,4 +31,4 @@
  Una pipeline serverless di elaborazione documenti su AWS che usa LLM per estrarre dati strutturati da documenti non strutturati — fatture, contratti, report — su larga scala. Nessun cluster GPU richiesto.
 &lt;/div>
 
-&lt;p>Le compagnie assicurative elaborano milioni di documenti ogni anno: verbali di polizia, cartelle cliniche, fatture, preventivi di riparazione. Tradizionalmente, operatori umani leggono ogni documento, lo classificano, ne estraggono i campi rilevanti e inseriscono i dati nel sistema dei sinistri. Questo è lento, costoso e soggetto a errori.&lt;/p></description></item></channel></rss>
+&lt;p>Le organizzazioni elaborano milioni di documenti ogni anno: report, contratti, fatture, corrispondenza. Tradizionalmente, operatori umani leggono ogni documento, lo classificano, ne estraggono i campi rilevanti e inseriscono i dati in un sistema di gestione. Questo è lento, costoso e soggetto a errori.&lt;/p></description></item></channel></rss>
